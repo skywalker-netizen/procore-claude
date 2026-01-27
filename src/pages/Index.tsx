@@ -124,7 +124,7 @@ const Index = () => {
             <p className="section-subtitle">Procore handles the project lifecycle. <span className="highlight">Salus handles the people, the gear, and the compliance heartbeat.</span></p>
             <div className="feature-block"><div className="feature-block-icon"><LayoutGrid /></div><div><h4>Unified Platform, Zero Silos</h4><p>Centralize everything from training logs to certificates in one live hub. No more risk hidden in "lost" spreadsheets or siloed email threads.</p></div></div>
             <div className="feature-block"><div className="feature-block-icon"><AlertCircle /></div><div><h4>Two-Way Field Feedback</h4><p>Close the gap between field reports and office repairs. Our two-way communication ensures every hazard is addressed and verified in real-time.</p></div></div>
-            <div className="feature-block"><div className="feature-block-icon"><MessageSquare /></div><div><h4>Beyond Pass/Fail Context</h4><p>Use smart form logic and voice-to-text to capture the "why" behind safety issues. Get rich context that flat Procore PDFs simply can't provide.</p></div></div>
+            
           </div>
         </div>
       </section>
@@ -137,6 +137,7 @@ const Index = () => {
             <h2 className="section-title">Beyond Static PDFs:<br /><span className="highlight">Real Time Field Data</span></h2>
             <div className="numbered-feature"><div className="numbered-feature-icon red"><FileText size={16} /></div><div><h4>1. The "Flat" Form Trap</h4><p>Procore Static fillable PDFs trap your data in a document, making it invisible to analytics and frustrating for field teams to fill on small screens.</p></div></div>
             <div className="numbered-feature"><div className="numbered-feature-icon lime"><Zap size={16} /></div><div><h4>2. Intelligent Dynamic Fields</h4><p>SALUS Forms are mobile-first and smart. They adapt based on user input—requiring photo evidence for failed checks and skipping irrelevant sections automatically.</p></div></div>
+            <div className="numbered-feature"><div className="numbered-feature-icon"><MessageSquare size={16} /></div><div><h4>3. Beyond Pass/Fail Context</h4><p>Use smart form logic and voice-to-text to capture the "why" behind safety issues. Get rich context that flat Procore PDFs simply can't provide.</p></div></div>
             <div className="field-note"><div className="field-note-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="17 8 12 3 7 8" /><line x1="12" y1="3" x2="12" y2="15" /></svg></div><p>Final signed documents still land in Procore for safekeeping.</p></div>
           </div>
           <div className="phone-comparison">
