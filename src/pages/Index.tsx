@@ -8,8 +8,6 @@ const Index = () => {
         <div className="header-inner">
           <a href="#" className="logo"><div className="logo-icon"></div>SALUS</a>
           <nav className="nav">
-            <a href="#" className="nav-link">INTEGRATION</a>
-            <a href="#" className="nav-link">REPORTING</a>
             <a href="#" className="btn btn-primary">BOOK A DEMO</a>
           </nav>
         </div>
