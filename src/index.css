@@ -84,22 +84,9 @@
   text-decoration: none;
 }
 
-.logo-icon {
-  width: 28px;
-  height: 28px;
-  background: hsl(var(--lime));
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-icon::after {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background: hsl(var(--navy));
-  border-radius: 2px;
+.logo-image {
+  height: 24px;
+  width: auto;
 }
 
 .nav {

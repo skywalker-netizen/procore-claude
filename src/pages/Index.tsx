@@ -1,4 +1,5 @@
 import { Link2, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Target, Bell, User, Activity, Check } from "lucide-react";
+import salusLogo from "@/assets/salus-logo.png";
 
 const Index = () => {
   return (
@@ -6,7 +7,7 @@ const Index = () => {
       {/* Header */}
       <header className="header">
         <div className="header-inner">
-          <a href="#" className="logo"><div className="logo-icon"></div>SALUS</a>
+          <a href="#" className="logo"><img src={salusLogo} alt="Salus" className="logo-image" /></a>
           <nav className="nav">
             <a href="#" className="btn btn-primary">BOOK A DEMO</a>
           </nav>
@@ -269,7 +270,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-inner">
-          <div className="footer-logo"><div className="icon"></div>SALUS.</div>
+          <div className="footer-logo"><img src={salusLogo} alt="Salus" className="logo-image" /></div>
           <div className="footer-copyright">© 2024 SALUS SAFETY INC. | ALL RIGHTS RESERVED</div>
         </div>
       </footer>
