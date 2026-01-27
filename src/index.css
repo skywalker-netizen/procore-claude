@@ -202,7 +202,7 @@
 }
 
 .hero-title .highlight {
-  color: hsl(var(--lime));
+  color: hsl(var(--gray-400));
   display: block;
 }
 
@@ -415,7 +415,7 @@
 }
 
 .section-title .highlight {
-  color: hsl(var(--lime));
+  color: hsl(var(--gray-400));
 }
 
 .section-title .muted {
@@ -429,7 +429,7 @@
 }
 
 .section-subtitle .highlight {
-  color: hsl(var(--lime));
+  color: hsl(var(--gray-400));
 }
 
 .section-subtitle .red {
@@ -502,7 +502,7 @@
 }
 
 .integration-title .highlight {
-  color: hsl(var(--lime));
+  color: hsl(var(--gray-400));
 }
 
 .integration-subtitle {
@@ -1164,7 +1164,7 @@
 }
 
 .trade-feature h4 .highlight {
-  color: hsl(var(--lime));
+  color: hsl(var(--gray-400));
 }
 
 .trade-feature p {
@@ -2123,7 +2123,7 @@
 }
 
 .cta-title .highlight {
-  color: hsl(var(--lime));
+  color: hsl(var(--gray-400));
 }
 
 .cta-description {
