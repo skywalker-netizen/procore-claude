@@ -473,7 +473,7 @@
 
 /* Integration Section */
 .integration-section {
-  background: hsl(var(--navy));
+  background: hsl(var(--gray-100));
   padding: 100px 48px;
 }
 
@@ -487,7 +487,7 @@
 }
 
 .integration-content .badge {
-  background: rgba(255, 255, 255, 0.1);
+  background: hsl(var(--navy));
 }
 
 .integration-title {
@@ -495,7 +495,7 @@
   font-size: 56px;
   font-weight: 900;
   line-height: 1.1;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
   margin-bottom: 24px;
 }
 
@@ -505,14 +505,14 @@
 
 .integration-subtitle {
   font-size: 18px;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
   margin-bottom: 16px;
   line-height: 1.6;
 }
 
 .integration-description {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.6);
+  color: hsl(var(--gray-600));
   margin-bottom: 40px;
   line-height: 1.7;
 }
@@ -528,7 +528,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: hsl(var(--gray-200));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,19 +538,19 @@
 .feature-icon svg {
   width: 20px;
   height: 20px;
-  color: hsl(var(--lime));
+  color: hsl(var(--navy));
 }
 
 .feature-text h4 {
   font-size: 15px;
   font-weight: 600;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
   margin-bottom: 4px;
 }
 
 .feature-text p {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
+  color: hsl(var(--gray-600));
 }
 
 /* Integration Diagram */
@@ -573,17 +573,18 @@
 
 .diagram-brand span {
   display: block;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 12px;
 }
 
 .brand-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -599,8 +600,8 @@
 }
 
 .diagram-brand small {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.4);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -608,7 +609,7 @@
 .diagram-rows {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
 .diagram-row {
@@ -618,28 +619,54 @@
 }
 
 .diagram-item {
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 500;
+  padding: 14px 28px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 140px;
+  text-align: center;
 }
 
 .diagram-item.left {
   background: rgba(255, 255, 255, 0.08);
   color: hsl(var(--white));
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .diagram-item.right {
+  border-radius: 24px;
+}
+
+.diagram-item.right.blue {
+  background: #4A9EEA;
+  color: hsl(var(--white));
+}
+
+.diagram-item.right.orange {
+  background: #F5A040;
+  color: hsl(var(--navy));
+}
+
+.diagram-item.right.lime {
   background: hsl(var(--lime));
   color: hsl(var(--navy));
+}
+
+.diagram-item.right.yellow {
+  background: #F5DD40;
+  color: hsl(var(--navy));
+}
+
+.diagram-item.right.red {
+  background: #EF5A5A;
+  color: hsl(var(--white));
 }
 
 .diagram-connector {
   flex: 1;
   height: 2px;
   margin: 0 16px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(197, 248, 42, 0.5) 100%);
+  background: rgba(255, 255, 255, 0.15);
   position: relative;
   overflow: visible;
 }
@@ -648,21 +675,44 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: hsl(var(--lime));
-  box-shadow: 0 0 8px hsl(var(--lime)), 0 0 16px rgba(197, 248, 42, 0.4);
 }
 
 .diagram-connector .dot:nth-child(1) {
-  animation: dotMoveRight 2.5s ease-in-out infinite;
+  animation: dotMoveRight 3s ease-in-out infinite;
 }
 
 .diagram-connector .dot:nth-child(2) {
-  animation: dotMoveLeft 2.5s ease-in-out infinite;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 16px rgba(255, 255, 255, 0.3);
+  animation: dotMoveRight 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+/* Dot colors per row */
+.diagram-connector.blue .dot {
+  background: #4A9EEA;
+  box-shadow: 0 0 10px #4A9EEA, 0 0 20px rgba(74, 158, 234, 0.5);
+}
+
+.diagram-connector.orange .dot {
+  background: #F5A040;
+  box-shadow: 0 0 10px #F5A040, 0 0 20px rgba(245, 160, 64, 0.5);
+}
+
+.diagram-connector.lime .dot {
+  background: hsl(var(--lime));
+  box-shadow: 0 0 10px hsl(var(--lime)), 0 0 20px rgba(197, 248, 42, 0.5);
+}
+
+.diagram-connector.yellow .dot {
+  background: #F5DD40;
+  box-shadow: 0 0 10px #F5DD40, 0 0 20px rgba(245, 221, 64, 0.5);
+}
+
+.diagram-connector.red .dot {
+  background: #EF5A5A;
+  box-shadow: 0 0 10px #EF5A5A, 0 0 20px rgba(239, 90, 90, 0.5);
 }
 
 @keyframes dotMoveRight {
@@ -672,23 +722,13 @@
   100% { left: 100%; opacity: 0; }
 }
 
-@keyframes dotMoveLeft {
-  0%, 100% { left: 100%; opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { left: 0%; opacity: 0; }
-}
-
 .diagram-row:nth-child(1) .dot { animation-delay: 0s; }
-.diagram-row:nth-child(1) .dot:nth-child(2) { animation-delay: 1.25s; }
-.diagram-row:nth-child(2) .dot { animation-delay: 0.4s; }
-.diagram-row:nth-child(2) .dot:nth-child(2) { animation-delay: 1.65s; }
-.diagram-row:nth-child(3) .dot { animation-delay: 0.8s; }
-.diagram-row:nth-child(3) .dot:nth-child(2) { animation-delay: 2.05s; }
-.diagram-row:nth-child(4) .dot { animation-delay: 1.2s; }
-.diagram-row:nth-child(4) .dot:nth-child(2) { animation-delay: 2.45s; }
-.diagram-row:nth-child(5) .dot { animation-delay: 1.6s; }
-.diagram-row:nth-child(5) .dot:nth-child(2) { animation-delay: 2.85s; }
+.diagram-row:nth-child(2) .dot { animation-delay: 0.3s; }
+.diagram-row:nth-child(2) .dot:nth-child(2) { animation-delay: 0.8s; }
+.diagram-row:nth-child(3) .dot { animation-delay: 0.6s; }
+.diagram-row:nth-child(3) .dot:nth-child(2) { animation-delay: 1.1s; }
+.diagram-row:nth-child(4) .dot { animation-delay: 0.9s; }
+.diagram-row:nth-child(5) .dot { animation-delay: 1.2s; }
 
 .data-health-badge {
   position: absolute;

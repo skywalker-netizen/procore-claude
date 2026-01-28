@@ -1,5 +1,6 @@
 import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Target, Bell, User, Activity, Check } from "lucide-react";
 import salusLogo from "@/assets/salus-logo.png";
+import salusShieldLogo from "@/assets/salus-shield-logo.png";
 
 const Index = () => {
   return (
@@ -63,17 +64,16 @@ const Index = () => {
           </div>
           <div className="integration-diagram">
             <div className="diagram-header">
-              <div className="diagram-brand"><span>DATA FROM</span><div className="brand-icon procore"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg></div><small>PROCORE</small></div>
-              <div className="diagram-brand"><span>ENHANCED BY</span><div className="brand-icon salus"><div style={{ width: 12, height: 12, background: 'hsl(var(--navy))', borderRadius: 3 }}></div></div><small>SALUS</small></div>
+              <div className="diagram-brand"><span>PROCORE</span><div className="brand-icon procore"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 4L4 8l8 4 8-4-8-4z" fill="white"/><path d="M12 12l8 4v-4l-8-4-8 4v4l8-4z" fill="white" fillOpacity="0.7"/></svg></div><small>SYSTEM OF RECORD</small></div>
+              <div className="diagram-brand"><span>SALUS</span><div className="brand-icon salus"><img src={salusShieldLogo} alt="Salus" style={{ width: 28, height: 28, objectFit: 'contain' }} /></div><small>FIELD ENGINE</small></div>
             </div>
             <div className="diagram-rows">
-              <div className="diagram-row"><div className="diagram-item left">Projects</div><div className="diagram-connector"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right">Smart Forms</div></div>
-              <div className="diagram-row"><div className="diagram-item left">Companies</div><div className="diagram-connector"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right">Compliance</div></div>
-              <div className="diagram-row"><div className="diagram-item left">Personnel</div><div className="diagram-connector"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right">Orientations</div></div>
-              <div className="diagram-row"><div className="diagram-item left">Tasks</div><div className="diagram-connector"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right">Corrections</div></div>
-              <div className="diagram-row"><div className="diagram-item left">Documents</div><div className="diagram-connector"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right">Certificates</div></div>
+              <div className="diagram-row"><div className="diagram-item left">Projects</div><div className="diagram-connector blue"><span className="dot"></span></div><div className="diagram-item right blue">Auto-Creation</div></div>
+              <div className="diagram-row"><div className="diagram-item left">Documents</div><div className="diagram-connector orange"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right orange">Signed Forms</div></div>
+              <div className="diagram-row"><div className="diagram-item left">Manpower</div><div className="diagram-connector lime"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right lime">Headcount Sync</div></div>
+              <div className="diagram-row"><div className="diagram-item left">Photos</div><div className="diagram-connector yellow"><span className="dot"></span></div><div className="diagram-item right yellow">Hazard Visuals</div></div>
+              <div className="diagram-row"><div className="diagram-item left">Tasks</div><div className="diagram-connector red"><span className="dot"></span></div><div className="diagram-item right red">Issue Tracking</div></div>
             </div>
-            <div className="data-health-badge"><div className="icon"><Zap size={18} /></div><div className="text"><span>DATA HEALTH</span><strong>100% Synced</strong></div></div>
           </div>
         </div>
       </section>
