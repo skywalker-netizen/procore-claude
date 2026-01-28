@@ -185,6 +185,7 @@
   font-size: 64px;
   font-weight: 900;
   line-height: 1.05;
+  letter-spacing: -0.03em;
   margin-bottom: 24px;
 }
 
@@ -196,6 +197,7 @@
 .hero-subtitle {
   font-size: 20px;
   line-height: 1.5;
+  letter-spacing: -0.02em;
   margin-bottom: 24px;
 }
 
