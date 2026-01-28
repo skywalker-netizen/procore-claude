@@ -68,12 +68,13 @@ const Index = () => {
               <div className="diagram-brand"><span>SALUS</span><div className="brand-icon salus"><img src={salusShieldLogo} alt="Salus" style={{ width: 28, height: 28, objectFit: 'contain' }} /></div><small>FIELD ENGINE</small></div>
             </div>
             <div className="diagram-rows">
-              <div className="diagram-row"><div className="diagram-item left">Projects</div><div className="diagram-connector blue"><span className="dot"></span></div><div className="diagram-item right blue">Auto-Creation</div></div>
+              <div className="diagram-row"><div className="diagram-item left">Projects</div><div className="diagram-connector blue"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right blue">Auto-Creation</div></div>
               <div className="diagram-row"><div className="diagram-item left">Documents</div><div className="diagram-connector orange"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right orange">Signed Forms</div></div>
               <div className="diagram-row"><div className="diagram-item left">Manpower</div><div className="diagram-connector lime"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right lime">Headcount Sync</div></div>
-              <div className="diagram-row"><div className="diagram-item left">Photos</div><div className="diagram-connector yellow"><span className="dot"></span></div><div className="diagram-item right yellow">Hazard Visuals</div></div>
-              <div className="diagram-row"><div className="diagram-item left">Tasks</div><div className="diagram-connector red"><span className="dot"></span></div><div className="diagram-item right red">Issue Tracking</div></div>
+              <div className="diagram-row"><div className="diagram-item left">Photos</div><div className="diagram-connector yellow"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right yellow">Hazard Visuals</div></div>
+              <div className="diagram-row"><div className="diagram-item left">Tasks</div><div className="diagram-connector red"><span className="dot"></span><span className="dot"></span></div><div className="diagram-item right red">Issue Tracking</div></div>
             </div>
+            <div className="data-health-badge"><div className="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg></div><div className="text"><span>CONTINUOUS</span><strong>Data Health</strong></div></div>
           </div>
         </div>
       </section>
