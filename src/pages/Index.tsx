@@ -80,7 +80,7 @@ const Index = () => {
       </section>
 
       {/* Unified Platform Section */}
-      <section className="section-padding" style={{ background: 'hsl(var(--gray-100))' }}>
+      <section className="section-padding" style={{ background: 'hsl(var(--white))' }}>
         <div className="section-inner grid-2">
           <div style={{ position: 'relative' }}>
             <div className="dashboard-card">
