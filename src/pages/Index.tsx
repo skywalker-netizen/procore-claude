@@ -131,7 +131,7 @@ const Index = () => {
       </section>
 
       {/* Field Advantage Section */}
-      <section className="section-padding" style={{ background: 'hsl(var(--white))' }}>
+      <section className="section-padding" style={{ background: 'hsl(var(--gray-100))' }}>
         <div className="section-inner grid-2">
           <div>
             <div className="badge"><span className="badge-dot"></span>THE FIELD ADVANTAGE</div>
