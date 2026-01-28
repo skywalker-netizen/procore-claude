@@ -24,11 +24,11 @@ const Index = () => {
             <p className="hero-description">Salus is the field engine that powers Procore's office brain. Two Platforms. One Seamlessly Integrated System.</p>
             <div className="trust-badges">
               <div className="trust-badge">
-                <div className="trust-icon"><Link2 /></div>
+                <div className="trust-icon navy"><Link2 size={20} /></div>
                 <div className="trust-text"><strong>Certified App</strong><span>PROCORE MARKETPLACE</span></div>
               </div>
               <div className="trust-badge">
-                <div className="trust-icon"><Zap /></div>
+                <div className="trust-icon lime"><Zap size={20} /></div>
                 <div className="trust-text"><strong>Real-time Sync</strong><span>BI-DIRECTIONAL API</span></div>
               </div>
             </div>
