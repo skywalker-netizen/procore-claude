@@ -1,8 +1,79 @@
+import { useState } from "react";
 import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Target, Bell, User, Activity, Check } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
 
+const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/udqz69h/";
+
 const Index = () => {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    company: "",
+    email: "",
+    phone: "",
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.firstName || !formData.lastName || !formData.email) {
+      toast({
+        title: "Error",
+        description: "Please fill in all required fields",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      await fetch(ZAPIER_WEBHOOK_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        mode: "no-cors",
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+          source: window.location.origin,
+        }),
+      });
+
+      toast({
+        title: "Demo Request Sent!",
+        description: "We'll be in touch shortly to schedule your personalized demo.",
+      });
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        company: "",
+        email: "",
+        phone: "",
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Error",
+        description: "Failed to submit the form. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -37,15 +108,18 @@ const Index = () => {
           <div className="demo-card">
             <h2>See Salus in action.</h2>
             <p className="subtitle">BOOK YOUR PERSONALIZED INTEGRATION DEMO</p>
-            <form onSubmit={(e) => { e.preventDefault(); alert('Demo request submitted!'); }}>
+            <form onSubmit={handleSubmit}>
               <div className="form-row">
-                <div className="form-group"><label>First Name</label><input type="text" placeholder="First Name" /></div>
-                <div className="form-group"><label>Last Name</label><input type="text" placeholder="Last Name" /></div>
+                <div className="form-group"><label>First Name</label><input type="text" name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="First Name" /></div>
+                <div className="form-group"><label>Last Name</label><input type="text" name="lastName" value={formData.lastName} onChange={handleInputChange} placeholder="Last Name" /></div>
               </div>
-              <div className="form-group"><label>Company</label><input type="text" placeholder="Your company name" /></div>
-              <div className="form-group"><label>Work Email</label><input type="email" placeholder="email@company.com" /></div>
-              <div className="form-group"><label>Phone Number</label><input type="tel" placeholder="+1 (555) 123-4567" /></div>
-              <button type="submit" className="btn-submit">Request Demo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></button>
+              <div className="form-group"><label>Company</label><input type="text" name="company" value={formData.company} onChange={handleInputChange} placeholder="Your company name" /></div>
+              <div className="form-group"><label>Work Email</label><input type="email" name="email" value={formData.email} onChange={handleInputChange} placeholder="email@company.com" /></div>
+              <div className="form-group"><label>Phone Number</label><input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} placeholder="+1 (555) 123-4567" /></div>
+              <button type="submit" className="btn-submit" disabled={isLoading}>
+                {isLoading ? "Sending..." : "Request Demo"} 
+                {!isLoading && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>}
+              </button>
             </form>
             <p className="form-footer">Join GCs like <a href="#">Broccolini</a> and <a href="#">Willmeng</a> who trust SALUS to capture field data for their Procore instance.</p>
           </div>
