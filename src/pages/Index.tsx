@@ -42,8 +42,8 @@ const Index = () => {
                 <div className="form-group"><label>First Name</label><input type="text" placeholder="First Name" /></div>
                 <div className="form-group"><label>Last Name</label><input type="text" placeholder="Last Name" /></div>
               </div>
-              <div className="form-group"><label>Work Email</label><input type="email" placeholder="email@company.com" /></div>
               <div className="form-group"><label>Company</label><input type="text" placeholder="Your company name" /></div>
+              <div className="form-group"><label>Work Email</label><input type="email" placeholder="email@company.com" /></div>
               <div className="form-group"><label>Phone Number</label><input type="tel" placeholder="+1 (555) 123-4567" /></div>
               <button type="submit" className="btn-submit">Request Demo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></button>
             </form>
