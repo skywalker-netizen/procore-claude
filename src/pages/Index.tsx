@@ -25,7 +25,7 @@ const Index = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.firstName || !formData.lastName || !formData.email) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone) {
       toast({
         title: "Error",
         description: "Please fill in all required fields",
@@ -110,12 +110,12 @@ const Index = () => {
             <p className="subtitle">BOOK YOUR PERSONALIZED INTEGRATION DEMO</p>
             <form onSubmit={handleSubmit}>
               <div className="form-row">
-                <div className="form-group"><label>First Name</label><input type="text" name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="First Name" /></div>
-                <div className="form-group"><label>Last Name</label><input type="text" name="lastName" value={formData.lastName} onChange={handleInputChange} placeholder="Last Name" /></div>
+                <div className="form-group"><label>First Name <span className="required">*</span></label><input type="text" name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="First Name" required /></div>
+                <div className="form-group"><label>Last Name <span className="required">*</span></label><input type="text" name="lastName" value={formData.lastName} onChange={handleInputChange} placeholder="Last Name" required /></div>
               </div>
               <div className="form-group"><label>Company</label><input type="text" name="company" value={formData.company} onChange={handleInputChange} placeholder="Your company name" /></div>
-              <div className="form-group"><label>Work Email</label><input type="email" name="email" value={formData.email} onChange={handleInputChange} placeholder="email@company.com" /></div>
-              <div className="form-group"><label>Phone Number</label><input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} placeholder="+1 (555) 123-4567" /></div>
+              <div className="form-group"><label>Work Email <span className="required">*</span></label><input type="email" name="email" value={formData.email} onChange={handleInputChange} placeholder="email@company.com" required /></div>
+              <div className="form-group"><label>Phone Number <span className="required">*</span></label><input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} placeholder="+1 (555) 123-4567" required /></div>
               <button type="submit" className="btn-submit" disabled={isLoading}>
                 {isLoading ? "Sending..." : "Request Demo"} 
                 {!isLoading && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>}

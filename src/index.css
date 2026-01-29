@@ -312,6 +312,11 @@
   margin-bottom: 8px;
 }
 
+.form-group label .required {
+  color: hsl(0, 70%, 50%);
+  margin-left: 2px;
+}
+
 .form-group input,
 .form-group select {
   width: 100%;
