@@ -418,12 +418,36 @@ const Index = () => {
           <h2 className="section-title">Where Your<br /><span className="muted">Data Flows.</span></h2>
           <p className="tech-description">We don't just "link" to Procore; we inhabit it. Every field action has a synchronized office outcome.</p>
           <div className="tech-table">
-            <div className="tech-table-header">PROCORE MODULE</div><div className="tech-table-header">SALUS DATA INPUT</div><div className="tech-table-header">OPERATIONAL BENEFIT</div>
-            <div className="tech-table-cell module">Projects</div><div className="tech-table-cell input">Auto-Sync Details</div><div className="tech-table-cell benefit"><span className="check"><Check size={12} /></span>No double setup for new jobsites.</div>
-            <div className="tech-table-cell module">Documents</div><div className="tech-table-cell input">Signed Forms & PDFs</div><div className="tech-table-cell benefit"><span className="check"><Check size={12} /></span>Automated archival for 100% audit readiness.</div>
-            <div className="tech-table-cell module">Manpower Logs</div><div className="tech-table-cell input">Worker Sign-ins</div><div className="tech-table-cell benefit"><span className="check"><Check size={12} /></span>Effortless transfer of headcount to Daily Logs.</div>
-            <div className="tech-table-cell module">Photos</div><div className="tech-table-cell input">Hazard Evidence</div><div className="tech-table-cell benefit"><span className="check"><Check size={12} /></span>Visual context for RFIs and Observations.</div>
-            <div className="tech-table-cell module">Tasks</div><div className="tech-table-cell input">Corrective Actions</div><div className="tech-table-cell benefit"><span className="check"><Check size={12} /></span>Issues flagged in SALUS become Procore Tasks.</div>
+            <div className="tech-table-header-row">
+              <div className="tech-table-header">PROCORE MODULE</div>
+              <div className="tech-table-header">SALUS DATA INPUT</div>
+              <div className="tech-table-header">OPERATIONAL BENEFIT</div>
+            </div>
+            <div className="tech-table-row">
+              <div className="tech-table-cell module" data-label="Procore Module">Projects</div>
+              <div className="tech-table-cell input" data-label="Salus Data Input">Auto-Sync Details</div>
+              <div className="tech-table-cell benefit" data-label="Operational Benefit"><span className="check"><Check size={12} /></span>No double setup for new jobsites.</div>
+            </div>
+            <div className="tech-table-row">
+              <div className="tech-table-cell module" data-label="Procore Module">Documents</div>
+              <div className="tech-table-cell input" data-label="Salus Data Input">Signed Forms & PDFs</div>
+              <div className="tech-table-cell benefit" data-label="Operational Benefit"><span className="check"><Check size={12} /></span>Automated archival for 100% audit readiness.</div>
+            </div>
+            <div className="tech-table-row">
+              <div className="tech-table-cell module" data-label="Procore Module">Manpower Logs</div>
+              <div className="tech-table-cell input" data-label="Salus Data Input">Worker Sign-ins</div>
+              <div className="tech-table-cell benefit" data-label="Operational Benefit"><span className="check"><Check size={12} /></span>Effortless transfer of headcount to Daily Logs.</div>
+            </div>
+            <div className="tech-table-row">
+              <div className="tech-table-cell module" data-label="Procore Module">Photos</div>
+              <div className="tech-table-cell input" data-label="Salus Data Input">Hazard Evidence</div>
+              <div className="tech-table-cell benefit" data-label="Operational Benefit"><span className="check"><Check size={12} /></span>Visual context for RFIs and Observations.</div>
+            </div>
+            <div className="tech-table-row">
+              <div className="tech-table-cell module" data-label="Procore Module">Tasks</div>
+              <div className="tech-table-cell input" data-label="Salus Data Input">Corrective Actions</div>
+              <div className="tech-table-cell benefit" data-label="Operational Benefit"><span className="check"><Check size={12} /></span>Issues flagged in SALUS become Procore Tasks.</div>
+            </div>
           </div>
         </div>
       </section>
