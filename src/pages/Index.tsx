@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Bell, User, UserCheck, Wrench, Check, Eye, FileX, Settings, ScanSearch, MessagesSquare } from "lucide-react";
+import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Bell, User, UserCheck, Wrench, Check, Eye, FileX, Settings, ScanSearch, MessagesSquare, Database } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
@@ -137,8 +137,8 @@ const Index = () => {
             <h2 className="integration-title">Deep Native<br /><span className="highlight">Connectivity.</span></h2>
             <p className="integration-subtitle">Maintain Procore as your system of record while giving the field a tool they actually love to use.</p>
             <p className="integration-description">Our native integration means your safety data isn't siloed—it flows directly into Procore's ecosystem in real-time. Inspections, observations, and personnel data appear exactly where your PMs expect to find them.</p>
-            <div className="feature-item"><div className="feature-icon"><LayoutGrid /></div><div className="feature-text"><h4>Native, Not Bolted-On</h4><p>Appears in Procore's sidebar, not as an afterthought.</p></div></div>
-            <div className="feature-item"><div className="feature-icon"><AlertCircle /></div><div className="feature-text"><h4>Unified User Experience</h4><p>Single source of truth for all jobsite compliance.</p></div></div>
+            <div className="feature-item"><div className="feature-icon circle beige"><Database size={20} /></div><div className="feature-text"><h4>Procore as Master</h4><p>All financial and project master data originates in Procore.</p></div></div>
+            <div className="feature-item"><div className="feature-icon circle blue"><Zap size={20} /></div><div className="feature-text"><h4>Salus is Procore's Field Engine</h4><p>All financial and project master data originates in Procore and pushed to Salus; All field data is captured in Salus and pushed into Procore.</p></div></div>
           </div>
           <div className="integration-diagram">
             <div className="diagram-header">

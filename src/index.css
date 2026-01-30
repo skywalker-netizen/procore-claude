@@ -599,6 +599,19 @@
   flex-shrink: 0;
 }
 
+.feature-icon.circle {
+  width: 56px;
+  height: 56px;
+}
+
+.feature-icon.circle.beige {
+  background: hsl(48, 40%, 92%);
+}
+
+.feature-icon.circle.blue {
+  background: hsl(220, 40%, 92%);
+}
+
 .feature-icon svg {
   width: 20px;
   height: 20px;
