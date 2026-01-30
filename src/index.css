@@ -1916,15 +1916,16 @@
 }
 
 .asset-feature h5 {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
   color: hsl(var(--navy));
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .asset-feature p {
-  font-size: 12px;
+  font-size: 14px;
   color: hsl(var(--gray-600));
+  line-height: 1.6;
 }
 
 /* Asset Dashboard */
