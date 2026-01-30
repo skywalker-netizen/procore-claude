@@ -392,6 +392,39 @@
   text-decoration: underline;
 }
 
+/* Thank You Screen */
+.thank-you-screen {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.thank-you-icon {
+  width: 80px;
+  height: 80px;
+  background: hsl(var(--lime));
+  color: hsl(var(--navy));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.thank-you-screen h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: hsl(var(--navy));
+}
+
+.thank-you-message {
+  font-size: 16px;
+  color: hsl(var(--gray-600));
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
 /* Section Styles */
 .section-padding {
   padding: 100px 48px;
