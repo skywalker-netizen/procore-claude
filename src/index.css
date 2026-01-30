@@ -51,6 +51,11 @@
     color: hsl(var(--navy));
     line-height: 1.6;
     background: hsl(var(--white));
+    overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
   }
 }
 
@@ -428,6 +433,7 @@
 /* Section Styles */
 .section-padding {
   padding: 100px 48px;
+  width: 100%;
 }
 
 .section-inner {
@@ -1210,6 +1216,7 @@
 /* Dark Section */
 .dark-section {
   background: hsl(var(--navy));
+  width: 100%;
 }
 
 .dark-section .badge {
@@ -1298,6 +1305,7 @@
   padding: 24px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   position: relative;
+  overflow-x: auto;
 }
 
 .compliance-card-header {
@@ -2746,6 +2754,8 @@
 
   .section-padding {
     padding: 80px 24px;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .hero {
