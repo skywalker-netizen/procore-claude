@@ -380,7 +380,7 @@ const Index = () => {
             <p className="section-subtitle">Procore is great for records. <span className="red">But it's where safety data goes to die.</span></p>
             <div className="feature-block"><div className="feature-block-icon circle beige"><FileX size={20} /></div><div><h4>No More Manual Tallies</h4><p>Stop wasting hours opening hundreds of individual PDFs to manually tally incidents in a spreadsheet. Salus indexes every field automatically.</p></div></div>
             <div className="feature-block"><div className="feature-block-icon circle green"><Settings size={20} /></div><div><h4>Lagging Indicators, Instantized</h4><p>Spot high-risk trends—like a spike in utility strikes across 50 jobsites—the moment they happen. Move from reactive filing to proactive prevention.</p></div></div>
-            <div className="feature-block"><div className="feature-block-icon"><LayoutGrid /></div><div><h4>Executive-Ready Reporting</h4><p>Deliver clean, professional dashboards to leadership without needing a Power BI developer or expensive analytics add-ons.</p></div></div>
+            <div className="feature-block"><div className="feature-block-icon circle blue"><LayoutGrid size={20} /></div><div><h4>Executive-Ready Reporting</h4><p>Deliver clean, professional dashboards to leadership without needing a Power BI developer or expensive analytics add-ons.</p></div></div>
           </div>
         </div>
       </section>

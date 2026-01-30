@@ -512,6 +512,10 @@
   background: hsl(120, 30%, 92%);
 }
 
+.feature-block-icon.circle.blue {
+  background: hsl(220, 40%, 92%);
+}
+
 .feature-block-icon svg {
   width: 20px;
   height: 20px;
