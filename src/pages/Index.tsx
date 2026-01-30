@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Bell, User, UserCheck, Wrench, Check, Eye } from "lucide-react";
+import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Bell, User, UserCheck, Wrench, Check, Eye, FileX, Settings } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
@@ -378,8 +378,8 @@ const Index = () => {
             <div className="badge"><span className="badge-dot"></span>EXECUTIVE LEVEL INSIGHTS</div>
             <h2 className="section-title">See the action<br /><span className="muted">in the field.</span></h2>
             <p className="section-subtitle">Procore is great for records. <span className="red">But it's where safety data goes to die.</span></p>
-            <div className="feature-block"><div className="feature-block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><line x1="9" y1="9" x2="15" y2="15" /><line x1="15" y1="9" x2="9" y2="15" /></svg></div><div><h4>No More Manual Tallies</h4><p>Stop wasting hours opening hundreds of individual PDFs to manually tally incidents in a spreadsheet. Salus indexes every field automatically.</p></div></div>
-            <div className="feature-block"><div className="feature-block-icon"><Clock /></div><div><h4>Lagging Indicators, Instantized</h4><p>Spot high-risk trends—like a spike in utility strikes across 50 jobsites—the moment they happen. Move from reactive filing to proactive prevention.</p></div></div>
+            <div className="feature-block"><div className="feature-block-icon circle beige"><FileX size={20} /></div><div><h4>No More Manual Tallies</h4><p>Stop wasting hours opening hundreds of individual PDFs to manually tally incidents in a spreadsheet. Salus indexes every field automatically.</p></div></div>
+            <div className="feature-block"><div className="feature-block-icon circle green"><Settings size={20} /></div><div><h4>Lagging Indicators, Instantized</h4><p>Spot high-risk trends—like a spike in utility strikes across 50 jobsites—the moment they happen. Move from reactive filing to proactive prevention.</p></div></div>
             <div className="feature-block"><div className="feature-block-icon"><LayoutGrid /></div><div><h4>Executive-Ready Reporting</h4><p>Deliver clean, professional dashboards to leadership without needing a Power BI developer or expensive analytics add-ons.</p></div></div>
           </div>
         </div>
