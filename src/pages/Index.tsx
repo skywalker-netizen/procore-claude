@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Bell, User, UserCheck, Wrench, Check, Eye, FileX, Settings } from "lucide-react";
+import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Bell, User, UserCheck, Wrench, Check, Eye, FileX, Settings, ScanSearch, MessagesSquare } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
@@ -201,8 +201,8 @@ const Index = () => {
             <div className="badge"><span className="badge-dot"></span>STOP THE WORKAROUNDS</div>
             <h2 className="section-title">Shatter the Silos,<br /><span className="highlight">Reduce risk.</span></h2>
             <p className="section-subtitle">Procore handles the project lifecycle. <span className="highlight">Salus handles the people, the gear, and the compliance heartbeat.</span></p>
-            <div className="feature-block"><div className="feature-block-icon"><LayoutGrid /></div><div><h4>Unified Platform, Zero Silos</h4><p>Certificates, assets, and training must live outside of Procore. Salus hosts everything in one app and connects the right worker to the right asset and the right training. No more risk hidden in "lost" spreadsheets or siloed email threads.</p></div></div>
-            <div className="feature-block"><div className="feature-block-icon"><AlertCircle /></div><div><h4>Two-Way Real-Time Field Feedback</h4><p>Close the gap between field reports and office repairs. Our two-way communication ensures every hazard is addressed and verified in real-time. Now, field data makes a difference.</p></div></div>
+            <div className="feature-block"><div className="feature-block-icon circle beige"><ScanSearch size={20} /></div><div><h4>Unified Platform, Zero Silos</h4><p>Centralize everything from training logs to certificates in one live hub. No more risk hidden in silos.</p></div></div>
+            <div className="feature-block"><div className="feature-block-icon circle blue"><MessagesSquare size={20} /></div><div><h4>Two-Way Field Feedback</h4><p>Close the gap between field reports and office repairs. Our two-way communication ensures every hazard is addressed.</p></div></div>
             
           </div>
         </div>
