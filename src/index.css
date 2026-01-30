@@ -2120,12 +2120,20 @@
   margin-bottom: 48px;
 }
 
+.tech-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .tech-table {
   background: hsl(var(--white));
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
   text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  min-width: 600px;
 }
 
 .tech-table-header-row {
@@ -2829,49 +2837,13 @@
     padding: 80px 24px;
   }
 
-  .tech-table-header-row {
-    display: none;
+  .tech-table-wrapper {
+    margin: 0 -24px;
+    padding: 0 24px;
   }
 
-  .tech-table-row {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid hsl(var(--gray-200));
-  }
-
-  .tech-table-row:last-child {
-    border-bottom: none;
-  }
-
-  .tech-table-cell {
-    border-bottom: none;
-    padding: 12px 20px;
-  }
-
-  .tech-table-cell::before {
-    content: attr(data-label);
-    display: block;
-    font-size: 10px;
-    font-weight: 600;
-    color: hsl(var(--gray-400));
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 4px;
-  }
-
-  .tech-table-cell.module {
-    padding-top: 20px;
-  }
-
-  .tech-table-cell.benefit {
-    border-radius: 0;
-    margin: 12px 16px 16px;
-    border-radius: 8px;
-    padding: 16px;
-  }
-
-  .tech-table-cell.benefit::before {
-    color: rgba(255, 255, 255, 0.6);
+  .tech-table {
+    min-width: 600px;
   }
 
   .testimonials-grid {
