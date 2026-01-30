@@ -1856,14 +1856,31 @@
 }
 
 .asset-feature-icon {
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   background: hsl(var(--gray-100));
-  border-radius: 10px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  color: hsl(var(--navy));
+}
+
+.asset-feature-icon.beige {
+  background: hsl(48, 40%, 92%);
+}
+
+.asset-feature-icon.green {
+  background: hsl(120, 30%, 92%);
+}
+
+.asset-feature-icon.tan {
+  background: hsl(40, 35%, 90%);
+}
+
+.asset-feature-icon.blue {
+  background: hsl(220, 40%, 92%);
 }
 
 .asset-feature h5 {

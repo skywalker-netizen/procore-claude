@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Target, Bell, User, Activity, Check } from "lucide-react";
+import { Link, Zap, LayoutGrid, AlertCircle, MessageSquare, FileText, Clock, Grid3X3, Bell, User, UserCheck, Wrench, Check, Eye } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
@@ -393,10 +393,10 @@ const Index = () => {
             <h2 className="section-title">Asset<br />Management<br /><span className="muted">Built for<br />Safety.</span></h2>
             <p style={{ color: 'hsl(var(--gray-600))', marginBottom: '32px' }}>Track every piece of equipment, from cranes to drills, with a system designed for the realities of the field. Move beyond financial job costing into real-time fleet health.</p>
             <div className="asset-features">
-              <div className="asset-feature"><div className="asset-feature-icon"><Target size={20} /></div><div><h5>Individual Visibility</h5><p>Track machine-specific history.</p></div></div>
-              <div className="asset-feature"><div className="asset-feature-icon"><Bell size={20} /></div><div><h5>Real-Time Alerts</h5><p>Instant deficiency triggers.</p></div></div>
-              <div className="asset-feature"><div className="asset-feature-icon"><User size={20} /></div><div><h5>True Accountability</h5><p>Identify who inspected what.</p></div></div>
-              <div className="asset-feature"><div className="asset-feature-icon"><Activity size={20} /></div><div><h5>Prevent Downtime</h5><p>Predictive data-driven repairs.</p></div></div>
+              <div className="asset-feature"><div className="asset-feature-icon beige"><Eye size={20} /></div><div><h5>Individual Visibility</h5><p>Track machine-specific history.</p></div></div>
+              <div className="asset-feature"><div className="asset-feature-icon green"><Bell size={20} /></div><div><h5>Real-Time Alerts</h5><p>Instant deficiency triggers.</p></div></div>
+              <div className="asset-feature"><div className="asset-feature-icon tan"><UserCheck size={20} /></div><div><h5>True Accountability</h5><p>Identify who inspected what.</p></div></div>
+              <div className="asset-feature"><div className="asset-feature-icon blue"><Wrench size={20} /></div><div><h5>Prevent Downtime</h5><p>Predictive data-driven repairs.</p></div></div>
             </div>
           </div>
           <div className="asset-dashboard">
