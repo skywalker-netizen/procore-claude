@@ -2325,22 +2325,29 @@
 }
 
 .numbered-feature-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  background: hsl(48, 40%, 92%);
+  color: hsl(var(--navy));
 }
 
 .numbered-feature-icon.red {
-  background: rgba(239, 68, 68, 0.1);
-  color: hsl(var(--red));
+  background: hsl(0, 40%, 92%);
+  color: hsl(var(--navy));
 }
 
 .numbered-feature-icon.lime {
-  background: rgba(197, 248, 42, 0.2);
+  background: hsl(90, 40%, 90%);
+  color: hsl(var(--navy));
+}
+
+.numbered-feature-icon.blue {
+  background: hsl(220, 40%, 92%);
   color: hsl(var(--navy));
 }
 
