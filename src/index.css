@@ -498,6 +498,20 @@
   flex-shrink: 0;
 }
 
+.feature-block-icon.circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.feature-block-icon.circle.beige {
+  background: hsl(48, 40%, 92%);
+}
+
+.feature-block-icon.circle.green {
+  background: hsl(120, 30%, 92%);
+}
+
 .feature-block-icon svg {
   width: 20px;
   height: 20px;
