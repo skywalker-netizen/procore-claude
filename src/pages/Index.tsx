@@ -605,6 +605,44 @@ const Index = () => {
       {/* Stop the Workarounds Section */}
       <section className="section-padding" style={{ background: "hsl(var(--gray-100))" }}>
         <div className="section-inner grid-2">
+          <div>
+            <div className="badge">
+              <span className="badge-dot"></span>STOP THE WORKAROUNDS
+            </div>
+            <h2 className="section-title">
+              Shatter the Silos,
+              <br />
+              <span className="highlight">Reduce risk.</span>
+            </h2>
+            <p className="section-subtitle">
+              Procore handles the project lifecycle.{" "}
+              <span className="highlight">Salus handles the people, the gear, and the compliance heartbeat.</span>
+            </p>
+            <div className="feature-block">
+              <div className="feature-block-icon circle beige">
+                <ScanSearch size={20} />
+              </div>
+              <div>
+                <h4>Unified Platform, Zero Silos</h4>
+                <p>
+                  Centralize everything from training logs to certificates in one live hub. No more risk hidden in
+                  silos.
+                </p>
+              </div>
+            </div>
+            <div className="feature-block">
+              <div className="feature-block-icon circle blue">
+                <MessagesSquare size={20} />
+              </div>
+              <div>
+                <h4>Two-Way Field Feedback</h4>
+                <p>
+                  Close the gap between field reports and office repairs. Our two-way communication ensures every hazard
+                  is addressed.
+                </p>
+              </div>
+            </div>
+          </div>
           <div style={{ position: "relative" }}>
             <div className="dashboard-card">
               <div className="dashboard-header">
@@ -736,44 +774,6 @@ const Index = () => {
                   <span>UNIFIED ADVANTAGE</span>
                   <strong>Zero Blindspots.</strong>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="badge">
-              <span className="badge-dot"></span>STOP THE WORKAROUNDS
-            </div>
-            <h2 className="section-title">
-              Shatter the Silos,
-              <br />
-              <span className="highlight">Reduce risk.</span>
-            </h2>
-            <p className="section-subtitle">
-              Procore handles the project lifecycle.{" "}
-              <span className="highlight">Salus handles the people, the gear, and the compliance heartbeat.</span>
-            </p>
-            <div className="feature-block">
-              <div className="feature-block-icon circle beige">
-                <ScanSearch size={20} />
-              </div>
-              <div>
-                <h4>Unified Platform, Zero Silos</h4>
-                <p>
-                  Centralize everything from training logs to certificates in one live hub. No more risk hidden in
-                  silos.
-                </p>
-              </div>
-            </div>
-            <div className="feature-block">
-              <div className="feature-block-icon circle blue">
-                <MessagesSquare size={20} />
-              </div>
-              <div>
-                <h4>Two-Way Field Feedback</h4>
-                <p>
-                  Close the gap between field reports and office repairs. Our two-way communication ensures every hazard
-                  is addressed.
-                </p>
               </div>
             </div>
           </div>
