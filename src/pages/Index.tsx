@@ -831,169 +831,137 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="portal-demo">
+          <div className="trade-infographic">
             {/* Main Compliance Dashboard */}
-            <div className="compliance-dashboard">
-              <div className="compliance-dashboard-header">
-                <div className="compliance-dashboard-logo">
-                  <img src={salusShieldLogo} alt="Salus" className="compliance-logo-img" style={{ width: '24px', height: '24px' }} />
-                  <span className="compliance-logo-text">SALUS</span>
+            <div className="trade-dashboard-card">
+              <div className="trade-dashboard-header">
+                <div className="trade-dashboard-brand">
+                  <div className="trade-brand-icon">
+                    <img src={salusShieldLogo} alt="Salus" style={{ width: '20px', height: '20px', objectFit: 'contain' }} />
+                  </div>
+                  <span className="trade-brand-name">SALUS</span>
                 </div>
-                <div className="compliance-dashboard-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
-                <div className="compliance-dashboard-icons">
-                  <div className="compliance-icon-circle">?</div>
+                <div className="trade-dashboard-divider"></div>
+                <span className="trade-header-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</span>
+                <div className="trade-header-icons">
+                  <div className="trade-icon-help">?</div>
                   <Bell size={16} />
-                  <div className="compliance-avatar-circle"></div>
+                  <div className="trade-avatar-circle"></div>
                 </div>
               </div>
-              <div className="compliance-section-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
-              <div className="compliance-table">
-                <div className="compliance-table-header">
+              
+              <div className="trade-section-label">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
+              
+              <div className="trade-compliance-table">
+                <div className="trade-table-header">
                   <span>COMPANY NAME</span>
                   <span>STATUS</span>
                   <span>WORKERS ON SITE</span>
                   <span>LAST JHA SUBMISSION</span>
                 </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">Steel Works Inc.</span>
-                  <span className="status orientated"><span className="status-dot"></span>Orientated</span>
-                  <span className="workers-count">12</span>
-                  <span className="last-jha">Today, 8:30 AM</span>
+                <div className="trade-table-row highlight">
+                  <span className="trade-company">Steel Works Inc.</span>
+                  <span className="trade-status green"><span className="trade-dot"></span>Orientated</span>
+                  <span className="trade-workers">12</span>
+                  <span className="trade-jha">Today, 8:30 AM</span>
                 </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">Apex Plumbing</span>
-                  <span className="status in-progress"><span className="status-dot"></span>In Progress</span>
-                  <span className="workers-count"></span>
-                  <span className="last-jha"></span>
+                <div className="trade-table-row">
+                  <span className="trade-company">Apex Plumbing</span>
+                  <span className="trade-status blue"><span className="trade-dot"></span>In Progress</span>
+                  <span className="trade-workers"></span>
+                  <span className="trade-jha"></span>
                 </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">City Electrical</span>
-                  <span className="status in-progress"><span className="status-dot"></span>In Progress</span>
-                  <span className="workers-count"></span>
-                  <span className="last-jha"></span>
+                <div className="trade-table-row">
+                  <span className="trade-company">City Electrical</span>
+                  <span className="trade-status blue"><span className="trade-dot"></span>In Progress</span>
+                  <span className="trade-workers"></span>
+                  <span className="trade-jha"></span>
                 </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">Concrete Solutions</span>
-                  <span className="status orientated"><span className="status-dot"></span>Orientated</span>
-                  <span className="workers-count"></span>
-                  <span className="last-jha"></span>
+                <div className="trade-table-row">
+                  <span className="trade-company">Concrete Solutions</span>
+                  <span className="trade-status green"><span className="trade-dot"></span>Orientated</span>
+                  <span className="trade-workers"></span>
+                  <span className="trade-jha"></span>
                 </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">Summit Roofing</span>
-                  <span className="status active"><span className="status-dot"></span>Active</span>
-                  <span className="workers-count"></span>
-                  <span className="last-jha"></span>
+                <div className="trade-table-row">
+                  <span className="trade-company">Summit Roofing</span>
+                  <span className="trade-status green"><span className="trade-dot"></span>Active</span>
+                  <span className="trade-workers"></span>
+                  <span className="trade-jha"></span>
                 </div>
               </div>
             </div>
 
-            {/* Worker Detail Card */}
-            <div className="worker-detail-card">
-              <div className="worker-detail-header">
-                <span className="back-arrow">←</span>
-                <span className="worker-company-name">Steel Works Inc.</span>
+            {/* Worker Detail Card - Overlapping */}
+            <div className="trade-worker-card">
+              <div className="trade-worker-header">
+                <span className="trade-back-arrow">←</span>
+                <span className="trade-worker-company">Steel Works Inc.</span>
               </div>
-              <div className="worker-detail-content">
-                <div className="progress-score-section">
-                  <span className="progress-score-label">PROGRESS SCORE</span>
-                  <div className="progress-score-bar">
-                    <div className="progress-score-fill"></div>
+              <div className="trade-worker-content">
+                <div className="trade-progress-section">
+                  <span className="trade-progress-label">PROGRESS SCORE</span>
+                  <div className="trade-progress-bar">
+                    <div className="trade-progress-fill"></div>
                   </div>
                 </div>
-                <div className="worker-list">
-                  <div className="worker-item">
-                    <div className="worker-avatar">
-                      <User size={20} />
+                <div className="trade-worker-list">
+                  <div className="trade-worker-row">
+                    <div className="trade-worker-avatar">
+                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="John S." />
                     </div>
-                    <span className="worker-name">John S.</span>
-                    <span className="flra-badge">FLRA</span>
+                    <span className="trade-worker-name">John S.</span>
+                    <span className="trade-flra">FLRA</span>
                   </div>
-                  <div className="worker-item">
-                    <div className="worker-avatar female">
-                      <User size={20} />
+                  <div className="trade-worker-row">
+                    <div className="trade-worker-avatar">
+                      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Maria R." />
                     </div>
-                    <span className="worker-name">Maria R.</span>
-                    <span className="flra-badge">FLRA</span>
+                    <span className="trade-worker-name">Maria R.</span>
+                    <span className="trade-flra">FLRA</span>
                   </div>
                 </div>
-                <div className="pending-review-row">
-                  <span className="pending-review-text">Pending Review</span>
+                <div className="trade-pending-row">
+                  <span className="trade-pending-text">Pending Review</span>
                 </div>
               </div>
-              <div className="check-badge">
+              
+              {/* Check badge */}
+              <div className="trade-check-badge">
                 <Check size={16} />
               </div>
             </div>
 
-            {/* QR Code Badge */}
-            <div className="qr-badge">
-              <div className="qr-code">
-                <svg viewBox="0 0 100 100" className="qr-svg">
-                  {/* Position detection patterns - corners */}
-                  <rect x="5" y="5" width="25" height="25" fill="hsl(var(--navy))" />
-                  <rect x="10" y="10" width="15" height="15" fill="white" />
-                  <rect x="13" y="13" width="9" height="9" fill="hsl(var(--navy))" />
-                  
-                  <rect x="70" y="5" width="25" height="25" fill="hsl(var(--navy))" />
-                  <rect x="75" y="10" width="15" height="15" fill="white" />
-                  <rect x="78" y="13" width="9" height="9" fill="hsl(var(--navy))" />
-                  
-                  <rect x="5" y="70" width="25" height="25" fill="hsl(var(--navy))" />
-                  <rect x="10" y="75" width="15" height="15" fill="white" />
-                  <rect x="13" y="78" width="9" height="9" fill="hsl(var(--navy))" />
-                  
-                  {/* Data modules - random pattern */}
-                  <rect x="35" y="5" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="45" y="5" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="5" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="35" y="15" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="50" y="15" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="60" y="15" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="40" y="25" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="25" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="5" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="15" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="25" y="40" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="35" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="45" y="40" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="65" y="40" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="75" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="85" y="40" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="90" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="5" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="20" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="40" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="50" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="60" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="80" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="90" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="10" y="60" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="25" y="60" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="35" y="55" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="45" y="60" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="55" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="70" y="55" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="85" y="60" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="35" y="70" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="50" y="70" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="60" y="75" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="70" y="70" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="80" y="75" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="90" y="70" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="40" y="85" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="80" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="65" y="85" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="75" y="80" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="85" y="85" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="90" y="90" width="5" height="5" fill="hsl(var(--navy))" />
-                </svg>
-              </div>
+            {/* QR Code Card */}
+            <div className="trade-qr-card">
+              <svg viewBox="0 0 60 60" className="trade-qr-svg">
+                {/* QR Code corner patterns */}
+                <rect x="2" y="2" width="16" height="16" fill="hsl(var(--navy))" />
+                <rect x="5" y="5" width="10" height="10" fill="white" />
+                <rect x="7" y="7" width="6" height="6" fill="hsl(var(--navy))" />
+                
+                <rect x="42" y="2" width="16" height="16" fill="hsl(var(--navy))" />
+                <rect x="45" y="5" width="10" height="10" fill="white" />
+                <rect x="47" y="7" width="6" height="6" fill="hsl(var(--navy))" />
+                
+                <rect x="2" y="42" width="16" height="16" fill="hsl(var(--navy))" />
+                <rect x="5" y="45" width="10" height="10" fill="white" />
+                <rect x="7" y="47" width="6" height="6" fill="hsl(var(--navy))" />
+                
+                {/* Data modules */}
+                <rect x="22" y="5" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="30" y="5" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="22" y="13" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="34" y="13" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="26" y="22" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="34" y="26" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="42" y="22" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="50" y="26" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="22" y="34" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="30" y="38" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="42" y="42" width="4" height="4" fill="hsl(var(--navy))" />
+                <rect x="50" y="50" width="4" height="4" fill="hsl(var(--navy))" />
+              </svg>
             </div>
           </div>
         </div>
