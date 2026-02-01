@@ -836,7 +836,7 @@ const Index = () => {
             <div className="compliance-dashboard">
               <div className="compliance-dashboard-header">
                 <div className="compliance-dashboard-logo">
-                  <img src={salusShieldLogo} alt="Salus" className="compliance-logo-img" />
+                  <img src={salusShieldLogo} alt="Salus" className="compliance-logo-img" style={{ width: '24px', height: '24px' }} />
                   <span className="compliance-logo-text">SALUS</span>
                 </div>
                 <div className="compliance-dashboard-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>

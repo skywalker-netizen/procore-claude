@@ -448,6 +448,16 @@
   align-items: center;
 }
 
+.grid-2 > * {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.grid-2 img {
+  max-width: 100%;
+  height: auto;
+}
+
 .section-title {
   font-family: 'Lato', sans-serif;
   font-size: 48px;
@@ -2813,6 +2823,9 @@
 .portal-demo {
   position: relative;
   padding: 40px 0;
+  min-height: 500px;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Compliance Dashboard */
@@ -2821,7 +2834,10 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 100%;
   max-width: 520px;
+  position: relative;
+  z-index: 1;
 }
 
 .compliance-dashboard-header {
@@ -2840,9 +2856,12 @@
 }
 
 .compliance-logo-img {
-  width: 24px;
-  height: 24px;
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .compliance-logo-text {
