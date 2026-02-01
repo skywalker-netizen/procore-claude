@@ -41,14 +41,14 @@ const Index = () => {
     utm_term: "",
   });
 
-  // Capture UTM parameters from URL on mount
+  // Capture UTM parameters on mount - use fixed values except utm_term from URL
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     setFormData((prev) => ({
       ...prev,
-      utm_source: params.get("utm_source") || "",
-      utm_campaign: params.get("utm_campaign") || "",
-      utm_medium: params.get("utm_medium") || "",
+      utm_source: "adwords",
+      utm_campaign: "procore",
+      utm_medium: "ppc",
       utm_term: params.get("utm_term") || "",
     }));
   }, []);
