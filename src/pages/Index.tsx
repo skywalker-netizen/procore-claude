@@ -647,9 +647,7 @@ const Index = () => {
               <div className="dashboard-header">
                 <div className="dashboard-header-left">
                   <div className="compliance-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
+                    <img src={salusShieldLogo} alt="Salus" style={{ width: 20, height: 20, objectFit: "contain" }} />
                   </div>
                   <div>
                     <div className="compliance-title">Safety Compliance</div>
@@ -1011,9 +1009,7 @@ const Index = () => {
             <div className="analytics-header">
               <div className="analytics-logo">
                 <div className="icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--navy))" strokeWidth="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  </svg>
+                  <img src={salusShieldLogo} alt="Salus" style={{ width: 16, height: 16, objectFit: "contain" }} />
                 </div>
                 <div className="text">
                   <h5>Salus Analytics Hub</h5>
