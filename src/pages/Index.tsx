@@ -129,18 +129,17 @@ const Index = () => {
               <span className="badge-dot"></span>SYNCED WITH THE FIELD
             </div>
             <h1 className="hero-title">
-              Your Procore
+              The Best Field Engine
               <br />
-              Investment.
+              for your Procore
               <br />
-              <span className="highlight">Maximized.</span>
+              <span className="highlight">Brain.</span>
             </h1>
             <p className="hero-subtitle">
-              Procore is world-class for Project Management. <em>But for Safety? It's often just digital paper.</em>
+              Your Procore dashboard says "compliant." But its safety module? <em>Field teams call it "click hell."</em> Forms get pencil-whipped. Field Data goes to Procore to die.
             </p>
             <p className="hero-description">
-              Salus is the field engine that powers Procore's office brain. Two Platforms. One Seamlessly Integrated
-              System.
+              Your System of Record is only as good as your System of Reality. Procore manages the build, but it leaves you blind to the trench. SALUS feeds Procore with the high-fidelity field intelligence required for mission-critical environments, ensuring your mission-critical delivery stays on track and out of the headlines.
             </p>
             <div className="trust-badges">
               <div className="trust-badge">
