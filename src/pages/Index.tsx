@@ -806,7 +806,7 @@ const Index = () => {
               <div>
                 <h4>Zero Barrier Access</h4>
                 <p>
-                  Manage your Tier 1 and Tier 2 partners without the "login tax." With SALUS, no paid account required. Onboard trades free with QR codes.
+                  Manage your Tier 1 and Tier 2 partners without the "login tax." Onboard trades with QR codes for free.
                 </p>
               </div>
             </div>
@@ -819,7 +819,7 @@ const Index = () => {
               </div>
               <div>
                 <h4>Accountability</h4>
-                <p>See orientation status, JHA submissions, and corrective actions at the worker level, not just the company level.</p>
+                <p>See orientation status, JHA submissions, and corrective actions of your contractors at the worker level, not just the company level.</p>
               </div>
             </div>
             <div className="trade-feature">
@@ -831,7 +831,7 @@ const Index = () => {
               </div>
               <div>
                 <h4>Win - Win</h4>
-                <p>For GCs, Salus Frictionless Contractor portal means no more black hole. For Trades: Own your data. Feed the GC's requirements and keep a portable safety record that protects your EMR and your bid eligibility.</p>
+                <p>For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.</p>
               </div>
             </div>
           </div>
