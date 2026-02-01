@@ -291,9 +291,9 @@ const Index = () => {
             <img src={kearCivilLogo} alt="Kear Civil" />
             <img src={titanElectricalLogo} alt="Titan Electrical Services" />
             <img src={caliberConcreteLogo} alt="Caliber Concrete" />
-            <img src={electricPlusLogo} alt="Electric Plus" style={{ height: '48px' }} />
-            <img src={tunistaLogo} alt="Tunista Construction" />
-            <img src={generalEnergyLogo} alt="General Energy" className="invert-logo" />
+            <img src={electricPlusLogo} alt="Electric Plus" className="logo-small-row" style={{ height: '48px' }} />
+            <img src={tunistaLogo} alt="Tunista Construction" className="logo-small-row" />
+            <img src={generalEnergyLogo} alt="General Energy" className="invert-logo logo-small-row" />
           </div>
         </div>
       </section>
