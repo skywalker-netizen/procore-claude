@@ -9,9 +9,11 @@ import {
   Grid3X3,
   Bell,
   User,
+  Users,
   UserCheck,
   Wrench,
   Check,
+  CheckSquare,
   Eye,
   FileX,
   Settings,
@@ -642,135 +644,144 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div style={{ position: "relative" }}>
-            <div className="dashboard-card">
-              <div className="dashboard-header">
-                <div className="dashboard-header-left">
-                  <div className="compliance-icon">
-                    <img src={salusShieldLogo} alt="Salus" style={{ width: 20, height: 20, objectFit: "contain" }} />
+          <div className="compliance-core-infographic">
+            <div className="compliance-core-card">
+              {/* Header */}
+              <div className="cc-header">
+                <div className="cc-header-left">
+                  <div className="cc-shield-icon">
+                    <img src={salusShieldLogo} alt="Salus" style={{ width: 24, height: 24, objectFit: "contain" }} />
                   </div>
-                  <div>
-                    <div className="compliance-title">Safety Compliance</div>
-                    <div className="compliance-status">LIVE</div>
+                  <div className="cc-header-text">
+                    <h3 className="cc-title">Compliance Core</h3>
+                    <div className="cc-live-status">
+                      <span className="cc-live-dot"></span>
+                      LIVE FEED ACTIVE
+                    </div>
                   </div>
                 </div>
-                <div className="risk-score">
-                  <div className="risk-label">RISK SCORE</div>
-                  <div className="risk-value">LOW</div>
+                <div className="cc-risk-section">
+                  <span className="cc-risk-label">TOTAL RISK SCORE</span>
+                  <span className="cc-risk-value">Minimal</span>
                 </div>
               </div>
-              <div className="dashboard-grid">
-                <div className="dashboard-widget training-widget">
-                  <div className="training-header">
-                    <div className="training-title">TRAINING MATRIX</div>
-                    <Clock size={14} />
+
+              <div className="cc-divider"></div>
+
+              {/* Two-column grid */}
+              <div className="cc-grid">
+                {/* Worker Certs Card */}
+                <div className="cc-widget cc-worker-certs">
+                  <div className="cc-widget-header">
+                    <div className="cc-widget-icon blue">
+                      <Users size={14} />
+                    </div>
+                    <div className="cc-widget-title">WORKER CERTS</div>
+                    <div className="cc-widget-date">AUG<br/>2024</div>
                   </div>
-                  <div className="training-items">
-                    <div className="training-item">
-                      <div className="training-avatar">
-                        <User size={20} stroke="rgba(255,255,255,.5)" />
+                  <div className="cc-worker-list">
+                    <div className="cc-worker-row">
+                      <div className="cc-worker-avatar">M</div>
+                      <div className="cc-worker-info">
+                        <span className="cc-worker-name">Marcus T.</span>
+                        <span className="cc-worker-cert">FALL PROTECTION</span>
                       </div>
-                      <div className="training-info">
-                        <div className="training-name">Carlos M.</div>
-                        <div className="training-course">CONFINED SPACES</div>
-                      </div>
-                      <div className="training-badge expired">EXPIRED</div>
+                      <div className="cc-status-dot blue"></div>
                     </div>
-                    <div className="training-item">
-                      <div className="training-avatar">
-                        <User size={20} stroke="rgba(255,255,255,.5)" />
+                    <div className="cc-worker-row">
+                      <div className="cc-worker-avatar">E</div>
+                      <div className="cc-worker-info">
+                        <span className="cc-worker-name">Elena G.</span>
+                        <span className="cc-worker-cert">CONFINED SPACE</span>
                       </div>
-                      <div className="training-info">
-                        <div className="training-name">Maria R.</div>
-                        <div className="training-course">SCAFFOLDING</div>
-                      </div>
-                      <div className="training-badge valid">
-                        <Check size={12} />
-                        VALID
-                      </div>
+                      <div className="cc-status-dot green"></div>
                     </div>
-                  </div>
-                </div>
-                <div className="dashboard-widget asset-widget">
-                  <div className="asset-header">
-                    <div className="asset-title">EQUIPMENT STATUS</div>
-                    <div className="asset-notification">
-                      <Bell size={14} />
-                      <span className="asset-notification-badge">2</span>
-                    </div>
-                  </div>
-                  <div className="asset-list">
-                    <div className="asset-item">
-                      <div className="asset-name">Tower Crane #1</div>
-                      <div className="asset-bar-container">
-                        <div className="asset-bar">
-                          <div className="asset-bar-fill high" style={{ width: "100%" }}></div>
-                        </div>
-                        <div className="asset-percent">100%</div>
+                    <div className="cc-worker-row">
+                      <div className="cc-worker-avatar">S</div>
+                      <div className="cc-worker-info">
+                        <span className="cc-worker-name">Sarah K.</span>
+                        <span className="cc-worker-cert">AERIAL LIFT</span>
                       </div>
-                    </div>
-                    <div className="asset-item">
-                      <div className="asset-name">Forklift-002</div>
-                      <div className="asset-bar-container">
-                        <div className="asset-bar">
-                          <div className="asset-bar-fill low" style={{ width: "45%" }}></div>
-                        </div>
-                        <div className="asset-percent low">45%</div>
-                      </div>
-                    </div>
-                    <div className="asset-item">
-                      <div className="asset-name">Scissor Lift</div>
-                      <div className="asset-bar-container">
-                        <div className="asset-bar">
-                          <div className="asset-bar-fill high" style={{ width: "92%" }}></div>
-                        </div>
-                        <div className="asset-percent">92%</div>
-                      </div>
+                      <div className="cc-status-dot orange"></div>
                     </div>
                   </div>
                 </div>
-                <div className="dashboard-widget corrective-widget">
-                  <div className="corrective-header">
-                    <div className="corrective-title">CORRECTIVE ACTIONS</div>
-                    <div className="resolution-rate">
-                      RESOLUTION RATE: <strong>98%</strong>
+
+                {/* Asset Health Card */}
+                <div className="cc-widget cc-asset-health">
+                  <div className="cc-widget-header">
+                    <div className="cc-widget-icon gray">
+                      <Settings size={14} />
                     </div>
+                    <div className="cc-widget-title">ASSET HEALTH</div>
                   </div>
-                  <div className="corrective-items">
-                    <div className="corrective-item">
-                      <div className="corrective-avatar">
-                        <User size={20} stroke="rgba(255,255,255,.5)" />
-                      </div>
-                      <div className="corrective-info">
-                        <div className="corrective-name">James R.</div>
-                        <div className="corrective-issue">MISSING GUARDRAIL</div>
-                      </div>
-                      <div className="corrective-badge pending">PENDING</div>
+                  <div className="cc-asset-list">
+                    <div className="cc-asset-row">
+                      <span className="cc-asset-name">Crane-A12</span>
+                      <span className="cc-asset-percent green">92%</span>
                     </div>
-                    <div className="corrective-item">
-                      <div className="corrective-avatar">
-                        <User size={20} stroke="rgba(255,255,255,.5)" />
-                      </div>
-                      <div className="corrective-info">
-                        <div className="corrective-name">Sarah W.</div>
-                        <div className="corrective-issue">PPE RE...</div>
-                      </div>
-                      <div className="corrective-badge resolved">
-                        <Check size={12} />
-                        RESOLVED
-                      </div>
+                    <div className="cc-asset-bar">
+                      <div className="cc-asset-fill green" style={{ width: "92%" }}></div>
+                    </div>
+                    <div className="cc-asset-row">
+                      <span className="cc-asset-name">Excavator-04</span>
+                      <span className="cc-asset-percent orange">40%</span>
+                    </div>
+                    <div className="cc-asset-bar">
+                      <div className="cc-asset-fill orange" style={{ width: "40%" }}></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="unified-badge">
-                <div className="icon">
-                  <Zap size={20} />
+
+              {/* Corrective Actions Card */}
+              <div className="cc-widget cc-corrective">
+                <div className="cc-corrective-header">
+                  <div className="cc-widget-header">
+                    <div className="cc-widget-icon lime">
+                      <CheckSquare size={14} />
+                    </div>
+                    <div className="cc-widget-title">CORRECTIVE ACTIONS</div>
+                  </div>
+                  <div className="cc-resolution-rate">RESOLUTION RATE: 98%</div>
                 </div>
-                <div className="text">
-                  <span>UNIFIED ADVANTAGE</span>
-                  <strong>Zero Blindspots.</strong>
+                <div className="cc-corrective-grid">
+                  <div className="cc-corrective-item">
+                    <div className="cc-corrective-avatar">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="James R." />
+                    </div>
+                    <div className="cc-corrective-info">
+                      <span className="cc-corrective-name">James R.</span>
+                      <div className="cc-corrective-issue-row">
+                        <span className="cc-corrective-issue">MISSING GUARDRAIL</span>
+                        <span className="cc-badge pending">PENDING</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="cc-corrective-item resolved">
+                    <div className="cc-corrective-check">
+                      <Check size={16} />
+                    </div>
+                    <div className="cc-corrective-info">
+                      <span className="cc-corrective-name">Sarah W.</span>
+                      <div className="cc-corrective-issue-row">
+                        <span className="cc-corrective-issue">PPE RE-ISSUE</span>
+                        <span className="cc-badge resolved">RESOLVED</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Unified Advantage Badge */}
+            <div className="cc-unified-badge">
+              <div className="cc-unified-icon">
+                <Zap size={20} />
+              </div>
+              <div className="cc-unified-text">
+                <span>UNIFIED ADVANTAGE</span>
+                <strong>Zero Blindspots.</strong>
               </div>
             </div>
           </div>
