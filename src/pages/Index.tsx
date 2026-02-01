@@ -1073,15 +1073,9 @@ const Index = () => {
               <span className="badge-dot"></span>PREVENTATIVE MAINTENANCE
             </div>
             <h2 className="section-title">
-              Asset
+              Your Crane Log Shouldn't
               <br />
-              Management
-              <br />
-              <span className="muted">
-                Built for
-                <br />
-                Safety.
-              </span>
+              <span className="muted">Live in a Binder.</span>
             </h2>
             <p style={{ color: "hsl(var(--gray-600))", marginBottom: "32px" }}>
               Track every piece of equipment, from cranes to drills, with a system designed for the realities of the
