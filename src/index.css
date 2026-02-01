@@ -3630,11 +3630,19 @@
     order: 2;
   }
 
-  /* Phone comparison (Field Advantage) */
+  /* Phone comparison (Field Advantage) - infographic is first in HTML, needs to go second on mobile */
   .phone-comparison {
     flex-direction: column;
     align-items: center;
+  }
+  
+  /* Field Advantage section: swap order so copy appears before phone mockup */
+  .grid-2:has(.phone-comparison) > div:first-child {
     order: 2;
+  }
+  
+  .grid-2:has(.phone-comparison) > div:last-child {
+    order: 1;
   }
 
   /* Compliance Core card (Stop the Workarounds) */
@@ -3648,9 +3656,18 @@
     order: 2;
   }
 
-  /* Analytics card (Executive Level) */
+  /* Analytics card (Executive Level) - infographic is first in HTML, needs to go second on mobile */
   .analytics-card {
     max-width: 100%;
+  }
+  
+  /* Executive Level section: swap order so copy appears before analytics card */
+  .grid-2:has(.analytics-card) > div:first-child {
+    order: 2;
+  }
+  
+  .grid-2:has(.analytics-card) > div:last-child {
+    order: 1;
   }
 
   /* Asset dashboard (Preventative Maintenance) */
