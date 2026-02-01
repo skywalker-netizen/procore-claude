@@ -36,9 +36,23 @@ const Index = () => {
     company: "",
     email: "",
     phone: "",
-    howManyWorkers: "",
-    howDidYouHear: "",
+    utm_source: "",
+    utm_campaign: "",
+    utm_medium: "",
+    utm_term: "",
   });
+
+  // Capture UTM parameters from URL on mount
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setFormData((prev) => ({
+      ...prev,
+      utm_source: params.get("utm_source") || "",
+      utm_campaign: params.get("utm_campaign") || "",
+      utm_medium: params.get("utm_medium") || "",
+      utm_term: params.get("utm_term") || "",
+    }));
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -48,7 +62,7 @@ const Index = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.firstName || !formData.lastName || !formData.company || !formData.email || !formData.phone || !formData.howManyWorkers) {
+    if (!formData.firstName || !formData.lastName || !formData.company || !formData.email || !formData.phone) {
       toast({
         title: "Error",
         description: "Please fill in all required fields",
@@ -72,6 +86,10 @@ const Index = () => {
           "Company": formData.company,
           "Work email": formData.email,
           "Phone number": formData.phone,
+          "utm_source": formData.utm_source,
+          "utm_campaign": formData.utm_campaign,
+          "utm_medium": formData.utm_medium,
+          "utm_term": formData.utm_term,
         }),
       });
 
@@ -233,42 +251,6 @@ const Index = () => {
                       placeholder="+1 (555) 123-4567"
                       required
                     />
-                  </div>
-                  <div className="form-group">
-                    <label>
-                      How Many Workers? <span className="required">*</span>
-                    </label>
-                    <select
-                      name="howManyWorkers"
-                      value={formData.howManyWorkers}
-                      onChange={handleInputChange}
-                      required
-                      className="form-select"
-                    >
-                      <option value="">Select...</option>
-                      <option value="1-50">1-50</option>
-                      <option value="51-200">51-200</option>
-                      <option value="201-500">201-500</option>
-                      <option value="501-1000">501-1000</option>
-                      <option value="1000+">1000+</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <label>How Did You Hear About Us?</label>
-                    <select
-                      name="howDidYouHear"
-                      value={formData.howDidYouHear}
-                      onChange={handleInputChange}
-                      className="form-select"
-                    >
-                      <option value="">Select...</option>
-                      <option value="Google Search">Google Search</option>
-                      <option value="LinkedIn">LinkedIn</option>
-                      <option value="Procore Marketplace">Procore Marketplace</option>
-                      <option value="Referral">Referral</option>
-                      <option value="Trade Show/Event">Trade Show/Event</option>
-                      <option value="Other">Other</option>
-                    </select>
                   </div>
                   <button type="submit" className="btn-submit" disabled={isLoading}>
                     {isLoading ? "Sending..." : "Request Demo"}
