@@ -469,7 +469,11 @@
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 40px;
-  color: hsl(var(--gray-400));
+  color: hsl(var(--navy));
+}
+
+.dark-section .section-subtitle {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .section-subtitle .highlight {
