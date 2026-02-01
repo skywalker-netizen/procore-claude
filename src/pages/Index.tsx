@@ -562,7 +562,7 @@ const Index = () => {
               <br />
               <span className="highlight">with a Stylus and a PDF.</span>
             </h2>
-            <p className="section-intro">
+            <p className="section-subtitle">
               100% compliance from the field, and data you can actually search in the office.
             </p>
             <div className="numbered-feature">
