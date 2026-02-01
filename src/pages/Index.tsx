@@ -9,11 +9,9 @@ import {
   Grid3X3,
   Bell,
   User,
-  Users,
   UserCheck,
   Wrench,
   Check,
-  CheckSquare,
   Eye,
   FileX,
   Settings,
@@ -644,144 +642,135 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="compliance-core-infographic">
-            <div className="compliance-core-card">
-              {/* Header */}
-              <div className="cc-header">
-                <div className="cc-header-left">
-                  <div className="cc-shield-icon">
-                    <img src={salusShieldLogo} alt="Salus" style={{ width: 24, height: 24, objectFit: "contain" }} />
+          <div style={{ position: "relative" }}>
+            <div className="dashboard-card">
+              <div className="dashboard-header">
+                <div className="dashboard-header-left">
+                  <div className="compliance-icon">
+                    <img src={salusShieldLogo} alt="Salus" style={{ width: 20, height: 20, objectFit: "contain" }} />
                   </div>
-                  <div className="cc-header-text">
-                    <h3 className="cc-title">Compliance Core</h3>
-                    <div className="cc-live-status">
-                      <span className="cc-live-dot"></span>
-                      LIVE FEED ACTIVE
-                    </div>
+                  <div>
+                    <div className="compliance-title">Safety Compliance</div>
+                    <div className="compliance-status">LIVE</div>
                   </div>
                 </div>
-                <div className="cc-risk-section">
-                  <span className="cc-risk-label">TOTAL RISK SCORE</span>
-                  <span className="cc-risk-value">Minimal</span>
+                <div className="risk-score">
+                  <div className="risk-label">RISK SCORE</div>
+                  <div className="risk-value">LOW</div>
                 </div>
               </div>
-
-              <div className="cc-divider"></div>
-
-              {/* Two-column grid */}
-              <div className="cc-grid">
-                {/* Worker Certs Card */}
-                <div className="cc-widget cc-worker-certs">
-                  <div className="cc-widget-header">
-                    <div className="cc-widget-icon blue">
-                      <Users size={14} />
-                    </div>
-                    <div className="cc-widget-title">WORKER CERTS</div>
-                    <div className="cc-widget-date">AUG<br/>2024</div>
+              <div className="dashboard-grid">
+                <div className="dashboard-widget training-widget">
+                  <div className="training-header">
+                    <div className="training-title">TRAINING MATRIX</div>
+                    <Clock size={14} />
                   </div>
-                  <div className="cc-worker-list">
-                    <div className="cc-worker-row">
-                      <div className="cc-worker-avatar">M</div>
-                      <div className="cc-worker-info">
-                        <span className="cc-worker-name">Marcus T.</span>
-                        <span className="cc-worker-cert">FALL PROTECTION</span>
+                  <div className="training-items">
+                    <div className="training-item">
+                      <div className="training-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
                       </div>
-                      <div className="cc-status-dot blue"></div>
+                      <div className="training-info">
+                        <div className="training-name">Carlos M.</div>
+                        <div className="training-course">CONFINED SPACES</div>
+                      </div>
+                      <div className="training-badge expired">EXPIRED</div>
                     </div>
-                    <div className="cc-worker-row">
-                      <div className="cc-worker-avatar">E</div>
-                      <div className="cc-worker-info">
-                        <span className="cc-worker-name">Elena G.</span>
-                        <span className="cc-worker-cert">CONFINED SPACE</span>
+                    <div className="training-item">
+                      <div className="training-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
                       </div>
-                      <div className="cc-status-dot green"></div>
-                    </div>
-                    <div className="cc-worker-row">
-                      <div className="cc-worker-avatar">S</div>
-                      <div className="cc-worker-info">
-                        <span className="cc-worker-name">Sarah K.</span>
-                        <span className="cc-worker-cert">AERIAL LIFT</span>
+                      <div className="training-info">
+                        <div className="training-name">Maria R.</div>
+                        <div className="training-course">SCAFFOLDING</div>
                       </div>
-                      <div className="cc-status-dot orange"></div>
+                      <div className="training-badge valid">
+                        <Check size={12} />
+                        VALID
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                {/* Asset Health Card */}
-                <div className="cc-widget cc-asset-health">
-                  <div className="cc-widget-header">
-                    <div className="cc-widget-icon gray">
-                      <Settings size={14} />
-                    </div>
-                    <div className="cc-widget-title">ASSET HEALTH</div>
-                  </div>
-                  <div className="cc-asset-list">
-                    <div className="cc-asset-row">
-                      <span className="cc-asset-name">Crane-A12</span>
-                      <span className="cc-asset-percent green">92%</span>
-                    </div>
-                    <div className="cc-asset-bar">
-                      <div className="cc-asset-fill green" style={{ width: "92%" }}></div>
-                    </div>
-                    <div className="cc-asset-row">
-                      <span className="cc-asset-name">Excavator-04</span>
-                      <span className="cc-asset-percent orange">40%</span>
-                    </div>
-                    <div className="cc-asset-bar">
-                      <div className="cc-asset-fill orange" style={{ width: "40%" }}></div>
+                <div className="dashboard-widget asset-widget">
+                  <div className="asset-header">
+                    <div className="asset-title">EQUIPMENT STATUS</div>
+                    <div className="asset-notification">
+                      <Bell size={14} />
+                      <span className="asset-notification-badge">2</span>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              {/* Corrective Actions Card */}
-              <div className="cc-widget cc-corrective">
-                <div className="cc-corrective-header">
-                  <div className="cc-widget-header">
-                    <div className="cc-widget-icon lime">
-                      <CheckSquare size={14} />
+                  <div className="asset-list">
+                    <div className="asset-item">
+                      <div className="asset-name">Tower Crane #1</div>
+                      <div className="asset-bar-container">
+                        <div className="asset-bar">
+                          <div className="asset-bar-fill high" style={{ width: "100%" }}></div>
+                        </div>
+                        <div className="asset-percent">100%</div>
+                      </div>
                     </div>
-                    <div className="cc-widget-title">CORRECTIVE ACTIONS</div>
-                  </div>
-                  <div className="cc-resolution-rate">RESOLUTION RATE: 98%</div>
-                </div>
-                <div className="cc-corrective-grid">
-                  <div className="cc-corrective-item">
-                    <div className="cc-corrective-avatar">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="James R." />
+                    <div className="asset-item">
+                      <div className="asset-name">Forklift-002</div>
+                      <div className="asset-bar-container">
+                        <div className="asset-bar">
+                          <div className="asset-bar-fill low" style={{ width: "45%" }}></div>
+                        </div>
+                        <div className="asset-percent low">45%</div>
+                      </div>
                     </div>
-                    <div className="cc-corrective-info">
-                      <span className="cc-corrective-name">James R.</span>
-                      <div className="cc-corrective-issue-row">
-                        <span className="cc-corrective-issue">MISSING GUARDRAIL</span>
-                        <span className="cc-badge pending">PENDING</span>
+                    <div className="asset-item">
+                      <div className="asset-name">Scissor Lift</div>
+                      <div className="asset-bar-container">
+                        <div className="asset-bar">
+                          <div className="asset-bar-fill high" style={{ width: "92%" }}></div>
+                        </div>
+                        <div className="asset-percent">92%</div>
                       </div>
                     </div>
                   </div>
-                  <div className="cc-corrective-item resolved">
-                    <div className="cc-corrective-check">
-                      <Check size={16} />
+                </div>
+                <div className="dashboard-widget corrective-widget">
+                  <div className="corrective-header">
+                    <div className="corrective-title">CORRECTIVE ACTIONS</div>
+                    <div className="resolution-rate">
+                      RESOLUTION RATE: <strong>98%</strong>
                     </div>
-                    <div className="cc-corrective-info">
-                      <span className="cc-corrective-name">Sarah W.</span>
-                      <div className="cc-corrective-issue-row">
-                        <span className="cc-corrective-issue">PPE RE-ISSUE</span>
-                        <span className="cc-badge resolved">RESOLVED</span>
+                  </div>
+                  <div className="corrective-items">
+                    <div className="corrective-item">
+                      <div className="corrective-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
+                      </div>
+                      <div className="corrective-info">
+                        <div className="corrective-name">James R.</div>
+                        <div className="corrective-issue">MISSING GUARDRAIL</div>
+                      </div>
+                      <div className="corrective-badge pending">PENDING</div>
+                    </div>
+                    <div className="corrective-item">
+                      <div className="corrective-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
+                      </div>
+                      <div className="corrective-info">
+                        <div className="corrective-name">Sarah W.</div>
+                        <div className="corrective-issue">PPE RE...</div>
+                      </div>
+                      <div className="corrective-badge resolved">
+                        <Check size={12} />
+                        RESOLVED
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Unified Advantage Badge */}
-            <div className="cc-unified-badge">
-              <div className="cc-unified-icon">
-                <Zap size={20} />
-              </div>
-              <div className="cc-unified-text">
-                <span>UNIFIED ADVANTAGE</span>
-                <strong>Zero Blindspots.</strong>
+              <div className="unified-badge">
+                <div className="icon">
+                  <Zap size={20} />
+                </div>
+                <div className="text">
+                  <span>UNIFIED ADVANTAGE</span>
+                  <strong>Zero Blindspots.</strong>
+                </div>
               </div>
             </div>
           </div>
@@ -842,137 +831,169 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="trade-infographic">
+          <div className="portal-demo">
             {/* Main Compliance Dashboard */}
-            <div className="trade-dashboard-card">
-              <div className="trade-dashboard-header">
-                <div className="trade-dashboard-brand">
-                  <div className="trade-brand-icon">
-                    <img src={salusShieldLogo} alt="Salus" style={{ width: '20px', height: '20px', objectFit: 'contain' }} />
-                  </div>
-                  <span className="trade-brand-name">SALUS</span>
+            <div className="compliance-dashboard">
+              <div className="compliance-dashboard-header">
+                <div className="compliance-dashboard-logo">
+                  <img src={salusShieldLogo} alt="Salus" className="compliance-logo-img" />
+                  <span className="compliance-logo-text">SALUS</span>
                 </div>
-                <div className="trade-dashboard-divider"></div>
-                <span className="trade-header-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</span>
-                <div className="trade-header-icons">
-                  <div className="trade-icon-help">?</div>
+                <div className="compliance-dashboard-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
+                <div className="compliance-dashboard-icons">
+                  <div className="compliance-icon-circle">?</div>
                   <Bell size={16} />
-                  <div className="trade-avatar-circle"></div>
+                  <div className="compliance-avatar-circle"></div>
                 </div>
               </div>
-              
-              <div className="trade-section-label">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
-              
-              <div className="trade-compliance-table">
-                <div className="trade-table-header">
+              <div className="compliance-section-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
+              <div className="compliance-table">
+                <div className="compliance-table-header">
                   <span>COMPANY NAME</span>
                   <span>STATUS</span>
                   <span>WORKERS ON SITE</span>
                   <span>LAST JHA SUBMISSION</span>
                 </div>
-                <div className="trade-table-row highlight">
-                  <span className="trade-company">Steel Works Inc.</span>
-                  <span className="trade-status green"><span className="trade-dot"></span>Orientated</span>
-                  <span className="trade-workers">12</span>
-                  <span className="trade-jha">Today, 8:30 AM</span>
+                <div className="compliance-table-row">
+                  <span className="company-name">Steel Works Inc.</span>
+                  <span className="status orientated"><span className="status-dot"></span>Orientated</span>
+                  <span className="workers-count">12</span>
+                  <span className="last-jha">Today, 8:30 AM</span>
                 </div>
-                <div className="trade-table-row">
-                  <span className="trade-company">Apex Plumbing</span>
-                  <span className="trade-status blue"><span className="trade-dot"></span>In Progress</span>
-                  <span className="trade-workers"></span>
-                  <span className="trade-jha"></span>
+                <div className="compliance-table-row">
+                  <span className="company-name">Apex Plumbing</span>
+                  <span className="status in-progress"><span className="status-dot"></span>In Progress</span>
+                  <span className="workers-count"></span>
+                  <span className="last-jha"></span>
                 </div>
-                <div className="trade-table-row">
-                  <span className="trade-company">City Electrical</span>
-                  <span className="trade-status blue"><span className="trade-dot"></span>In Progress</span>
-                  <span className="trade-workers"></span>
-                  <span className="trade-jha"></span>
+                <div className="compliance-table-row">
+                  <span className="company-name">City Electrical</span>
+                  <span className="status in-progress"><span className="status-dot"></span>In Progress</span>
+                  <span className="workers-count"></span>
+                  <span className="last-jha"></span>
                 </div>
-                <div className="trade-table-row">
-                  <span className="trade-company">Concrete Solutions</span>
-                  <span className="trade-status green"><span className="trade-dot"></span>Orientated</span>
-                  <span className="trade-workers"></span>
-                  <span className="trade-jha"></span>
+                <div className="compliance-table-row">
+                  <span className="company-name">Concrete Solutions</span>
+                  <span className="status orientated"><span className="status-dot"></span>Orientated</span>
+                  <span className="workers-count"></span>
+                  <span className="last-jha"></span>
                 </div>
-                <div className="trade-table-row">
-                  <span className="trade-company">Summit Roofing</span>
-                  <span className="trade-status green"><span className="trade-dot"></span>Active</span>
-                  <span className="trade-workers"></span>
-                  <span className="trade-jha"></span>
+                <div className="compliance-table-row">
+                  <span className="company-name">Summit Roofing</span>
+                  <span className="status active"><span className="status-dot"></span>Active</span>
+                  <span className="workers-count"></span>
+                  <span className="last-jha"></span>
                 </div>
               </div>
             </div>
 
-            {/* Worker Detail Card - Overlapping */}
-            <div className="trade-worker-card">
-              <div className="trade-worker-header">
-                <span className="trade-back-arrow">←</span>
-                <span className="trade-worker-company">Steel Works Inc.</span>
+            {/* Worker Detail Card */}
+            <div className="worker-detail-card">
+              <div className="worker-detail-header">
+                <span className="back-arrow">←</span>
+                <span className="worker-company-name">Steel Works Inc.</span>
               </div>
-              <div className="trade-worker-content">
-                <div className="trade-progress-section">
-                  <span className="trade-progress-label">PROGRESS SCORE</span>
-                  <div className="trade-progress-bar">
-                    <div className="trade-progress-fill"></div>
+              <div className="worker-detail-content">
+                <div className="progress-score-section">
+                  <span className="progress-score-label">PROGRESS SCORE</span>
+                  <div className="progress-score-bar">
+                    <div className="progress-score-fill"></div>
                   </div>
                 </div>
-                <div className="trade-worker-list">
-                  <div className="trade-worker-row">
-                    <div className="trade-worker-avatar">
-                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="John S." />
+                <div className="worker-list">
+                  <div className="worker-item">
+                    <div className="worker-avatar">
+                      <User size={20} />
                     </div>
-                    <span className="trade-worker-name">John S.</span>
-                    <span className="trade-flra">FLRA</span>
+                    <span className="worker-name">John S.</span>
+                    <span className="flra-badge">FLRA</span>
                   </div>
-                  <div className="trade-worker-row">
-                    <div className="trade-worker-avatar">
-                      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Maria R." />
+                  <div className="worker-item">
+                    <div className="worker-avatar female">
+                      <User size={20} />
                     </div>
-                    <span className="trade-worker-name">Maria R.</span>
-                    <span className="trade-flra">FLRA</span>
+                    <span className="worker-name">Maria R.</span>
+                    <span className="flra-badge">FLRA</span>
                   </div>
                 </div>
-                <div className="trade-pending-row">
-                  <span className="trade-pending-text">Pending Review</span>
+                <div className="pending-review-row">
+                  <span className="pending-review-text">Pending Review</span>
                 </div>
               </div>
-              
-              {/* Check badge */}
-              <div className="trade-check-badge">
+              <div className="check-badge">
                 <Check size={16} />
               </div>
             </div>
 
-            {/* QR Code Card */}
-            <div className="trade-qr-card">
-              <svg viewBox="0 0 60 60" className="trade-qr-svg">
-                {/* QR Code corner patterns */}
-                <rect x="2" y="2" width="16" height="16" fill="hsl(var(--navy))" />
-                <rect x="5" y="5" width="10" height="10" fill="white" />
-                <rect x="7" y="7" width="6" height="6" fill="hsl(var(--navy))" />
-                
-                <rect x="42" y="2" width="16" height="16" fill="hsl(var(--navy))" />
-                <rect x="45" y="5" width="10" height="10" fill="white" />
-                <rect x="47" y="7" width="6" height="6" fill="hsl(var(--navy))" />
-                
-                <rect x="2" y="42" width="16" height="16" fill="hsl(var(--navy))" />
-                <rect x="5" y="45" width="10" height="10" fill="white" />
-                <rect x="7" y="47" width="6" height="6" fill="hsl(var(--navy))" />
-                
-                {/* Data modules */}
-                <rect x="22" y="5" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="30" y="5" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="22" y="13" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="34" y="13" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="26" y="22" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="34" y="26" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="42" y="22" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="50" y="26" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="22" y="34" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="30" y="38" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="42" y="42" width="4" height="4" fill="hsl(var(--navy))" />
-                <rect x="50" y="50" width="4" height="4" fill="hsl(var(--navy))" />
-              </svg>
+            {/* QR Code Badge */}
+            <div className="qr-badge">
+              <div className="qr-code">
+                <svg viewBox="0 0 100 100" className="qr-svg">
+                  {/* Position detection patterns - corners */}
+                  <rect x="5" y="5" width="25" height="25" fill="hsl(var(--navy))" />
+                  <rect x="10" y="10" width="15" height="15" fill="white" />
+                  <rect x="13" y="13" width="9" height="9" fill="hsl(var(--navy))" />
+                  
+                  <rect x="70" y="5" width="25" height="25" fill="hsl(var(--navy))" />
+                  <rect x="75" y="10" width="15" height="15" fill="white" />
+                  <rect x="78" y="13" width="9" height="9" fill="hsl(var(--navy))" />
+                  
+                  <rect x="5" y="70" width="25" height="25" fill="hsl(var(--navy))" />
+                  <rect x="10" y="75" width="15" height="15" fill="white" />
+                  <rect x="13" y="78" width="9" height="9" fill="hsl(var(--navy))" />
+                  
+                  {/* Data modules - random pattern */}
+                  <rect x="35" y="5" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="45" y="5" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="55" y="5" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="35" y="15" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="50" y="15" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="60" y="15" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="40" y="25" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="55" y="25" width="5" height="5" fill="hsl(var(--navy))" />
+                  
+                  <rect x="5" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="15" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="25" y="40" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="35" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="45" y="40" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="55" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="65" y="40" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="75" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="85" y="40" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="90" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                  
+                  <rect x="5" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="20" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="40" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="50" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="60" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="80" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="90" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                  
+                  <rect x="10" y="60" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="25" y="60" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="35" y="55" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="45" y="60" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="55" y="55" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="70" y="55" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="85" y="60" width="5" height="5" fill="hsl(var(--navy))" />
+                  
+                  <rect x="35" y="70" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="50" y="70" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="60" y="75" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="70" y="70" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="80" y="75" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="90" y="70" width="5" height="5" fill="hsl(var(--navy))" />
+                  
+                  <rect x="40" y="85" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="55" y="80" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="65" y="85" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="75" y="80" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="85" y="85" width="5" height="5" fill="hsl(var(--navy))" />
+                  <rect x="90" y="90" width="5" height="5" fill="hsl(var(--navy))" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
