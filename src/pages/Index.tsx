@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 import {
   Link,
   Zap,
@@ -24,7 +24,7 @@ import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
 
-const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
+const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/udqz69h/";
 
 const Index = () => {
   const { toast } = useToast();
@@ -36,9 +36,11 @@ const Index = () => {
     company: "",
     email: "",
     phone: "",
+    howManyWorkers: "",
+    howDidYouHear: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -46,7 +48,7 @@ const Index = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone) {
+    if (!formData.firstName || !formData.lastName || !formData.company || !formData.email || !formData.phone || !formData.howManyWorkers) {
       toast({
         title: "Error",
         description: "Please fill in all required fields",
@@ -65,9 +67,11 @@ const Index = () => {
         },
         mode: "no-cors",
         body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-          source: window.location.origin,
+          "First Name": formData.firstName,
+          "Last Name": formData.lastName,
+          "Company": formData.company,
+          "Work email": formData.email,
+          "Phone number": formData.phone,
         }),
       });
 
@@ -192,13 +196,16 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label>Company</label>
+                    <label>
+                      Company <span className="required">*</span>
+                    </label>
                     <input
                       type="text"
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
                       placeholder="Your company name"
+                      required
                     />
                   </div>
                   <div className="form-group">
@@ -226,6 +233,42 @@ const Index = () => {
                       placeholder="+1 (555) 123-4567"
                       required
                     />
+                  </div>
+                  <div className="form-group">
+                    <label>
+                      How Many Workers? <span className="required">*</span>
+                    </label>
+                    <select
+                      name="howManyWorkers"
+                      value={formData.howManyWorkers}
+                      onChange={handleInputChange}
+                      required
+                      className="form-select"
+                    >
+                      <option value="">Select...</option>
+                      <option value="1-50">1-50</option>
+                      <option value="51-200">51-200</option>
+                      <option value="201-500">201-500</option>
+                      <option value="501-1000">501-1000</option>
+                      <option value="1000+">1000+</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label>How Did You Hear About Us?</label>
+                    <select
+                      name="howDidYouHear"
+                      value={formData.howDidYouHear}
+                      onChange={handleInputChange}
+                      className="form-select"
+                    >
+                      <option value="">Select...</option>
+                      <option value="Google Search">Google Search</option>
+                      <option value="LinkedIn">LinkedIn</option>
+                      <option value="Procore Marketplace">Procore Marketplace</option>
+                      <option value="Referral">Referral</option>
+                      <option value="Trade Show/Event">Trade Show/Event</option>
+                      <option value="Other">Other</option>
+                    </select>
                   </div>
                   <button type="submit" className="btn-submit" disabled={isLoading}>
                     {isLoading ? "Sending..." : "Request Demo"}
@@ -396,49 +439,48 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="risk-score">
-                  <span>RISK SCORE</span>
-                  <strong>LOW — 12/100</strong>
+                  <div className="risk-label">RISK SCORE</div>
+                  <div className="risk-value">LOW</div>
                 </div>
               </div>
               <div className="dashboard-grid">
-                <div className="dashboard-widget">
-                  <div className="widget-header">
-                    <div className="widget-title">
-                      <span className="widget-title-icon"></span>ONSITE TODAY
-                    </div>
-                    <div className="widget-date">Oct 17</div>
+                <div className="dashboard-widget training-widget">
+                  <div className="training-header">
+                    <div className="training-title">TRAINING MATRIX</div>
+                    <Clock size={14} />
                   </div>
-                  <div className="worker-list">
-                    <div className="worker-item">
-                      <div className="worker-avatar">MR</div>
-                      <div className="worker-info">
-                        <div className="worker-name">Mike Rodriguez</div>
-                        <div className="worker-role">SUPERINTENDENT</div>
+                  <div className="training-items">
+                    <div className="training-item">
+                      <div className="training-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
                       </div>
-                      <div className="worker-status green"></div>
+                      <div className="training-info">
+                        <div className="training-name">Carlos M.</div>
+                        <div className="training-course">CONFINED SPACES</div>
+                      </div>
+                      <div className="training-badge expired">EXPIRED</div>
                     </div>
-                    <div className="worker-item">
-                      <div className="worker-avatar">JC</div>
-                      <div className="worker-info">
-                        <div className="worker-name">Jane Chen</div>
-                        <div className="worker-role">SAFETY LEAD</div>
+                    <div className="training-item">
+                      <div className="training-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
                       </div>
-                      <div className="worker-status green"></div>
-                    </div>
-                    <div className="worker-item">
-                      <div className="worker-avatar">RB</div>
-                      <div className="worker-info">
-                        <div className="worker-name">Robert Blake</div>
-                        <div className="worker-role">ELECTRICIAN</div>
+                      <div className="training-info">
+                        <div className="training-name">Maria R.</div>
+                        <div className="training-course">SCAFFOLDING</div>
                       </div>
-                      <div className="worker-status yellow"></div>
+                      <div className="training-badge valid">
+                        <Check size={12} />
+                        VALID
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="dashboard-widget">
-                  <div className="widget-header">
-                    <div className="widget-title">
-                      <span className="widget-title-icon"></span>EQUIPMENT STATUS
+                <div className="dashboard-widget asset-widget">
+                  <div className="asset-header">
+                    <div className="asset-title">EQUIPMENT STATUS</div>
+                    <div className="asset-notification">
+                      <Bell size={14} />
+                      <span className="asset-notification-badge">2</span>
                     </div>
                   </div>
                   <div className="asset-list">
@@ -822,120 +864,93 @@ const Index = () => {
                 </svg>
               </div>
               <div>
-                <h4>
-                  Real-time Visibility <span className="highlight">— at the worker level.</span>
-                </h4>
-                <p>See orientation status, track corrective actions and compliance at the individual level.</p>
+                <h4>Multi-Language Support</h4>
+                <p>Break the language barrier. Forms and notifications in multiple languages.</p>
               </div>
-            </div>
-            <div className="trade-note">
-              <div className="trade-note-icon">
-                <Grid3X3 size={16} />
-              </div>
-              <p>Instant QR-Driven Portal — workers onboard in seconds.</p>
             </div>
           </div>
-          <div style={{ position: "relative" }}>
-            <div className="compliance-card">
-              <div className="compliance-card-header">
-                <div className="compliance-card-logo">
-                  <div className="icon"></div>SALUS
-                </div>
-                <div className="compliance-card-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
-              </div>
-              <div className="compliance-table-header">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
-              <table className="compliance-table">
-                <thead>
-                  <tr>
-                    <th>Company Name</th>
-                    <th>Status</th>
-                    <th>Workers on Site</th>
-                    <th>Last JHA Submission</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="company">Steel Works Inc.</td>
-                    <td>
-                      <span className="status-badge orientated">Orientated</span>
-                    </td>
-                    <td>12</td>
-                    <td>Today, 8:30 AM</td>
-                  </tr>
-                  <tr>
-                    <td className="company">Apex Plumbing</td>
-                    <td>
-                      <span className="status-badge in-progress">In Progress</span>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td className="company">City Electrical</td>
-                    <td>
-                      <span className="status-badge in-progress">In Progress</span>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td className="company">Concrete Solutions</td>
-                    <td>
-                      <span className="status-badge orientated">Orientated</span>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td className="company">Summit Roofing</td>
-                    <td>
-                      <span className="status-badge active">Active</span>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="worker-popup">
-              <div className="worker-popup-header">
-                ← Steel Works Inc.<span>✕</span>
-              </div>
-              <div className="worker-popup-progress">
-                <label>PROGRESS SCORE</label>
-                <div className="value">100%</div>
-                <div className="bar">
-                  <div className="bar-fill" style={{ width: "100%" }}></div>
-                </div>
-              </div>
-              <div className="worker-popup-list">
-                <div className="worker-popup-item">
-                  <div className="avatar" style={{ background: "#9ca3af" }}></div>
-                  <div className="name">John S.</div>
-                  <div className="tags">
-                    <span className="tag">FLRA</span>
-                    <span className="tag">JHA</span>
+          <div className="portal-demo">
+            <div className="portal-card">
+              <div className="portal-header">
+                <div className="portal-header-left">
+                  <div className="portal-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                  </div>
+                  <div className="portal-header-text">
+                    <h5>Contractor Portal</h5>
+                    <span>SUBCONTRACTOR VIEW</span>
                   </div>
                 </div>
-                <div className="worker-popup-item">
-                  <div className="avatar" style={{ background: "#ef4444" }}></div>
-                  <div className="name">Maria R.</div>
-                  <div className="tags">
-                    <span className="tag">FLRA</span>
-                    <span className="tag">JHA</span>
+                <div className="portal-live">LIVE</div>
+              </div>
+              <div className="portal-content">
+                <div className="portal-section">
+                  <div className="portal-section-header">
+                    <span className="portal-section-title">REQUIRED DOCUMENTS</span>
+                    <span className="portal-section-count">3 PENDING</span>
+                  </div>
+                  <div className="portal-doc-item">
+                    <div className="portal-doc-icon pending">
+                      <FileText size={14} />
+                    </div>
+                    <div className="portal-doc-info">
+                      <span className="portal-doc-name">Site Orientation</span>
+                      <span className="portal-doc-status">DUE IN 2 DAYS</span>
+                    </div>
+                    <div className="portal-doc-action">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="portal-doc-item">
+                    <div className="portal-doc-icon complete">
+                      <Check size={14} />
+                    </div>
+                    <div className="portal-doc-info">
+                      <span className="portal-doc-name">WHMIS Training</span>
+                      <span className="portal-doc-status complete">COMPLETED</span>
+                    </div>
+                  </div>
+                  <div className="portal-doc-item">
+                    <div className="portal-doc-icon pending">
+                      <FileText size={14} />
+                    </div>
+                    <div className="portal-doc-info">
+                      <span className="portal-doc-name">Fall Protection Cert</span>
+                      <span className="portal-doc-status">UPLOAD REQUIRED</span>
+                    </div>
+                    <div className="portal-doc-action">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="17 8 12 3 7 8" />
+                        <line x1="12" y1="3" x2="12" y2="15" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="portal-progress">
+                  <div className="portal-progress-header">
+                    <span>ONBOARDING PROGRESS</span>
+                    <span className="portal-progress-percent">67%</span>
+                  </div>
+                  <div className="portal-progress-bar">
+                    <div className="portal-progress-fill" style={{ width: "67%" }}></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="qr-card">
-              <div className="check">✓</div>
+            <div className="qr-badge">
               <div className="qr-code">
-                <div className="qr-code-inner">
+                <div className="qr-inner">
                   <div></div>
                   <div></div>
                   <div></div>
                   <div></div>
-                  <div style={{ background: "transparent" }}></div>
+                  <div></div>
                   <div></div>
                   <div></div>
                   <div></div>
