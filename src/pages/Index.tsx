@@ -787,12 +787,10 @@ const Index = () => {
               <span className="badge-dot"></span>TRADE PARTNER MANAGEMENT
             </div>
             <h2 className="section-title">
-              One QR code. Zero friction.
-              <br />
-              <span className="muted">Full visibility Into Every Trade.</span>
+              Full visibility Into Every Trade.
             </h2>
             <p className="section-subtitle">
-              In mission-critical construction, "I didn't know the sub wasn't certified" isn't a valid excuse. Gain a real-time window into every trade partner on your site.
+              In mission-critical construction, "I didn't know the sub wasn't certified" isn't a valid excuse.
             </p>
             <div className="trade-feature">
               <div className="trade-feature-icon">
