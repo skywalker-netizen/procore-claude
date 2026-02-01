@@ -787,13 +787,12 @@ const Index = () => {
               <span className="badge-dot"></span>TRADE PARTNER MANAGEMENT
             </div>
             <h2 className="section-title">
-              Zero Barrier
+              One QR code. Zero friction.
               <br />
-              <span className="muted">Portal.</span>
+              <span className="muted">Full visibility Into Every Trade.</span>
             </h2>
-            <p style={{ fontSize: "16px", color: "rgba(255,255,255,.6)", lineHeight: "1.7", marginBottom: "40px" }}>
-              Managing subcontractor safety shouldn't require chasing paper trails or managing hundreds of external
-              logins. Gain a real-time window into every trade partner on your site.
+            <p className="section-subtitle">
+              In mission-critical construction, "I didn't know the sub wasn't certified" isn't a valid excuse. Gain a real-time window into every trade partner on your site.
             </p>
             <div className="trade-feature">
               <div className="trade-feature-icon">
@@ -807,31 +806,32 @@ const Index = () => {
               <div>
                 <h4>Zero Barrier Access</h4>
                 <p>
-                  With the SALUS Contractor Portal, invite and onboard trades. No account registration, no Salus account
-                  required.
+                  Manage your Tier 1 and Tier 2 partners without the "login tax." With SALUS, no paid account required. Onboard trades free with QR codes.
                 </p>
               </div>
             </div>
             <div className="trade-feature">
               <div className="trade-feature-icon">
-                <Zap size={20} />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M9 11l3 3L22 4" />
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                </svg>
               </div>
               <div>
-                <h4>Seamless Orientations</h4>
-                <p>Share site-specific forms —onboard trades free with QR codes.</p>
+                <h4>Accountability</h4>
+                <p>See orientation status, JHA submissions, and corrective actions at the worker level, not just the company level.</p>
               </div>
             </div>
             <div className="trade-feature">
               <div className="trade-feature-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M9 12l2 2 4-4" />
                 </svg>
               </div>
               <div>
-                <h4>Multi-Language Support</h4>
-                <p>Break the language barrier. Forms and notifications in multiple languages.</p>
+                <h4>Win - Win</h4>
+                <p>For GCs, Salus Frictionless Contractor portal means no more black hole. For Trades: Own your data. Feed the GC's requirements and keep a portable safety record that protects your EMR and your bid eligibility.</p>
               </div>
             </div>
           </div>
