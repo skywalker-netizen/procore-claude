@@ -3800,4 +3800,23 @@
     margin-top: 24px;
     align-self: center;
   }
+
+  /* Social proof logos mobile layout */
+  .social-proof-section {
+    padding: 32px 24px;
+  }
+
+  .social-proof-logos {
+    gap: 24px 32px;
+  }
+
+  .social-proof-logos img {
+    height: 24px;
+    max-width: 100px;
+  }
+
+  .social-proof-logos img.logo-small-row {
+    height: 20px;
+    max-width: 80px;
+  }
 }
