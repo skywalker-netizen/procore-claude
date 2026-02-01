@@ -1159,7 +1159,7 @@ const Index = () => {
               <br />
               <span className="muted">Live in a Binder.</span>
             </h2>
-            <p style={{ color: "hsl(var(--gray-600))", marginBottom: "32px" }}>
+            <p className="section-subtitle">
               Track every piece of equipment, from cranes to drills, with a system designed for the realities of the
               field. Move beyond financial job costing into real-time fleet health.
             </p>
@@ -1269,7 +1269,7 @@ const Index = () => {
             <br />
             <span className="muted">Data Flows.</span>
           </h2>
-          <p className="tech-description">
+          <p className="section-subtitle">
             We don't just "link" to Procore; we inhabit it. Every field action has a synchronized office outcome.
           </p>
           <div className="tech-table-wrapper">
@@ -1340,7 +1340,7 @@ const Index = () => {
           <div className="badge">
             <span className="badge-dot"></span>CUSTOMER SUCCESS
           </div>
-          <p className="testimonials-subtitle">
+          <p className="section-subtitle">
             Join 1,200+ companies that have abandoned digital paper for intelligent field safety.
           </p>
           <div className="testimonials-grid">
