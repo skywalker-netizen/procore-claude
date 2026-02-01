@@ -397,185 +397,8 @@ const Index = () => {
       </section>
 
       {/* Unified Platform Section */}
-      <section className="section-padding" style={{ background: "hsl(var(--white))" }}>
-        <div className="section-inner grid-2">
-          <div style={{ position: "relative" }}>
-            <div className="dashboard-card">
-              <div className="dashboard-header">
-                <div className="dashboard-header-left">
-                  <div className="compliance-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="compliance-title">Safety Compliance</div>
-                    <div className="compliance-status">LIVE</div>
-                  </div>
-                </div>
-                <div className="risk-score">
-                  <div className="risk-label">RISK SCORE</div>
-                  <div className="risk-value">LOW</div>
-                </div>
-              </div>
-              <div className="dashboard-grid">
-                <div className="dashboard-widget training-widget">
-                  <div className="training-header">
-                    <div className="training-title">TRAINING MATRIX</div>
-                    <Clock size={14} />
-                  </div>
-                  <div className="training-items">
-                    <div className="training-item">
-                      <div className="training-avatar">
-                        <User size={20} stroke="rgba(255,255,255,.5)" />
-                      </div>
-                      <div className="training-info">
-                        <div className="training-name">Carlos M.</div>
-                        <div className="training-course">CONFINED SPACES</div>
-                      </div>
-                      <div className="training-badge expired">EXPIRED</div>
-                    </div>
-                    <div className="training-item">
-                      <div className="training-avatar">
-                        <User size={20} stroke="rgba(255,255,255,.5)" />
-                      </div>
-                      <div className="training-info">
-                        <div className="training-name">Maria R.</div>
-                        <div className="training-course">SCAFFOLDING</div>
-                      </div>
-                      <div className="training-badge valid">
-                        <Check size={12} />
-                        VALID
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="dashboard-widget asset-widget">
-                  <div className="asset-header">
-                    <div className="asset-title">EQUIPMENT STATUS</div>
-                    <div className="asset-notification">
-                      <Bell size={14} />
-                      <span className="asset-notification-badge">2</span>
-                    </div>
-                  </div>
-                  <div className="asset-list">
-                    <div className="asset-item">
-                      <div className="asset-name">Tower Crane #1</div>
-                      <div className="asset-bar-container">
-                        <div className="asset-bar">
-                          <div className="asset-bar-fill high" style={{ width: "100%" }}></div>
-                        </div>
-                        <div className="asset-percent">100%</div>
-                      </div>
-                    </div>
-                    <div className="asset-item">
-                      <div className="asset-name">Forklift-002</div>
-                      <div className="asset-bar-container">
-                        <div className="asset-bar">
-                          <div className="asset-bar-fill low" style={{ width: "45%" }}></div>
-                        </div>
-                        <div className="asset-percent low">45%</div>
-                      </div>
-                    </div>
-                    <div className="asset-item">
-                      <div className="asset-name">Scissor Lift</div>
-                      <div className="asset-bar-container">
-                        <div className="asset-bar">
-                          <div className="asset-bar-fill high" style={{ width: "92%" }}></div>
-                        </div>
-                        <div className="asset-percent">92%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="dashboard-widget corrective-widget">
-                  <div className="corrective-header">
-                    <div className="corrective-title">CORRECTIVE ACTIONS</div>
-                    <div className="resolution-rate">
-                      RESOLUTION RATE: <strong>98%</strong>
-                    </div>
-                  </div>
-                  <div className="corrective-items">
-                    <div className="corrective-item">
-                      <div className="corrective-avatar">
-                        <User size={20} stroke="rgba(255,255,255,.5)" />
-                      </div>
-                      <div className="corrective-info">
-                        <div className="corrective-name">James R.</div>
-                        <div className="corrective-issue">MISSING GUARDRAIL</div>
-                      </div>
-                      <div className="corrective-badge pending">PENDING</div>
-                    </div>
-                    <div className="corrective-item">
-                      <div className="corrective-avatar">
-                        <User size={20} stroke="rgba(255,255,255,.5)" />
-                      </div>
-                      <div className="corrective-info">
-                        <div className="corrective-name">Sarah W.</div>
-                        <div className="corrective-issue">PPE RE...</div>
-                      </div>
-                      <div className="corrective-badge resolved">
-                        <Check size={12} />
-                        RESOLVED
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="unified-badge">
-                <div className="icon">
-                  <Zap size={20} />
-                </div>
-                <div className="text">
-                  <span>UNIFIED ADVANTAGE</span>
-                  <strong>Zero Blindspots.</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="badge">
-              <span className="badge-dot"></span>STOP THE WORKAROUNDS
-            </div>
-            <h2 className="section-title">
-              Shatter the Silos,
-              <br />
-              <span className="highlight">Reduce risk.</span>
-            </h2>
-            <p className="section-subtitle">
-              Procore handles the project lifecycle.{" "}
-              <span className="highlight">Salus handles the people, the gear, and the compliance heartbeat.</span>
-            </p>
-            <div className="feature-block">
-              <div className="feature-block-icon circle beige">
-                <ScanSearch size={20} />
-              </div>
-              <div>
-                <h4>Unified Platform, Zero Silos</h4>
-                <p>
-                  Centralize everything from training logs to certificates in one live hub. No more risk hidden in
-                  silos.
-                </p>
-              </div>
-            </div>
-            <div className="feature-block">
-              <div className="feature-block-icon circle blue">
-                <MessagesSquare size={20} />
-              </div>
-              <div>
-                <h4>Two-Way Field Feedback</h4>
-                <p>
-                  Close the gap between field reports and office repairs. Our two-way communication ensures every hazard
-                  is addressed.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Field Advantage Section */}
-      <section className="section-padding" style={{ background: "hsl(var(--gray-100))" }}>
+      <section className="section-padding" style={{ background: "hsl(var(--white))" }}>
         <div className="section-inner grid-2">
           <div>
             <div className="badge">
@@ -782,6 +605,184 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stop the Workarounds Section */}
+      <section className="section-padding" style={{ background: "hsl(var(--gray-100))" }}>
+        <div className="section-inner grid-2">
+          <div style={{ position: "relative" }}>
+            <div className="dashboard-card">
+              <div className="dashboard-header">
+                <div className="dashboard-header-left">
+                  <div className="compliance-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="compliance-title">Safety Compliance</div>
+                    <div className="compliance-status">LIVE</div>
+                  </div>
+                </div>
+                <div className="risk-score">
+                  <div className="risk-label">RISK SCORE</div>
+                  <div className="risk-value">LOW</div>
+                </div>
+              </div>
+              <div className="dashboard-grid">
+                <div className="dashboard-widget training-widget">
+                  <div className="training-header">
+                    <div className="training-title">TRAINING MATRIX</div>
+                    <Clock size={14} />
+                  </div>
+                  <div className="training-items">
+                    <div className="training-item">
+                      <div className="training-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
+                      </div>
+                      <div className="training-info">
+                        <div className="training-name">Carlos M.</div>
+                        <div className="training-course">CONFINED SPACES</div>
+                      </div>
+                      <div className="training-badge expired">EXPIRED</div>
+                    </div>
+                    <div className="training-item">
+                      <div className="training-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
+                      </div>
+                      <div className="training-info">
+                        <div className="training-name">Maria R.</div>
+                        <div className="training-course">SCAFFOLDING</div>
+                      </div>
+                      <div className="training-badge valid">
+                        <Check size={12} />
+                        VALID
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="dashboard-widget asset-widget">
+                  <div className="asset-header">
+                    <div className="asset-title">EQUIPMENT STATUS</div>
+                    <div className="asset-notification">
+                      <Bell size={14} />
+                      <span className="asset-notification-badge">2</span>
+                    </div>
+                  </div>
+                  <div className="asset-list">
+                    <div className="asset-item">
+                      <div className="asset-name">Tower Crane #1</div>
+                      <div className="asset-bar-container">
+                        <div className="asset-bar">
+                          <div className="asset-bar-fill high" style={{ width: "100%" }}></div>
+                        </div>
+                        <div className="asset-percent">100%</div>
+                      </div>
+                    </div>
+                    <div className="asset-item">
+                      <div className="asset-name">Forklift-002</div>
+                      <div className="asset-bar-container">
+                        <div className="asset-bar">
+                          <div className="asset-bar-fill low" style={{ width: "45%" }}></div>
+                        </div>
+                        <div className="asset-percent low">45%</div>
+                      </div>
+                    </div>
+                    <div className="asset-item">
+                      <div className="asset-name">Scissor Lift</div>
+                      <div className="asset-bar-container">
+                        <div className="asset-bar">
+                          <div className="asset-bar-fill high" style={{ width: "92%" }}></div>
+                        </div>
+                        <div className="asset-percent">92%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="dashboard-widget corrective-widget">
+                  <div className="corrective-header">
+                    <div className="corrective-title">CORRECTIVE ACTIONS</div>
+                    <div className="resolution-rate">
+                      RESOLUTION RATE: <strong>98%</strong>
+                    </div>
+                  </div>
+                  <div className="corrective-items">
+                    <div className="corrective-item">
+                      <div className="corrective-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
+                      </div>
+                      <div className="corrective-info">
+                        <div className="corrective-name">James R.</div>
+                        <div className="corrective-issue">MISSING GUARDRAIL</div>
+                      </div>
+                      <div className="corrective-badge pending">PENDING</div>
+                    </div>
+                    <div className="corrective-item">
+                      <div className="corrective-avatar">
+                        <User size={20} stroke="rgba(255,255,255,.5)" />
+                      </div>
+                      <div className="corrective-info">
+                        <div className="corrective-name">Sarah W.</div>
+                        <div className="corrective-issue">PPE RE...</div>
+                      </div>
+                      <div className="corrective-badge resolved">
+                        <Check size={12} />
+                        RESOLVED
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="unified-badge">
+                <div className="icon">
+                  <Zap size={20} />
+                </div>
+                <div className="text">
+                  <span>UNIFIED ADVANTAGE</span>
+                  <strong>Zero Blindspots.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="badge">
+              <span className="badge-dot"></span>STOP THE WORKAROUNDS
+            </div>
+            <h2 className="section-title">
+              Shatter the Silos,
+              <br />
+              <span className="highlight">Reduce risk.</span>
+            </h2>
+            <p className="section-subtitle">
+              Procore handles the project lifecycle.{" "}
+              <span className="highlight">Salus handles the people, the gear, and the compliance heartbeat.</span>
+            </p>
+            <div className="feature-block">
+              <div className="feature-block-icon circle beige">
+                <ScanSearch size={20} />
+              </div>
+              <div>
+                <h4>Unified Platform, Zero Silos</h4>
+                <p>
+                  Centralize everything from training logs to certificates in one live hub. No more risk hidden in
+                  silos.
+                </p>
+              </div>
+            </div>
+            <div className="feature-block">
+              <div className="feature-block-icon circle blue">
+                <MessagesSquare size={20} />
+              </div>
+              <div>
+                <h4>Two-Way Field Feedback</h4>
+                <p>
+                  Close the gap between field reports and office repairs. Our two-way communication ensures every hazard
+                  is addressed.
+                </p>
               </div>
             </div>
           </div>
