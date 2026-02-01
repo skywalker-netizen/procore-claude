@@ -615,7 +615,7 @@ const Index = () => {
               <span className="highlight">Reduce risk.</span>
             </h2>
             <p className="section-intro">
-              Certificates, assets, and training live outside of Procore, and fragmented safety data increases risk in the field and time chasing information.
+              Certificates, assets, and training live outside of Procore. Fragmented safety data means increased risk in the field and more time chasing information.
             </p>
             <p className="section-subtitle">
               Procore handles the project lifecycle.{" "}
