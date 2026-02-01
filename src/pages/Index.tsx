@@ -291,7 +291,7 @@ const Index = () => {
             <img src={kearCivilLogo} alt="Kear Civil" />
             <img src={titanElectricalLogo} alt="Titan Electrical Services" />
             <img src={caliberConcreteLogo} alt="Caliber Concrete" />
-            <img src={electricPlusLogo} alt="Electric Plus" />
+            <img src={electricPlusLogo} alt="Electric Plus" style={{ height: '48px' }} />
             <img src={tunistaLogo} alt="Tunista Construction" />
             <img src={generalEnergyLogo} alt="General Energy" className="invert-logo" />
           </div>
