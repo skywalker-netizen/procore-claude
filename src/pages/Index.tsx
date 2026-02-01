@@ -24,6 +24,15 @@ import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
 
+// Company logos
+import kearCivilLogo from "@/assets/logos/kear-civil.png";
+import caliberConcreteLogo from "@/assets/logos/caliber-concrete.avif";
+import titanElectricalLogo from "@/assets/logos/titan-electrical.png";
+import electricPlusLogo from "@/assets/logos/electric-plus.webp";
+import mcfarlandLogo from "@/assets/logos/mcfarland.png";
+import tunistaLogo from "@/assets/logos/tunista.png";
+import turnerLogo from "@/assets/logos/turner.png";
+
 const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
 
 const Index = () => {
@@ -267,6 +276,22 @@ const Index = () => {
                 </p>
               </>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof Section */}
+      <section className="social-proof-section">
+        <div className="social-proof-inner">
+          <h3 className="social-proof-title">These companies use Procore + Salus</h3>
+          <div className="social-proof-logos">
+            <img src={turnerLogo} alt="Turner Construction" />
+            <img src={mcfarlandLogo} alt="McFarland Construction" />
+            <img src={kearCivilLogo} alt="Kear Civil" />
+            <img src={titanElectricalLogo} alt="Titan Electrical Services" />
+            <img src={caliberConcreteLogo} alt="Caliber Concrete" />
+            <img src={electricPlusLogo} alt="Electric Plus" />
+            <img src={tunistaLogo} alt="Tunista Construction" />
           </div>
         </div>
       </section>
