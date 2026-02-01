@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import {
   Link,
   Zap,
@@ -24,7 +24,7 @@ import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
 
-const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/udqz69h/";
+const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
 
 const Index = () => {
   const { toast } = useToast();
