@@ -1272,12 +1272,12 @@
 }
 
 .compliance-core-card {
-  background: hsl(var(--navy));
-  border-radius: 24px;
-  padding: 28px;
-  box-shadow: 0 30px 80px rgba(26, 35, 50, 0.4);
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
   width: 100%;
-  max-width: 480px;
+  max-width: 520px;
 }
 
 .cc-header {
@@ -1312,7 +1312,7 @@
 .cc-title {
   font-size: 20px;
   font-weight: 700;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
   margin: 0;
 }
 
@@ -1346,7 +1346,7 @@
 .cc-risk-label {
   display: block;
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.4);
+  color: hsl(var(--gray-400));
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -1355,12 +1355,12 @@
 .cc-risk-value {
   font-size: 22px;
   font-weight: 700;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
 }
 
 .cc-divider {
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: hsl(var(--gray-300));
   margin-bottom: 20px;
 }
 
@@ -1372,9 +1372,10 @@
 }
 
 .cc-widget {
-  background: rgba(255, 255, 255, 0.05);
+  background: hsl(var(--white));
   border-radius: 14px;
   padding: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .cc-widget-header {
@@ -1399,7 +1400,7 @@
 }
 
 .cc-widget-icon.gray {
-  background: rgba(255, 255, 255, 0.1);
+  background: hsl(var(--gray-100));
   color: #60a5fa;
 }
 
@@ -1411,7 +1412,7 @@
 .cc-widget-title {
   font-size: 11px;
   font-weight: 700;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
   letter-spacing: 0.5px;
   text-transform: uppercase;
   flex: 1;
@@ -1419,7 +1420,7 @@
 
 .cc-widget-date {
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.4);
+  color: hsl(var(--gray-400));
   text-align: right;
   line-height: 1.2;
 }
@@ -1441,7 +1442,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
+  background: hsl(var(--navy));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1460,12 +1461,12 @@
 .cc-worker-name {
   font-size: 13px;
   font-weight: 500;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
 }
 
 .cc-worker-cert {
   font-size: 9px;
-  color: rgba(255, 255, 255, 0.4);
+  color: hsl(var(--gray-400));
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
@@ -1503,7 +1504,7 @@
 
 .cc-asset-name {
   font-size: 12px;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
 }
 
 .cc-asset-percent {
@@ -1521,7 +1522,7 @@
 
 .cc-asset-bar {
   height: 6px;
-  background: rgba(255, 255, 255, 0.1);
+  background: hsl(var(--gray-200));
   border-radius: 100px;
   overflow: hidden;
   margin-bottom: 10px;
@@ -1558,7 +1559,7 @@
 
 .cc-resolution-rate {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.5);
+  color: hsl(var(--gray-400));
   letter-spacing: 0.5px;
 }
 
@@ -1569,7 +1570,7 @@
 }
 
 .cc-corrective-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: hsl(var(--gray-100));
   border-radius: 10px;
   padding: 14px;
   display: flex;
@@ -1613,7 +1614,7 @@
   display: block;
   font-size: 13px;
   font-weight: 600;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
   margin-bottom: 4px;
 }
 
@@ -1626,7 +1627,7 @@
 
 .cc-corrective-issue {
   font-size: 9px;
-  color: rgba(255, 255, 255, 0.4);
+  color: hsl(var(--gray-400));
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
@@ -3264,12 +3265,12 @@
 }
 
 .trade-dashboard-card {
-  background: hsl(var(--white));
-  border-radius: 16px;
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
   width: 100%;
-  max-width: 480px;
-  overflow: hidden;
+  max-width: 520px;
+  overflow: visible;
 }
 
 .trade-dashboard-header {
