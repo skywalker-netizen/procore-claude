@@ -1020,12 +1020,12 @@ const Index = () => {
               <span className="badge-dot"></span>EXECUTIVE LEVEL INSIGHTS
             </div>
             <h2 className="section-title">
-              See the action
+              Your EMR Is a Bid Filter.
               <br />
-              <span className="muted">in the field.</span>
+              <span className="muted">Treat It Like One.</span>
             </h2>
             <p className="section-subtitle">
-              Procore is great for records. <span className="red">But it's where safety data goes to die.</span>
+              An EMR over 1.0 doesn't just raise your premiums—it disqualifies you from the bid list. Procore keeps a record of what happened. Salus shows you why it happened and what's about to happen.
             </p>
             <div className="feature-block">
               <div className="feature-block-icon circle beige">
@@ -1034,8 +1034,7 @@ const Index = () => {
               <div>
                 <h4>No More Manual Tallies</h4>
                 <p>
-                  Stop wasting hours opening hundreds of individual PDFs to manually tally incidents in a spreadsheet.
-                  Salus indexes every field automatically.
+                  Stop opening 500 PDFs to find a trend. SALUS aggregates every field entry into a high-level Risk Profile.
                 </p>
               </div>
             </div>
@@ -1044,10 +1043,9 @@ const Index = () => {
                 <Settings size={20} />
               </div>
               <div>
-                <h4>Lagging Indicators, Instantized</h4>
+                <h4>Track Leading Indicators</h4>
                 <p>
-                  Spot high-risk trends—like a spike in utility strikes across 50 jobsites—the moment they happen. Move
-                  from reactive filing to proactive prevention.
+                  Spot a spike in utility-strike near-misses across your Eastern Region sites before a backhoe hits a fiber line.
                 </p>
               </div>
             </div>
