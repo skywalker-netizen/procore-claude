@@ -493,6 +493,14 @@
   opacity: 1;
 }
 
+.social-proof-logos img.invert-logo {
+  filter: grayscale(100%) invert(1) brightness(0.4);
+}
+
+.social-proof-logos img.invert-logo:hover {
+  filter: invert(1) brightness(0.4);
+}
+
 /* Section Styles */
 .section-padding {
   padding: 100px 48px;

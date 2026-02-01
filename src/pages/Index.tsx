@@ -32,6 +32,7 @@ import electricPlusLogo from "@/assets/logos/electric-plus.webp";
 import mcfarlandLogo from "@/assets/logos/mcfarland.png";
 import tunistaLogo from "@/assets/logos/tunista.png";
 import turnerLogo from "@/assets/logos/turner.png";
+import generalEnergyLogo from "@/assets/logos/general-energy-2.svg";
 
 const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
 
@@ -292,6 +293,7 @@ const Index = () => {
             <img src={caliberConcreteLogo} alt="Caliber Concrete" />
             <img src={electricPlusLogo} alt="Electric Plus" />
             <img src={tunistaLogo} alt="Tunista Construction" />
+            <img src={generalEnergyLogo} alt="General Energy" className="invert-logo" />
           </div>
         </div>
       </section>
