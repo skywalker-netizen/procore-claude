@@ -18,6 +18,7 @@ import {
   ScanSearch,
   MessagesSquare,
   Database,
+  Heart,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
@@ -557,31 +558,32 @@ const Index = () => {
               <span className="badge-dot"></span>THE FIELD ADVANTAGE
             </div>
             <h2 className="section-title">
-              Beyond Static PDFs:
+              You Can't Build a Data Center
               <br />
-              <span className="highlight">Real Time Field Data</span>
+              <span className="highlight">with a Stylus and a PDF.</span>
             </h2>
+            <p className="section-intro">
+              100% compliance from the field, and data you can actually search in the office.
+            </p>
             <div className="numbered-feature">
               <div className="numbered-feature-icon red">
-                <FileText size={20} />
+                <Heart size={20} />
               </div>
               <div>
-                <h4>The "Flat" Form Trap</h4>
+                <h4>Mobile-First. Field-Loved.</h4>
                 <p>
-                  Procore Static fillable PDFs trap your data in a document, making it invisible to analytics and
-                  frustrating for field teams to fill on small screens.
+                  Procore's static PDFs are built for desktops, not for a foreman in a high-vis vest in 100-degree heat. SALUS Smart Forms are mobile-first, logic-driven, and loved by the field. They speak their language. They adapt to their reality while skipping irrelevant sections. If a trench is over 5ft, the "Shoring Evidence" photo becomes mandatory.
                 </p>
               </div>
             </div>
             <div className="numbered-feature">
               <div className="numbered-feature-icon lime">
-                <Zap size={20} />
+                <FileText size={20} />
               </div>
               <div>
-                <h4>Intelligent Dynamic Fields</h4>
+                <h4>The "Flat" Form Trap</h4>
                 <p>
-                  SALUS Forms are mobile-first and smart. They adapt based on user input—requiring photo evidence for
-                  failed checks and skipping irrelevant sections automatically.
+                  Procore Static fillable PDFs trap your data in a document, making it invisible to analytics.
                 </p>
               </div>
             </div>
@@ -590,22 +592,11 @@ const Index = () => {
                 <MessageSquare size={20} />
               </div>
               <div>
-                <h4>Beyond Pass/Fail Context</h4>
+                <h4>Salus forms are litigation-grade.</h4>
                 <p>
-                  Use smart form logic and voice-to-text to capture the "why" behind safety issues. Get rich context
-                  that flat Procore PDFs simply can't provide.
+                  GPS-stamped location proof. Mandatory photo evidence for failed check. Voice-to-text captures the nuance of a hazard, not just a checkbox. The signed PDF still lands in Procore for your records. But now you have context.
                 </p>
               </div>
-            </div>
-            <div className="field-note">
-              <div className="field-note-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="17 8 12 3 7 8" />
-                  <line x1="12" y1="3" x2="12" y2="15" />
-                </svg>
-              </div>
-              <p>Final signed documents still land in Procore for safekeeping.</p>
             </div>
           </div>
         </div>
