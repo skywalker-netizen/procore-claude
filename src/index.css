@@ -581,6 +581,13 @@
   line-height: 1.7;
 }
 
+.section-intro {
+  font-size: 15px;
+  color: hsl(var(--gray-600));
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
 .feature-item {
   display: flex;
   align-items: flex-start;
