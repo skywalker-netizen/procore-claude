@@ -9,6 +9,10 @@
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   :root {
     --navy: 217 32% 15%;
     --navy-dark: 217 35% 12%;

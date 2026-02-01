@@ -115,7 +115,7 @@ const Index = () => {
             <img src={salusLogo} alt="Salus" className="logo-image" />
           </a>
           <nav className="nav">
-            <a href="#" className="btn btn-primary">
+            <a href="#demo-form" className="btn btn-primary">
               BOOK A DEMO
             </a>
           </nav>
@@ -163,7 +163,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="demo-card">
+          <div id="demo-form" className="demo-card">
             {isSubmitted ? (
               <div className="thank-you-screen">
                 <div className="thank-you-icon">
