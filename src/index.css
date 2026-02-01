@@ -448,10 +448,10 @@
 }
 
 .social-proof-title {
-  font-size: 14px;
-  font-weight: 500;
-  color: hsl(var(--gray-400));
-  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: hsl(var(--navy));
   margin-bottom: 32px;
 }
 
