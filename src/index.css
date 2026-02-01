@@ -434,6 +434,50 @@
   margin-bottom: 24px;
 }
 
+/* Social Proof Section */
+.social-proof-section {
+  padding: 48px 48px;
+  background: hsl(var(--white));
+  border-bottom: 1px solid hsl(var(--gray-200));
+}
+
+.social-proof-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-proof-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(var(--gray-400));
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+}
+
+.social-proof-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 56px;
+}
+
+.social-proof-logos img {
+  height: 32px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: opacity 0.2s, filter 0.2s;
+}
+
+.social-proof-logos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
 /* Section Styles */
 .section-padding {
   padding: 100px 48px;
