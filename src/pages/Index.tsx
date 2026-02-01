@@ -278,17 +278,12 @@ const Index = () => {
               <span className="badge-dot"></span>SEAMLESS INTEGRATION
             </div>
             <h2 className="integration-title">
-              Deep Native
+              Two Systems. One Truth.
               <br />
-              <span className="highlight">Connectivity.</span>
+              <span className="highlight">Zero Excuses.</span>
             </h2>
-            <p className="integration-subtitle">
-              Maintain Procore as your system of record while giving the field a tool they actually love to use.
-            </p>
             <p className="integration-description">
-              Our native integration means your safety data isn't siloed—it flows directly into Procore's ecosystem in
-              real-time. Inspections, observations, and personnel data appear exactly where your PMs expect to find
-              them.
+              Deep native sync means Procore stays your system of record. No double entry. No shadow workflows. Inspections, observations, and personnel data appear exactly where your PMs expect to find them. We don't just "link" to Procore; we inhabit it.
             </p>
             <div className="feature-item">
               <div className="feature-icon circle beige">
