@@ -283,7 +283,7 @@ const Index = () => {
               <br />
               <span className="highlight">Zero Excuses.</span>
             </h2>
-            <p className="integration-description">
+            <p className="section-subtitle">
               Deep native sync means Procore stays your system of record. No double entry. No shadow workflows. Inspections, observations, and personnel data appear exactly where your PMs expect to find them. We don't just "link" to Procore; we inhabit it.
             </p>
             <div className="feature-item">
