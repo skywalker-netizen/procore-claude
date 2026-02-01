@@ -834,79 +834,100 @@ const Index = () => {
             </div>
           </div>
           <div className="portal-demo">
-            <div className="portal-card">
-              <div className="portal-header">
-                <div className="portal-header-left">
-                  <div className="portal-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                  </div>
-                  <div className="portal-header-text">
-                    <h5>Contractor Portal</h5>
-                    <span>SUBCONTRACTOR VIEW</span>
-                  </div>
+            {/* Main Compliance Dashboard */}
+            <div className="compliance-dashboard">
+              <div className="compliance-dashboard-header">
+                <div className="compliance-dashboard-logo">
+                  <div className="compliance-logo-icon"></div>
+                  <span className="compliance-logo-text">SALUS</span>
                 </div>
-                <div className="portal-live">LIVE</div>
+                <div className="compliance-dashboard-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
+                <div className="compliance-dashboard-icons">
+                  <div className="compliance-icon-circle">?</div>
+                  <Bell size={16} />
+                  <div className="compliance-avatar-circle"></div>
+                </div>
               </div>
-              <div className="portal-content">
-                <div className="portal-section">
-                  <div className="portal-section-header">
-                    <span className="portal-section-title">REQUIRED DOCUMENTS</span>
-                    <span className="portal-section-count">3 PENDING</span>
-                  </div>
-                  <div className="portal-doc-item">
-                    <div className="portal-doc-icon pending">
-                      <FileText size={14} />
-                    </div>
-                    <div className="portal-doc-info">
-                      <span className="portal-doc-name">Site Orientation</span>
-                      <span className="portal-doc-status">DUE IN 2 DAYS</span>
-                    </div>
-                    <div className="portal-doc-action">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <polyline points="12 5 19 12 12 19" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="portal-doc-item">
-                    <div className="portal-doc-icon complete">
-                      <Check size={14} />
-                    </div>
-                    <div className="portal-doc-info">
-                      <span className="portal-doc-name">WHMIS Training</span>
-                      <span className="portal-doc-status complete">COMPLETED</span>
-                    </div>
-                  </div>
-                  <div className="portal-doc-item">
-                    <div className="portal-doc-icon pending">
-                      <FileText size={14} />
-                    </div>
-                    <div className="portal-doc-info">
-                      <span className="portal-doc-name">Fall Protection Cert</span>
-                      <span className="portal-doc-status">UPLOAD REQUIRED</span>
-                    </div>
-                    <div className="portal-doc-action">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                        <polyline points="17 8 12 3 7 8" />
-                        <line x1="12" y1="3" x2="12" y2="15" />
-                      </svg>
-                    </div>
-                  </div>
+              <div className="compliance-section-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
+              <div className="compliance-table">
+                <div className="compliance-table-header">
+                  <span>COMPANY NAME</span>
+                  <span>STATUS</span>
+                  <span>WORKERS ON SITE</span>
+                  <span>LAST JHA SUBMISSION</span>
                 </div>
-                <div className="portal-progress">
-                  <div className="portal-progress-header">
-                    <span>ONBOARDING PROGRESS</span>
-                    <span className="portal-progress-percent">67%</span>
-                  </div>
-                  <div className="portal-progress-bar">
-                    <div className="portal-progress-fill" style={{ width: "67%" }}></div>
-                  </div>
+                <div className="compliance-table-row">
+                  <span className="company-name">Steel Works Inc.</span>
+                  <span className="status orientated"><span className="status-dot"></span>Orientated</span>
+                  <span className="workers-count">12</span>
+                  <span className="last-jha">Today, 8:30 AM</span>
+                </div>
+                <div className="compliance-table-row">
+                  <span className="company-name">Apex Plumbing</span>
+                  <span className="status in-progress"><span className="status-dot"></span>In Progress</span>
+                  <span className="workers-count"></span>
+                  <span className="last-jha"></span>
+                </div>
+                <div className="compliance-table-row">
+                  <span className="company-name">City Electrical</span>
+                  <span className="status in-progress"><span className="status-dot"></span>In Progress</span>
+                  <span className="workers-count"></span>
+                  <span className="last-jha"></span>
+                </div>
+                <div className="compliance-table-row">
+                  <span className="company-name">Concrete Solutions</span>
+                  <span className="status orientated"><span className="status-dot"></span>Orientated</span>
+                  <span className="workers-count"></span>
+                  <span className="last-jha"></span>
+                </div>
+                <div className="compliance-table-row">
+                  <span className="company-name">Summit Roofing</span>
+                  <span className="status active"><span className="status-dot"></span>Active</span>
+                  <span className="workers-count"></span>
+                  <span className="last-jha"></span>
                 </div>
               </div>
             </div>
+
+            {/* Worker Detail Card */}
+            <div className="worker-detail-card">
+              <div className="worker-detail-header">
+                <span className="back-arrow">←</span>
+                <span className="worker-company-name">Steel Works Inc.</span>
+              </div>
+              <div className="worker-detail-content">
+                <div className="progress-score-section">
+                  <span className="progress-score-label">PROGRESS SCORE</span>
+                  <div className="progress-score-bar">
+                    <div className="progress-score-fill"></div>
+                  </div>
+                </div>
+                <div className="worker-list">
+                  <div className="worker-item">
+                    <div className="worker-avatar">
+                      <User size={20} />
+                    </div>
+                    <span className="worker-name">John S.</span>
+                    <span className="flra-badge">FLRA</span>
+                  </div>
+                  <div className="worker-item">
+                    <div className="worker-avatar female">
+                      <User size={20} />
+                    </div>
+                    <span className="worker-name">Maria R.</span>
+                    <span className="flra-badge">FLRA</span>
+                  </div>
+                </div>
+                <div className="pending-review-row">
+                  <span className="pending-review-text">Pending Review</span>
+                </div>
+              </div>
+              <div className="check-badge">
+                <Check size={16} />
+              </div>
+            </div>
+
+            {/* QR Code Badge */}
             <div className="qr-badge">
               <div className="qr-code">
                 <div className="qr-inner">
@@ -921,8 +942,6 @@ const Index = () => {
                   <div></div>
                 </div>
               </div>
-              <h5>Scan to Start</h5>
-              <p>PORTAL V2.4 ACTIVE</p>
             </div>
           </div>
         </div>
