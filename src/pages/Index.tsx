@@ -594,7 +594,7 @@ const Index = () => {
               <div>
                 <h4>Salus forms are litigation-grade.</h4>
                 <p>
-                  GPS-stamped location proof. Mandatory photo evidence for failed check. Voice-to-text captures the nuance of a hazard, not just a checkbox. The signed PDF still lands in Procore for your records. But now you have context.
+                  GPS-stamped location proof. Mandatory photo evidence for failed check. Voice-to-text captures the nuance of a hazard, not just a checkbox. The signed PDF still lands in Procore for your records, but now you have context.
                 </p>
               </div>
             </div>
