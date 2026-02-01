@@ -3801,22 +3801,27 @@
     align-self: center;
   }
 
-  /* Social proof logos mobile layout */
+  /* Social proof logos mobile layout - 3 columns max */
   .social-proof-section {
     padding: 32px 24px;
   }
 
   .social-proof-logos {
-    gap: 24px 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 16px;
+    justify-items: center;
+    align-items: center;
   }
 
   .social-proof-logos img {
-    height: 24px;
-    max-width: 100px;
+    height: auto;
+    max-height: 32px;
+    max-width: 100%;
+    width: auto;
   }
 
   .social-proof-logos img.logo-small-row {
-    height: 20px;
-    max-width: 80px;
+    max-height: 28px;
   }
 }
