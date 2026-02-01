@@ -614,6 +614,9 @@ const Index = () => {
               <br />
               <span className="highlight">Reduce risk.</span>
             </h2>
+            <p className="section-intro">
+              Certificates, assets, and training live outside of Procore, and fragmented safety data increases risk in the field and time chasing information.
+            </p>
             <p className="section-subtitle">
               Procore handles the project lifecycle.{" "}
               <span className="highlight">Salus handles the people, the gear, and the compliance heartbeat.</span>
