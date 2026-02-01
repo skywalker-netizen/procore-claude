@@ -139,7 +139,7 @@ const Index = () => {
               Your Procore dashboard says "compliant." But its safety module? <em>Field teams call it "click hell."</em> Forms get pencil-whipped. Field Data goes to Procore to die.
             </p>
             <p className="hero-description">
-              Your System of Record is only as good as your System of Reality. Procore manages the build, but it leaves you blind to the trench. SALUS feeds Procore with the high-fidelity field intelligence required for mission-critical environments, ensuring your mission-critical delivery stays on track and out of the headlines.
+              Your System of Record is only as good as your System of Reality. Procore manages the build. SALUS feeds Procore with a live feed of high-fidelity field intelligence, ensuring your mission-critical delivery stays on track and out of the headlines.
             </p>
             <div className="trust-badges">
               <div className="trust-badge">
