@@ -646,7 +646,7 @@ const Index = () => {
               <div>
                 <h4>Mobile-First. Field-Loved.</h4>
                 <p>
-                  Procore's static PDFs are built for desktops, not for a foreman in a high-vis vest in 100-degree heat. SALUS Smart Forms are mobile-first, logic-driven, and loved by the field. They speak their language. They adapt to their reality while skipping irrelevant sections. If a trench is over 5ft, the "Shoring Evidence" photo becomes mandatory.
+                  Procore's static PDFs are built for desktops, not for a foreman in a high-vis vest in 100-degree heat. SALUS Smart Forms are mobile-first, logic-driven, and loved by the field. They speak their language and adapt to their reality. If a trench is over 5ft, the "Shoring Evidence" photo becomes mandatory.
                 </p>
               </div>
             </div>
