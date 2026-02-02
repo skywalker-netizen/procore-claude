@@ -662,6 +662,14 @@ const Index = () => {
                 </p>
               </div>
             </div>
+            <div className="executive-quote">
+              <blockquote>
+                "That first week is so important when you put a new user on a platform. Can they use it, and does everything work the way you're saying it's going to work? If it doesn't, you are going to struggle for the next two years to get them back involved. That was the biggest hurdle that we got over quite easily with SALUS."
+              </blockquote>
+              <cite>
+                <strong>Dennis Rumshas</strong>, Vice President of Safety and Risk Management, McShane Construction
+              </cite>
+            </div>
           </div>
         </div>
       </section>
