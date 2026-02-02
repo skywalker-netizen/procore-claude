@@ -337,9 +337,7 @@ const Index = () => {
               <span className="badge-dot"></span>SEAMLESS INTEGRATION
             </div>
             <h2 className="integration-title">
-              Two Systems. One Truth.
-              <br />
-              <span className="highlight">Zero Excuses.</span>
+              Two Systems. One Truth. <span className="highlight">Zero Excuses.</span>
             </h2>
             <p className="section-subtitle">
               Deep native sync means Procore stays your system of record. No double entry. No shadow workflows. Inspections, observations, and personnel data appear exactly where your PMs expect to find them. We don't just "link" to Procore; we inhabit it.
@@ -616,9 +614,7 @@ const Index = () => {
               <span className="badge-dot"></span>THE FIELD ADVANTAGE
             </div>
             <h2 className="section-title">
-              You Can't Build a Data Center
-              <br />
-              <span className="highlight">with a Stylus and a PDF.</span>
+              You Can't Build a Data Center <span className="highlight">with a Stylus and a PDF.</span>
             </h2>
             <p className="section-subtitle">
               100% compliance from the field, and data you can actually search in the office.
