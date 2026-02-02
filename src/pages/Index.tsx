@@ -907,6 +907,14 @@ const Index = () => {
                 <p>For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.</p>
               </div>
             </div>
+            <div className="executive-quote dark">
+              <blockquote>
+                "You could get on a plane and fly to all of these jobs to see what they actually look like, or you can create a system where people bring jobs to life in front of your eyes."
+              </blockquote>
+              <cite>
+                <strong>Dennis Rumshas</strong>, Vice President of Safety and Risk Management, McShane Construction
+              </cite>
+            </div>
           </div>
           <div className="portal-demo">
             {/* Main Compliance Dashboard */}
