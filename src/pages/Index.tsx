@@ -153,13 +153,13 @@ const Index = () => {
               <span className="highlight">Brain.</span>
             </h1>
             <p className="hero-subtitle">
-              Your Procore dashboard says "compliant." But its safety module? <em>Field teams call it "click hell."</em>{" "}
-              Forms get pencil-whipped. Field Data goes to Procore to die.
+              Procore dashboard says "compliant." But is it the truth?
+              <br />
+              <em>Field teams call its safety module "click hell."</em> Forms get pencil-whipped. Your System of Record is only as good as your System of Reality.
             </p>
             <p className="hero-description">
-              Your System of Record is only as good as your System of Reality. SALUS feeds Procore with a live feed of
-              high-fidelity field intelligence, ensuring your mission-critical delivery stays on track and out of the
-              headlines. Zero Incidents. Zero Downtime. Zero Blindspots.
+              SALUS feeds Procore with a live feed of high-fidelity field intelligence, ensuring your mission-critical
+              delivery stays on track and out of the headlines. Zero Incidents. Zero Downtime. Zero Blindspots.
             </p>
             <div className="trust-badges">
               <div className="trust-badge">
