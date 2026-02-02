@@ -365,6 +365,14 @@ const Index = () => {
                 </p>
               </div>
             </div>
+            <div className="executive-quote">
+              <blockquote>
+                "Procore is our master solution that we use to manage all our sites. All SALUS log submissions are auto-uploaded to Procore's document section. If you're done wasting time searching, SALUS is the solution."
+              </blockquote>
+              <cite>
+                <strong>Justin Itule</strong>, Field Integration Manager, Willmeng Construction
+              </cite>
+            </div>
           </div>
           <div className="integration-diagram">
             <div className="diagram-header">
