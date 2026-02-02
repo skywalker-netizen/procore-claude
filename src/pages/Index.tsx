@@ -35,6 +35,7 @@ import tunistaLogo from "@/assets/logos/tunista.png";
 import turnerLogo from "@/assets/logos/turner.png";
 import generalEnergyLogo from "@/assets/logos/general-energy-2.svg";
 import g2Logo from "@/assets/logos/g2-logo.svg";
+import willmengLogo from "@/assets/logos/willmeng.png";
 
 const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
 
@@ -325,6 +326,7 @@ const Index = () => {
             <img src={electricPlusLogo} alt="Electric Plus" style={{ height: '48px' }} />
             <img src={tunistaLogo} alt="Tunista Construction" className="logo-small-row" />
             <img src={generalEnergyLogo} alt="General Energy" className="invert-logo logo-small-row" />
+            <img src={willmengLogo} alt="Willmeng Construction" />
           </div>
         </div>
       </section>
