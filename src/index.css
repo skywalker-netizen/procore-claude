@@ -3882,26 +3882,37 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 16px;
+    background: transparent;
   }
 
   .phone-comparison {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 16px;
+    gap: 24px;
     min-width: max-content;
-    padding: 0 8px;
+    padding: 16px;
+    background: transparent;
   }
   
   .phone-comparison .phone-wrapper {
     flex: 0 0 auto;
-    width: 200px;
+    width: 280px;
     max-width: none;
   }
   
   .phone-comparison .phone-mockup {
     width: 100%;
     max-width: none;
+    background: hsl(var(--white));
+  }
+
+  .phone-comparison .phone-screen {
+    background: hsl(var(--white));
+  }
+
+  .phone-comparison .phone-screen.dark {
+    background: hsl(var(--navy-dark));
   }
   
   /* Field Advantage section: swap order so copy appears before phone mockup */
