@@ -176,7 +176,7 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Social Proof Stats */}
+            {/* G2 Badge */}
             <div className="hero-proof-section">
               <div className="g2-badge">
                 <img src={g2Logo} alt="G2" className="g2-logo" />
@@ -188,20 +188,6 @@ const Index = () => {
                   <Star size={16} fill="#F5A623" stroke="#F5A623" />
                 </div>
                 <span className="rating-text">4.8 stars</span>
-              </div>
-              <div className="hero-stats">
-                <div className="hero-stat">
-                  <span className="stat-number">70,000+</span>
-                  <span className="stat-label">Projects Globally</span>
-                </div>
-                <div className="hero-stat">
-                  <span className="stat-number">250,000+</span>
-                  <span className="stat-label">Field Level Users</span>
-                </div>
-                <div className="hero-stat">
-                  <span className="stat-number">9,100+</span>
-                  <span className="stat-label">Companies Protected</span>
-                </div>
               </div>
             </div>
           </div>
@@ -327,6 +313,20 @@ const Index = () => {
             <img src={tunistaLogo} alt="Tunista Construction" className="logo-small-row" />
             <img src={generalEnergyLogo} alt="General Energy" className="invert-logo logo-small-row" />
             <img src={willmengLogo} alt="Willmeng Construction" />
+          </div>
+          <div className="social-proof-stats">
+            <div className="social-proof-stat">
+              <span className="stat-number">70,000+</span>
+              <span className="stat-label">Projects Globally</span>
+            </div>
+            <div className="social-proof-stat">
+              <span className="stat-number">250,000+</span>
+              <span className="stat-label">Field Level Users</span>
+            </div>
+            <div className="social-proof-stat">
+              <span className="stat-number">9,100+</span>
+              <span className="stat-label">Companies Protected</span>
+            </div>
           </div>
         </div>
       </section>
