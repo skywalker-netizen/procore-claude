@@ -1152,6 +1152,14 @@ const Index = () => {
               </div>
               <button className="generate-btn">GENERATE INSIGHTS ⚡</button>
             </div>
+            <div className="executive-quote">
+              <blockquote>
+                "GCs talk safety and will say they have a safety plan. Willmeng can now show the results of our safety initiatives to owners. That has helped us win a multitude of new jobs."
+              </blockquote>
+              <cite>
+                <strong>Justin Itule</strong>, Field Integration Manager, Willmeng Construction
+              </cite>
+            </div>
           </div>
           <div>
             <div className="badge">
