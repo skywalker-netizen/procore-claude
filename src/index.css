@@ -3701,10 +3701,22 @@
     order: 2;
   }
 
-  /* Phone comparison (Field Advantage) - infographic is first in HTML, needs to go second on mobile */
+  /* Phone comparison (Field Advantage) - keep side by side on mobile */
   .phone-comparison {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .phone-comparison .phone-wrapper {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .phone-comparison .phone-mockup {
+    width: 100%;
+    max-width: none;
   }
   
   /* Field Advantage section: swap order so copy appears before phone mockup */
