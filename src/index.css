@@ -622,7 +622,7 @@
 }
 
 .section-subtitle {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.6;
   margin-bottom: 40px;
   color: hsl(var(--navy));
@@ -690,7 +690,7 @@
 }
 
 .feature-block p {
-  font-size: 14px;
+  font-size: 15px;
   color: hsl(var(--gray-600));
   line-height: 1.6;
 }
@@ -794,7 +794,7 @@
 }
 
 .feature-text p {
-  font-size: 14px;
+  font-size: 15px;
   color: hsl(var(--gray-600));
   line-height: 1.6;
 }
@@ -1916,7 +1916,7 @@
 }
 
 .trade-feature p {
-  font-size: 14px;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.5;
 }
@@ -2594,7 +2594,7 @@
 }
 
 .asset-feature p {
-  font-size: 14px;
+  font-size: 15px;
   color: hsl(var(--gray-600));
   line-height: 1.6;
 }
@@ -2788,7 +2788,7 @@
 }
 
 .tech-description {
-  font-size: 18px;
+  font-size: 19px;
   color: hsl(var(--gray-600));
   margin-bottom: 48px;
 }
@@ -2884,7 +2884,7 @@
 }
 
 .testimonials-subtitle {
-  font-size: 18px;
+  font-size: 19px;
   color: hsl(var(--gray-600));
   margin-bottom: 48px;
 }
@@ -3047,7 +3047,7 @@
 }
 
 .numbered-feature p {
-  font-size: 14px;
+  font-size: 15px;
   color: hsl(var(--gray-600));
   line-height: 1.6;
 }
