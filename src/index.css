@@ -2223,6 +2223,13 @@
   letter-spacing: 0.5px;
 }
 
+/* Analytics Column */
+.analytics-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 /* Analytics Card */
 .analytics-card {
   background: hsl(var(--white));

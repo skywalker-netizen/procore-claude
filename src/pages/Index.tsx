@@ -1074,7 +1074,8 @@ const Index = () => {
         style={{ background: "linear-gradient(180deg, hsl(var(--gray-100)) 0%, hsl(var(--white)) 100%)" }}
       >
         <div className="section-inner grid-2">
-          <div className="analytics-card">
+          <div className="analytics-column">
+            <div className="analytics-card">
             <div className="analytics-header">
               <div className="analytics-logo">
                 <div className="icon">
@@ -1152,14 +1153,15 @@ const Index = () => {
               </div>
               <button className="generate-btn">GENERATE INSIGHTS ⚡</button>
             </div>
-            <div className="executive-quote">
-              <blockquote>
-                "GCs talk safety and will say they have a safety plan. Willmeng can now show the results of our safety initiatives to owners. That has helped us win a multitude of new jobs."
-              </blockquote>
-              <cite>
-                <strong>Justin Itule</strong>, Field Integration Manager, Willmeng Construction
-              </cite>
-            </div>
+          </div>
+          <div className="executive-quote">
+            <blockquote>
+              "GCs talk safety and will say they have a safety plan. Willmeng can now show the results of our safety initiatives to owners. That has helped us win a multitude of new jobs."
+            </blockquote>
+            <cite>
+              <strong>Justin Itule</strong>, Field Integration Manager, Willmeng Construction
+            </cite>
+          </div>
           </div>
           <div>
             <div className="badge">
