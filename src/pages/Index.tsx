@@ -315,7 +315,7 @@ const Index = () => {
       {/* Social Proof Section */}
       <section className="social-proof-section">
         <div className="social-proof-inner">
-          <h3 className="social-proof-title">These companies use Procore + Salus</h3>
+          <h3 className="social-proof-title">Leaders use Procore + Salus</h3>
           <div className="social-proof-logos">
             <img src={turnerLogo} alt="Turner Construction" />
             <img src={mcfarlandLogo} alt="McFarland Construction" />
