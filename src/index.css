@@ -296,17 +296,9 @@
 }
 
 .g2-logo {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  background: hsl(var(--white));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-  color: #FF492C;
 }
 
 .g2-badge .stars {
@@ -502,7 +494,7 @@
 
 /* Social Proof Section */
 .social-proof-section {
-  padding: 48px 48px;
+  padding: 24px 48px 48px;
   background: hsl(var(--white));
   border-bottom: 1px solid hsl(var(--gray-200));
 }

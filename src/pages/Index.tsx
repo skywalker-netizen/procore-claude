@@ -178,13 +178,13 @@ const Index = () => {
             {/* Social Proof Stats */}
             <div className="hero-proof-section">
               <div className="g2-badge">
-                <span className="g2-logo">G2</span>
+                <img src={g2Logo} alt="G2" className="g2-logo" />
                 <div className="stars">
-                  <Star size={16} fill="hsl(var(--lime))" stroke="hsl(var(--lime))" />
-                  <Star size={16} fill="hsl(var(--lime))" stroke="hsl(var(--lime))" />
-                  <Star size={16} fill="hsl(var(--lime))" stroke="hsl(var(--lime))" />
-                  <Star size={16} fill="hsl(var(--lime))" stroke="hsl(var(--lime))" />
-                  <Star size={16} fill="hsl(var(--lime))" stroke="hsl(var(--lime))" />
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
                 </div>
                 <span className="rating-text">4.8 stars</span>
               </div>
