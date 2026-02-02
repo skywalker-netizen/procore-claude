@@ -565,6 +565,7 @@
   justify-content: center;
   gap: 64px;
   margin-top: 48px;
+  padding: 0 16px;
 }
 
 .social-proof-stat {
@@ -572,6 +573,8 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 .social-proof-stat .stat-number {
@@ -579,11 +582,13 @@
   font-size: 36px;
   font-weight: 900;
   color: hsl(var(--navy));
+  white-space: nowrap;
 }
 
 .social-proof-stat .stat-label {
   font-size: 14px;
   color: hsl(var(--gray-500));
+  text-align: center;
 }
 
 /* Section Styles */
@@ -2544,6 +2549,19 @@
   color: hsl(var(--white));
 }
 
+/* Portal Column */
+.portal-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Trade Content */
+.trade-content {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Asset Features */
 .asset-features {
   display: grid;
@@ -3847,17 +3865,38 @@
     order: 2;
   }
 
-  /* Phone comparison (Field Advantage) - keep side by side on mobile */
+  /* Move executive quote below diagram in integration section */
+  .integration-content .executive-quote {
+    order: 3;
+  }
+
+  /* Field Advantage section - horizontal scroll container */
+  .field-advantage-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .phone-comparison-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 16px;
+  }
+
   .phone-comparison {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
-    gap: 12px;
+    justify-content: flex-start;
+    gap: 16px;
+    min-width: max-content;
+    padding: 0 8px;
   }
   
   .phone-comparison .phone-wrapper {
-    flex: 1;
-    max-width: 50%;
+    flex: 0 0 auto;
+    width: 200px;
+    max-width: none;
   }
   
   .phone-comparison .phone-mockup {
@@ -3866,12 +3905,17 @@
   }
   
   /* Field Advantage section: swap order so copy appears before phone mockup */
-  .grid-2:has(.phone-comparison) > div:first-child {
+  .grid-2:has(.field-advantage-column) > div:first-child {
     order: 2;
   }
   
-  .grid-2:has(.phone-comparison) > div:last-child {
+  .grid-2:has(.field-advantage-column) > div:last-child {
     order: 1;
+  }
+
+  /* Move quote below phone mockups in field advantage */
+  .field-advantage-column .executive-quote {
+    order: 3;
   }
 
   /* Compliance Core card (Stop the Workarounds) */
@@ -3885,17 +3929,34 @@
     order: 2;
   }
 
+  /* Trade partner quote styling */
+  .dark-section .trade-content .executive-quote {
+    order: 10;
+    margin-top: 24px;
+  }
+
   /* Analytics card (Executive Level) - infographic is first in HTML, needs to go second on mobile */
   .analytics-card {
     max-width: 100%;
   }
   
+  /* Analytics column - quote below analytics card */
+  .analytics-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .analytics-column .executive-quote {
+    order: 2;
+    margin-top: 24px;
+  }
+  
   /* Executive Level section: swap order so copy appears before analytics card */
-  .grid-2:has(.analytics-card) > div:first-child {
+  .grid-2:has(.analytics-column) > div:first-child {
     order: 2;
   }
   
-  .grid-2:has(.analytics-card) > div:last-child {
+  .grid-2:has(.analytics-column) > div:last-child {
     order: 1;
   }
 
@@ -3942,8 +4003,22 @@
     min-width: 600px;
   }
 
+  /* Testimonials - horizontal scroll on mobile */
   .testimonials-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 16px;
+    margin: 0 -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .testimonials-grid .testimonial-card {
+    flex: 0 0 85%;
+    min-width: 280px;
   }
 
   .asset-features {
@@ -3957,6 +4032,21 @@
     right: auto;
     margin-top: 24px;
     align-self: center;
+  }
+
+  /* Social proof stats - prevent cutoff */
+  .social-proof-stats {
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-proof-stat .stat-number {
+    font-size: 28px;
+  }
+
+  .social-proof-stat .stat-label {
+    font-size: 12px;
   }
 
   /* Social proof logos mobile layout - 3 columns max, last row centered */
@@ -3982,5 +4072,11 @@
 
   .social-proof-logos img.logo-small-row {
     max-height: 28px;
+  }
+
+  /* CTA section form modal */
+  .cta-section .demo-card {
+    margin-top: 32px;
+    max-width: 400px;
   }
 }
