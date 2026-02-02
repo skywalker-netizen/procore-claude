@@ -25,6 +25,7 @@ import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
 import fieldBackground from "@/assets/field-background.png";
+import techSpecsBackground from "@/assets/tech-specs-background.png";
 
 // Company logos
 import kearCivilLogo from "@/assets/logos/kear-civil.png";
@@ -1406,7 +1407,7 @@ const Index = () => {
       </section>
 
       {/* Tech Spec Section */}
-      <section className="section-padding tech-section" style={{ background: "hsl(var(--white))" }}>
+      <section className="tech-section" style={{ backgroundImage: `url(${techSpecsBackground})` }}>
         <div className="section-inner">
           <div className="badge">
             <span className="badge-dot"></span>TECHNICAL SPECIFICATION
