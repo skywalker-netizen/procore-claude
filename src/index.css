@@ -179,12 +179,11 @@
   box-shadow: 0 2px 12px hsl(var(--lime) / 0.4);
 }
 
-/* Hero Section - Industrial with Background */
+/* Hero Section - Industrial */
 .hero {
   padding: 140px 48px 80px;
-  background: hsl(var(--navy));
+  background: hsl(var(--white));
   position: relative;
-  overflow: hidden;
 }
 
 .hero::before {
@@ -194,22 +193,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/images/hero-background.png');
-  background-size: cover;
-  background-position: center;
+  background-image: 
+    linear-gradient(hsl(var(--concrete-dark) / 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--concrete-dark) / 0.3) 1px, transparent 1px);
+  background-size: 40px 40px;
   pointer-events: none;
-  opacity: 0.35;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, hsl(var(--navy) / 0.85) 0%, hsl(var(--asphalt) / 0.7) 100%);
-  pointer-events: none;
+  opacity: 0.5;
 }
 
 .hero-inner {
@@ -260,11 +249,10 @@
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin-bottom: 24px;
-  color: hsl(var(--white));
 }
 
 .hero-title .highlight {
-  color: hsl(var(--steel));
+  color: hsl(var(--gray-400));
   display: block;
 }
 
@@ -273,19 +261,18 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   margin-bottom: 24px;
-  color: hsl(var(--concrete));
 }
 
 .hero-subtitle em {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   font-weight: 400;
-  color: hsl(var(--concrete-dark));
+  color: hsl(var(--gray-600));
 }
 
 .hero-description {
   font-size: 16px;
-  color: hsl(var(--concrete-dark));
+  color: hsl(var(--gray-600));
   margin-bottom: 48px;
   max-width: 480px;
 }
@@ -313,7 +300,7 @@
 }
 
 .trust-icon.navy {
-  background: hsl(var(--asphalt));
+  background: hsl(var(--navy));
   color: hsl(var(--concrete));
   border-color: hsl(var(--steel-dark));
 }
@@ -338,12 +325,12 @@
   font-weight: 700;
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
   letter-spacing: 0.3px;
 }
 
 .trust-text span {
-  color: hsl(var(--concrete-dark));
+  color: hsl(var(--steel));
   font-family: 'JetBrains Mono', monospace;
   font-size: 9px;
   letter-spacing: 1px;
@@ -362,11 +349,11 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: hsl(var(--asphalt));
+  background: hsl(var(--concrete));
   border-radius: 4px;
   padding: 8px 16px;
   width: fit-content;
-  border: 1px solid hsl(var(--steel-dark));
+  border: 1px solid hsl(var(--concrete-dark));
 }
 
 .g2-logo {
@@ -381,7 +368,7 @@
 }
 
 .g2-badge .rating-text {
-  color: hsl(var(--concrete));
+  color: hsl(var(--steel));
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
   font-weight: 600;
@@ -402,14 +389,14 @@
   font-family: 'JetBrains Mono', monospace;
   font-size: 28px;
   font-weight: 700;
-  color: hsl(var(--white));
+  color: hsl(var(--navy));
   letter-spacing: -0.02em;
 }
 
 .hero-stat .stat-label {
   font-size: 12px;
   font-family: 'JetBrains Mono', monospace;
-  color: hsl(var(--concrete-dark));
+  color: hsl(var(--steel));
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
