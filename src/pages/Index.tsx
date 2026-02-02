@@ -203,8 +203,7 @@ const Index = () => {
                   integration demo.
                 </p>
                 <p className="form-footer">
-                  Join GCs like <a href="#">Broccolini</a> and <a href="#">Willmeng</a> who trust SALUS to capture field
-                  data for their Procore instance.
+                  Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to capture field data for their Procore instance.
                 </p>
               </div>
             ) : (
@@ -290,8 +289,7 @@ const Index = () => {
                   </button>
                 </form>
                 <p className="form-footer">
-                  Join GCs like <a href="#">Broccolini</a> and <a href="#">Willmeng</a> who trust SALUS to capture field
-                  data for their Procore instance.
+                  Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to capture field data for their Procore instance.
                 </p>
               </>
             )}
