@@ -43,6 +43,7 @@ const Index = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showCtaForm, setShowCtaForm] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -466,7 +467,8 @@ const Index = () => {
       <section className="section-padding" style={{ background: "hsl(var(--white))" }}>
         <div className="section-inner grid-2">
           <div className="field-advantage-column">
-            <div className="phone-comparison">
+            <div className="phone-comparison-wrapper">
+              <div className="phone-comparison">
             <div className="phone-wrapper">
               <div className="phone-label procore">PROCORE STATIC PDF</div>
               <div className="phone-mockup">
@@ -618,6 +620,7 @@ const Index = () => {
               </div>
             </div>
           </div>
+            </div>
             <div className="executive-quote">
               <blockquote>
                 "That first week is so important when you put a new user on a platform. Can they use it, and does everything work the way you're saying it's going to work? If it doesn't, you are going to struggle for the next two years to get them back involved. That was the biggest hurdle that we got over quite easily with SALUS."
@@ -865,7 +868,7 @@ const Index = () => {
       {/* Trade Partner Section */}
       <section className="section-padding dark-section">
         <div className="section-inner grid-2">
-          <div>
+          <div className="trade-content">
             <div className="badge">
               <span className="badge-dot"></span>TRADE PARTNER MANAGEMENT
             </div>
@@ -915,16 +918,9 @@ const Index = () => {
                 <p>For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.</p>
               </div>
             </div>
-            <div className="executive-quote dark">
-              <blockquote>
-                "You could get on a plane and fly to all of these jobs to see what they actually look like, or you can create a system where people bring jobs to life in front of your eyes."
-              </blockquote>
-              <cite>
-                <strong>Dennis Rumshas</strong>, Vice President of Safety and Risk Management, McShane Construction
-              </cite>
-            </div>
           </div>
-          <div className="portal-demo">
+          <div className="portal-column">
+            <div className="portal-demo">
             {/* Main Compliance Dashboard */}
             <div className="compliance-dashboard">
               <div className="compliance-dashboard-header">
@@ -1087,6 +1083,15 @@ const Index = () => {
                   <rect x="90" y="90" width="5" height="5" fill="hsl(var(--navy))" />
                 </svg>
               </div>
+            </div>
+          </div>
+            <div className="executive-quote dark">
+              <blockquote>
+                "You could get on a plane and fly to all of these jobs to see what they actually look like, or you can create a system where people bring jobs to life in front of your eyes."
+              </blockquote>
+              <cite>
+                <strong>Dennis Rumshas</strong>, Vice President of Safety and Risk Management, McShane Construction
+              </cite>
             </div>
           </div>
         </div>
@@ -1462,17 +1467,125 @@ const Index = () => {
       {/* CTA Section */}
       <section className="section-padding cta-section dark-section">
         <div className="section-inner" style={{ maxWidth: "600px" }}>
-          <h2 className="cta-title">
-            See Salus
-            <br />
-            <span className="highlight">in Action.</span>
-          </h2>
-          <p className="cta-description">
-            Schedule a live walkthrough to see how SALUS talks to your Procore instance in real-time.
-          </p>
-          <a href="#" className="btn btn-lime">
-            Book Your Demo
-          </a>
+          {!showCtaForm ? (
+            <>
+              <h2 className="cta-title">
+                See Salus
+                <br />
+                <span className="highlight">in Action.</span>
+              </h2>
+              <p className="cta-description">
+                Schedule a live walkthrough to see how SALUS talks to your Procore instance in real-time.
+              </p>
+              <button onClick={() => setShowCtaForm(true)} className="btn btn-lime">
+                Book Your Demo
+              </button>
+            </>
+          ) : (
+            <div className="demo-card" style={{ margin: "0 auto" }}>
+              {isSubmitted ? (
+                <div className="thank-you-screen">
+                  <div className="thank-you-icon">
+                    <Check size={48} strokeWidth={2.5} />
+                  </div>
+                  <h2>Thank You!</h2>
+                  <p className="thank-you-message">
+                    Your demo request has been received. We'll be in touch shortly to schedule your personalized
+                    integration demo.
+                  </p>
+                  <p className="form-footer">
+                    Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to capture field data for their Procore instance.
+                  </p>
+                </div>
+              ) : (
+                <>
+                  <h2>See Salus in action.</h2>
+                  <p className="subtitle">BOOK YOUR PERSONALIZED INTEGRATION DEMO</p>
+                  <form onSubmit={handleSubmit}>
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label>
+                          First Name <span className="required">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          name="firstName"
+                          value={formData.firstName}
+                          onChange={handleInputChange}
+                          placeholder="First Name"
+                          required
+                        />
+                      </div>
+                      <div className="form-group">
+                        <label>
+                          Last Name <span className="required">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          name="lastName"
+                          value={formData.lastName}
+                          onChange={handleInputChange}
+                          placeholder="Last Name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <label>
+                        Company <span className="required">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        name="company"
+                        value={formData.company}
+                        onChange={handleInputChange}
+                        placeholder="Your company name"
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label>
+                        Work Email <span className="required">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        placeholder="email@company.com"
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label>
+                        Phone Number <span className="required">*</span>
+                      </label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                        placeholder="+1 (555) 123-4567"
+                        required
+                      />
+                    </div>
+                    <button type="submit" className="btn-submit" disabled={isLoading}>
+                      {isLoading ? "Sending..." : "Request Demo"}
+                      {!isLoading && (
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <line x1="5" y1="12" x2="19" y2="12" />
+                          <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                      )}
+                    </button>
+                  </form>
+                  <p className="form-footer">
+                    Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to capture field data for their Procore instance.
+                  </p>
+                </>
+              )}
+            </div>
+          )}
         </div>
       </section>
 
