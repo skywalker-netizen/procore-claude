@@ -2978,6 +2978,28 @@
 /* Tech Section - Industrial */
 .tech-section {
   text-align: center;
+  padding: 64px 24px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tech-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    hsl(var(--navy) / 0.75) 0%,
+    hsl(var(--asphalt) / 0.8) 100%
+  );
+  z-index: 0;
+}
+
+.tech-section .section-inner {
+  position: relative;
+  z-index: 1;
 }
 
 .tech-section .badge {
@@ -2986,12 +3008,22 @@
 
 .tech-section .section-title {
   font-size: 52px;
+  color: hsl(var(--white));
+}
+
+.tech-section .section-title .muted {
+  color: hsl(var(--white) / 0.6);
+}
+
+.tech-section .section-subtitle {
+  color: hsl(var(--white) / 0.85);
+  margin-bottom: 32px;
 }
 
 .tech-description {
   font-size: 17px;
-  color: hsl(var(--steel-dark));
-  margin-bottom: 48px;
+  color: hsl(var(--white) / 0.8);
+  margin-bottom: 32px;
 }
 
 .tech-table-wrapper {
