@@ -559,6 +559,33 @@
   filter: invert(1) brightness(0.4);
 }
 
+/* Social Proof Stats */
+.social-proof-stats {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 48px;
+}
+
+.social-proof-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.social-proof-stat .stat-number {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: hsl(var(--navy));
+}
+
+.social-proof-stat .stat-label {
+  font-size: 14px;
+  color: hsl(var(--gray-500));
+}
+
 /* Section Styles */
 .section-padding {
   padding: 100px 48px;
