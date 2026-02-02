@@ -2527,6 +2527,23 @@
   font-weight: 700;
 }
 
+/* Executive Quote Dark Variant */
+.executive-quote.dark {
+  background: linear-gradient(135deg, hsl(var(--lime) / 0.2), hsl(var(--lime) / 0.08));
+}
+
+.executive-quote.dark blockquote {
+  color: hsl(var(--white));
+}
+
+.executive-quote.dark cite {
+  color: hsl(var(--gray-400));
+}
+
+.executive-quote.dark cite strong {
+  color: hsl(var(--white));
+}
+
 /* Asset Features */
 .asset-features {
   display: grid;
