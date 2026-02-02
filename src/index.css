@@ -277,6 +277,66 @@
   text-transform: uppercase;
 }
 
+/* Hero Proof Section */
+.hero-proof-section {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.g2-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: hsl(var(--navy) / 0.3);
+  border: 1px solid hsl(var(--gray-400) / 0.3);
+  border-radius: 999px;
+  padding: 8px 20px;
+  width: fit-content;
+}
+
+.g2-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.g2-badge .stars {
+  display: flex;
+  gap: 2px;
+}
+
+.g2-badge .rating-text {
+  color: hsl(var(--white));
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 48px;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-stat .stat-number {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: hsl(var(--periwinkle));
+}
+
+.hero-stat .stat-label {
+  font-size: 14px;
+  color: hsl(var(--white));
+  opacity: 0.9;
+}
+
 /* Demo Card */
 .demo-card {
   background: hsl(var(--white));

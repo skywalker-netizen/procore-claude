@@ -19,6 +19,7 @@ import {
   MessagesSquare,
   Database,
   Heart,
+  Star,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
@@ -33,6 +34,7 @@ import mcfarlandLogo from "@/assets/logos/mcfarland.png";
 import tunistaLogo from "@/assets/logos/tunista.png";
 import turnerLogo from "@/assets/logos/turner.png";
 import generalEnergyLogo from "@/assets/logos/general-energy-2.svg";
+import g2Logo from "@/assets/logos/g2-logo.svg";
 
 const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
 
@@ -169,6 +171,35 @@ const Index = () => {
                 <div className="trust-text">
                   <strong>Real-time Sync</strong>
                   <span>BI-DIRECTIONAL API</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Social Proof Stats */}
+            <div className="hero-proof-section">
+              <div className="g2-badge">
+                <img src={g2Logo} alt="G2" className="g2-logo" />
+                <div className="stars">
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
+                  <Star size={16} fill="#F5A623" stroke="#F5A623" />
+                </div>
+                <span className="rating-text">4.8 stars</span>
+              </div>
+              <div className="hero-stats">
+                <div className="hero-stat">
+                  <span className="stat-number">70,000+</span>
+                  <span className="stat-label">Projects Globally</span>
+                </div>
+                <div className="hero-stat">
+                  <span className="stat-number">250,000+</span>
+                  <span className="stat-label">Field Level Users</span>
+                </div>
+                <div className="hero-stat">
+                  <span className="stat-number">9,100+</span>
+                  <span className="stat-label">Companies Protected</span>
                 </div>
               </div>
             </div>
