@@ -3078,6 +3078,13 @@
   color: hsl(var(--navy));
 }
 
+/* Field Advantage Column */
+.field-advantage-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 /* Phone Comparison */
 .phone-comparison {
   display: flex;

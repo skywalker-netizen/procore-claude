@@ -467,7 +467,8 @@ const Index = () => {
       {/* Field Advantage Section */}
       <section className="section-padding" style={{ background: "hsl(var(--white))" }}>
         <div className="section-inner grid-2">
-          <div className="phone-comparison">
+          <div className="field-advantage-column">
+            <div className="phone-comparison">
             <div className="phone-wrapper">
               <div className="phone-label procore">PROCORE STATIC PDF</div>
               <div className="phone-mockup">
@@ -619,6 +620,15 @@ const Index = () => {
               </div>
             </div>
           </div>
+            <div className="executive-quote">
+              <blockquote>
+                "That first week is so important when you put a new user on a platform. Can they use it, and does everything work the way you're saying it's going to work? If it doesn't, you are going to struggle for the next two years to get them back involved. That was the biggest hurdle that we got over quite easily with SALUS."
+              </blockquote>
+              <cite>
+                <strong>Dennis Rumshas</strong>, Vice President of Safety and Risk Management, McShane Construction
+              </cite>
+            </div>
+          </div>
           <div>
             <div className="badge">
               <span className="badge-dot"></span>THE FIELD ADVANTAGE
@@ -661,14 +671,6 @@ const Index = () => {
                   GPS-stamped location proof. Mandatory photo evidence for failed check. Voice-to-text captures the nuance of a hazard, not just a checkbox. The signed PDF still lands in Procore for your records, but now you have context.
                 </p>
               </div>
-            </div>
-            <div className="executive-quote">
-              <blockquote>
-                "That first week is so important when you put a new user on a platform. Can they use it, and does everything work the way you're saying it's going to work? If it doesn't, you are going to struggle for the next two years to get them back involved. That was the biggest hurdle that we got over quite easily with SALUS."
-              </blockquote>
-              <cite>
-                <strong>Dennis Rumshas</strong>, Vice President of Safety and Risk Management, McShane Construction
-              </cite>
             </div>
           </div>
         </div>
