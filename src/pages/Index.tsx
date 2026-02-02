@@ -97,13 +97,13 @@ const Index = () => {
         body: JSON.stringify({
           "First Name": formData.firstName,
           "Last Name": formData.lastName,
-          "Company": formData.company,
+          Company: formData.company,
           "Work email": formData.email,
           "Phone number": formData.phone,
-          "utm_source": formData.utm_source,
-          "utm_campaign": formData.utm_campaign,
-          "utm_medium": formData.utm_medium,
-          "utm_term": formData.utm_term,
+          utm_source: formData.utm_source,
+          utm_campaign: formData.utm_campaign,
+          utm_medium: formData.utm_medium,
+          utm_term: formData.utm_term,
         }),
       });
 
@@ -151,10 +151,13 @@ const Index = () => {
               <span className="highlight">Brain.</span>
             </h1>
             <p className="hero-subtitle">
-              Your Procore dashboard says "compliant." But its safety module? <em>Field teams call it "click hell."</em> Forms get pencil-whipped. Field Data goes to Procore to die.
+              Your Procore dashboard says "compliant." But its safety module? <em>Field teams call it "click hell."</em>{" "}
+              Forms get pencil-whipped. Field Data goes to Procore to die.
             </p>
             <p className="hero-description">
-              Your System of Record is only as good as your System of Reality. SALUS feeds Procore with a live feed of high-fidelity field intelligence, ensuring your mission-critical delivery stays on track and out of the headlines. Zero Incidents. Zero Downtime. Zero Blindspots.
+              Your System of Record is only as good as your System of Reality. SALUS feeds Procore with a live feed of
+              high-fidelity field intelligence, ensuring your mission-critical delivery stays on track and out of the
+              headlines. Zero Incidents. Zero Downtime. Zero Blindspots.
             </p>
             <div className="trust-badges">
               <div className="trust-badge">
@@ -176,7 +179,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* G2 Badge */}
             <div className="hero-proof-section">
               <div className="g2-badge">
@@ -204,7 +207,8 @@ const Index = () => {
                   integration demo.
                 </p>
                 <p className="form-footer">
-                  Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to capture field data for their Procore instance.
+                  Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to
+                  capture field data for their Procore instance.
                 </p>
               </div>
             ) : (
@@ -290,7 +294,8 @@ const Index = () => {
                   </button>
                 </form>
                 <p className="form-footer">
-                  Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to capture field data for their Procore instance.
+                  Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to
+                  capture field data for their Procore instance.
                 </p>
               </>
             )}
@@ -308,7 +313,7 @@ const Index = () => {
             <img src={kearCivilLogo} alt="Kear Civil" />
             <img src={titanElectricalLogo} alt="Titan Electrical Services" />
             <img src={caliberConcreteLogo} alt="Caliber Concrete" />
-            <img src={electricPlusLogo} alt="Electric Plus" style={{ height: '48px' }} />
+            <img src={electricPlusLogo} alt="Electric Plus" style={{ height: "48px" }} />
             <img src={tunistaLogo} alt="Tunista Construction" className="logo-small-row" />
             <img src={generalEnergyLogo} alt="General Energy" className="invert-logo logo-small-row" />
             <img src={willmengLogo} alt="Willmeng Construction" />
@@ -341,7 +346,9 @@ const Index = () => {
               Two Systems. One Truth. <span className="highlight">Zero Excuses.</span>
             </h2>
             <p className="section-subtitle">
-              Deep native sync means Procore stays your system of record. No double entry. No shadow workflows. Inspections, observations, and personnel data appear exactly where your PMs expect to find them. We don't just "link" to Procore; we inhabit it.
+              Deep native sync means Procore stays your system of record. No double entry. No shadow workflows.
+              Inspections, observations, and personnel data appear exactly where your PMs expect to find them. We don't
+              just "link" to Procore; we inhabit it.
             </p>
             <div className="feature-item">
               <div className="feature-icon circle beige">
@@ -366,7 +373,9 @@ const Index = () => {
             </div>
             <div className="executive-quote">
               <blockquote>
-                "Procore is our master solution that we use to manage all our sites. All SALUS log submissions are auto-uploaded to Procore's document section. If you're done wasting time searching, SALUS is the solution."
+                "Procore is our master solution that we use to manage all our sites. All SALUS log submissions are
+                auto-uploaded to Procore's document section. If you're done wasting time searching, SALUS is the
+                solution."
               </blockquote>
               <cite>
                 <strong>Justin Itule</strong>, Field Integration Manager, Willmeng Construction
@@ -485,7 +494,10 @@ const Index = () => {
                 <div>
                   <h4>Mobile-First. Field-Loved.</h4>
                   <p>
-                    Procore's static PDFs are built for desktops, not for a foreman in a high-vis vest in 100-degree heat. SALUS Smart Forms are mobile-first, logic-driven, and loved by the field. They speak their language and adapt to their reality. If a trench is over 5ft, the "Shoring Evidence" photo becomes mandatory.
+                    Procore's static PDFs are built for desktops, not for a foreman in a high-vis vest in 100-degree
+                    heat. SALUS Smart Forms are mobile-first, logic-driven, and loved by the field. They speak their
+                    language and adapt to their reality. If a trench is over 5ft, the "Shoring Evidence" photo becomes
+                    mandatory.
                   </p>
                 </div>
               </div>
@@ -495,9 +507,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h4>The "Flat" Form Trap</h4>
-                  <p>
-                    Procore Static fillable PDFs trap your data in a document, making it invisible to analytics.
-                  </p>
+                  <p>Procore Static fillable PDFs trap your data in a document, making it invisible to analytics.</p>
                 </div>
               </div>
               <div className="numbered-feature">
@@ -507,7 +517,9 @@ const Index = () => {
                 <div>
                   <h4>Salus forms are litigation-grade.</h4>
                   <p>
-                    GPS-stamped location proof. Mandatory photo evidence for failed check. Voice-to-text captures the nuance of a hazard, not just a checkbox. The signed PDF still lands in Procore for your records, but now you have context.
+                    GPS-stamped location proof. Mandatory photo evidence for failed check. Voice-to-text captures the
+                    nuance of a hazard, not just a checkbox. The signed PDF still lands in Procore for your records, but
+                    now you have context.
                   </p>
                 </div>
               </div>
@@ -671,7 +683,10 @@ const Index = () => {
               </div>
               <div className="executive-quote">
                 <blockquote>
-                  "That first week is so important when you put a new user on a platform. Can they use it, and does everything work the way you're saying it's going to work? If it doesn't, you are going to struggle for the next two years to get them back involved. That was the biggest hurdle that we got over quite easily with SALUS."
+                  "That first week is so important when you put a new user on a platform. Can they use it, and does
+                  everything work the way you're saying it's going to work? If it doesn't, you are going to struggle for
+                  the next two years to get them back involved. That was the biggest hurdle that we got over quite
+                  easily with SALUS."
                 </blockquote>
                 <cite>
                   <strong>Dennis Rumshas</strong>, Vice President of Safety and Risk Management, McShane Construction
@@ -695,7 +710,8 @@ const Index = () => {
               <span className="highlight">Reduce risk.</span>
             </h2>
             <p className="section-subtitle">
-              Certificates, assets, and training live outside of Procore. Fragmented safety data means increased risk in the field and more time chasing information.
+              Certificates, assets, and training live outside of Procore. Fragmented safety data means increased risk in
+              the field and more time chasing information.
             </p>
             <div className="feature-block">
               <div className="feature-block-icon circle beige">
@@ -754,8 +770,16 @@ const Index = () => {
                     <div className="cc-widget-icon">
                       <UserCheck size={16} />
                     </div>
-                    <span className="cc-widget-title">WORKER<br/>CERTS</span>
-                    <span className="cc-widget-date">AUG<br/>2024</span>
+                    <span className="cc-widget-title">
+                      WORKER
+                      <br />
+                      CERTS
+                    </span>
+                    <span className="cc-widget-date">
+                      AUG
+                      <br />
+                      2024
+                    </span>
                   </div>
                   <div className="cc-worker-list">
                     <div className="cc-worker-item">
@@ -830,7 +854,10 @@ const Index = () => {
                 <div className="cc-corrective-grid">
                   <div className="cc-corrective-item">
                     <div className="cc-corrective-avatar">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="James R." />
+                      <img
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+                        alt="James R."
+                      />
                     </div>
                     <div className="cc-corrective-info">
                       <span className="cc-corrective-name">James R.</span>
@@ -877,9 +904,7 @@ const Index = () => {
             <div className="badge">
               <span className="badge-dot"></span>TRADE PARTNER MANAGEMENT
             </div>
-            <h2 className="section-title">
-              Full visibility Into Every Trade.
-            </h2>
+            <h2 className="section-title">Full visibility Into Every Trade.</h2>
             <p className="section-subtitle">
               In mission-critical construction, "I didn't know the sub wasn't certified" isn't a valid excuse.
             </p>
@@ -908,7 +933,10 @@ const Index = () => {
               </div>
               <div>
                 <h4>Accountability</h4>
-                <p>See orientation status, JHA submissions, and corrective actions of your contractors at the worker level, not just the company level.</p>
+                <p>
+                  See orientation status, JHA submissions, and corrective actions of your contractors at the worker
+                  level, not just the company level.
+                </p>
               </div>
             </div>
             <div className="trade-feature">
@@ -920,179 +948,193 @@ const Index = () => {
               </div>
               <div>
                 <h4>Win - Win</h4>
-                <p>For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.</p>
+                <p>
+                  For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades
+                  own their data; they keep a portable safety record that protects their EMR and their bid eligibility.
+                </p>
               </div>
             </div>
           </div>
           <div className="portal-column">
             <div className="portal-demo">
-            {/* Main Compliance Dashboard */}
-            <div className="compliance-dashboard">
-              <div className="compliance-dashboard-header">
-                <div className="compliance-dashboard-logo">
-                  <img src={salusShieldLogo} alt="Salus" className="compliance-logo-img" />
-                  <span className="compliance-logo-text">SALUS</span>
+              {/* Main Compliance Dashboard */}
+              <div className="compliance-dashboard">
+                <div className="compliance-dashboard-header">
+                  <div className="compliance-dashboard-logo">
+                    <img src={salusShieldLogo} alt="Salus" className="compliance-logo-img" />
+                    <span className="compliance-logo-text">SALUS</span>
+                  </div>
+                  <div className="compliance-dashboard-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
+                  <div className="compliance-dashboard-icons">
+                    <div className="compliance-icon-circle">?</div>
+                    <Bell size={16} />
+                    <div className="compliance-avatar-circle"></div>
+                  </div>
                 </div>
-                <div className="compliance-dashboard-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
-                <div className="compliance-dashboard-icons">
-                  <div className="compliance-icon-circle">?</div>
-                  <Bell size={16} />
-                  <div className="compliance-avatar-circle"></div>
+                <div className="compliance-section-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
+                <div className="compliance-table">
+                  <div className="compliance-table-header">
+                    <span>COMPANY NAME</span>
+                    <span>STATUS</span>
+                    <span>WORKERS ON SITE</span>
+                    <span>LAST JHA SUBMISSION</span>
+                  </div>
+                  <div className="compliance-table-row">
+                    <span className="company-name">Steel Works Inc.</span>
+                    <span className="status orientated">
+                      <span className="status-dot"></span>Orientated
+                    </span>
+                    <span className="workers-count">12</span>
+                    <span className="last-jha">Today, 8:30 AM</span>
+                  </div>
+                  <div className="compliance-table-row">
+                    <span className="company-name">Apex Plumbing</span>
+                    <span className="status in-progress">
+                      <span className="status-dot"></span>In Progress
+                    </span>
+                    <span className="workers-count"></span>
+                    <span className="last-jha"></span>
+                  </div>
+                  <div className="compliance-table-row">
+                    <span className="company-name">City Electrical</span>
+                    <span className="status in-progress">
+                      <span className="status-dot"></span>In Progress
+                    </span>
+                    <span className="workers-count"></span>
+                    <span className="last-jha"></span>
+                  </div>
+                  <div className="compliance-table-row">
+                    <span className="company-name">Concrete Solutions</span>
+                    <span className="status orientated">
+                      <span className="status-dot"></span>Orientated
+                    </span>
+                    <span className="workers-count"></span>
+                    <span className="last-jha"></span>
+                  </div>
+                  <div className="compliance-table-row">
+                    <span className="company-name">Summit Roofing</span>
+                    <span className="status active">
+                      <span className="status-dot"></span>Active
+                    </span>
+                    <span className="workers-count"></span>
+                    <span className="last-jha"></span>
+                  </div>
                 </div>
               </div>
-              <div className="compliance-section-title">SUBCONTRACTOR COMPLIANCE OVERVIEW</div>
-              <div className="compliance-table">
-                <div className="compliance-table-header">
-                  <span>COMPANY NAME</span>
-                  <span>STATUS</span>
-                  <span>WORKERS ON SITE</span>
-                  <span>LAST JHA SUBMISSION</span>
-                </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">Steel Works Inc.</span>
-                  <span className="status orientated"><span className="status-dot"></span>Orientated</span>
-                  <span className="workers-count">12</span>
-                  <span className="last-jha">Today, 8:30 AM</span>
-                </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">Apex Plumbing</span>
-                  <span className="status in-progress"><span className="status-dot"></span>In Progress</span>
-                  <span className="workers-count"></span>
-                  <span className="last-jha"></span>
-                </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">City Electrical</span>
-                  <span className="status in-progress"><span className="status-dot"></span>In Progress</span>
-                  <span className="workers-count"></span>
-                  <span className="last-jha"></span>
-                </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">Concrete Solutions</span>
-                  <span className="status orientated"><span className="status-dot"></span>Orientated</span>
-                  <span className="workers-count"></span>
-                  <span className="last-jha"></span>
-                </div>
-                <div className="compliance-table-row">
-                  <span className="company-name">Summit Roofing</span>
-                  <span className="status active"><span className="status-dot"></span>Active</span>
-                  <span className="workers-count"></span>
-                  <span className="last-jha"></span>
-                </div>
-              </div>
-            </div>
 
-            {/* Worker Detail Card */}
-            <div className="worker-detail-card">
-              <div className="worker-detail-header">
-                <span className="back-arrow">←</span>
-                <span className="worker-company-name">Steel Works Inc.</span>
-              </div>
-              <div className="worker-detail-content">
-                <div className="progress-score-section">
-                  <span className="progress-score-label">PROGRESS SCORE</span>
-                  <div className="progress-score-bar">
-                    <div className="progress-score-fill"></div>
-                  </div>
+              {/* Worker Detail Card */}
+              <div className="worker-detail-card">
+                <div className="worker-detail-header">
+                  <span className="back-arrow">←</span>
+                  <span className="worker-company-name">Steel Works Inc.</span>
                 </div>
-                <div className="worker-list">
-                  <div className="worker-item">
-                    <div className="worker-avatar">
-                      <User size={20} />
+                <div className="worker-detail-content">
+                  <div className="progress-score-section">
+                    <span className="progress-score-label">PROGRESS SCORE</span>
+                    <div className="progress-score-bar">
+                      <div className="progress-score-fill"></div>
                     </div>
-                    <span className="worker-name">John S.</span>
-                    <span className="flra-badge">FLRA</span>
                   </div>
-                  <div className="worker-item">
-                    <div className="worker-avatar female">
-                      <User size={20} />
+                  <div className="worker-list">
+                    <div className="worker-item">
+                      <div className="worker-avatar">
+                        <User size={20} />
+                      </div>
+                      <span className="worker-name">John S.</span>
+                      <span className="flra-badge">FLRA</span>
                     </div>
-                    <span className="worker-name">Maria R.</span>
-                    <span className="flra-badge">FLRA</span>
+                    <div className="worker-item">
+                      <div className="worker-avatar female">
+                        <User size={20} />
+                      </div>
+                      <span className="worker-name">Maria R.</span>
+                      <span className="flra-badge">FLRA</span>
+                    </div>
+                  </div>
+                  <div className="pending-review-row">
+                    <span className="pending-review-text">Pending Review</span>
                   </div>
                 </div>
-                <div className="pending-review-row">
-                  <span className="pending-review-text">Pending Review</span>
+                <div className="check-badge">
+                  <Check size={16} />
                 </div>
               </div>
-              <div className="check-badge">
-                <Check size={16} />
-              </div>
-            </div>
 
-            {/* QR Code Badge */}
-            <div className="qr-badge">
-              <div className="qr-code">
-                <svg viewBox="0 0 100 100" className="qr-svg">
-                  {/* Position detection patterns - corners */}
-                  <rect x="5" y="5" width="25" height="25" fill="hsl(var(--navy))" />
-                  <rect x="10" y="10" width="15" height="15" fill="white" />
-                  <rect x="13" y="13" width="9" height="9" fill="hsl(var(--navy))" />
-                  
-                  <rect x="70" y="5" width="25" height="25" fill="hsl(var(--navy))" />
-                  <rect x="75" y="10" width="15" height="15" fill="white" />
-                  <rect x="78" y="13" width="9" height="9" fill="hsl(var(--navy))" />
-                  
-                  <rect x="5" y="70" width="25" height="25" fill="hsl(var(--navy))" />
-                  <rect x="10" y="75" width="15" height="15" fill="white" />
-                  <rect x="13" y="78" width="9" height="9" fill="hsl(var(--navy))" />
-                  
-                  {/* Data modules - random pattern */}
-                  <rect x="35" y="5" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="45" y="5" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="5" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="35" y="15" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="50" y="15" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="60" y="15" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="40" y="25" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="25" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="5" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="15" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="25" y="40" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="35" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="45" y="40" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="65" y="40" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="75" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="85" y="40" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="90" y="35" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="5" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="20" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="40" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="50" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="60" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="80" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="90" y="50" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="10" y="60" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="25" y="60" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="35" y="55" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="45" y="60" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="55" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="70" y="55" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="85" y="60" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="35" y="70" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="50" y="70" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="60" y="75" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="70" y="70" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="80" y="75" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="90" y="70" width="5" height="5" fill="hsl(var(--navy))" />
-                  
-                  <rect x="40" y="85" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="55" y="80" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="65" y="85" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="75" y="80" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="85" y="85" width="5" height="5" fill="hsl(var(--navy))" />
-                  <rect x="90" y="90" width="5" height="5" fill="hsl(var(--navy))" />
-                </svg>
+              {/* QR Code Badge */}
+              <div className="qr-badge">
+                <div className="qr-code">
+                  <svg viewBox="0 0 100 100" className="qr-svg">
+                    {/* Position detection patterns - corners */}
+                    <rect x="5" y="5" width="25" height="25" fill="hsl(var(--navy))" />
+                    <rect x="10" y="10" width="15" height="15" fill="white" />
+                    <rect x="13" y="13" width="9" height="9" fill="hsl(var(--navy))" />
+
+                    <rect x="70" y="5" width="25" height="25" fill="hsl(var(--navy))" />
+                    <rect x="75" y="10" width="15" height="15" fill="white" />
+                    <rect x="78" y="13" width="9" height="9" fill="hsl(var(--navy))" />
+
+                    <rect x="5" y="70" width="25" height="25" fill="hsl(var(--navy))" />
+                    <rect x="10" y="75" width="15" height="15" fill="white" />
+                    <rect x="13" y="78" width="9" height="9" fill="hsl(var(--navy))" />
+
+                    {/* Data modules - random pattern */}
+                    <rect x="35" y="5" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="45" y="5" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="55" y="5" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="35" y="15" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="50" y="15" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="60" y="15" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="40" y="25" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="55" y="25" width="5" height="5" fill="hsl(var(--navy))" />
+
+                    <rect x="5" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="15" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="25" y="40" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="35" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="45" y="40" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="55" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="65" y="40" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="75" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="85" y="40" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="90" y="35" width="5" height="5" fill="hsl(var(--navy))" />
+
+                    <rect x="5" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="20" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="40" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="50" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="60" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="80" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="90" y="50" width="5" height="5" fill="hsl(var(--navy))" />
+
+                    <rect x="10" y="60" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="25" y="60" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="35" y="55" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="45" y="60" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="55" y="55" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="70" y="55" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="85" y="60" width="5" height="5" fill="hsl(var(--navy))" />
+
+                    <rect x="35" y="70" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="50" y="70" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="60" y="75" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="70" y="70" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="80" y="75" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="90" y="70" width="5" height="5" fill="hsl(var(--navy))" />
+
+                    <rect x="40" y="85" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="55" y="80" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="65" y="85" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="75" y="80" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="85" y="85" width="5" height="5" fill="hsl(var(--navy))" />
+                    <rect x="90" y="90" width="5" height="5" fill="hsl(var(--navy))" />
+                  </svg>
+                </div>
               </div>
             </div>
-          </div>
             <div className="executive-quote dark">
               <blockquote>
-                "You could get on a plane and fly to all of these jobs to see what they actually look like, or you can create a system where people bring jobs to life in front of your eyes."
+                "You could get on a plane and fly to all of these jobs to see what they actually look like, or you can
+                create a system where people bring jobs to life in front of your eyes."
               </blockquote>
               <cite>
                 <strong>Dennis Rumshas</strong>, Vice President of Safety and Risk Management, McShane Construction
@@ -1110,92 +1152,93 @@ const Index = () => {
         <div className="section-inner grid-2">
           <div className="analytics-column">
             <div className="analytics-card">
-            <div className="analytics-header">
-              <div className="analytics-logo">
-                <div className="icon">
-                  <img src={salusShieldLogo} alt="Salus" style={{ width: 16, height: 16, objectFit: "contain" }} />
+              <div className="analytics-header">
+                <div className="analytics-logo">
+                  <div className="icon">
+                    <img src={salusShieldLogo} alt="Salus" style={{ width: 16, height: 16, objectFit: "contain" }} />
+                  </div>
+                  <div className="text">
+                    <h5>Salus Analytics Hub</h5>
+                    <span>90-DAY RISK PROFILE</span>
+                  </div>
                 </div>
+                <div className="live-sync">LIVE SYNC ACTIVE</div>
+              </div>
+              <div className="analytics-title">
+                TOTAL INCIDENTS BY TYPE<span>Aug - Oct 2024</span>
+              </div>
+              <div className="incident-list">
+                <div className="incident-item">
+                  <div className="incident-name">Utility Strike</div>
+                  <div className="incident-status critical">CRITICAL</div>
+                  <div className="incident-bar">
+                    <div className="incident-bar-fill red" style={{ width: "100%" }}></div>
+                  </div>
+                  <div className="incident-count">14</div>
+                </div>
+                <div className="incident-item">
+                  <div className="incident-name">Crane Ops</div>
+                  <div className="incident-status monitor">MONITOR</div>
+                  <div className="incident-bar">
+                    <div className="incident-bar-fill orange" style={{ width: "65%" }}></div>
+                  </div>
+                  <div className="incident-count">9</div>
+                </div>
+                <div className="incident-item">
+                  <div className="incident-name">Fall Risk</div>
+                  <div className="incident-status stable">STABLE</div>
+                  <div className="incident-bar">
+                    <div className="incident-bar-fill blue" style={{ width: "43%" }}></div>
+                  </div>
+                  <div className="incident-count">6</div>
+                </div>
+                <div className="incident-item">
+                  <div className="incident-name">PPE Violation</div>
+                  <div className="incident-status improving">IMPROVING</div>
+                  <div className="incident-bar">
+                    <div className="incident-bar-fill green" style={{ width: "29%" }}></div>
+                  </div>
+                  <div className="incident-count">4</div>
+                </div>
+                <div className="incident-item">
+                  <div className="incident-name">Minor Injury</div>
+                  <div className="incident-status low">LOW</div>
+                  <div className="incident-bar">
+                    <div className="incident-bar-fill gray" style={{ width: "14%" }}></div>
+                  </div>
+                  <div className="incident-count">2</div>
+                </div>
+              </div>
+              <div className="risk-alert">
+                <div className="icon">⚠️</div>
                 <div className="text">
-                  <h5>Salus Analytics Hub</h5>
-                  <span>90-DAY RISK PROFILE</span>
+                  <strong>RISK ALERT</strong>
+                  <span>Utility Strikes +12%</span>
                 </div>
               </div>
-              <div className="live-sync">LIVE SYNC ACTIVE</div>
-            </div>
-            <div className="analytics-title">
-              TOTAL INCIDENTS BY TYPE<span>Aug - Oct 2024</span>
-            </div>
-            <div className="incident-list">
-              <div className="incident-item">
-                <div className="incident-name">Utility Strike</div>
-                <div className="incident-status critical">CRITICAL</div>
-                <div className="incident-bar">
-                  <div className="incident-bar-fill red" style={{ width: "100%" }}></div>
+              <div className="analytics-footer">
+                <div className="analytics-footer-left">
+                  <div className="avatar-stack">
+                    <div className="avatar"></div>
+                    <div className="avatar"></div>
+                    <div className="avatar"></div>
+                  </div>
+                  <span>
+                    REPORT SHARED WITH <strong>Executive Leadership</strong>
+                  </span>
                 </div>
-                <div className="incident-count">14</div>
-              </div>
-              <div className="incident-item">
-                <div className="incident-name">Crane Ops</div>
-                <div className="incident-status monitor">MONITOR</div>
-                <div className="incident-bar">
-                  <div className="incident-bar-fill orange" style={{ width: "65%" }}></div>
-                </div>
-                <div className="incident-count">9</div>
-              </div>
-              <div className="incident-item">
-                <div className="incident-name">Fall Risk</div>
-                <div className="incident-status stable">STABLE</div>
-                <div className="incident-bar">
-                  <div className="incident-bar-fill blue" style={{ width: "43%" }}></div>
-                </div>
-                <div className="incident-count">6</div>
-              </div>
-              <div className="incident-item">
-                <div className="incident-name">PPE Violation</div>
-                <div className="incident-status improving">IMPROVING</div>
-                <div className="incident-bar">
-                  <div className="incident-bar-fill green" style={{ width: "29%" }}></div>
-                </div>
-                <div className="incident-count">4</div>
-              </div>
-              <div className="incident-item">
-                <div className="incident-name">Minor Injury</div>
-                <div className="incident-status low">LOW</div>
-                <div className="incident-bar">
-                  <div className="incident-bar-fill gray" style={{ width: "14%" }}></div>
-                </div>
-                <div className="incident-count">2</div>
+                <button className="generate-btn">GENERATE INSIGHTS ⚡</button>
               </div>
             </div>
-            <div className="risk-alert">
-              <div className="icon">⚠️</div>
-              <div className="text">
-                <strong>RISK ALERT</strong>
-                <span>Utility Strikes +12%</span>
-              </div>
+            <div className="executive-quote">
+              <blockquote>
+                "GCs talk safety and will say they have a safety plan. Willmeng can now show the results of our safety
+                initiatives to owners. That has helped us win a multitude of new jobs."
+              </blockquote>
+              <cite>
+                <strong>Justin Itule</strong>, Field Integration Manager, Willmeng Construction
+              </cite>
             </div>
-            <div className="analytics-footer">
-              <div className="analytics-footer-left">
-                <div className="avatar-stack">
-                  <div className="avatar"></div>
-                  <div className="avatar"></div>
-                  <div className="avatar"></div>
-                </div>
-                <span>
-                  REPORT SHARED WITH <strong>Executive Leadership</strong>
-                </span>
-              </div>
-              <button className="generate-btn">GENERATE INSIGHTS ⚡</button>
-            </div>
-          </div>
-          <div className="executive-quote">
-            <blockquote>
-              "GCs talk safety and will say they have a safety plan. Willmeng can now show the results of our safety initiatives to owners. That has helped us win a multitude of new jobs."
-            </blockquote>
-            <cite>
-              <strong>Justin Itule</strong>, Field Integration Manager, Willmeng Construction
-            </cite>
-          </div>
           </div>
           <div>
             <div className="badge">
@@ -1207,7 +1250,8 @@ const Index = () => {
               <span className="muted">Treat It Like One.</span>
             </h2>
             <p className="section-subtitle">
-              An EMR over 1.0 doesn't just raise your premiums—it disqualifies you from the bid list. Procore keeps a record of what happened. Salus shows you why it happened and what's about to happen.
+              An EMR over 1.0 doesn't just raise your premiums—it disqualifies you from the bid list. Procore keeps a
+              record of what happened. Salus shows you why it happened and what's about to happen.
             </p>
             <div className="feature-block">
               <div className="feature-block-icon circle beige">
@@ -1216,7 +1260,8 @@ const Index = () => {
               <div>
                 <h4>No More Manual Tallies</h4>
                 <p>
-                  Stop opening 500 PDFs to find a trend. SALUS aggregates every field entry into a high-level Risk Profile.
+                  Stop opening 500 PDFs to find a trend. SALUS aggregates every field entry into a high-level Risk
+                  Profile.
                 </p>
               </div>
             </div>
@@ -1227,7 +1272,8 @@ const Index = () => {
               <div>
                 <h4>Track Leading Indicators</h4>
                 <p>
-                  Spot a spike in utility-strike near-misses across your Eastern Region sites before a backhoe hits a fiber line.
+                  Spot a spike in utility-strike near-misses across your Eastern Region sites before a backhoe hits a
+                  fiber line.
                 </p>
               </div>
             </div>
@@ -1499,7 +1545,8 @@ const Index = () => {
                     integration demo.
                   </p>
                   <p className="form-footer">
-                    Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to capture field data for their Procore instance.
+                    Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to
+                    capture field data for their Procore instance.
                   </p>
                 </div>
               ) : (
@@ -1577,7 +1624,14 @@ const Index = () => {
                     <button type="submit" className="btn-submit" disabled={isLoading}>
                       {isLoading ? "Sending..." : "Request Demo"}
                       {!isLoading && (
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                        >
                           <line x1="5" y1="12" x2="19" y2="12" />
                           <polyline points="12 5 19 12 12 19" />
                         </svg>
@@ -1585,7 +1639,8 @@ const Index = () => {
                     </button>
                   </form>
                   <p className="form-footer">
-                    Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to capture field data for their Procore instance.
+                    Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to
+                    capture field data for their Procore instance.
                   </p>
                 </>
               )}
