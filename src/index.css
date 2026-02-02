@@ -2490,6 +2490,36 @@
   cursor: pointer;
 }
 
+/* Executive Quote */
+.executive-quote {
+  margin-top: 32px;
+  padding: 24px;
+  background: linear-gradient(135deg, hsl(var(--lime) / 0.15), hsl(var(--lime) / 0.05));
+  border-left: 4px solid hsl(var(--lime));
+  border-radius: 0 12px 12px 0;
+}
+
+.executive-quote blockquote {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+  color: hsl(var(--navy));
+  margin-bottom: 16px;
+}
+
+.executive-quote cite {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  color: hsl(var(--gray-600));
+}
+
+.executive-quote cite strong {
+  color: hsl(var(--navy));
+  font-weight: 700;
+}
+
 /* Asset Features */
 .asset-features {
   display: grid;
