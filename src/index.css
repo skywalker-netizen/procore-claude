@@ -582,13 +582,28 @@
 
 /* Social Proof Section */
 .social-proof-section {
-  padding: 32px 48px 56px;
-  background: hsl(var(--concrete));
-  border-top: 1px solid hsl(var(--concrete-dark));
-  border-bottom: 1px solid hsl(var(--concrete-dark));
+  position: relative;
+  padding: 48px 48px 64px;
+  background: url('@/assets/field-background.png') center center / cover no-repeat;
+  border-top: 1px solid hsl(var(--asphalt));
+  border-bottom: 1px solid hsl(var(--asphalt));
+}
+
+.social-proof-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    hsl(var(--navy) / 0.85) 0%,
+    hsl(var(--asphalt) / 0.9) 100%
+  );
+  z-index: 0;
 }
 
 .social-proof-inner {
+  position: relative;
+  z-index: 1;
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
@@ -632,22 +647,22 @@
   width: auto;
   max-width: 140px;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.5;
+  filter: grayscale(100%) brightness(2);
+  opacity: 0.8;
   transition: opacity 0.2s, filter 0.2s;
 }
 
 .social-proof-logos img:hover {
-  filter: grayscale(0%);
+  filter: grayscale(0%) brightness(1.2);
   opacity: 1;
 }
 
 .social-proof-logos img.invert-logo {
-  filter: grayscale(100%) invert(1) brightness(0.4);
+  filter: grayscale(100%) invert(1) brightness(2);
 }
 
 .social-proof-logos img.invert-logo:hover {
-  filter: invert(1) brightness(0.4);
+  filter: invert(1) brightness(1.2);
 }
 
 /* Social Proof Stats */
@@ -656,10 +671,11 @@
   justify-content: center;
   gap: 64px;
   margin-top: 48px;
-  padding: 24px;
-  background: hsl(var(--white));
+  padding: 24px 32px;
+  background: hsl(var(--navy) / 0.6);
+  backdrop-filter: blur(8px);
   border-radius: 4px;
-  border: 1px solid hsl(var(--concrete-dark));
+  border: 1px solid hsl(var(--steel) / 0.3);
 }
 
 .social-proof-stat {
@@ -675,7 +691,7 @@
   font-family: 'JetBrains Mono', monospace;
   font-size: 32px;
   font-weight: 700;
-  color: hsl(var(--navy));
+  color: hsl(var(--white));
   white-space: nowrap;
   letter-spacing: -0.02em;
 }
@@ -683,7 +699,7 @@
 .social-proof-stat .stat-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
-  color: hsl(var(--steel));
+  color: hsl(var(--concrete));
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
