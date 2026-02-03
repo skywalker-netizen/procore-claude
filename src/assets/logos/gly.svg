@@ -1,0 +1,22 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#000" stroke-width="6"/>
+  
+  <!-- G -->
+  <text x="42" y="115" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#000">G</text>
+  
+  <!-- Arrow 1 -->
+  <polygon points="72,100 82,93 82,107" fill="#000"/>
+  
+  <!-- L -->
+  <text x="88" y="115" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#000">L</text>
+  
+  <!-- Arrow 2 -->
+  <polygon points="118,100 128,93 128,107" fill="#000"/>
+  
+  <!-- Y -->
+  <text x="134" y="115" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#000">Y</text>
+  
+  <!-- Registered trademark -->
+  <text x="175" y="180" font-family="Arial, sans-serif" font-size="14" fill="#000">®</text>
+</svg>
