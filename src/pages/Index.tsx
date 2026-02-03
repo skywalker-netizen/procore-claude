@@ -345,12 +345,10 @@ const Index = () => {
               <span className="badge-dot"></span>SEAMLESS INTEGRATION
             </div>
             <h2 className="integration-title">
-              Two Systems. One Truth. <span className="highlight">Zero Excuses.</span>
+              One Truth. <span className="highlight">Zero Excuses.</span>
             </h2>
             <p className="section-subtitle">
-              Deep native sync means Procore stays your system of record while giving the field a tool they actually love.
-              No double entry. No shadow workflows. Inspections, observations, and personnel data appear exactly where
-              your PMs expect to find them.
+              You already have an "Enterprise Software." You don't need another one. With Salus native sync, Procore stays your system of record while giving the field a tool they actually love. No double entry. No shadow workflows.
             </p>
             <div className="feature-item">
               <div className="feature-icon circle beige">
@@ -358,7 +356,7 @@ const Index = () => {
               </div>
               <div className="feature-text">
                 <h4>Procore as Master</h4>
-                <p>All financial and project master data originates in Procore.</p>
+                <p>All financial and project master data originates in Procore. Inspections, observations, and personnel data from Salus appear in Procore exactly where your PMs expect to find them.</p>
               </div>
             </div>
             <div className="feature-item">
