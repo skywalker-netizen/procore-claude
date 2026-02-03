@@ -27,6 +27,7 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import salusLogo from "@/assets/salus-logo.png";
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
+import fieldBackground from "@/assets/field-background.png";
 
 // Company logos
 import kearCivilLogo from "@/assets/logos/kear-civil.png";
@@ -311,7 +312,7 @@ const Root = () => {
       </section>
 
       {/* Social Proof Section */}
-      <section className="social-proof-section">
+      <section className="social-proof-section" style={{ backgroundImage: `url(${fieldBackground})` }}>
         <div className="social-proof-inner">
           <h3 className="social-proof-title">Leaders use Salus</h3>
       <div className="social-proof-logos">
