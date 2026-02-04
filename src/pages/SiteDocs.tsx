@@ -6,7 +6,6 @@ import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { FieldAdvantageSection } from "@/components/sections/FieldAdvantageSection";
 import { TradePartnerSection } from "@/components/sections/TradePartnerSection";
 import { PreventativeMaintenanceSection } from "@/components/sections/PreventativeMaintenanceSection";
-import { ExecutiveInsightsSection } from "@/components/sections/ExecutiveInsightsSection";
 import { IntegrationSection } from "@/components/sections/IntegrationSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
@@ -23,7 +22,6 @@ const SiteDocs = () => {
       <TradePartnerSection variant="sitedocs" />
       <FieldAdvantageSection variant="sitedocs" />
       <PreventativeMaintenanceSection />
-      <ExecutiveInsightsSection variant="general" />
       <IntegrationSection />
       <TestimonialsSection />
       <CTASection />
