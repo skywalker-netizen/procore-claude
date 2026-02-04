@@ -27,7 +27,7 @@ import oconnorElectricLogo from "@/assets/logos/oconnor-electric.png";
 import broccoliniCaLogo from "@/assets/logos/broccolini-ca.svg";
 import lmsSteelCaLogo from "@/assets/logos/lms-steel-ca.png";
 import group1Logo from "@/assets/logos/group-1.png";
-import kingHoeLogo from "@/assets/logos/king-hoe.jpg";
+
 import giustiGroupLogo from "@/assets/logos/giusti-group.png";
 import universalGroupLogo from "@/assets/logos/universal-group.png";
 
@@ -65,7 +65,7 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
           <img src={broccoliniCaLogo} alt="Broccolini" className="invert-logo" />
           <img src={lmsSteelCaLogo} alt="LMS Reinforcing Steel Group" className="invert-logo" />
           <img src={group1Logo} alt="Group 1" />
-          <img src={kingHoeLogo} alt="King Hoe Excavating" className="invert-logo" />
+          
           <img src={giustiGroupLogo} alt="Giusti Group" />
           <img src={universalGroupLogo} alt="Universal Group" />
         </>
