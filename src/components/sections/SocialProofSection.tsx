@@ -94,9 +94,9 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
           {renderLogos()}
         </div>
         <Quote
-          text={SOCIAL_PROOF_QUOTE.text}
-          author={SOCIAL_PROOF_QUOTE.author}
-          title={SOCIAL_PROOF_QUOTE.title}
+          text={SOCIAL_PROOF_QUOTE[variant].text}
+          author={SOCIAL_PROOF_QUOTE[variant].author}
+          title={SOCIAL_PROOF_QUOTE[variant].title}
           variant="dark"
           className="my-10 max-w-xl mx-auto text-center"
         />

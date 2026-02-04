@@ -1,4 +1,4 @@
-import type { VariantContent, SectionContent } from "../types";
+import type { VariantContent, SectionContent, QuoteContent } from "../types";
 
 export const STOP_WORKAROUNDS_CONTENT: VariantContent<SectionContent> = {
   procore: {

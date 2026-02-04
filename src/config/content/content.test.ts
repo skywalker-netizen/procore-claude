@@ -197,10 +197,11 @@ describe("Social Proof Content", () => {
     });
   });
 
-  it("should have valid quote content", () => {
-    expect(SOCIAL_PROOF_QUOTE.text).toBeTruthy();
-    expect(SOCIAL_PROOF_QUOTE.author).toBeTruthy();
-    expect(SOCIAL_PROOF_QUOTE.title).toBeTruthy();
+  it("should have valid quote content for all variants", () => {
+    PAGE_VARIANTS.forEach((variant) => {
+      expect(SOCIAL_PROOF_QUOTE[variant]).toBeDefined();
+      expect(SOCIAL_PROOF_QUOTE[variant].text).toBeTruthy();
+    });
   });
 });
 
