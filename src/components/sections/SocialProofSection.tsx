@@ -27,7 +27,7 @@ import oconnorElectricLogo from "@/assets/logos/oconnor-electric.png";
 import broccoliniCaLogo from "@/assets/logos/broccolini-ca.svg";
 import lmsSteelCaLogo from "@/assets/logos/lms-steel-ca.png";
 import group1Logo from "@/assets/logos/group-1.png";
-import kingHoeLogo from "@/assets/logos/king-hoe.png";
+import kingHoeLogo from "@/assets/logos/king-hoe.jpg";
 import giustiGroupLogo from "@/assets/logos/giusti-group.png";
 import universalGroupLogo from "@/assets/logos/universal-group.png";
 
