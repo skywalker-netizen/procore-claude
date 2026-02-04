@@ -1696,10 +1696,13 @@
 }
 
 .trade-feature h4 {
-  font-size: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
   font-weight: 700;
   color: hsl(var(--white));
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .trade-feature h4 .highlight {
@@ -1759,11 +1762,11 @@
 
 .feature-block h4 {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 .feature-block p {
@@ -1781,12 +1784,12 @@
 
 .feature-text h4 {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: hsl(var(--navy));
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 .feature-text p {
@@ -1805,11 +1808,11 @@
 
 .numbered-feature h4 {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 .numbered-feature p {
