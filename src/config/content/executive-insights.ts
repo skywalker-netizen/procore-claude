@@ -111,10 +111,10 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
   },
   ca: {
     badge: "COMPLIANCE & REPORTING",
-    title: "COR™ Master and Rebate Engine",
+    title: "Secure Your COR™ Certification.\nMaximize Your WCB Rebates.\nWin More Bids.",
     titleHighlight: "",
     subtitle:
-      "Turn your safety program from a cost center into a direct contributor to your top and bottom line.",
+      'You\'re outgrowing paper binders and simple digital safety forms. SALUS is the only "Field-First" safety platform that provides actionable and high-fidelity field intelligence — giving Canadian Prime and Specialized Contractors push-button audit readiness and a direct path to insurance premium discounts.',
     features: [
       {
         title: "COR™ Audit Mastery",
