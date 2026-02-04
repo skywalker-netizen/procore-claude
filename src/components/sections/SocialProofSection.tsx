@@ -1,6 +1,7 @@
 import fieldBackground from "@/assets/field-background.png";
 import procoreFieldBackground from "@/assets/procore-field-background.png";
-import { SOCIAL_PROOF_TITLE, SOCIAL_PROOF_STATS } from "@/config";
+import { SOCIAL_PROOF_TITLE, SOCIAL_PROOF_STATS, SOCIAL_PROOF_QUOTE } from "@/config";
+import { Quote } from "@/components/shared/Quote";
 import type { PageVariant } from "@/config/types";
 
 // Index page logos
@@ -69,6 +70,13 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
             </div>
           ))}
         </div>
+        <Quote
+          text={SOCIAL_PROOF_QUOTE.text}
+          author={SOCIAL_PROOF_QUOTE.author}
+          title={SOCIAL_PROOF_QUOTE.title}
+          variant="dark"
+          className="mt-10 max-w-3xl mx-auto text-center"
+        />
       </div>
     </section>
   );
