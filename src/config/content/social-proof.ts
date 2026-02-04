@@ -19,3 +19,9 @@ export const SOCIAL_PROOF_QUOTE: QuoteContent = {
   author: "Robert Clark",
   title: "VP of Safety - UNIVERSAL GROUP",
 };
+
+export const SOCIAL_PROOF_CA_QUOTE: QuoteContent = {
+  text: "The Universal Group centralized 14 fragmented systems into SALUS and secured $750,000 in annual insurance savings.",
+  author: "",
+  title: "",
+};
