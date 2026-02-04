@@ -62,6 +62,13 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
             </>
           )}
         </div>
+        <Quote
+          text={SOCIAL_PROOF_QUOTE.text}
+          author={SOCIAL_PROOF_QUOTE.author}
+          title={SOCIAL_PROOF_QUOTE.title}
+          variant="dark"
+          className="my-10 max-w-xl mx-auto text-center"
+        />
         <div className="social-proof-stats">
           {SOCIAL_PROOF_STATS.map((stat, index) => (
             <div key={index} className="social-proof-stat">
@@ -70,13 +77,6 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
             </div>
           ))}
         </div>
-        <Quote
-          text={SOCIAL_PROOF_QUOTE.text}
-          author={SOCIAL_PROOF_QUOTE.author}
-          title={SOCIAL_PROOF_QUOTE.title}
-          variant="dark"
-          className="mt-10 max-w-xl mx-auto text-center"
-        />
       </div>
     </section>
   );
