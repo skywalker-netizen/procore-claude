@@ -35,7 +35,8 @@ export function HeroSection({ variant }: HeroSectionProps) {
           {isProcore ? (
             <h1 className="hero-title">
               The Best Field Engine<br />
-              for your Procore<span className="highlight">{content.titleHighlight}</span>
+              for your Procore<br />
+              <span className="highlight">Brain.</span>
             </h1>
           ) : (
             <h1 className="hero-title">
