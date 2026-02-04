@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -13,6 +14,9 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Salus | Procore's Field-First Safety Companion";
+  }, []);
   return (
     <div className="min-h-screen">
       <Header />

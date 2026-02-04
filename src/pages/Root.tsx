@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -12,6 +13,9 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
 
 const Root = () => {
+  useEffect(() => {
+    document.title = "Salus - Adoption-First Safety Management Software";
+  }, []);
   return (
     <div className="min-h-screen">
       <Header />
