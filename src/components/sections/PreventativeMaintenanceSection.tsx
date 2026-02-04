@@ -1,4 +1,4 @@
-import { LayoutGrid, Clock, Grid3X3, Bell } from "lucide-react";
+import { Wrench, TrendingUp } from "lucide-react";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 
@@ -7,39 +7,25 @@ export function PreventativeMaintenanceSection() {
     <section className="section-padding" style={{ background: "hsl(var(--gray-100))" }}>
       <div className="section-inner grid-2">
         <div>
-          <SyncBadge text="PREVENTATIVE MAINTENANCE" />
+          <SyncBadge text="ACTIONABLE FIELD INTELLIGENCE" />
           <h2 className="section-title">
-            Your Crane Log Shouldn't Live in a Binder.
+            Intelligence from the field, for the field.
           </h2>
           <p className="section-subtitle">
-            High-value assets require high-fidelity tracking. SALUS replaces binders with live equipment dashboards.
+            Your Crane Log Shouldn't Live in a Binder. High-Fidelity Field Intelligence helps you prevent incidents and close the accountability gaps. At the worker and asset level.
           </p>
           <FeatureItem
-            icon={<LayoutGrid size={20} />}
+            icon={<Wrench size={20} />}
             iconColor="blue"
-            title="Real-Time Fleet Dashboard"
-            description="See every asset's inspection status, maintenance schedule, and operator certifications in one view."
+            title="Corrective Actions"
+            description="A foreman scans a QR code on a scissor lift. SALUS instantly checks the maintenance log. If the inspection is overdue, the app flags it immediately."
             variant="block"
           />
           <FeatureItem
-            icon={<Clock size={20} />}
+            icon={<TrendingUp size={20} />}
             iconColor="tan"
-            title="Predictive Alerts"
-            description="Get notified before certifications expire or maintenance is due—not after."
-            variant="block"
-          />
-          <FeatureItem
-            icon={<Grid3X3 size={20} />}
-            iconColor="lime"
-            title="QR-Based Asset Identity"
-            description="Scan any asset tag for instant pre-trip status, maintenance history, and operator requirements."
-            variant="block"
-          />
-          <FeatureItem
-            icon={<Bell size={20} />}
-            iconColor="orange"
-            title="Automated Compliance"
-            description="Never miss an OSHA inspection deadline. SALUS tracks requirements and alerts your team."
+            title="Track Leading Indicators"
+            description="Spot a spike in utility-strike near-misses across your Eastern Region sites before a backhoe hits a fiber line."
             variant="block"
           />
         </div>
@@ -87,7 +73,7 @@ export function PreventativeMaintenanceSection() {
             </div>
             <div className="digital-identity-card">
               <div className="icon">
-                <Grid3X3 size={24} />
+                <Wrench size={24} />
               </div>
               <div>
                 <h5>DIGITAL IDENTITY</h5>
