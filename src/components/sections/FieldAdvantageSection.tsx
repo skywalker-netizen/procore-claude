@@ -37,7 +37,7 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
                 iconColor={feature.iconColor as IconColor}
                 title={feature.title}
                 description={feature.description}
-                variant="numbered"
+                variant={variant === "sitedocs" ? "block" : "numbered"}
                 titleOnly={feature.titleOnly}
               />
             ))}
