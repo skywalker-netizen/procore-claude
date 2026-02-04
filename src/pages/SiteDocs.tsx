@@ -23,7 +23,7 @@ const SiteDocs = () => {
       <ComparisonTableSection />
       <TradePartnerSection variant="sitedocs" />
       <FieldAdvantageSection variant="sitedocs" />
-      <PreventativeMaintenanceSection />
+      <PreventativeMaintenanceSection variant="sitedocs" />
       <TestimonialsSection />
       <IntegrationSection />
       <CTASection />
