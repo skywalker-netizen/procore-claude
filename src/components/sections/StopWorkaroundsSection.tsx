@@ -5,27 +5,44 @@ import { ComplianceCoreDashboard } from "@/components/infographics/ComplianceCor
 import { LMSDashboard } from "@/components/infographics/LMSDashboard";
 import { STOP_WORKAROUNDS_CONTENT } from "@/config";
 import type { PageVariant, IconColor } from "@/config/types";
+import type { ReactNode } from "react";
 
 interface StopWorkaroundsSectionProps {
   variant: PageVariant;
 }
 
-const PROCORE_ICONS = [
-  <ScanSearch size={20} />,
-  <MessagesSquare size={20} />,
-];
+interface VariantConfig {
+  icons: ReactNode[];
+  infographic: "lms" | "compliance";
+  showUnifiedBadge: boolean;
+}
 
-const GENERAL_ICONS = [
-  <ScanSearch size={20} />,
-  <MessagesSquare size={20} />,
-  <Zap size={20} />,
-];
+const VARIANT_CONFIG: Record<PageVariant, VariantConfig> = {
+  procore: {
+    icons: [<ScanSearch size={20} />, <MessagesSquare size={20} />],
+    infographic: "compliance",
+    showUnifiedBadge: false,
+  },
+  general: {
+    icons: [<ScanSearch size={20} />, <MessagesSquare size={20} />, <Zap size={20} />],
+    infographic: "compliance",
+    showUnifiedBadge: true,
+  },
+  sitedocs: {
+    icons: [<ScanSearch size={20} />, <MessagesSquare size={20} />, <Zap size={20} />],
+    infographic: "compliance",
+    showUnifiedBadge: true,
+  },
+  hammertech: {
+    icons: [<ScanSearch size={20} />, <MessagesSquare size={20} />, <Zap size={20} />],
+    infographic: "lms",
+    showUnifiedBadge: false,
+  },
+};
 
 export function StopWorkaroundsSection({ variant }: StopWorkaroundsSectionProps) {
   const content = STOP_WORKAROUNDS_CONTENT[variant];
-  const isProcore = variant === "procore";
-  const isHammertech = variant === "hammertech";
-  const icons = isProcore ? PROCORE_ICONS : GENERAL_ICONS;
+  const config = VARIANT_CONFIG[variant];
 
   return (
     <section className="section-padding section-bg-gray">
@@ -42,7 +59,7 @@ export function StopWorkaroundsSection({ variant }: StopWorkaroundsSectionProps)
           {content.features?.map((feature, index) => (
             <FeatureItem
               key={index}
-              icon={icons[index]}
+              icon={config.icons[index]}
               iconColor={feature.iconColor as IconColor}
               title={feature.title}
               description={feature.description}
@@ -51,10 +68,10 @@ export function StopWorkaroundsSection({ variant }: StopWorkaroundsSectionProps)
           ))}
         </div>
         <div style={{ position: "relative" }}>
-          {isHammertech ? (
+          {config.infographic === "lms" ? (
             <LMSDashboard />
           ) : (
-            <ComplianceCoreDashboard showUnifiedBadge={!isProcore} />
+            <ComplianceCoreDashboard showUnifiedBadge={config.showUnifiedBadge} />
           )}
         </div>
       </div>
