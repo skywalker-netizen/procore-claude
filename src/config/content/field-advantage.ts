@@ -68,10 +68,10 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
         titleOnly: true,
       },
       {
-        title: "",
-        description:
-          'With Salus, you don\'t ask workers to learn a new "software" process; our success team works with you to provide a digital version of the way they already work in the field.',
+        title: 'With Salus, you don\'t ask workers to learn a new "software" process; our success team works with you to provide a digital version of the way they already work in the field.',
+        description: "",
         iconColor: "lime",
+        titleOnly: true,
       },
     ],
   },
