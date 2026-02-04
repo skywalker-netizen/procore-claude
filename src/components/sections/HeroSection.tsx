@@ -26,6 +26,7 @@ export function HeroSection({ variant }: HeroSectionProps) {
   const trustBadges = HERO_TRUST_BADGES[variant];
   const icons = variant === "procore" ? PROCORE_ICONS : GENERAL_ICONS;
   const isProcore = variant === "procore";
+  const useGeneralLayout = variant === "general" || variant === "sitedocs";
 
   return (
     <section className="hero">
@@ -37,12 +38,12 @@ export function HeroSection({ variant }: HeroSectionProps) {
               The Best Field Engine<br />
               for your Procore <span className="highlight">Brain.</span>
             </h1>
-          ) : (
+          ) : useGeneralLayout ? (
             <h1 className="hero-title">
               {content.title}<br />
               <span className="highlight-block">{content.titleHighlight}</span>
             </h1>
-          )}
+          ) : null}
           
           {isProcore ? (
             <>
@@ -57,13 +58,13 @@ export function HeroSection({ variant }: HeroSectionProps) {
                 {content.descriptionLine2}
               </p>
             </>
-          ) : (
+          ) : useGeneralLayout ? (
             <>
               <p className="hero-subtitle">{content.subtitle}</p>
               <p className="hero-description">{content.description}</p>
               {content.tagline && <p className="hero-tagline">{content.tagline}</p>}
             </>
-          )}
+          ) : null}
 
           <div className={`trust-badges ${isProcore ? 'trust-badges-procore' : ''}`}>
             {trustBadges.map((badge, index) => (

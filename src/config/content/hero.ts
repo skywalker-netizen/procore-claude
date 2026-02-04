@@ -37,6 +37,16 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
       "SALUS provides high-precision trades and general contractors with a live stream of high-fidelity, actionable field intelligence and helps close the accountability gaps so that mission-critical projects stay on track and reputations stay protected.",
     tagline: "Zero Incidents. Zero Downtime. Zero Blindspots.",
   },
+  sitedocs: {
+    badge: "ACCOUNTABILITY, NOT JUST FORMS",
+    title: "Salus vs. SiteDocs:",
+    titleHighlight: "Switch to the High-Visibility Safety Platform.",
+    subtitle:
+      "You're outgrowing SiteDocs simple safety forms, its low-fidelity visibility into the field, and you expect more from your partner in safety.",
+    description:
+      "SiteDocs fragmented system leaves you with accountability gaps. Salus empowers field and office to drill down to the worker and asset level, across sites, trades, and equipment for 100% visibility and accountability.",
+    tagline: "Scale your Business, Not Risk.",
+  },
 };
 
 export const HERO_TRUST_BADGES: VariantContent<TrustBadgeContent[]> = {
@@ -66,6 +76,23 @@ export const HERO_TRUST_BADGES: VariantContent<TrustBadgeContent[]> = {
     {
       text: "Agile - up and running in as",
       subtext: "little as two weeks",
+      iconBg: "navy",
+    },
+  ],
+  sitedocs: [
+    {
+      text: "100% visibility",
+      subtext: "across all sites",
+      iconBg: "lime",
+    },
+    {
+      text: "Worker & asset level",
+      subtext: "accountability",
+      iconBg: "navy",
+    },
+    {
+      text: "High-fidelity",
+      subtext: "field intelligence",
       iconBg: "navy",
     },
   ],
