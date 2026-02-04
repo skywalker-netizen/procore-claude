@@ -7,9 +7,9 @@ import { EXECUTIVE_INSIGHTS_CONTENT, EXECUTIVE_INSIGHTS_QUOTE } from "./executiv
 import { TRADE_PARTNER_CONTENT, TRADE_PARTNER_QUOTE } from "./trade-partner";
 import { PREVENTATIVE_MAINTENANCE_CONTENT } from "./preventative-maintenance";
 import { SOCIAL_PROOF_TITLE, SOCIAL_PROOF_STATS, SOCIAL_PROOF_QUOTE } from "./social-proof";
-import { TESTIMONIALS_CONTENT, TESTIMONIALS_QUOTE } from "./testimonials";
+import { TESTIMONIALS_CONTENT, TESTIMONIALS_QUOTE, getTestimonialsContent } from "./testimonials";
 
-const PAGE_VARIANTS: PageVariant[] = ["procore", "general", "sitedocs"];
+const PAGE_VARIANTS: PageVariant[] = ["procore", "general", "sitedocs", "hammertech"];
 
 describe("Hero Content", () => {
   it("should have all variants defined", () => {
@@ -205,13 +205,13 @@ describe("Social Proof Content", () => {
 });
 
 describe("Testimonials Content", () => {
-  it("should have required fields", () => {
+  it("should have required fields for default content", () => {
     expect(TESTIMONIALS_CONTENT.badge).toBeTruthy();
     expect(TESTIMONIALS_CONTENT.title).toBeTruthy();
     expect(TESTIMONIALS_CONTENT.subtitle).toBeTruthy();
   });
 
-  it("should have valid features array", () => {
+  it("should have valid features array for default content", () => {
     expect(Array.isArray(TESTIMONIALS_CONTENT.features)).toBe(true);
     expect(TESTIMONIALS_CONTENT.features.length).toBeGreaterThan(0);
     TESTIMONIALS_CONTENT.features.forEach((feature) => {
@@ -225,5 +225,18 @@ describe("Testimonials Content", () => {
     expect(TESTIMONIALS_QUOTE.text).toBeTruthy();
     expect(TESTIMONIALS_QUOTE.author).toBeTruthy();
     expect(TESTIMONIALS_QUOTE.title).toBeTruthy();
+  });
+
+  it("should return variant-specific content for hammertech", () => {
+    const hammertechContent = getTestimonialsContent("hammertech");
+    expect(hammertechContent.badge).toBeTruthy();
+    expect(hammertechContent.title).toBeTruthy();
+    expect(hammertechContent.subtitle).toBeTruthy();
+    expect(hammertechContent.subtitle).toContain("HammerTech");
+  });
+
+  it("should return default content for non-hammertech variants", () => {
+    const procoreContent = getTestimonialsContent("procore");
+    expect(procoreContent).toEqual(TESTIMONIALS_CONTENT);
   });
 });
