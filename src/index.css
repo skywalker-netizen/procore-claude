@@ -1325,6 +1325,10 @@
 
 .hero-title .highlight {
   color: hsl(var(--gray-400));
+}
+
+.hero-title .highlight-block {
+  color: hsl(var(--gray-400));
   display: block;
 }
 
