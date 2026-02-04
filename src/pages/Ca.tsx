@@ -24,8 +24,8 @@ const Ca = () => {
       <ExecutiveInsightsSection variant="ca" />
       <TradePartnerSection variant="ca" />
       <PreventativeMaintenanceSection variant="ca" />
-      <IntegrationSection />
       <TestimonialsSection />
+      <IntegrationSection />
       <CTASection />
       <Footer />
     </div>
