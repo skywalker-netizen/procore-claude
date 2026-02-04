@@ -50,7 +50,7 @@ export function HeroSection({ variant }: HeroSectionProps) {
                 {content.subtitleLine1}<br />
                 <em className="hero-italic">{content.subtitleLine2Italic}</em>
                 {content.subtitleLine2End}<br />
-                <span className="hero-subtitle-emphasis">{content.subtitleLine3}</span>
+                {content.subtitleLine3}
               </p>
               <p className="hero-description">{content.description}</p>
             </>
