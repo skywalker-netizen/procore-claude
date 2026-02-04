@@ -1,4 +1,5 @@
 import fieldBackground from "@/assets/field-background.png";
+import procoreFieldBackground from "@/assets/procore-field-background.png";
 import { SOCIAL_PROOF_TITLE, SOCIAL_PROOF_STATS } from "@/config";
 import type { PageVariant } from "@/config/types";
 
@@ -26,9 +27,10 @@ interface SocialProofSectionProps {
 export function SocialProofSection({ variant }: SocialProofSectionProps) {
   const isProcore = variant === "procore";
   const title = SOCIAL_PROOF_TITLE[variant];
+  const backgroundImage = isProcore ? procoreFieldBackground : fieldBackground;
 
   return (
-    <section className="social-proof-section" style={{ backgroundImage: `url(${fieldBackground})` }}>
+    <section className="social-proof-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="social-proof-inner">
         <h3 className="social-proof-title">{title}</h3>
         <div className="social-proof-logos">
