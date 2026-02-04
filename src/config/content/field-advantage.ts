@@ -102,7 +102,7 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
     title: "100% field participation.",
     titleHighlight: "That changes everything.",
     subtitle:
-      'In high-risk scaling and mission-critical builds, "pencil-whipping" is a silent epidemic. When safety tools are either too shallow to provide real logic or so complex that field crews find them a burden, workers stop reporting the truth. Garbage in, Garbage out.',
+      "You cannot be on every site. You need a safety management software. But if the field hates it, what's the point? Garbage in, Garbage out.",
     features: [
       {
         title: "Mobile-First. Field-Loved.",
@@ -117,9 +117,9 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
         iconColor: "lime",
       },
       {
-        title: "More relevant in-field experience, better intel",
+        title: "More relevant, better intel",
         description:
-          "Salus Form builder gives you complete control over your digital forms. Customize the software to make it fit your needs and your workflows, not the way around. We don't ask your crews to learn a new software process. We provide a digital mirror of the way they already work.",
+          "Salus Form builder gives you complete control over your digital forms. Customize the software to make it fit your needs and your workflows, not the way around.",
         iconColor: "blue",
       },
     ],
