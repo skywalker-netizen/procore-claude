@@ -5,6 +5,7 @@ import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { FieldAdvantageSection } from "@/components/sections/FieldAdvantageSection";
 import { StopWorkaroundsSection } from "@/components/sections/StopWorkaroundsSection";
 import { TradePartnerSection } from "@/components/sections/TradePartnerSection";
+import { PreventativeMaintenanceSection } from "@/components/sections/PreventativeMaintenanceSection";
 import { ExecutiveInsightsSection } from "@/components/sections/ExecutiveInsightsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
@@ -18,6 +19,7 @@ const Root = () => {
       <FieldAdvantageSection variant="general" />
       <StopWorkaroundsSection variant="general" />
       <TradePartnerSection variant="general" />
+      <PreventativeMaintenanceSection />
       <ExecutiveInsightsSection variant="general" />
       <TestimonialsSection />
       <CTASection />
