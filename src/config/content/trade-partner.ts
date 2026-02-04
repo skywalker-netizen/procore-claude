@@ -80,7 +80,7 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
   hammertech: {
     badge: "TRADE PARTNER MANAGEMENT",
     title: "Better collaboration for greater visibility: it's a win-win and it should be Free.",
-    subtitle: 'HammerTech\'s complexity creates friction with trade partners. Salus onboards individuals, not just companies, and tracks compliance and corrective actions down to the individual level.',
+    subtitle: 'The "Subcontractor Black Box" is where compliance goes to die. HammerTech setup generates friction, as Trades have to create a new HammerTech account with every GC they work with. With Salus, Trades and General Contractors create an account only once.',
     features: [
       {
         title: "Zero Barrier Access",
