@@ -78,7 +78,7 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
     title: "The Magic",
     titleHighlight: "Orientation",
     subtitle:
-      "HammerTech's complex onboarding slows field adoption. With SALUS, workers scan a single QR code at the gate to complete their site orientation, watch site-specific videos, and digitally sign all necessary forms before stepping onto the jobsite.",
+      "While HammerTech users struggle with complex sign-ins and clunky menus, Salus workers scan a QR code and are ready to work in seconds.",
     features: [
       {
         title: "Faster onboarding",
