@@ -75,7 +75,7 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
           author={SOCIAL_PROOF_QUOTE.author}
           title={SOCIAL_PROOF_QUOTE.title}
           variant="dark"
-          className="mt-10 max-w-3xl mx-auto text-center"
+          className="mt-10 max-w-xl mx-auto text-center"
         />
       </div>
     </section>
