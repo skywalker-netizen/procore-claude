@@ -5,6 +5,7 @@ export interface SEOContent {
   description: string;
   canonical: string;
   ogImage?: string;
+  keywords?: string;
 }
 
 const BASE_URL = "https://salusisprocoresafetysolution.lovable.app";
@@ -43,8 +44,9 @@ export const SEO_CONTENT: Record<PageVariant | "root", SEOContent> = {
   ca: {
     title: "Salus Canada | COR™ Certification & WCB Rebate Optimization",
     description:
-      "Salus helps Canadian contractors secure COR™ certification, maximize WCB rebates, and win public bids with push-button audit readiness.",
+      "Salus helps Canadian contractors secure COR™ certification, maximize WCB premium rebates, and win public infrastructure bids. Push-button audit readiness for BC, Alberta & Ontario.",
     canonical: `${BASE_URL}/ca`,
+    keywords: "COR certification, WCB rebates, Canadian safety software, construction safety Canada, WHMIS 2015, NBC 2020, Alberta safety, BC safety, Ontario safety",
   },
 };
 
@@ -77,4 +79,22 @@ export const PRODUCT_SCHEMA = {
     ratingCount: "250000",
     bestRating: "5",
   },
+};
+
+export const CANADA_SERVICE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Salus Safety Management for Canada",
+  provider: {
+    "@type": "Organization",
+    name: "Salus",
+  },
+  areaServed: [
+    { "@type": "Country", name: "Canada" },
+    { "@type": "AdministrativeArea", name: "British Columbia" },
+    { "@type": "AdministrativeArea", name: "Alberta" },
+    { "@type": "AdministrativeArea", name: "Ontario" },
+  ],
+  description: "Construction safety management software optimized for Canadian COR™ certification, WCB premium rebates, WHMIS 2015 compliance, and NBC 2020 requirements.",
+  serviceType: "Safety Management Software",
 };
