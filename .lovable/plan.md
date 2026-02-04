@@ -1,184 +1,177 @@
 
 
-# Code Cleanup and Refactoring Plan
+# CSS Reorganization Plan (Visual-Preserving)
 
-This plan restructures the codebase to improve maintainability, reduce duplication, and follow React best practices.
-
----
-
-## Summary of Changes
-
-The current codebase has two nearly identical landing pages (Root.tsx at 1,596 lines and Index.tsx at 1,665 lines) with massive code duplication. This refactoring extracts shared components and creates a modular architecture.
+This plan restructures `index.css` for maintainability without changing any visual output.
 
 ---
 
-## New Component Structure
+## Goals
+
+- Improve developer navigation and maintainability
+- Reduce duplication through shared utility classes
+- Add clear section organization with a table of contents
+- Consolidate magic values into CSS variables
+- Zero visual changes
+
+---
+
+## Proposed Structure
 
 ```text
-src/components/
-├── layout/
-│   ├── Header.tsx              # Shared site header
-│   └── Footer.tsx              # Shared site footer
-├── sections/
-│   ├── HeroSection.tsx         # Hero with configurable content
-│   ├── SocialProofSection.tsx  # Logo bar and stats
-│   ├── IntegrationSection.tsx  # Integration diagram section
-│   ├── FieldAdvantageSection.tsx
-│   ├── TradePartnerSection.tsx
-│   ├── StopWorkaroundsSection.tsx
-│   ├── ExecutiveInsightsSection.tsx
-│   ├── PreventativeMaintenanceSection.tsx
-│   ├── TechSpecsSection.tsx
-│   └── TestimonialsSection.tsx
-├── forms/
-│   ├── DemoForm.tsx            # Reusable demo request form
-│   └── useDemoForm.ts          # Form state and submission logic hook
-├── infographics/
-│   ├── IntegrationDiagram.tsx
-│   ├── ComplianceCoreDashboard.tsx
-│   ├── PhoneMockups.tsx
-│   ├── TradePartnerDashboard.tsx
-│   └── AnalyticsCard.tsx
-└── shared/
-    ├── Badge.tsx               # "SYNCED WITH THE FIELD" badge
-    ├── TrustBadge.tsx          # Icon + text trust badges
-    ├── G2Badge.tsx             # G2 rating badge
-    ├── Quote.tsx               # Testimonial quote block
-    └── FeatureItem.tsx         # Icon + title + description
+src/index.css (reorganized)
+├── TABLE OF CONTENTS (comment block)
+├── 1. TAILWIND DIRECTIVES
+├── 2. CSS VARIABLES (@layer base :root)
+├── 3. GLOBAL RESETS & BASE STYLES
+├── 4. TYPOGRAPHY (font utilities, .mono)
+├── 5. LAYOUT UTILITIES (containers, grids)
+├── 6. COMPONENT LIBRARY
+│   ├── 6.1 Buttons (.btn-*)
+│   ├── 6.2 Badges (.badge, .status-badge, etc.)
+│   ├── 6.3 Cards (.demo-card, .analytics-card, etc.)
+│   ├── 6.4 Forms (.form-group, inputs)
+│   └── 6.5 Icons (.trust-icon, .feature-icon, etc.)
+├── 7. SHARED PATTERNS
+│   ├── 7.1 Widget Base (.widget-base)
+│   ├── 7.2 List Items (.list-item-base)
+│   ├── 7.3 Progress Bars (.progress-bar-base)
+│   └── 7.4 Status Indicators (.status-dot)
+├── 8. LAYOUT COMPONENTS
+│   ├── 8.1 Header
+│   └── 8.2 Footer
+├── 9. SECTIONS (ordered by page flow)
+│   ├── 9.1 Hero Section
+│   ├── 9.2 Social Proof Section
+│   ├── 9.3 Integration Section
+│   ├── 9.4 Field Advantage Section
+│   ├── 9.5 Trade Partner Section
+│   ├── 9.6 Stop Workarounds Section
+│   ├── 9.7 Executive Insights Section
+│   ├── 9.8 Preventative Maintenance Section
+│   ├── 9.9 Tech Specs Section
+│   ├── 9.10 Testimonials Section
+│   └── 9.11 CTA Section
+├── 10. INFOGRAPHIC COMPONENTS
+│   ├── 10.1 Integration Diagram
+│   ├── 10.2 Compliance Core Dashboard
+│   ├── 10.3 Phone Mockups
+│   ├── 10.4 Trade Partner Dashboard
+│   └── 10.5 Analytics Card
+├── 11. ANIMATIONS & KEYFRAMES
+└── 12. RESPONSIVE / MEDIA QUERIES
 ```
 
 ---
 
-## Key Extractions
+## Key Changes
 
-### 1. Demo Form Logic (Custom Hook)
+### 1. Add Table of Contents
 
-Extracts the form state, validation, UTM parameter handling, and Zapier submission into a reusable hook.
+A comment block at the top listing all sections with line numbers for quick navigation.
 
-**Before (duplicated in both pages):**
-- Form state with 9 fields
-- UTM parameter capture in useEffect
-- handleInputChange function
-- handleSubmit with validation and fetch
+```css
+/* ==========================================================================
+   SALUS STYLES - TABLE OF CONTENTS
+   ==========================================================================
+   
+   1. Tailwind Directives ......................... line ~10
+   2. CSS Variables ............................... line ~20
+   3. Global Resets ............................... line ~100
+   4. Typography .................................. line ~130
+   5. Layout Utilities ............................ line ~160
+   6. Component Library ........................... line ~200
+      6.1 Buttons ................................. line ~200
+      6.2 Badges .................................. line ~280
+      ...
+   
+   ========================================================================== */
+```
 
-**After:**
-```tsx
-// src/components/forms/useDemoForm.ts
-export function useDemoForm() {
-  // All form logic encapsulated
-  return { formData, handleInputChange, handleSubmit, isLoading, isSubmitted };
+### 2. Extract Shared Patterns
+
+Create base classes that multiple components extend:
+
+```css
+/* BEFORE: Duplicated 5+ times */
+.dashboard-widget { background: hsl(var(--steel-dark) / 0.3); border-radius: 4px; padding: 16px; border: 1px solid hsl(var(--steel-dark)); }
+.cc-widget { background: hsl(var(--steel-dark) / 0.3); border-radius: 4px; padding: 16px; border: 1px solid hsl(var(--steel-dark)); }
+
+/* AFTER: Shared base + specific overrides */
+.widget-base { 
+  background: hsl(var(--steel-dark) / 0.3); 
+  border-radius: 4px; 
+  padding: 16px; 
+  border: 1px solid hsl(var(--steel-dark)); 
 }
+.dashboard-widget { /* inherits via composition or extends widget-base */ }
+.cc-widget { /* specific overrides only */ }
 ```
 
-### 2. Demo Form UI Component
+### 3. Consolidate Magic Values
 
-**Before:** ~80 lines duplicated in each page file
+```css
+/* BEFORE: Scattered throughout */
+.some-element { background: rgba(255, 255, 255, 0.1); }
+.another-element { background: rgba(255, 255, 255, 0.1); }
 
-**After:**
-```tsx
-// src/components/forms/DemoForm.tsx
-<DemoForm 
-  variant="hero" | "cta"
-  onSuccess={() => {}}
-/>
+/* AFTER: Variable in :root */
+:root {
+  --glass-white-10: rgba(255, 255, 255, 0.1);
+  --glass-white-05: rgba(255, 255, 255, 0.05);
+}
+.some-element { background: var(--glass-white-10); }
 ```
 
-### 3. Header and Footer
+### 4. Standardize Section Markers
 
-**Before:** Identical in both files
+```css
+/* ==========================================================================
+   9.3 INTEGRATION SECTION
+   ========================================================================== */
 
-**After:**
-```tsx
-// src/components/layout/Header.tsx
-<Header />
-
-// src/components/layout/Footer.tsx  
-<Footer />
-```
-
-### 4. Section Components
-
-Each section becomes its own component with props for content customization:
-
-```tsx
-// Example: HeroSection
-<HeroSection
-  title="A System of Reality"
-  highlightedText="Loved by Boots and Suits."
-  subtitle="..."
-  trustBadges={[...]}
-  variant="procore" | "general"
-/>
+.integration-section { ... }
 ```
 
 ---
 
-## Refactored Page Structure
+## Implementation Steps
 
-After refactoring, each page becomes a simple composition:
-
-```tsx
-// src/pages/Root.tsx (~50 lines)
-const Root = () => (
-  <>
-    <Header />
-    <HeroSection variant="general" />
-    <SocialProofSection logos={rootLogos} />
-    <FieldAdvantageSection />
-    <TradePartnerSection />
-    <StopWorkaroundsSection />
-    <ExecutiveInsightsSection />
-    <PreventativeMaintenanceSection />
-    <CTASection />
-    <Footer />
-  </>
-);
-```
+1. **Create a backup** - Copy current `index.css` to `index.css.backup`
+2. **Add table of contents** - Insert comment block at top
+3. **Reorder existing rules** - Move blocks to match new structure (no changes to selectors or values)
+4. **Add section dividers** - Insert standardized comment blocks
+5. **Extract shared patterns** - Create base classes, update HTML to add them alongside existing classes
+6. **Consolidate variables** - Move magic values to `:root`
+7. **Verify visually** - Check all pages render identically
 
 ---
 
-## CSS Improvements
+## Estimated Line Reduction
 
-### Current Issues
-- Single 4,400-line CSS file
-- Section-specific styles not co-located with components
+| Category | Current | After |
+|----------|---------|-------|
+| Widget duplications | ~200 lines | ~80 lines |
+| Status dot variants | ~50 lines | ~20 lines |
+| Card patterns | ~150 lines | ~70 lines |
+| **Total** | **4,406 lines** | **~3,900 lines** |
 
-### Proposed Approach
-- Keep global styles (variables, base, utilities) in index.css
-- Extract section-specific styles into component-level CSS modules or keep consolidated but organized with clear section comments
-
----
-
-## Implementation Order
-
-1. **Create the forms hook and component** - These are used across multiple sections
-2. **Create layout components** - Header and Footer
-3. **Create shared components** - Badge, TrustBadge, G2Badge, Quote, FeatureItem
-4. **Create infographic components** - Visual dashboard elements
-5. **Create section components** - One section at a time
-6. **Refactor Root.tsx** - Replace inline code with components
-7. **Refactor Index.tsx** - Replace inline code with components
-8. **Clean up** - Remove unused code, verify both pages work
+The reduction is modest because the goal is preserving visuals, not aggressive refactoring.
 
 ---
 
-## Benefits
+## Risk Mitigation
 
-| Metric | Before | After |
-|--------|--------|-------|
-| Root.tsx | 1,596 lines | ~50 lines |
-| Index.tsx | 1,665 lines | ~60 lines |
-| Code duplication | ~90% overlap | Near zero |
-| Component reusability | None | High |
-| Testability | Difficult | Easy (isolated components) |
+- All existing class names remain unchanged
+- New base classes are additive (components use both base + specific)
+- Responsive styles stay at the end for cascade correctness
+- No CSS nesting or preprocessor features (keeps vanilla CSS)
 
 ---
 
 ## Technical Notes
 
-- All components use TypeScript with proper prop interfaces
-- Form submission logic stays in the custom hook for easy testing
-- Section components accept content props for A/B testing flexibility
-- Existing CSS class names preserved for styling compatibility
-- No breaking changes to the live pages during refactoring
+- This is pure reorganization - no Sass/SCSS conversion
+- Compatible with Tailwind's `@layer` system already in use
+- Future consideration: Split into multiple files with `@import` if build supports it (Vite does)
 
