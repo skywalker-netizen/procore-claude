@@ -15,7 +15,6 @@ import generalEnergyLogo from "@/assets/logos/general-energy-2.svg";
 import willmengLogo from "@/assets/logos/willmeng.png";
 
 // Root page logos
-import glyLogo from "@/assets/logos/gly.svg";
 import mcshaneLogo from "@/assets/logos/mcshane.svg";
 import stacyWitbeckLogo from "@/assets/logos/stacy-witbeck.png";
 import delawareElevatorLogo from "@/assets/logos/delaware-elevator.png";
@@ -50,10 +49,9 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
           ) : (
             <>
               <img src={kearCivilLogo} alt="Kear Civil" />
-              <img src={electricPlusLogo} alt="Electric Plus" className="logo-height-48" />
+              <img src={electricPlusLogo} alt="Electric Plus" className="logo-height-64" />
               <img src={tunistaLogo} alt="Tunista Construction" className="logo-small-row" />
               <img src={generalEnergyLogo} alt="General Energy" className="invert-logo logo-small-row" />
-              <img src={glyLogo} alt="GLY Construction" className="invert-logo" />
               <img src={mcshaneLogo} alt="McShane Construction" />
               <img src={stacyWitbeckLogo} alt="Stacy Witbeck" />
               <img src={delawareElevatorLogo} alt="Delaware Elevator" />
