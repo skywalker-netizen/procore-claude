@@ -59,18 +59,18 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
     title: "The Magic",
     titleHighlight: "Orientation",
     subtitle:
-      "With SiteDocs, orientations are managed outside the platform, requiring supervisors to spend significant time manually confirming that workers are properly oriented and job-ready.",
+      "With SiteDocs, orientations are managed outside the platform, requiring supervisors to spend significant time manually confirming that workers are properly oriented and job-ready.\n\nWith SALUS, workers scan a single QR code at the gate to complete their site orientation, watch site-specific videos, and digitally sign all necessary forms before stepping onto the jobsite.\n\nWith Salus, our success team works with you to provide a digital version not only of a form, but of your workflows and the way workers already work in the field.\n\nNo paper orientation:",
     features: [
       {
-        title: "With SALUS, workers scan a single QR code at the gate to complete their site orientation, watch site-specific videos, and digitally sign all necessary forms before stepping onto the jobsite.",
+        title: "Faster onboarding",
         description: "",
-        iconColor: "red",
+        iconColor: "lime",
         titleOnly: true,
       },
       {
-        title: 'With Salus, you don\'t ask workers to learn a new "software" process; our success team works with you to provide a digital version of the way they already work in the field.',
+        title: "Lower risk",
         description: "",
-        iconColor: "lime",
+        iconColor: "blue",
         titleOnly: true,
       },
     ],
