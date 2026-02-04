@@ -11,6 +11,40 @@ interface FieldAdvantageSectionProps {
   variant: PageVariant;
 }
 
+interface VariantConfig {
+  bgClass: string;
+  featureStyle: "block" | "numbered";
+  infographic: "qr" | "phones";
+  showContentQuote: boolean;
+}
+
+const VARIANT_CONFIG: Record<PageVariant, VariantConfig> = {
+  procore: {
+    bgClass: "section-bg-white",
+    featureStyle: "numbered",
+    infographic: "phones",
+    showContentQuote: false,
+  },
+  general: {
+    bgClass: "section-bg-white",
+    featureStyle: "numbered",
+    infographic: "phones",
+    showContentQuote: false,
+  },
+  sitedocs: {
+    bgClass: "section-bg-gray",
+    featureStyle: "block",
+    infographic: "qr",
+    showContentQuote: true,
+  },
+  hammertech: {
+    bgClass: "section-bg-gray",
+    featureStyle: "block",
+    infographic: "qr",
+    showContentQuote: true,
+  },
+};
+
 const FEATURE_ICONS = [
   <Heart size={20} />,
   <FileText size={20} />,
@@ -19,9 +53,10 @@ const FEATURE_ICONS = [
 
 export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
   const content = FIELD_ADVANTAGE_CONTENT[variant];
+  const config = VARIANT_CONFIG[variant];
 
   return (
-    <section className={`section-padding field-advantage-section ${(variant === "sitedocs" || variant === "hammertech") ? "section-bg-gray" : "section-bg-white"}`}>
+    <section className={`section-padding field-advantage-section ${config.bgClass}`}>
       <div className="section-inner">
         <div className="field-advantage-grid">
           <div className="field-advantage-content">
@@ -38,12 +73,12 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
                 iconColor={feature.iconColor as IconColor}
                 title={feature.title}
                 description={feature.description}
-                variant={(variant === "sitedocs" || variant === "hammertech") ? "block" : "numbered"}
+                variant={config.featureStyle}
                 titleOnly={feature.titleOnly}
               />
             ))}
 
-            {(variant === "sitedocs" || variant === "hammertech") && (
+            {config.showContentQuote && (
               <Quote
                 text={FIELD_ADVANTAGE_SITEDOCS_QUOTE.text}
                 author={FIELD_ADVANTAGE_SITEDOCS_QUOTE.author}
@@ -54,7 +89,7 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
           </div>
 
           <div className="field-advantage-mockups">
-            {(variant === "sitedocs" || variant === "hammertech") ? (
+            {config.infographic === "qr" ? (
               <SiteOnboardingDashboard />
             ) : (
               <>
