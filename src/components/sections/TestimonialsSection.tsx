@@ -15,7 +15,7 @@ const FEATURE_ICONS = [
 export function TestimonialsSection() {
   return (
     <section className="section-padding testimonials-section section-bg-gray">
-      <div className="section-inner grid-2">
+      <div className="section-inner grid-2 testimonials-grid">
         <div className="support-visual-column">
           <img 
             src={supportTeamImage} 
