@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -11,13 +10,12 @@ import { ExecutiveInsightsSection } from "@/components/sections/ExecutiveInsight
 import { IntegrationSection } from "@/components/sections/IntegrationSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
+import { SEOHead } from "@/components/shared/SEOHead";
 
 const Root = () => {
-  useEffect(() => {
-    document.title = "Salus - Adoption-First Safety Management Software";
-  }, []);
   return (
     <div className="min-h-screen">
+      <SEOHead variant="root" includeProductSchema />
       <Header />
       <HeroSection variant="general" />
       <SocialProofSection variant="general" />

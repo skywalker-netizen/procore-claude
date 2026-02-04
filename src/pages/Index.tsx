@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -12,13 +11,12 @@ import { PreventativeMaintenanceSection } from "@/components/sections/Preventati
 import { TechSpecsSection } from "@/components/sections/TechSpecsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
+import { SEOHead } from "@/components/shared/SEOHead";
 
 const Index = () => {
-  useEffect(() => {
-    document.title = "Salus | Procore's Field-First Safety Companion";
-  }, []);
   return (
     <div className="min-h-screen">
+      <SEOHead variant="procore" includeProductSchema />
       <Header />
       <HeroSection variant="procore" />
       <SocialProofSection variant="procore" />
