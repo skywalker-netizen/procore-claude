@@ -40,7 +40,7 @@ export function HeroSection({ variant }: HeroSectionProps) {
           ) : (
             <h1 className="hero-title">
               {content.title}<br />
-              <span className="highlight">{content.titleHighlight}</span>
+              <span className="highlight-block">{content.titleHighlight}</span>
             </h1>
           )}
           
