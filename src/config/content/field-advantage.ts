@@ -32,7 +32,7 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
     title: "100% field participation.",
     titleHighlight: "That changes everything.",
     subtitle:
-      'You cannot be on every site, and your regional managers are drowning in a "Visibility Gap". But workers will "pencil-whip" fillable PDFs at 4:00 PM just to go home.',
+      "You cannot be on every site. You need a safety management software. But if the field hates it, what's the point? Garbage in, Garbage out.",
     features: [
       {
         title: "Mobile-First. Field-Loved.",
