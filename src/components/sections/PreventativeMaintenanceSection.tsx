@@ -2,7 +2,11 @@ import { Wrench, ClipboardCheck, Activity } from "lucide-react";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 import { PREVENTATIVE_MAINTENANCE_CONTENT } from "@/config";
-import type { IconColor } from "@/config/types";
+import type { IconColor, PageVariant } from "@/config/types";
+
+interface PreventativeMaintenanceSectionProps {
+  variant?: PageVariant;
+}
 
 const FEATURE_ICONS = [
   <Wrench size={20} />,
@@ -10,8 +14,8 @@ const FEATURE_ICONS = [
   <Activity size={20} />,
 ];
 
-export function PreventativeMaintenanceSection() {
-  const content = PREVENTATIVE_MAINTENANCE_CONTENT;
+export function PreventativeMaintenanceSection({ variant = "general" }: PreventativeMaintenanceSectionProps) {
+  const content = PREVENTATIVE_MAINTENANCE_CONTENT[variant];
 
   return (
     <section className="section-padding section-bg-white">

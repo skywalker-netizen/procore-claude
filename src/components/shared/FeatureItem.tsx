@@ -27,8 +27,14 @@ export function FeatureItem({ icon, iconColor = "beige", title, description, var
       <div className="feature-block">
         <div className={`feature-block-icon circle ${iconColor}`}>{icon}</div>
         <div>
-          <h4>{title}</h4>
-          <p>{description}</p>
+          {titleOnly ? (
+            <p className="feature-title-text">{title}</p>
+          ) : (
+            <>
+              <h4>{title}</h4>
+              <p>{description}</p>
+            </>
+          )}
         </div>
       </div>
     );

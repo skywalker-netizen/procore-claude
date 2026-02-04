@@ -24,7 +24,7 @@ const Root = () => {
       <FieldAdvantageSection variant="general" />
       <StopWorkaroundsSection variant="general" />
       <TradePartnerSection variant="general" />
-      <PreventativeMaintenanceSection />
+      <PreventativeMaintenanceSection variant="general" />
       <ExecutiveInsightsSection variant="general" />
       <IntegrationSection />
       <TestimonialsSection />
