@@ -13,7 +13,7 @@ import { CTASection } from "@/components/sections/CTASection";
 
 const SiteDocs = () => {
   useEffect(() => {
-    document.title = "Salus - SiteDocs";
+    document.title = "Salus vs SiteDocs | Safety Management Comparison";
   }, []);
   return (
     <div className="min-h-screen">
