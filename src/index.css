@@ -1827,12 +1827,9 @@
 .executive-quote {
   margin-top: 32px;
   padding: 20px 24px;
-  background: hsl(var(--concrete));
+  background: hsl(var(--lime) / 0.12);
   border-left: 4px solid hsl(var(--lime));
   border-radius: 0 4px 4px 0;
-  border-top: 1px solid hsl(var(--concrete-dark));
-  border-right: 1px solid hsl(var(--concrete-dark));
-  border-bottom: 1px solid hsl(var(--concrete-dark));
 }
 
 .executive-quote blockquote {
