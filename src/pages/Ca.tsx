@@ -19,7 +19,7 @@ const Ca = () => {
       <Header />
       <HeroSection variant="ca" />
       <SocialProofSection variant="general" />
-      <FieldAdvantageSection variant="general" />
+      <FieldAdvantageSection variant="ca" />
       <StopWorkaroundsSection variant="general" />
       <TradePartnerSection variant="general" />
       <PreventativeMaintenanceSection variant="general" />
