@@ -2,8 +2,8 @@ import { Headphones, UserCheck, GraduationCap } from "lucide-react";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { Quote } from "@/components/shared/Quote";
 import { FeatureItem } from "@/components/shared/FeatureItem";
-import { getTestimonialsContent, TESTIMONIALS_QUOTE } from "@/config";
-import type { IconColor, PageVariant } from "@/config/types";
+import { TESTIMONIALS_CONTENT, TESTIMONIALS_QUOTE } from "@/config";
+import type { IconColor } from "@/config/types";
 import supportTeamImage from "@/assets/support-team.jpg";
 
 const FEATURE_ICONS = [
@@ -13,15 +13,12 @@ const FEATURE_ICONS = [
 ];
 
 interface TestimonialsSectionProps {
-  variant?: PageVariant;
-  bgVariant?: "default" | "white";
+  variant?: "default" | "white";
 }
 
-export function TestimonialsSection({ variant, bgVariant = "default" }: TestimonialsSectionProps) {
-  const content = getTestimonialsContent(variant);
-  
+export function TestimonialsSection({ variant = "default" }: TestimonialsSectionProps) {
   return (
-    <section className={`section-padding testimonials-section ${bgVariant === "white" ? "section-bg-white" : "section-bg-gray"}`}>
+    <section className={`section-padding testimonials-section ${variant === "white" ? "section-bg-white" : "section-bg-gray"}`}>
       <div className="section-inner grid-2 testimonials-grid">
         <div className="support-visual-column">
           <img 
@@ -37,14 +34,14 @@ export function TestimonialsSection({ variant, bgVariant = "default" }: Testimon
         </div>
         <div className="support-content">
           <div className="w-fit">
-            <SyncBadge text={content.badge} />
+            <SyncBadge text={TESTIMONIALS_CONTENT.badge} />
           </div>
           <h2 className="section-title">
-            {content.title} <span className="highlight">{content.titleHighlight}</span>
+            {TESTIMONIALS_CONTENT.title} <span className="highlight">{TESTIMONIALS_CONTENT.titleHighlight}</span>
           </h2>
-          <p className="section-subtitle">{content.subtitle}</p>
+          <p className="section-subtitle">{TESTIMONIALS_CONTENT.subtitle}</p>
 
-          {content.features.map((feature, index) => (
+          {TESTIMONIALS_CONTENT.features.map((feature, index) => (
             <FeatureItem
               key={index}
               icon={FEATURE_ICONS[index]}

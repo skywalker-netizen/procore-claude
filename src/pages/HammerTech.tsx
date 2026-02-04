@@ -24,7 +24,7 @@ const HammerTech = () => {
       <FieldAdvantageSection variant="hammertech" />
       <TradePartnerSection variant="hammertech" />
       <StopWorkaroundsSection variant="hammertech" />
-      <TestimonialsSection variant="hammertech" bgVariant="white" />
+      <TestimonialsSection variant="white" />
       <IntegrationSection />
       <CTASection />
       <Footer />
