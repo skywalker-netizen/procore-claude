@@ -9,7 +9,7 @@ interface QuoteProps {
 export function Quote({ text, author, title, variant = "light", className = "" }: QuoteProps) {
   return (
     <div className={`executive-quote ${variant === "dark" ? "dark" : ""} ${className}`}>
-      <blockquote>{text}</blockquote>
+      <blockquote className="whitespace-pre-line">{text}</blockquote>
       <cite>
         <strong>{author}</strong>, {title}
       </cite>

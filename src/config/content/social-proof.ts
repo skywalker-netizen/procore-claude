@@ -13,7 +13,7 @@ export const SOCIAL_PROOF_STATS: StatContent[] = [
 ];
 
 export const SOCIAL_PROOF_QUOTE: QuoteContent = {
-  text: "Before SALUS, we were tracking safety data across 14 different systems—Excel, SharePoint, SiteDocs, you name it. It was unmanageable. Moving to SALUS didn't just digitize us; it unified us.",
+  text: "Before SALUS, we were tracking safety data across 14 different systems—\nExcel, SharePoint, SiteDocs, you name it. It was unmanageable.\nMoving to SALUS didn't just digitize us; it unified us.",
   author: "Robert Clark",
   title: "VP of Safety - UNIVERSAL GROUP",
 };
