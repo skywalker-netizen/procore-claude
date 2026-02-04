@@ -3,7 +3,8 @@ import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 import { ComplianceCoreDashboard } from "@/components/infographics/ComplianceCoreDashboard";
 import { LMSDashboard } from "@/components/infographics/LMSDashboard";
-import { STOP_WORKAROUNDS_CONTENT } from "@/config";
+import { Quote } from "@/components/shared/Quote";
+import { STOP_WORKAROUNDS_CONTENT, STOP_WORKAROUNDS_QUOTE } from "@/config";
 import type { PageVariant, IconColor } from "@/config/types";
 import type { ReactNode } from "react";
 
@@ -77,6 +78,14 @@ export function StopWorkaroundsSection({ variant }: StopWorkaroundsSectionProps)
             <LMSDashboard />
           ) : (
             <ComplianceCoreDashboard showUnifiedBadge={config.showUnifiedBadge} />
+          )}
+          {STOP_WORKAROUNDS_QUOTE[variant] && (
+            <Quote
+              text={STOP_WORKAROUNDS_QUOTE[variant]!.text}
+              author={STOP_WORKAROUNDS_QUOTE[variant]!.author}
+              title={STOP_WORKAROUNDS_QUOTE[variant]!.title}
+              className="mt-6"
+            />
           )}
         </div>
       </div>
