@@ -222,6 +222,46 @@
   line-height: 1.7;
 }
 
+/* --------------------------------------------------------------------------
+   5.1 Section Background Utilities
+   -------------------------------------------------------------------------- */
+
+.section-bg-white {
+  background: hsl(var(--white));
+}
+
+.section-bg-gray {
+  background: hsl(var(--gray-100));
+}
+
+.section-bg-gradient-gray {
+  background: linear-gradient(180deg, hsl(var(--gray-100)) 0%, hsl(var(--white)) 100%);
+}
+
+/* --------------------------------------------------------------------------
+   5.2 Container & Size Utilities
+   -------------------------------------------------------------------------- */
+
+.max-w-cta {
+  max-width: 600px;
+}
+
+.logo-xs {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.logo-sm {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.logo-height-48 {
+  height: 48px;
+}
+
 
 /* ==========================================================================
    6. COMPONENT LIBRARY

@@ -3,37 +3,42 @@ import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 import { Quote } from "@/components/shared/Quote";
 import { IntegrationDiagram } from "@/components/infographics/IntegrationDiagram";
+import { INTEGRATION_CONTENT, INTEGRATION_QUOTE } from "@/config";
+import type { IconColor } from "@/config/types";
+
+const FEATURE_ICONS = [
+  <Database size={20} />,
+  <Zap size={20} />,
+];
 
 export function IntegrationSection() {
+  const content = INTEGRATION_CONTENT;
+
   return (
     <section className="integration-section">
       <div className="integration-inner">
         <div className="integration-content">
-          <SyncBadge text="SEAMLESS INTEGRATION" />
+          <SyncBadge text={content.badge} />
           <h2 className="integration-title">
-            One Truth. <span className="highlight">Zero Excuses.</span>
+            {content.title} <span className="highlight">{content.titleHighlight}</span>
           </h2>
-          <p className="section-subtitle">
-            You already have an "Enterprise Software." You don't need another one. With Salus native sync, Procore stays your system of record while giving the field a tool they actually love. No double entry. No shadow workflows.
-          </p>
-          <FeatureItem
-            icon={<Database size={20} />}
-            iconColor="beige"
-            title="Procore as Master"
-            description="All financial and project master data originates in Procore. Inspections, observations, and personnel data from Salus appear in Procore exactly where your PMs expect to find them."
-            variant="block"
-          />
-          <FeatureItem
-            icon={<Zap size={20} />}
-            iconColor="blue"
-            title="Salus is Procore's Field Engine"
-            description="All financial and project master data originates in Procore and pushed to Salus; All field data is captured in Salus and pushed into Procore."
-            variant="block"
-          />
+          <p className="section-subtitle">{content.subtitle}</p>
+          
+          {content.features?.map((feature, index) => (
+            <FeatureItem
+              key={index}
+              icon={FEATURE_ICONS[index]}
+              iconColor={feature.iconColor as IconColor}
+              title={feature.title}
+              description={feature.description}
+              variant="block"
+            />
+          ))}
+          
           <Quote
-            text="Procore is our master solution that we use to manage all our sites. All SALUS log submissions are auto-uploaded to Procore's document section. If you're done wasting time searching, SALUS is the solution."
-            author="Justin Itule"
-            title="Field Integration Manager, Willmeng Construction"
+            text={INTEGRATION_QUOTE.text}
+            author={INTEGRATION_QUOTE.author}
+            title={INTEGRATION_QUOTE.title}
           />
         </div>
         <IntegrationDiagram />

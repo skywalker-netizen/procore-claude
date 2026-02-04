@@ -1,24 +1,23 @@
 import { useState } from "react";
 import { DemoForm } from "@/components/forms/DemoForm";
+import { CTA_CONTENT } from "@/config";
 
 export function CTASection() {
   const [showCtaForm, setShowCtaForm] = useState(false);
 
   return (
     <section className="section-padding cta-section dark-section">
-      <div className="section-inner" style={{ maxWidth: "600px" }}>
+      <div className="section-inner max-w-cta">
         {!showCtaForm ? (
           <>
             <h2 className="cta-title">
-              See Salus
+              {CTA_CONTENT.title}
               <br />
-              <span className="highlight">in Action.</span>
+              <span className="highlight">{CTA_CONTENT.titleHighlight}</span>
             </h2>
-            <p className="cta-description">
-              Schedule a live walkthrough to see how SALUS talks to your Procore instance in real-time.
-            </p>
+            <p className="cta-description">{CTA_CONTENT.description}</p>
             <button onClick={() => setShowCtaForm(true)} className="btn btn-lime">
-              Book Your Demo
+              {CTA_CONTENT.buttonText}
             </button>
           </>
         ) : (

@@ -1,33 +1,35 @@
 import { Wrench, TrendingUp } from "lucide-react";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
+import { PREVENTATIVE_MAINTENANCE_CONTENT } from "@/config";
+import type { IconColor } from "@/config/types";
+
+const FEATURE_ICONS = [
+  <Wrench size={20} />,
+  <TrendingUp size={20} />,
+];
 
 export function PreventativeMaintenanceSection() {
+  const content = PREVENTATIVE_MAINTENANCE_CONTENT;
+
   return (
-    <section className="section-padding" style={{ background: "hsl(var(--gray-100))" }}>
+    <section className="section-padding section-bg-gray">
       <div className="section-inner grid-2">
         <div>
-          <SyncBadge text="ACTIONABLE FIELD INTELLIGENCE" />
-          <h2 className="section-title">
-            Intelligence from the field, for the field.
-          </h2>
-          <p className="section-subtitle">
-            Your Crane Log Shouldn't Live in a Binder. High-Fidelity Field Intelligence helps you prevent incidents and close the accountability gaps. At the worker and asset level.
-          </p>
-          <FeatureItem
-            icon={<Wrench size={20} />}
-            iconColor="blue"
-            title="Corrective Actions"
-            description="A foreman scans a QR code on a scissor lift. SALUS instantly checks the maintenance log. If the inspection is overdue, the app flags it immediately."
-            variant="block"
-          />
-          <FeatureItem
-            icon={<TrendingUp size={20} />}
-            iconColor="tan"
-            title="Track Leading Indicators"
-            description="Spot a spike in utility-strike near-misses across your Eastern Region sites before a backhoe hits a fiber line."
-            variant="block"
-          />
+          <SyncBadge text={content.badge} />
+          <h2 className="section-title">{content.title}</h2>
+          <p className="section-subtitle">{content.subtitle}</p>
+          
+          {content.features?.map((feature, index) => (
+            <FeatureItem
+              key={index}
+              icon={FEATURE_ICONS[index]}
+              iconColor={feature.iconColor as IconColor}
+              title={feature.title}
+              description={feature.description}
+              variant="block"
+            />
+          ))}
         </div>
         <div className="asset-dashboard">
           <div className="uptime-badge">

@@ -1,12 +1,5 @@
 import salusShieldLogo from "@/assets/salus-shield-logo.png";
-
-const diagramRows = [
-  { left: "Projects", right: "Auto-Creation", color: "blue" },
-  { left: "Documents", right: "Signed Forms", color: "orange" },
-  { left: "Manpower", right: "Headcount Sync", color: "lime" },
-  { left: "Photos", right: "Hazard Visuals", color: "yellow" },
-  { left: "Tasks", right: "Issue Tracking", color: "red" },
-];
+import { INTEGRATION_DIAGRAM_ROWS } from "@/config";
 
 export function IntegrationDiagram() {
   return (
@@ -25,13 +18,13 @@ export function IntegrationDiagram() {
         <div className="diagram-brand">
           <span>SALUS</span>
           <div className="brand-icon salus">
-            <img src={salusShieldLogo} alt="Salus" style={{ width: 28, height: 28, objectFit: "contain" }} />
+            <img src={salusShieldLogo} alt="Salus" className="logo-sm" />
           </div>
           <small>FIELD ENGINE</small>
         </div>
       </div>
       <div className="diagram-rows">
-        {diagramRows.map((row, index) => (
+        {INTEGRATION_DIAGRAM_ROWS.map((row, index) => (
           <div key={index} className="diagram-row">
             <div className="diagram-item left">{row.left}</div>
             <div className={`diagram-connector ${row.color}`}>
