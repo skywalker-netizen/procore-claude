@@ -1687,6 +1687,9 @@
   color: hsl(var(--concrete));
 }
 
+.trade-title {
+  max-width: 480px;
+}
 /* Trade Features */
 .trade-feature {
   display: flex;
