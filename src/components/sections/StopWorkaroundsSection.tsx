@@ -2,6 +2,7 @@ import { ScanSearch, MessagesSquare, Zap } from "lucide-react";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 import { ComplianceCoreDashboard } from "@/components/infographics/ComplianceCoreDashboard";
+import { LMSDashboard } from "@/components/infographics/LMSDashboard";
 import { STOP_WORKAROUNDS_CONTENT } from "@/config";
 import type { PageVariant, IconColor } from "@/config/types";
 
@@ -23,6 +24,7 @@ const GENERAL_ICONS = [
 export function StopWorkaroundsSection({ variant }: StopWorkaroundsSectionProps) {
   const content = STOP_WORKAROUNDS_CONTENT[variant];
   const isProcore = variant === "procore";
+  const isHammertech = variant === "hammertech";
   const icons = isProcore ? PROCORE_ICONS : GENERAL_ICONS;
 
   return (
@@ -49,7 +51,11 @@ export function StopWorkaroundsSection({ variant }: StopWorkaroundsSectionProps)
           ))}
         </div>
         <div style={{ position: "relative" }}>
-          <ComplianceCoreDashboard showUnifiedBadge={!isProcore} />
+          {isHammertech ? (
+            <LMSDashboard />
+          ) : (
+            <ComplianceCoreDashboard showUnifiedBadge={!isProcore} />
+          )}
         </div>
       </div>
     </section>

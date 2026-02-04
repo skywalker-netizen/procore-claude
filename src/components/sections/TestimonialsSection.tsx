@@ -2,8 +2,8 @@ import { Headphones, UserCheck, GraduationCap } from "lucide-react";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { Quote } from "@/components/shared/Quote";
 import { FeatureItem } from "@/components/shared/FeatureItem";
-import { TESTIMONIALS_CONTENT, TESTIMONIALS_QUOTE } from "@/config";
-import type { IconColor } from "@/config/types";
+import { getTestimonialsContent, TESTIMONIALS_QUOTE } from "@/config";
+import type { IconColor, PageVariant } from "@/config/types";
 import supportTeamImage from "@/assets/support-team.jpg";
 
 const FEATURE_ICONS = [
@@ -12,9 +12,16 @@ const FEATURE_ICONS = [
   <GraduationCap size={20} />,
 ];
 
-export function TestimonialsSection() {
+interface TestimonialsSectionProps {
+  variant?: PageVariant;
+  bgVariant?: "default" | "white";
+}
+
+export function TestimonialsSection({ variant, bgVariant = "default" }: TestimonialsSectionProps) {
+  const content = getTestimonialsContent(variant);
+  
   return (
-    <section className="section-padding testimonials-section section-bg-gray">
+    <section className={`section-padding testimonials-section ${bgVariant === "white" ? "section-bg-white" : "section-bg-gray"}`}>
       <div className="section-inner grid-2 testimonials-grid">
         <div className="support-visual-column">
           <img 
@@ -30,14 +37,14 @@ export function TestimonialsSection() {
         </div>
         <div className="support-content">
           <div className="w-fit">
-            <SyncBadge text={TESTIMONIALS_CONTENT.badge} />
+            <SyncBadge text={content.badge} />
           </div>
           <h2 className="section-title">
-            {TESTIMONIALS_CONTENT.title} <span className="highlight">{TESTIMONIALS_CONTENT.titleHighlight}</span>
+            {content.title} <span className="highlight">{content.titleHighlight}</span>
           </h2>
-          <p className="section-subtitle">{TESTIMONIALS_CONTENT.subtitle}</p>
+          <p className="section-subtitle">{content.subtitle}</p>
 
-          {TESTIMONIALS_CONTENT.features.map((feature, index) => (
+          {content.features.map((feature, index) => (
             <FeatureItem
               key={index}
               icon={FEATURE_ICONS[index]}
