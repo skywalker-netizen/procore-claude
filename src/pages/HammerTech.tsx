@@ -18,7 +18,7 @@ const HammerTech = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSection variant="sitedocs" />
+      <HeroSection variant="hammertech" />
       <SocialProofSection variant="general" />
       <ComparisonTableSection />
       <TradePartnerSection variant="sitedocs" />

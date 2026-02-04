@@ -49,6 +49,17 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
       "SiteDocs fragmented system leaves you with accountability gaps. Salus empowers field and office to drill down to the worker and asset level, across sites, trades, and equipment for 100% visibility and accountability.",
     tagline: "Scale your Business, Not Risk.",
   },
+  hammertech: {
+    badge: "FRICTION-FREE SAFETY",
+    title: "Salus vs. HammerTech:",
+    titleHighlight: "Powerful safety management",
+    titleHighlightLine2: "without the friction.",
+    subtitle:
+      "You've outgrown simple digital forms, and in your business, safety is not just a checkbox. But HammerTech's complexity causes implementation friction.",
+    description:
+      "Salus built for high-precision trades and general contractors a high-fidelity safety software designed for 100% field buy-in, rapid deployment, and collaboration between GCs and Trades.",
+    tagline: "Scale your Business with Agility.",
+  },
 };
 
 export const HERO_TRUST_BADGES: VariantContent<TrustBadgeContent[]> = {
@@ -95,6 +106,23 @@ export const HERO_TRUST_BADGES: VariantContent<TrustBadgeContent[]> = {
     {
       text: "Easy Data Migration",
       subtext: "from SiteDocs",
+      iconBg: "navy",
+    },
+  ],
+  hammertech: [
+    {
+      text: "All-in-one connected",
+      subtext: "safety ecosystem",
+      iconBg: "lime",
+    },
+    {
+      text: "GC & Trade",
+      subtext: "collaboration",
+      iconBg: "navy",
+    },
+    {
+      text: "Agile deployment",
+      subtext: "as little as 2 weeks",
       iconBg: "navy",
     },
   ],
