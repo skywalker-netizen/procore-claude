@@ -107,19 +107,19 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
       {
         title: "Mobile-First. Field-Loved.",
         description:
-          "Onboard in the Trench: When you hire 20 new workers for a high-stakes data center project, they don't need a four-hour software orientation. If they can send a text, they can use SALUS to stay compliant.",
+          "Onboard in the Trench: if they can send a text, they can use SALUS to stay compliant. Salus AI-powered Smart Forms adapt to the reality in the field, provide the information required to do the job, and skip anything not relevant to the job.",
         iconColor: "red",
       },
       {
         title: "Not just digital forms; workflows.",
         description:
-          'With Salus, you don\'t ask workers to learn a new "software" process; you provide a digital version of the way they already work in the field.',
+          "Salus Smart Forms provide the logic-gated intelligence needed for complex NBC 2020 or mission-critical environments.",
         iconColor: "lime",
       },
       {
         title: "More relevant, better intel",
         description:
-          'Salus AI-powered Smart Forms adapt to the reality in the field, provide the information required to do the job, and skip anything not relevant to the job. If a trench is over 5ft, the "Shoring Evidence" photo becomes mandatory.',
+          "Salus Form builder gives you complete control over your digital forms. Customize the software to make it fit your needs and your workflows, not the way around.",
         iconColor: "blue",
       },
     ],
