@@ -143,3 +143,9 @@ export const EXECUTIVE_INSIGHTS_QUOTE: QuoteContent = {
   author: "Justin Itule",
   title: "Field Integration Manager, Willmeng Construction",
 };
+
+export const EXECUTIVE_INSIGHTS_CA_QUOTE: QuoteContent = {
+  text: "LMS Reinforcing Steel saved $180,000/Year in administrative salaries.",
+  author: "",
+  title: "",
+};
