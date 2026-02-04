@@ -26,8 +26,8 @@ const Index = () => {
       <FieldAdvantageSection variant="procore" />
       <StopWorkaroundsSection variant="procore" />
       <TradePartnerSection variant="procore" />
-      <ExecutiveInsightsSection variant="procore" />
       <PreventativeMaintenanceSection />
+      <ExecutiveInsightsSection variant="procore" />
       <TechSpecsSection />
       <TestimonialsSection />
       <CTASection />
