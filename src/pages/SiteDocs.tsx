@@ -23,8 +23,8 @@ const SiteDocs = () => {
       <SocialProofSection variant="general" />
       <TradePartnerSection variant="sitedocs" />
       <FieldAdvantageSection variant="sitedocs" />
-      <StopWorkaroundsSection variant="general" />
       <PreventativeMaintenanceSection />
+      <StopWorkaroundsSection variant="general" />
       <ExecutiveInsightsSection variant="general" />
       <IntegrationSection />
       <TestimonialsSection />
