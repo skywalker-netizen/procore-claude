@@ -2364,8 +2364,9 @@
    9.10 Testimonials Section - Industrial
    -------------------------------------------------------------------------- */
 
+/* Testimonials / Unmatched Support Section */
 .testimonials-section {
-  text-align: center;
+  text-align: left;
 }
 
 .testimonials-section .badge {
@@ -2378,13 +2379,17 @@
   margin-bottom: 48px;
 }
 
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+/* Support Section Columns */
+.support-content {
+  display: flex;
+  flex-direction: column;
   text-align: left;
-  max-width: 1000px;
-  margin: 0 auto;
+}
+
+.support-quote-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
