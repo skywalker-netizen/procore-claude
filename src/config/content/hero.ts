@@ -4,10 +4,11 @@ interface HeroContent {
   badge: string;
   title: string;
   titleHighlight: string;
-  subtitle: string;
-  subtitleItalic?: string;
-  subtitleEnd?: string;
-  subtitleTagline?: string;
+  subtitle?: string;
+  subtitleLine1?: string;
+  subtitleLine2Italic?: string;
+  subtitleLine2End?: string;
+  subtitleLine3?: string;
   description: string;
   tagline?: string;
 }
@@ -17,10 +18,10 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     badge: "SYNCED WITH THE FIELD",
     title: "The Best Field Engine for your Procore",
     titleHighlight: " Brain.",
-    subtitle: 'Procore dashboard says "compliant." But is it the truth?',
-    subtitleItalic: 'Field teams call its safety module "click hell."',
-    subtitleEnd: "Forms get pencil-whipped.",
-    subtitleTagline: "Your System of Record is only as good as your System of Reality.",
+    subtitleLine1: 'Procore dashboard says "compliant." But is it the truth?',
+    subtitleLine2Italic: 'Field teams call its safety module "click hell."',
+    subtitleLine2End: " Forms get pencil-whipped.",
+    subtitleLine3: "Your System of Record is only as good as your System of Reality.",
     description: "SALUS feeds Procore with a live feed of high-fidelity field intelligence, ensuring your mission-critical delivery stays on track and out of the headlines. Zero Incidents. Zero Downtime. Zero Blindspots.",
   },
   general: {
