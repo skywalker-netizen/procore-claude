@@ -60,7 +60,7 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
     if (isCa) {
       return (
         <>
-          <img src={appiaLogo} alt="Appia Development" className="invert-logo" />
+          <img src={appiaLogo} alt="Appia Development" className="invert-logo logo-height-80" />
           <img src={oconnorElectricLogo} alt="O'Connor Electric" />
           <img src={broccoliniCaLogo} alt="Broccolini" className="invert-logo" />
           <img src={lmsSteelCaLogo} alt="LMS Reinforcing Steel Group" className="invert-logo" />
