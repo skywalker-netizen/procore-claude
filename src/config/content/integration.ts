@@ -1,11 +1,11 @@
 import type { SectionContent, QuoteContent, DiagramRowContent } from "../types";
 
 export const INTEGRATION_CONTENT: SectionContent = {
-  badge: "SEAMLESS INTEGRATION",
+  badge: "PROCORE INTEGRATION",
   title: "One Truth.",
   titleHighlight: "Zero Excuses.",
   subtitle:
-    'You already have an "Enterprise Software." You don\'t need another one. With Salus native sync, Procore stays your system of record while giving the field a tool they actually love. No double entry. No shadow workflows.',
+    'With Procore, you already have an "Enterprise Software." You don\'t need another one. With Salus native sync, Procore stays your system of record while giving the field a tool they actually love. No double entry. No shadow workflows.',
   features: [
     {
       title: "Procore as Master",
