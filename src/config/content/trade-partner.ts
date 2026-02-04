@@ -131,3 +131,10 @@ export const TRADE_PARTNER_QUOTE: QuoteContent = {
   title: "Vice President of Safety and Risk Management, McShane Construction",
   variant: "dark",
 };
+
+export const TRADE_PARTNER_QUOTE_CA: QuoteContent = {
+  text: "With SALUS, I can pinpoint the exact form I need in under a minute—something that was impossible with paper. It's been a game changer to have real-time visibility across our entire North American operation.",
+  author: "Ben Sleeman",
+  title: "Director of Safety, LMS Reinforcing Steel Group",
+  variant: "dark",
+};

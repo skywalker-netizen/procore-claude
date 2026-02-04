@@ -2,7 +2,7 @@ import { SyncBadge } from "@/components/shared/SyncBadge";
 import { Quote } from "@/components/shared/Quote";
 import { TradePartnerDashboard } from "@/components/infographics/TradePartnerDashboard";
 import { UserPlus, QrCode, ClipboardCheck, Handshake } from "lucide-react";
-import { TRADE_PARTNER_CONTENT, TRADE_PARTNER_QUOTE } from "@/config";
+import { TRADE_PARTNER_CONTENT, TRADE_PARTNER_QUOTE, TRADE_PARTNER_QUOTE_CA } from "@/config";
 import type { PageVariant } from "@/config/types";
 
 interface TradePartnerSectionProps {
@@ -52,9 +52,9 @@ export function TradePartnerSection({ variant }: TradePartnerSectionProps) {
         <div className="portal-column">
           <TradePartnerDashboard />
           <Quote
-            text={TRADE_PARTNER_QUOTE.text}
-            author={TRADE_PARTNER_QUOTE.author}
-            title={TRADE_PARTNER_QUOTE.title}
+            text={variant === "ca" ? TRADE_PARTNER_QUOTE_CA.text : TRADE_PARTNER_QUOTE.text}
+            author={variant === "ca" ? TRADE_PARTNER_QUOTE_CA.author : TRADE_PARTNER_QUOTE.author}
+            title={variant === "ca" ? TRADE_PARTNER_QUOTE_CA.title : TRADE_PARTNER_QUOTE.title}
             variant="dark"
           />
         </div>
