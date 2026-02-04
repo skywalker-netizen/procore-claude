@@ -4,6 +4,7 @@ interface HeroContent {
   badge: string;
   title: string;
   titleHighlight: string;
+  titleHighlightLine2?: string;
   subtitle?: string;
   subtitleLine1?: string;
   subtitleLine2Italic?: string;
@@ -40,7 +41,8 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
   sitedocs: {
     badge: "ACCOUNTABILITY, NOT JUST FORMS",
     title: "Salus vs. SiteDocs:",
-    titleHighlight: "Switch to the High-Visibility Safety Platform.",
+    titleHighlight: "Switch to the High-Visibility & Accountability",
+    titleHighlightLine2: "Safety Platform.",
     subtitle:
       "You're outgrowing SiteDocs simple safety forms, its low-fidelity visibility into the field, and you expect more from your partner in safety.",
     description:

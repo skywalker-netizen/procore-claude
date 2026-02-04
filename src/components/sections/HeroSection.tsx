@@ -41,7 +41,10 @@ export function HeroSection({ variant }: HeroSectionProps) {
           ) : useGeneralLayout ? (
             <h1 className="hero-title">
               {content.title}<br />
-              <span className="highlight-block">{content.titleHighlight}</span>
+              <span className="highlight-block">
+                {content.titleHighlight}
+                {content.titleHighlightLine2 && <><br />{content.titleHighlightLine2}</>}
+              </span>
             </h1>
           ) : null}
           
