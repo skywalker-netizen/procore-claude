@@ -99,8 +99,8 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
   },
   ca: {
     badge: "THE FIELD ADVANTAGE",
-    title: "100% field participation.",
-    titleHighlight: "That changes everything.",
+    title: "Is your safety data protecting you—",
+    titleHighlight: "or exposing you?",
     subtitle:
       "In high-risk scaling and mission-critical builds, \"pencil-whipping\" is a silent epidemic. When safety tools are either too shallow to provide real logic or so complex that field crews find them a burden, workers stop reporting the truth. Garbage in, Garbage out.",
     features: [
