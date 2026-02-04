@@ -7,7 +7,6 @@ import type { PageVariant } from "@/config/types";
 // Index page logos
 import kearCivilLogo from "@/assets/logos/kear-civil.png";
 import caliberConcreteLogo from "@/assets/logos/caliber-concrete.avif";
-import titanElectricalLogo from "@/assets/logos/titan-electrical.png";
 import electricPlusLogo from "@/assets/logos/electric-plus.webp";
 import mcfarlandLogo from "@/assets/logos/mcfarland.png";
 import tunistaLogo from "@/assets/logos/tunista.png";
@@ -19,7 +18,9 @@ import willmengLogo from "@/assets/logos/willmeng.png";
 import glyLogo from "@/assets/logos/gly.svg";
 import mcshaneLogo from "@/assets/logos/mcshane.svg";
 import stacyWitbeckLogo from "@/assets/logos/stacy-witbeck.png";
-import jfElectricLogo from "@/assets/logos/jf-electric.png";
+import delawareElevatorLogo from "@/assets/logos/delaware-elevator.png";
+import broccoliniLogo from "@/assets/logos/broccolini.png";
+import lmsSteelLogo from "@/assets/logos/lms-steel.png";
 
 interface SocialProofSectionProps {
   variant: PageVariant;
@@ -40,7 +41,6 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
               <img src={turnerLogo} alt="Turner Construction" />
               <img src={mcfarlandLogo} alt="McFarland Construction" />
               <img src={kearCivilLogo} alt="Kear Civil" />
-              <img src={titanElectricalLogo} alt="Titan Electrical Services" />
               <img src={caliberConcreteLogo} alt="Caliber Concrete" />
               <img src={electricPlusLogo} alt="Electric Plus" className="logo-height-48" />
               <img src={tunistaLogo} alt="Tunista Construction" className="logo-small-row" />
@@ -50,14 +50,15 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
           ) : (
             <>
               <img src={kearCivilLogo} alt="Kear Civil" />
-              <img src={titanElectricalLogo} alt="Titan Electrical Services" />
               <img src={electricPlusLogo} alt="Electric Plus" className="logo-height-48" />
               <img src={tunistaLogo} alt="Tunista Construction" className="logo-small-row" />
               <img src={generalEnergyLogo} alt="General Energy" className="invert-logo logo-small-row" />
               <img src={glyLogo} alt="GLY Construction" className="invert-logo" />
               <img src={mcshaneLogo} alt="McShane Construction" />
               <img src={stacyWitbeckLogo} alt="Stacy Witbeck" />
-              <img src={jfElectricLogo} alt="JF Electric" />
+              <img src={delawareElevatorLogo} alt="Delaware Elevator" />
+              <img src={broccoliniLogo} alt="Broccolini" />
+              <img src={lmsSteelLogo} alt="LMS Reinforcing Steel Group" />
             </>
           )}
         </div>
