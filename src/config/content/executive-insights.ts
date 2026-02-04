@@ -111,27 +111,27 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
   },
   ca: {
     badge: "COMPLIANCE & REPORTING",
-    title: "Inspection-Ready. Audit-Proof.",
-    titleHighlight: "Win.",
+    title: "COR™ Master and Rebate Engine",
+    titleHighlight: "",
     subtitle:
-      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. Salus proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
+      "Turn your safety program from a cost center into a direct contributor to your top and bottom line.",
     features: [
       {
-        title: "High-Resolution Compliance",
+        title: "COR™ Audit Mastery",
         description:
-          "In the world of energized work, Lockout/Tagout (LOTO), and NFPA 70E standards, compliance is the difference between uptime and a catastrophic failure. SALUS is built for specialized trades where one missed signature on a hot-work permit stops the job.",
+          'Stop losing 20+ hours a week to "paper-chasing" and weeks of manual prep for annual external audits. SALUS provides "Push-Button" audit readiness. Secure your Certificate of Recognition and your right to bid on federal infrastructure and high-stakes public contracts.',
         iconColor: "blue",
       },
       {
-        title: "Audit-Ready, Always",
+        title: "The Rebate Engine",
         description:
-          "Whether it's a mid-project audit or a Pre-qual for a new hyperscale bid, export a verified, time-stamped history of every high-risk activity in seconds.",
+          "You can't provide the high-fidelity documentation required for premium discounts. With Salus, you can.",
         iconColor: "orange",
       },
       {
-        title: "STEP-Ready Reporting",
+        title: "Native",
         description:
-          "With Salus, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
+          "Bilingual WHMIS 2015. NBC 2020 Ready. Automatic COR Reciprocity.",
         iconColor: "lime",
       },
     ],
