@@ -5095,3 +5095,149 @@
     gap: 4px;
   }
 }
+
+/* ========================================
+   Comparison Table Section
+   ======================================== */
+
+.comparison-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px hsl(var(--navy) / 0.1);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 24px 28px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Header styles */
+.comparison-header-capability,
+.comparison-header-sitedocs {
+  background: hsl(var(--gray-100));
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: hsl(var(--steel));
+}
+
+.comparison-header-salus {
+  background: hsl(var(--navy));
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  border-top-right-radius: 12px;
+}
+
+.comparison-header-capability {
+  border-top-left-radius: 12px;
+  width: 30%;
+}
+
+.comparison-header-sitedocs {
+  width: 25%;
+}
+
+.comparison-header-salus {
+  width: 45%;
+}
+
+/* Body row styles */
+.comparison-table tbody tr {
+  border-bottom: 1px solid hsl(var(--gray-200));
+}
+
+.comparison-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.comparison-table tbody tr:last-child .comparison-capability,
+.comparison-table tbody tr:last-child .comparison-sitedocs {
+  border-bottom-left-radius: 12px;
+}
+
+.comparison-table tbody tr:last-child .comparison-salus {
+  border-bottom-right-radius: 12px;
+}
+
+.comparison-capability {
+  background: white;
+  font-weight: 600;
+  color: hsl(var(--navy));
+  font-size: 15px;
+}
+
+.comparison-sitedocs {
+  background: white;
+  color: hsl(var(--steel));
+  font-size: 15px;
+  font-style: italic;
+}
+
+.comparison-salus {
+  background: hsl(var(--navy));
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.salus-value {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.salus-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  background: hsl(var(--lime));
+  border-radius: 50%;
+  color: hsl(var(--navy));
+  margin-top: 2px;
+}
+
+.text-lime {
+  color: hsl(var(--lime));
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .comparison-table th,
+  .comparison-table td {
+    padding: 16px 14px;
+    font-size: 13px;
+  }
+
+  .comparison-header-capability,
+  .comparison-header-sitedocs,
+  .comparison-header-salus {
+    font-size: 10px;
+  }
+
+  .salus-check {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+  }
+
+  .salus-check svg {
+    width: 12px;
+    height: 12px;
+  }
+}
