@@ -4,7 +4,7 @@ import { FeatureItem } from "@/components/shared/FeatureItem";
 import { Quote } from "@/components/shared/Quote";
 import { PhoneMockups } from "@/components/infographics/PhoneMockups";
 import { SiteOnboardingDashboard } from "@/components/infographics/SiteOnboardingDashboard";
-import { FIELD_ADVANTAGE_CONTENT, FIELD_ADVANTAGE_QUOTE } from "@/config";
+import { FIELD_ADVANTAGE_CONTENT, FIELD_ADVANTAGE_QUOTE, FIELD_ADVANTAGE_SITEDOCS_QUOTE } from "@/config";
 import type { PageVariant, IconColor } from "@/config/types";
 
 interface FieldAdvantageSectionProps {
@@ -42,6 +42,15 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
                 titleOnly={feature.titleOnly}
               />
             ))}
+
+            {variant === "sitedocs" && (
+              <Quote
+                text={FIELD_ADVANTAGE_SITEDOCS_QUOTE.text}
+                author={FIELD_ADVANTAGE_SITEDOCS_QUOTE.author}
+                title={FIELD_ADVANTAGE_SITEDOCS_QUOTE.title}
+                className="mt-8"
+              />
+            )}
           </div>
 
           <div className="field-advantage-mockups">

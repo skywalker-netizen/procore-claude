@@ -82,3 +82,9 @@ export const FIELD_ADVANTAGE_QUOTE: QuoteContent = {
   author: "Dennis Rumshas",
   title: "Vice President of Safety and Risk Management, McShane Construction",
 };
+
+export const FIELD_ADVANTAGE_SITEDOCS_QUOTE: QuoteContent = {
+  text: "SALUS is the perfect marriage of both usability and capability. It has really great features for us as admin, but it's simple for my crews to use out in the field, too.",
+  author: "Health & Safety Manager",
+  title: "O'CONNOR ELECTRIC",
+};
