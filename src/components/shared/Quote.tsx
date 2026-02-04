@@ -10,8 +10,9 @@ export function Quote({ text, author, title, variant = "light", className = "" }
   return (
     <div className={`executive-quote ${variant === "dark" ? "dark" : ""} ${className}`}>
       <blockquote className="whitespace-pre-line">{text}</blockquote>
-      <cite className="quote-citation-uniform">
-        <strong>{author}</strong>, {title}
+      <cite className="quote-citation-uniform flex flex-col">
+        <strong>{author}</strong>
+        <span>{title}</span>
       </cite>
     </div>
   );
