@@ -1,21 +1,14 @@
-import type { TestimonialContent } from "../types";
+import type { QuoteContent } from "../types";
 
 export const TESTIMONIALS_CONTENT = {
-  badge: "CUSTOMER SUCCESS",
-  subtitle: "Join 1,200+ companies that have abandoned digital paper for intelligent field safety.",
+  badge: "UNMATCHED SUPPORT",
+  title: "World-Class Service.",
+  titleHighlight: "We Are Here For You.",
+  subtitle: "SALUS partners with you every step of the way, including digitizing your safety forms and workflows, helping you learn how to do it, rolling out your safety program to the field and driving adoption, so your program sticks.",
 };
 
-export const TESTIMONIALS: TestimonialContent[] = [
-  {
-    text: "SALUS is the perfect marriage of both usability and capability. It has really great features for us as admin, but it's simple for my crews to use out in the field, too.",
-    author: "Health & Safety Manager",
-    company: "O'CONNOR ELECTRIC",
-    isDark: false,
-  },
-  {
-    text: 'Before SALUS, we were tracking safety data across 14 different systems—Excel, SharePoint, SiteDocs, you name it. It was unmanageable. Moving to SALUS didn\'t just digitize us; it unified us.',
-    author: "Robert Clark, VP of Safety",
-    company: "UNIVERSAL GROUP",
-    isDark: true,
-  },
-];
+export const TESTIMONIALS_QUOTE: QuoteContent = {
+  text: "It was everything I felt we needed to take our safety to the next level. We developed a really good relationship with the SALUS team and we got to work.",
+  author: "Kelly Kursteiner",
+  title: "WestUrban",
+};
