@@ -48,20 +48,24 @@ export function ExecutiveInsightsSection({ variant }: ExecutiveInsightsSectionPr
               : "In Fault-tolerant construction, compliance isn't a checkbox. It is a process. Salus proves intent against \"nuclear verdicts\" and enhances your reputation for excellence."
             }
           </p>
-          <FeatureItem
-            icon={<FileX size={20} />}
-            iconColor="beige"
-            title="No More Manual Tallies"
-            description="Salus aggregates your leading indicators into high-level Risk Profiles automatically."
-            variant="block"
-          />
-          <FeatureItem
-            icon={<Eye size={20} />}
-            iconColor="green"
-            title="Track Leading Indicators"
-            description="Spot a spike in utility-strike near-misses across your Eastern Region sites before a backhoe hits a fiber line."
-            variant="block"
-          />
+          {isProcore && (
+            <>
+              <FeatureItem
+                icon={<FileX size={20} />}
+                iconColor="beige"
+                title="No More Manual Tallies"
+                description="Salus aggregates your leading indicators into high-level Risk Profiles automatically."
+                variant="block"
+              />
+              <FeatureItem
+                icon={<Eye size={20} />}
+                iconColor="green"
+                title="Track Leading Indicators"
+                description="Spot a spike in utility-strike near-misses across your Eastern Region sites before a backhoe hits a fiber line."
+                variant="block"
+              />
+            </>
+          )}
           {!isProcore && (
             <>
               <FeatureItem
