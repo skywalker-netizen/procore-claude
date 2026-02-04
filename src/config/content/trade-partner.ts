@@ -102,7 +102,7 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
   },
   ca: {
     badge: "TRADE PARTNER MANAGEMENT",
-    title: "Total Visibility: Multi-Site & Multi-Trade.",
+    title: "Portfolio Visibility: Multi-Site & Multi-Trade.",
     subtitle: 'Data Black Holes increase risks and leak cash. Identify "hazard clusters" across BC, Alberta, and Ontario jobsites before they become WCB claims.',
     features: [
       {
