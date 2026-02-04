@@ -49,7 +49,6 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
             </>
           ) : (
             <>
-              <img src={turnerLogo} alt="Turner Construction" />
               <img src={kearCivilLogo} alt="Kear Civil" />
               <img src={titanElectricalLogo} alt="Titan Electrical Services" />
               <img src={electricPlusLogo} alt="Electric Plus" className="logo-height-48" />
