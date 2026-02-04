@@ -1332,8 +1332,8 @@
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  margin-bottom: 24px;
-  font-weight: 600;
+  margin-bottom: 16px;
+  font-weight: 400;
 }
 
 .hero-italic {
@@ -1349,6 +1349,15 @@
   line-height: 1.6;
   margin-bottom: 16px;
   max-width: 560px;
+}
+
+.hero-subtitle-tagline {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(var(--navy));
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
 }
 
 .hero-tagline {
