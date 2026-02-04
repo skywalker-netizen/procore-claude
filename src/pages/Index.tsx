@@ -19,10 +19,10 @@ const Index = () => {
       <HeroSection variant="procore" />
       <SocialProofSection variant="procore" />
       <IntegrationSection />
-      <FieldAdvantageSection variant="procore" />
+      <ExecutiveInsightsSection variant="procore" />
       <StopWorkaroundsSection variant="procore" />
       <TradePartnerSection variant="procore" />
-      <ExecutiveInsightsSection variant="procore" />
+      <FieldAdvantageSection variant="procore" />
       <PreventativeMaintenanceSection />
       <TechSpecsSection />
       <TestimonialsSection />
