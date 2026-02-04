@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { ShieldCheck, RefreshCw, Rocket } from "lucide-react";
+import { Link2, Zap, ShieldCheck, RefreshCw, Rocket } from "lucide-react";
 import { DemoForm } from "@/components/forms/DemoForm";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { G2Badge } from "@/components/shared/G2Badge";
@@ -10,36 +10,59 @@ interface HeroSectionProps {
   variant: PageVariant;
 }
 
-const TRUST_BADGE_ICONS: ReactNode[] = [
+const PROCORE_ICONS: ReactNode[] = [
+  <Link2 size={22} strokeWidth={2.5} />,
+  <Zap size={22} strokeWidth={2.5} />,
+];
+
+const GENERAL_ICONS: ReactNode[] = [
   <ShieldCheck size={22} strokeWidth={2.5} />,
   <RefreshCw size={22} strokeWidth={2.5} />,
   <Rocket size={22} strokeWidth={2.5} />,
 ];
 
 export function HeroSection({ variant }: HeroSectionProps) {
+  const content = HERO_CONTENT[variant];
+  const trustBadges = HERO_TRUST_BADGES[variant];
+  const icons = variant === "procore" ? PROCORE_ICONS : GENERAL_ICONS;
+  const isProcore = variant === "procore";
+
   return (
     <section className="hero">
       <div className="hero-inner">
         <div>
-          <SyncBadge />
+          <SyncBadge text={content.badge} />
           <h1 className="hero-title">
-            {HERO_CONTENT.title}<br />
-            <span className="highlight">{HERO_CONTENT.titleHighlight}</span>
+            {content.title}<br />
+            <span className="highlight">{content.titleHighlight}</span>
           </h1>
           
-          <p className="hero-subtitle">{HERO_CONTENT.subtitle}</p>
-          <p className="hero-description">{HERO_CONTENT.description}</p>
-          <p className="hero-tagline">{HERO_CONTENT.tagline}</p>
+          {isProcore ? (
+            <>
+              <p className="hero-subtitle">
+                {content.subtitle}{" "}
+                <em className="hero-italic">{content.subtitleItalic}</em>{" "}
+                {content.subtitleEnd}
+              </p>
+              <p className="hero-description">{content.description}</p>
+            </>
+          ) : (
+            <>
+              <p className="hero-subtitle">{content.subtitle}</p>
+              <p className="hero-description">{content.description}</p>
+              {content.tagline && <p className="hero-tagline">{content.tagline}</p>}
+            </>
+          )}
 
-          <div className="trust-badges">
-            {HERO_TRUST_BADGES.map((badge, index) => (
+          <div className={`trust-badges ${isProcore ? 'trust-badges-procore' : ''}`}>
+            {trustBadges.map((badge, index) => (
               <div key={index} className="trust-badge">
                 <div className={`trust-icon ${badge.iconBg}`}>
-                  {TRUST_BADGE_ICONS[index]}
+                  {icons[index]}
                 </div>
                 <div className="trust-text">
                   <strong>{badge.text}</strong>
-                  {badge.subtext && <span>{badge.subtext}</span>}
+                  <span>{badge.subtext}</span>
                 </div>
               </div>
             ))}
