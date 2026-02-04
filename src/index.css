@@ -1787,7 +1787,10 @@
   color: hsl(var(--concrete));
 }
 
-/* Trade title inherits natural width from content */
+.trade-content .badge {
+  width: fit-content;
+}
+
 /* Trade Features */
 .trade-feature {
   display: flex;
