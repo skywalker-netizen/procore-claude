@@ -132,6 +132,12 @@ export const FIELD_ADVANTAGE_QUOTE: QuoteContent = {
   title: "Vice President of Safety and Risk Management, McShane Construction",
 };
 
+export const FIELD_ADVANTAGE_CA_QUOTE: QuoteContent = {
+  text: "With SALUS, our crews know we care. The platform gives them a voice and ensures their concerns are addressed instantly. It's shifted our culture from 'checking boxes' to meaningful safety.",
+  author: "Connie Saltel",
+  title: "Health & Safety Manager, O'Connor Electric",
+};
+
 export const FIELD_ADVANTAGE_SITEDOCS_QUOTE: QuoteContent = {
   text: "SALUS is the perfect marriage of both usability and capability. It has really great features for us as admin, but it's simple for my crews to use out in the field, too.",
   author: "Health & Safety Manager",

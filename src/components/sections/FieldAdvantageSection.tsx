@@ -4,7 +4,7 @@ import { FeatureItem } from "@/components/shared/FeatureItem";
 import { Quote } from "@/components/shared/Quote";
 import { PhoneMockups } from "@/components/infographics/PhoneMockups";
 import { SiteOnboardingDashboard } from "@/components/infographics/SiteOnboardingDashboard";
-import { FIELD_ADVANTAGE_CONTENT, FIELD_ADVANTAGE_QUOTE, FIELD_ADVANTAGE_SITEDOCS_QUOTE } from "@/config";
+import { FIELD_ADVANTAGE_CONTENT, FIELD_ADVANTAGE_QUOTE, FIELD_ADVANTAGE_SITEDOCS_QUOTE, FIELD_ADVANTAGE_CA_QUOTE } from "@/config";
 import type { PageVariant, IconColor } from "@/config/types";
 
 interface FieldAdvantageSectionProps {
@@ -101,9 +101,9 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
               <>
                 <PhoneMockups />
                 <Quote
-                  text={FIELD_ADVANTAGE_QUOTE.text}
-                  author={FIELD_ADVANTAGE_QUOTE.author}
-                  title={FIELD_ADVANTAGE_QUOTE.title}
+                  text={variant === "ca" ? FIELD_ADVANTAGE_CA_QUOTE.text : FIELD_ADVANTAGE_QUOTE.text}
+                  author={variant === "ca" ? FIELD_ADVANTAGE_CA_QUOTE.author : FIELD_ADVANTAGE_QUOTE.author}
+                  title={variant === "ca" ? FIELD_ADVANTAGE_CA_QUOTE.title : FIELD_ADVANTAGE_QUOTE.title}
                 />
               </>
             )}
