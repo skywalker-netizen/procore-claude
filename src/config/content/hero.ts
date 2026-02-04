@@ -139,18 +139,18 @@ export const HERO_TRUST_BADGES: VariantContent<TrustBadgeContent[]> = {
   ],
   ca: [
     {
-      text: "COR™ Audit Ready",
-      subtext: "push-button compliance",
+      text: "All-in-one connected",
+      subtext: "safety ecosystem",
       iconBg: "lime",
     },
     {
-      text: "WCB Premium",
-      subtext: "rebate optimization",
+      text: "Jobsites - office",
+      subtext: "constant feedback loop",
       iconBg: "navy",
     },
     {
-      text: "Field-First Platform",
-      subtext: "built for Canadian contractors",
+      text: "Agile - up and running in as",
+      subtext: "little as two weeks",
       iconBg: "navy",
     },
   ],
