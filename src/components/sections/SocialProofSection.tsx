@@ -1,4 +1,6 @@
 import fieldBackground from "@/assets/field-background.png";
+import { SOCIAL_PROOF_TITLE, SOCIAL_PROOF_STATS } from "@/config";
+import type { PageVariant } from "@/config/types";
 
 // Index page logos
 import kearCivilLogo from "@/assets/logos/kear-civil.png";
@@ -18,18 +20,12 @@ import stacyWitbeckLogo from "@/assets/logos/stacy-witbeck.png";
 import jfElectricLogo from "@/assets/logos/jf-electric.png";
 
 interface SocialProofSectionProps {
-  variant: "procore" | "general";
+  variant: PageVariant;
 }
-
-const stats = [
-  { number: "70,000+", label: "Projects Globally" },
-  { number: "250,000+", label: "Field Level Users" },
-  { number: "9,100+", label: "Companies Protected" },
-];
 
 export function SocialProofSection({ variant }: SocialProofSectionProps) {
   const isProcore = variant === "procore";
-  const title = isProcore ? "Leaders use Procore + Salus" : "Leaders use Salus";
+  const title = SOCIAL_PROOF_TITLE[variant];
 
   return (
     <section className="social-proof-section" style={{ backgroundImage: `url(${fieldBackground})` }}>
@@ -43,7 +39,7 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
               <img src={kearCivilLogo} alt="Kear Civil" />
               <img src={titanElectricalLogo} alt="Titan Electrical Services" />
               <img src={caliberConcreteLogo} alt="Caliber Concrete" />
-              <img src={electricPlusLogo} alt="Electric Plus" style={{ height: "48px" }} />
+              <img src={electricPlusLogo} alt="Electric Plus" className="logo-height-48" />
               <img src={tunistaLogo} alt="Tunista Construction" className="logo-small-row" />
               <img src={generalEnergyLogo} alt="General Energy" className="invert-logo logo-small-row" />
               <img src={willmengLogo} alt="Willmeng Construction" />
@@ -53,7 +49,7 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
               <img src={turnerLogo} alt="Turner Construction" />
               <img src={kearCivilLogo} alt="Kear Civil" />
               <img src={titanElectricalLogo} alt="Titan Electrical Services" />
-              <img src={electricPlusLogo} alt="Electric Plus" style={{ height: "48px" }} />
+              <img src={electricPlusLogo} alt="Electric Plus" className="logo-height-48" />
               <img src={tunistaLogo} alt="Tunista Construction" className="logo-small-row" />
               <img src={generalEnergyLogo} alt="General Energy" className="invert-logo logo-small-row" />
               <img src={glyLogo} alt="GLY Construction" className="invert-logo" />
@@ -64,7 +60,7 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
           )}
         </div>
         <div className="social-proof-stats">
-          {stats.map((stat, index) => (
+          {SOCIAL_PROOF_STATS.map((stat, index) => (
             <div key={index} className="social-proof-stat">
               <span className="stat-number">{stat.number}</span>
               <span className="stat-label">{stat.label}</span>

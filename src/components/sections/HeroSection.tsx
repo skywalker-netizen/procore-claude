@@ -3,68 +3,39 @@ import { ShieldCheck, RefreshCw, Rocket } from "lucide-react";
 import { DemoForm } from "@/components/forms/DemoForm";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { G2Badge } from "@/components/shared/G2Badge";
-
-interface TrustBadgeItem {
-  icon: ReactNode;
-  iconBg: string;
-  text: string;
-  subtext?: string;
-}
+import { HERO_CONTENT, HERO_TRUST_BADGES } from "@/config";
+import type { PageVariant } from "@/config/types";
 
 interface HeroSectionProps {
-  variant: "procore" | "general";
+  variant: PageVariant;
 }
 
-const generalTrustBadges: TrustBadgeItem[] = [
-  {
-    icon: <ShieldCheck size={22} strokeWidth={2.5} />,
-    iconBg: "lime",
-    text: "All-in-one connected",
-    subtext: "safety ecosystem",
-  },
-  {
-    icon: <RefreshCw size={22} strokeWidth={2.5} />,
-    iconBg: "navy",
-    text: "Jobsites - office",
-    subtext: "constant feedback loop",
-  },
-  {
-    icon: <Rocket size={22} strokeWidth={2.5} />,
-    iconBg: "navy",
-    text: "Agile - up and running in as",
-    subtext: "little as two weeks",
-  },
+const TRUST_BADGE_ICONS: ReactNode[] = [
+  <ShieldCheck size={22} strokeWidth={2.5} />,
+  <RefreshCw size={22} strokeWidth={2.5} />,
+  <Rocket size={22} strokeWidth={2.5} />,
 ];
 
 export function HeroSection({ variant }: HeroSectionProps) {
-  const isProcore = variant === "procore";
-  const trustBadges = generalTrustBadges;
-
   return (
     <section className="hero">
       <div className="hero-inner">
         <div>
           <SyncBadge />
           <h1 className="hero-title">
-            Safety management software<br />
-            <span className="highlight">Loved by Boots and Suits.</span>
+            {HERO_CONTENT.title}<br />
+            <span className="highlight">{HERO_CONTENT.titleHighlight}</span>
           </h1>
           
-          <p className="hero-subtitle">
-            You're outgrowing paper binders and simple safety forms, but "good enough" safety is not an option and you don't have time for "Enterprise" bloat that takes six months to deploy.
-          </p>
-          <p className="hero-description">
-            SALUS provides high-precision trades and general contractors with a live stream of high-fidelity, actionable field intelligence and helps close the accountability gaps so that mission-critical projects stay on track and reputations stay protected.
-          </p>
-          <p className="hero-tagline">
-            Zero Incidents. Zero Downtime. Zero Blindspots.
-          </p>
+          <p className="hero-subtitle">{HERO_CONTENT.subtitle}</p>
+          <p className="hero-description">{HERO_CONTENT.description}</p>
+          <p className="hero-tagline">{HERO_CONTENT.tagline}</p>
 
           <div className="trust-badges">
-            {trustBadges.map((badge, index) => (
+            {HERO_TRUST_BADGES.map((badge, index) => (
               <div key={index} className="trust-badge">
                 <div className={`trust-icon ${badge.iconBg}`}>
-                  {badge.icon}
+                  {TRUST_BADGE_ICONS[index]}
                 </div>
                 <div className="trust-text">
                   <strong>{badge.text}</strong>

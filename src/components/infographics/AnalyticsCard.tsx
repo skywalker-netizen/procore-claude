@@ -14,7 +14,7 @@ export function AnalyticsCard() {
       <div className="analytics-header">
         <div className="analytics-logo">
           <div className="icon">
-            <img src={salusShieldLogo} alt="Salus" style={{ width: 16, height: 16, objectFit: "contain" }} />
+            <img src={salusShieldLogo} alt="Salus" className="logo-xs" />
           </div>
           <div className="text">
             <h5>Salus Analytics Hub</h5>
