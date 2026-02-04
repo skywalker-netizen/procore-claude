@@ -1,7 +1,7 @@
 // Content type definitions for marketing sections
 // These types enable type-safe content management across all landing page variants
 
-export type IconColor = "beige" | "blue" | "lime" | "red" | "green" | "tan";
+export type IconColor = "beige" | "blue" | "lime" | "red" | "green" | "tan" | "orange";
 
 export type PageVariant = "procore" | "general";
 
