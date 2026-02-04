@@ -44,7 +44,7 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     titleHighlight: "Switch to the High-Visibility & Accountability",
     titleHighlightLine2: "Safety Platform.",
     subtitle:
-      "You're outgrowing SiteDocs simple safety forms, its low-fidelity visibility into the field, and you expect more from your partner in safety.",
+      "You're outgrowing SiteDocs simple digital forms, its low-fidelity visibility into the field, and you expect more from your partner in safety.",
     description:
       "SiteDocs fragmented system leaves you with accountability gaps. Salus empowers field and office to drill down to the worker and asset level, across sites, trades, and equipment for 100% visibility and accountability.",
     tagline: "Scale your Business, Not Risk.",
