@@ -1,7 +1,17 @@
 import { useState, useEffect } from "react";
+import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 
 const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
+
+const demoFormSchema = z.object({
+  firstName: z.string().trim().min(1, "First name is required").max(50, "First name is too long"),
+  lastName: z.string().trim().min(1, "Last name is required").max(50, "Last name is too long"),
+  company: z.string().trim().min(1, "Company is required").max(100, "Company name is too long"),
+  email: z.string().trim().min(1, "Email is required").email("Please enter a valid email address"),
+  phone: z.string().trim().min(1, "Phone number is required")
+    .regex(/^[\d\s\-\+\(\)]+$/, "Please enter a valid phone number"),
+});
 
 export interface DemoFormData {
   firstName: string;
@@ -15,10 +25,13 @@ export interface DemoFormData {
   utm_term: string;
 }
 
+export type FormErrors = Partial<Record<keyof Pick<DemoFormData, 'firstName' | 'lastName' | 'company' | 'email' | 'phone'>, string>>;
+
 export function useDemoForm() {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errors, setErrors] = useState<FormErrors>({});
   const [formData, setFormData] = useState<DemoFormData>({
     firstName: "",
     lastName: "",
@@ -43,20 +56,42 @@ export function useDemoForm() {
     }));
   }, []);
 
+  const clearFieldError = (field: keyof FormErrors) => {
+    if (errors[field]) {
+      setErrors((prev) => {
+        const next = { ...prev };
+        delete next[field];
+        return next;
+      });
+    }
+  };
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    clearFieldError(name as keyof FormErrors);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.firstName || !formData.lastName || !formData.company || !formData.email || !formData.phone) {
-      toast({
-        title: "Error",
-        description: "Please fill in all required fields",
-        variant: "destructive",
+    const result = demoFormSchema.safeParse({
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      company: formData.company,
+      email: formData.email,
+      phone: formData.phone,
+    });
+
+    if (!result.success) {
+      const fieldErrors: FormErrors = {};
+      result.error.errors.forEach((err) => {
+        const field = err.path[0] as keyof FormErrors;
+        if (!fieldErrors[field]) {
+          fieldErrors[field] = err.message;
+        }
       });
+      setErrors(fieldErrors);
       return;
     }
 
@@ -101,5 +136,6 @@ export function useDemoForm() {
     handleSubmit,
     isLoading,
     isSubmitted,
+    errors,
   };
 }

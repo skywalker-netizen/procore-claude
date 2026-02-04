@@ -617,6 +617,24 @@
   box-shadow: 0 0 0 3px hsl(var(--lime) / 0.2);
 }
 
+.form-group input.has-error {
+  border-color: hsl(var(--red));
+}
+
+.form-group input.has-error:focus {
+  border-color: hsl(var(--red));
+  box-shadow: 0 0 0 3px hsl(var(--red) / 0.15);
+}
+
+.form-group .error-message {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: hsl(var(--red));
+  margin-top: 4px;
+  letter-spacing: 0.3px;
+}
+
 .form-group.select-wrapper {
   position: relative;
 }
