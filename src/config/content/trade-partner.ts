@@ -102,8 +102,8 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
   },
   ca: {
     badge: "TRADE PARTNER MANAGEMENT",
-    title: "Better collaboration for greater visibility: it's a win-win and it should be Free.",
-    subtitle: 'In mission-critical construction, "I didn\'t know the sub wasn\'t certified" isn\'t a valid excuse.',
+    title: "3. Total Visibility: Multi-Site & Multi-Trade.",
+    subtitle: 'Data Black Holes increase risks and leak cash. Identify "hazard clusters" across BC, Alberta, and Ontario jobsites before they become WCB claims.',
     features: [
       {
         title: "Zero Barrier Access",
@@ -119,7 +119,7 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
       },
       {
         title: "Win - Win",
-        description: "For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
+        description: "For Prime Contractors, Salus Contractor portal means no more compliance black hole. Meanwhile, Specialty Contractors own their data; they keep a portable safety record that protects their premiums and bid eligibility.",
       },
     ],
   },
