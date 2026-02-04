@@ -7,7 +7,9 @@ export function TestimonialsSection() {
     <section className="section-padding testimonials-section section-bg-gray">
       <div className="section-inner grid-2">
         <div className="support-content">
-          <SyncBadge text={TESTIMONIALS_CONTENT.badge} />
+          <div className="w-fit">
+            <SyncBadge text={TESTIMONIALS_CONTENT.badge} />
+          </div>
           <h2 className="section-title">
             {TESTIMONIALS_CONTENT.title} <span className="highlight">{TESTIMONIALS_CONTENT.titleHighlight}</span>
           </h2>
