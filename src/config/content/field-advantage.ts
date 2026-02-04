@@ -73,6 +73,25 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
       },
     ],
   },
+  hammertech: {
+    badge: "Instant Onboarding",
+    title: "The Magic",
+    titleHighlight: "Orientation",
+    subtitle:
+      "HammerTech's complex onboarding slows field adoption. With SALUS, workers scan a single QR code at the gate to complete their site orientation, watch site-specific videos, and digitally sign all necessary forms before stepping onto the jobsite.",
+    features: [
+      {
+        title: "Faster onboarding",
+        description: "",
+        iconColor: "lime",
+      },
+      {
+        title: "Lower risk",
+        description: "",
+        iconColor: "blue",
+      },
+    ],
+  },
 };
 
 export const FIELD_ADVANTAGE_QUOTE: QuoteContent = {

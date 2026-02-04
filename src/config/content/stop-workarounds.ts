@@ -76,4 +76,31 @@ export const STOP_WORKAROUNDS_CONTENT: VariantContent<SectionContent> = {
       },
     ],
   },
+  hammertech: {
+    badge: "STOP THE WORKAROUNDS",
+    title: "Shatter the Silos,",
+    titleHighlight: "Reduce risk.",
+    subtitle:
+      "Risk lives in the gaps—the disconnect between a worker, their training, and the equipment they operate. SALUS closes that gap by connecting your LMS and Asset Management directly to the frontline worker.",
+    features: [
+      {
+        title: "Unified Platform, Zero Silos",
+        description:
+          'No more dark data in excel, email, or Google. A foreman scans a QR code on a scissor lift. Salus instantly cross-references the worker\'s profile. If their Fall Protection cert expired yesterday, they can\'t sign onto the JHA.',
+        iconColor: "beige",
+      },
+      {
+        title: "Integrated Asset Management",
+        description:
+          "A foreman scans a QR code on a scissor lift. SALUS instantly checks the maintenance log. If the inspection is overdue, the app flags it immediately.",
+        iconColor: "blue",
+      },
+      {
+        title: "Just-in-Time Training",
+        description:
+          "Use our integrated LMS to push site-specific toolbox talks based on the gear a crew is actually using that morning.",
+        iconColor: "lime",
+      },
+    ],
+  },
 };
