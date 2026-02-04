@@ -16,6 +16,18 @@ export function TestimonialsSection() {
   return (
     <section className="section-padding testimonials-section section-bg-gray">
       <div className="section-inner grid-2">
+        <div className="support-visual-column">
+          <img 
+            src={supportTeamImage} 
+            alt="Construction team collaborating on safety" 
+            className="support-image"
+          />
+          <Quote
+            text={TESTIMONIALS_QUOTE.text}
+            author={TESTIMONIALS_QUOTE.author}
+            title={TESTIMONIALS_QUOTE.title}
+          />
+        </div>
         <div className="support-content">
           <div className="w-fit">
             <SyncBadge text={TESTIMONIALS_CONTENT.badge} />
@@ -35,18 +47,6 @@ export function TestimonialsSection() {
               variant="block"
             />
           ))}
-        </div>
-        <div className="support-visual-column">
-          <img 
-            src={supportTeamImage} 
-            alt="Construction team collaborating on safety" 
-            className="support-image"
-          />
-          <Quote
-            text={TESTIMONIALS_QUOTE.text}
-            author={TESTIMONIALS_QUOTE.author}
-            title={TESTIMONIALS_QUOTE.title}
-          />
         </div>
       </div>
     </section>
