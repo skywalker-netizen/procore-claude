@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import Root from "./pages/Root";
 import SiteDocs from "./pages/SiteDocs";
 import HammerTech from "./pages/HammerTech";
+import Ca from "./pages/Ca";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/salus-safety-for-procore" element={<Index />} />
             <Route path="/sitedocs" element={<SiteDocs />} />
             <Route path="/hammertech" element={<HammerTech />} />
+            <Route path="/ca" element={<Ca />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
