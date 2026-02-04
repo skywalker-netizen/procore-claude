@@ -21,7 +21,7 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
   const content = FIELD_ADVANTAGE_CONTENT[variant];
 
   return (
-    <section className={`section-padding field-advantage-section ${variant === "sitedocs" ? "section-bg-gray" : "section-bg-white"}`}>
+    <section className={`section-padding field-advantage-section ${(variant === "sitedocs" || variant === "hammertech") ? "section-bg-gray" : "section-bg-white"}`}>
       <div className="section-inner">
         <div className="field-advantage-grid">
           <div className="field-advantage-content">
@@ -38,12 +38,12 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
                 iconColor={feature.iconColor as IconColor}
                 title={feature.title}
                 description={feature.description}
-                variant={variant === "sitedocs" ? "block" : "numbered"}
+                variant={(variant === "sitedocs" || variant === "hammertech") ? "block" : "numbered"}
                 titleOnly={feature.titleOnly}
               />
             ))}
 
-            {variant === "sitedocs" && (
+            {(variant === "sitedocs" || variant === "hammertech") && (
               <Quote
                 text={FIELD_ADVANTAGE_SITEDOCS_QUOTE.text}
                 author={FIELD_ADVANTAGE_SITEDOCS_QUOTE.author}
@@ -54,7 +54,7 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
           </div>
 
           <div className="field-advantage-mockups">
-            {variant === "sitedocs" ? (
+            {(variant === "sitedocs" || variant === "hammertech") ? (
               <SiteOnboardingDashboard />
             ) : (
               <>
