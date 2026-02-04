@@ -1,0 +1,26 @@
+/* ==========================================================================
+   CTA SECTION - Industrial
+   ========================================================================== */
+
+.cta-section {
+  text-align: center;
+}
+
+.cta-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  color: hsl(var(--concrete));
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.cta-title .highlight {
+  color: hsl(var(--steel));
+}
+
+.cta-description {
+  font-size: 15px;
+  color: hsl(var(--steel));
+  margin-bottom: 32px;
+}

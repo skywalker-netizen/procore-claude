@@ -1,0 +1,84 @@
+/* ==========================================================================
+   BUTTONS - Industrial Style
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: none;
+}
+
+.btn-primary {
+  background: hsl(var(--navy));
+  color: hsl(var(--white));
+  border: 2px solid transparent;
+}
+
+.btn-primary:hover {
+  background: hsl(var(--asphalt));
+  box-shadow: 0 0 0 2px hsl(var(--lime));
+}
+
+.btn-lime {
+  background: hsl(var(--lime));
+  color: hsl(var(--navy));
+  padding: 16px 32px;
+  font-size: 13px;
+  border: 2px solid hsl(var(--lime-dark));
+}
+
+.btn-lime:hover {
+  background: hsl(var(--lime-dark));
+  box-shadow: 0 2px 12px hsl(var(--lime) / 0.4);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: hsl(var(--navy));
+  color: hsl(var(--white));
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.15s;
+  margin-top: 8px;
+}
+
+.btn-submit:hover {
+  background: hsl(var(--asphalt));
+  box-shadow: 0 0 0 2px hsl(var(--lime));
+}
+
+.generate-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: hsl(var(--lime));
+  color: hsl(var(--navy));
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}

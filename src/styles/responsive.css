@@ -1,0 +1,373 @@
+/* ==========================================================================
+   RESPONSIVE / MEDIA QUERIES
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero-inner,
+  .integration-inner,
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  /* Ensure infographics appear below copy on mobile */
+  .grid-2 > div:first-child {
+    order: 1;
+  }
+  
+  .grid-2 > div:last-child {
+    order: 2;
+  }
+
+  /* Integration diagram */
+  .integration-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .integration-content {
+    order: 1;
+  }
+
+  .integration-diagram {
+    order: 2;
+  }
+
+  /* Move executive quote below diagram in integration section */
+  .integration-content .executive-quote {
+    order: 3;
+  }
+
+  /* Field Advantage section - new structure */
+  .field-advantage-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .field-advantage-content {
+    order: 1;
+    width: 100%;
+  }
+
+  .field-advantage-mockups {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .phone-comparison-wrapper {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 24px 16px;
+    background: transparent;
+  }
+
+  .phone-comparison {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    min-width: max-content;
+    padding: 0;
+    background: transparent;
+  }
+  
+  .phone-comparison .phone-wrapper {
+    flex: 0 0 auto;
+    width: 280px;
+    max-width: none;
+  }
+  
+  .phone-comparison .phone-mockup {
+    width: 100%;
+    max-width: none;
+    background: hsl(var(--white));
+  }
+
+  .phone-comparison .phone-screen {
+    background: hsl(var(--white));
+  }
+
+  .phone-comparison .phone-screen.dark {
+    background: hsl(var(--navy-dark));
+  }
+
+  .field-advantage-mockups .executive-quote {
+    order: 3;
+  }
+
+  /* Compliance Core card (Stop the Workarounds) */
+  .compliance-core-card {
+    min-width: unset;
+    width: 100%;
+  }
+
+  /* Portal demo (Trade Partner Management) */
+  .portal-demo {
+    order: 2;
+  }
+
+  /* Trade partner quote styling */
+  .dark-section .trade-content .executive-quote {
+    order: 10;
+    margin-top: 24px;
+  }
+
+  /* Analytics card (Executive Level) - infographic is first in HTML, needs to go second on mobile */
+  .analytics-card {
+    max-width: 100%;
+  }
+  
+  /* Analytics column - quote below analytics card */
+  .analytics-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .analytics-column .executive-quote {
+    order: 2;
+    margin-top: 24px;
+  }
+  
+  /* Executive Level section: swap order so copy appears before analytics card */
+  .grid-2:has(.analytics-column) > div:first-child {
+    order: 2;
+  }
+  
+  .grid-2:has(.analytics-column) > div:last-child {
+    order: 1;
+  }
+
+  /* Asset dashboard (Preventative Maintenance) */
+  .asset-dashboard {
+    order: 2;
+  }
+
+  .hero-title,
+  .integration-title,
+  .section-title,
+  .cta-title {
+    font-size: 40px;
+  }
+
+  .tech-section .section-title {
+    font-size: 40px;
+  }
+
+  .header {
+    padding: 16px 24px;
+  }
+
+  .section-padding {
+    padding: 80px 24px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    padding: 100px 24px 60px;
+    overflow-x: hidden;
+  }
+
+  .hero-inner {
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .hero-tagline {
+    font-size: 14px;
+  }
+
+  .trust-badges {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .trust-badge {
+    gap: 12px;
+  }
+
+  .trust-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .trust-text strong {
+    font-size: 11px;
+  }
+
+  .demo-card {
+    padding: 28px 20px;
+  }
+
+  .demo-card h2 {
+    font-size: 22px;
+  }
+
+  .integration-section {
+    padding: 80px 24px;
+  }
+
+  .tech-table-wrapper {
+    margin: 0 -24px;
+    padding: 0 24px;
+  }
+
+  .tech-table {
+    min-width: 600px;
+  }
+
+  /* Testimonials - stack vertically on mobile with content first */
+  .testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .testimonials-grid .support-content {
+    order: 1;
+  }
+
+  .testimonials-grid .support-visual-column {
+    order: 2;
+  }
+
+  .testimonials-grid .testimonial-card {
+    flex: 0 0 85%;
+    min-width: 280px;
+  }
+
+  .asset-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* Unified advantage badge positioning on mobile */
+  .unified-advantage-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 24px;
+    align-self: center;
+  }
+
+  /* Social proof stats - prevent cutoff */
+  .social-proof-stats {
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-proof-stat .stat-number {
+    font-size: 28px;
+  }
+
+  .social-proof-stat .stat-label {
+    font-size: 12px;
+  }
+
+  /* Social proof logos mobile layout - 3 columns max, last row centered */
+  .social-proof-section {
+    padding: 32px 24px;
+  }
+
+  .social-proof-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-proof-logos img {
+    height: auto;
+    max-height: 32px;
+    width: calc(33.333% - 12px);
+    max-width: 100px;
+    object-fit: contain;
+  }
+
+  .social-proof-logos img.logo-small-row {
+    max-height: 28px;
+  }
+
+  /* CTA section form modal */
+  .cta-section .demo-card {
+    margin-top: 32px;
+    max-width: 400px;
+  }
+}
+
+/* Responsive - Site Onboarding */
+@media (max-width: 768px) {
+  .site-onboarding-dashboard {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 10px;
+  }
+  
+  .induction-log-card {
+    max-width: 100%;
+    padding: 24px;
+  }
+  
+  .qr-scanner-card {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: -40px;
+    min-width: 180px;
+    padding: 24px 32px 20px;
+  }
+  
+  .worker-status {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+
+  /* Comparison table mobile */
+  .comparison-table th,
+  .comparison-table td {
+    padding: 16px 14px;
+    font-size: 13px;
+  }
+
+  .comparison-header-capability,
+  .comparison-header-sitedocs,
+  .comparison-header-salus {
+    font-size: 10px;
+  }
+
+  .salus-check {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+  }
+
+  .salus-check svg {
+    width: 12px;
+    height: 12px;
+  }
+}

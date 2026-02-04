@@ -1,0 +1,54 @@
+/* ==========================================================================
+   ANIMATIONS & KEYFRAMES
+   ========================================================================== */
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.9); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes dotMoveRight {
+  0%, 100% { left: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+@keyframes dotMoveLeft {
+  0%, 100% { left: 100%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 0%; opacity: 0; }
+}
+
+@keyframes smartFormScroll {
+  0%, 10% {
+    transform: translateY(0);
+  }
+  20%, 30% {
+    transform: translateY(-60px);
+  }
+  40%, 50% {
+    transform: translateY(-140px);
+  }
+  60%, 70% {
+    transform: translateY(-220px);
+  }
+  80%, 90% {
+    transform: translateY(-280px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes stepFadeIn {
+  0%, 5% { opacity: 0; transform: translateY(10px); }
+  15%, 85% { opacity: 1; transform: translateY(0); }
+  95%, 100% { opacity: 0; transform: translateY(10px); }
+}

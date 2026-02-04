@@ -1,0 +1,40 @@
+/* ==========================================================================
+   FOOTER - Industrial
+   ========================================================================== */
+
+.footer {
+  padding: 32px 48px;
+  background: hsl(var(--asphalt));
+  border-top: 4px solid hsl(var(--lime));
+}
+
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(var(--concrete));
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.footer-logo .icon {
+  width: 20px;
+  height: 20px;
+  background: hsl(var(--lime));
+  border-radius: 2px;
+}
+
+.footer-copyright {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: hsl(var(--steel));
+  letter-spacing: 0.5px;
+}

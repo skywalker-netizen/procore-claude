@@ -1,0 +1,104 @@
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: hsl(var(--navy));
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.form-group label .required {
+  color: hsl(var(--rust));
+  margin-left: 2px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 2px solid hsl(var(--concrete-dark));
+  border-radius: 4px;
+  background: hsl(var(--white));
+  color: hsl(var(--navy));
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.form-group input::placeholder {
+  color: hsl(var(--steel));
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: hsl(var(--navy));
+  box-shadow: 0 0 0 3px hsl(var(--lime) / 0.2);
+}
+
+.form-group input.has-error {
+  border-color: hsl(var(--red));
+}
+
+.form-group input.has-error:focus {
+  border-color: hsl(var(--red));
+  box-shadow: 0 0 0 3px hsl(var(--red) / 0.15);
+}
+
+.form-group .error-message {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: hsl(var(--red));
+  margin-top: 4px;
+  letter-spacing: 0.3px;
+}
+
+.form-group.select-wrapper {
+  position: relative;
+}
+
+.form-group.select-wrapper::after {
+  content: '🔒';
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.form-group select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 11px;
+  color: hsl(var(--steel));
+}
+
+.form-footer a {
+  color: hsl(var(--navy));
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid hsl(var(--lime));
+}

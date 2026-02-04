@@ -1,0 +1,225 @@
+/* ==========================================================================
+   ICONS (Trust, Feature, etc.)
+   ========================================================================== */
+
+.trust-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+}
+
+.trust-icon.navy {
+  background: hsl(var(--navy));
+  color: hsl(var(--concrete));
+  border-color: hsl(var(--steel-dark));
+}
+
+.trust-icon.lime {
+  background: hsl(var(--lime));
+  color: hsl(var(--navy));
+  border-color: hsl(var(--lime-dark));
+}
+
+.trust-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Feature Block Icon */
+.feature-block-icon {
+  width: 44px;
+  height: 44px;
+  background: hsl(var(--concrete));
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid hsl(var(--concrete-dark));
+}
+
+.feature-block-icon.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.feature-block-icon.circle.beige {
+  background: hsl(35, 25%, 90%);
+  border-color: hsl(35, 20%, 80%);
+}
+
+.feature-block-icon.circle.green {
+  background: hsl(145, 25%, 88%);
+  border-color: hsl(145, 20%, 75%);
+}
+
+.feature-block-icon.circle.blue {
+  background: hsl(205, 85%, 92%);
+  border-color: hsl(205, 70%, 75%);
+}
+
+.feature-block-icon.circle.blue svg {
+  color: hsl(205, 80%, 40%);
+}
+
+.feature-block-icon.circle.tan {
+  background: hsl(25, 70%, 92%);
+  border-color: hsl(25, 55%, 75%);
+}
+
+.feature-block-icon.circle.tan svg {
+  color: hsl(25, 70%, 45%);
+}
+
+.feature-block-icon.circle.lime {
+  background: hsl(82, 70%, 88%);
+  border-color: hsl(82, 55%, 65%);
+}
+
+.feature-block-icon.circle.lime svg {
+  color: hsl(82, 70%, 35%);
+}
+
+.feature-block-icon.circle.orange {
+  background: hsl(30, 90%, 92%);
+  border-color: hsl(30, 70%, 70%);
+}
+
+.feature-block-icon.circle.orange svg {
+  color: hsl(30, 85%, 45%);
+}
+
+.feature-block-icon.circle.red {
+  background: hsl(0, 70%, 93%);
+  border-color: hsl(0, 55%, 78%);
+}
+
+.feature-block-icon.circle.red svg {
+  color: hsl(0, 65%, 45%);
+}
+
+.feature-block-icon svg {
+  width: 20px;
+  height: 20px;
+  color: hsl(var(--navy));
+}
+
+/* Feature Icon */
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  background: hsl(var(--concrete));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid hsl(var(--concrete-dark));
+}
+
+.feature-icon.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.feature-icon.circle.beige {
+  background: hsl(35, 25%, 90%);
+  border-color: hsl(35, 20%, 80%);
+}
+
+.feature-icon.circle.blue {
+  background: hsl(210, 25%, 90%);
+  border-color: hsl(210, 20%, 80%);
+}
+
+.feature-icon svg {
+  width: 20px;
+  height: 20px;
+  color: hsl(var(--navy));
+}
+
+/* Numbered Feature Icon */
+.numbered-feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid transparent;
+  background: hsl(35, 25%, 90%);
+  color: hsl(var(--navy));
+  border-color: hsl(35, 20%, 80%);
+}
+
+.numbered-feature-icon.red {
+  background: hsl(0, 25%, 90%);
+  color: hsl(var(--navy));
+  border-color: hsl(0, 20%, 80%);
+}
+
+.numbered-feature-icon.lime {
+  background: hsl(var(--lime));
+  color: hsl(var(--navy));
+  border-color: hsl(var(--lime-dark));
+}
+
+.numbered-feature-icon.blue {
+  background: hsl(210, 25%, 90%);
+  color: hsl(var(--navy));
+  border-color: hsl(210, 20%, 80%);
+}
+
+/* Asset Feature Icon */
+.asset-feature-icon {
+  width: 48px;
+  height: 48px;
+  background: hsl(var(--concrete));
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: hsl(var(--navy));
+  border: 2px solid hsl(var(--concrete-dark));
+}
+
+.asset-feature-icon.beige {
+  background: hsl(35, 25%, 90%);
+  border-color: hsl(35, 20%, 80%);
+}
+
+.asset-feature-icon.green {
+  background: hsl(145, 25%, 88%);
+  border-color: hsl(145, 20%, 75%);
+}
+
+.asset-feature-icon.tan {
+  background: hsl(35, 30%, 88%);
+  border-color: hsl(35, 25%, 78%);
+}
+
+.asset-feature-icon.blue {
+  background: hsl(210, 25%, 90%);
+  border-color: hsl(210, 20%, 80%);
+}
+
+/* Trade Feature Icon */
+.trade-feature-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--glass-white-10);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: hsl(var(--lime));
+}

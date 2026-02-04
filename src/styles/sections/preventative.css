@@ -1,0 +1,208 @@
+/* ==========================================================================
+   PREVENTATIVE MAINTENANCE SECTION
+   ========================================================================== */
+
+/* Asset Features - Industrial */
+.asset-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.asset-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.asset-feature h5 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(var(--navy));
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.asset-feature p {
+  font-size: 14px;
+  color: hsl(var(--steel-dark));
+  line-height: 1.6;
+}
+
+/* Asset Dashboard */
+.asset-dashboard {
+  position: relative;
+}
+
+.uptime-badge {
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  background: hsl(var(--lime));
+  border-radius: 12px;
+  padding: 16px 24px;
+  text-align: center;
+  z-index: 10;
+}
+
+.uptime-badge .value {
+  font-size: 32px;
+  font-weight: 900;
+  color: hsl(var(--navy));
+}
+
+.uptime-badge .label {
+  font-size: 10px;
+  color: hsl(var(--navy));
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.asset-card {
+  background: hsl(var(--navy));
+  border-radius: 16px;
+  padding: 24px;
+  margin-left: 60px;
+}
+
+.asset-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.asset-card-header h4 {
+  color: hsl(var(--white));
+  font-size: 16px;
+}
+
+.asset-card-header span {
+  font-size: 10px;
+  color: var(--glass-white-40);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.asset-card-item {
+  background: var(--glass-white-05);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.asset-card-item-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.asset-card-item-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--glass-white-10);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--glass-white-60);
+}
+
+.asset-card-item-info h5 {
+  font-size: 14px;
+  color: hsl(var(--white));
+  font-weight: 600;
+}
+
+.asset-card-item-info span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.asset-card-item-info span.pending {
+  color: hsl(var(--orange));
+}
+
+.asset-card-item-info span.operational {
+  color: hsl(var(--lime));
+}
+
+.asset-card-item-status {
+  margin-left: auto;
+  text-align: right;
+}
+
+.asset-card-item-status .label {
+  font-size: 10px;
+  color: var(--glass-white-40);
+  text-transform: uppercase;
+}
+
+.asset-card-item-status .value {
+  font-size: 12px;
+  color: hsl(var(--orange));
+}
+
+.asset-card-item-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--glass-white-50);
+}
+
+.asset-card-item-progress .bar {
+  flex: 1;
+  height: 6px;
+  background: var(--glass-white-10);
+  border-radius: 3px;
+  margin: 0 12px;
+  overflow: hidden;
+}
+
+.asset-card-item-progress .bar-fill {
+  height: 100%;
+  background: hsl(var(--lime));
+  border-radius: 3px;
+}
+
+.digital-identity-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.digital-identity-card .icon {
+  width: 48px;
+  height: 48px;
+  background: hsl(var(--white));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--navy));
+}
+
+.digital-identity-card h5 {
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(var(--white));
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.digital-identity-card p {
+  font-size: 11px;
+  color: var(--glass-white-50);
+}

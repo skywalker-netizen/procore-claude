@@ -1,0 +1,51 @@
+/* ==========================================================================
+   INTEGRATION SECTION
+   ========================================================================== */
+
+.integration-section {
+  background: hsl(var(--concrete));
+  padding: 100px 48px;
+  border-top: 1px solid hsl(var(--concrete-dark));
+  border-bottom: 1px solid hsl(var(--concrete-dark));
+}
+
+.integration-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.integration-content .badge {
+  background: hsl(var(--asphalt));
+}
+
+.integration-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: hsl(var(--navy));
+  margin-bottom: 24px;
+}
+
+.integration-title .highlight {
+  color: hsl(var(--steel));
+}
+
+.integration-subtitle {
+  font-size: 17px;
+  color: hsl(var(--navy));
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.integration-description {
+  font-size: 15px;
+  color: hsl(var(--steel-dark));
+  margin-bottom: 40px;
+  line-height: 1.7;
+}

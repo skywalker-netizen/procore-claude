@@ -1,0 +1,245 @@
+/* ==========================================================================
+   SITE ONBOARDING DASHBOARD (Instant Onboarding Infographic)
+   ========================================================================== */
+
+.site-onboarding-dashboard {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 480px;
+  padding: 20px;
+}
+
+/* Main Induction Log Card */
+.induction-log-card {
+  background: hsl(var(--white));
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 8px 40px var(--glass-black-08);
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+.induction-log-header {
+  margin-bottom: 24px;
+}
+
+.induction-log-header .live-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: hsl(var(--steel));
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.induction-log-header h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: hsl(var(--navy));
+  letter-spacing: -0.02em;
+}
+
+/* Worker List */
+.worker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.worker-entry {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid hsl(var(--gray-200));
+}
+
+.worker-entry:last-child {
+  border-bottom: none;
+}
+
+.worker-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: hsl(var(--gray-100));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.worker-avatar span {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(var(--steel));
+}
+
+.worker-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.worker-name {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(var(--navy));
+}
+
+.worker-company {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: hsl(var(--steel));
+  text-transform: uppercase;
+}
+
+.worker-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.status-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.status-badge.signed {
+  background: hsl(var(--lime) / 0.15);
+  color: hsl(var(--lime-dark));
+}
+
+.status-badge.pending {
+  background: hsl(var(--orange) / 0.15);
+  color: hsl(var(--orange));
+}
+
+.status-time {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(var(--navy));
+}
+
+/* Compliance Badge */
+.compliance-badge {
+  background: hsl(var(--navy));
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.compliance-value {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+  color: hsl(var(--lime));
+}
+
+.compliance-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: hsl(var(--white) / 0.6);
+  text-transform: uppercase;
+}
+
+/* QR Scanner Card */
+.qr-scanner-card {
+  position: absolute;
+  right: -20px;
+  bottom: 40px;
+  background: hsl(var(--navy));
+  border-radius: 28px;
+  padding: 32px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 16px 48px var(--glass-black-25);
+  z-index: 2;
+  min-width: 200px;
+}
+
+.checkmark-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  background: hsl(var(--lime));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--navy));
+  box-shadow: 0 4px 12px hsl(var(--lime) / 0.4);
+}
+
+.qr-scanner-icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-scanner-icon > svg:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.scanner-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotate-slow 20s linear infinite;
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.scan-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  font-style: italic;
+  color: hsl(var(--lime));
+}
+
+.version-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: hsl(var(--white) / 0.5);
+  text-transform: uppercase;
+}
