@@ -6,9 +6,10 @@ interface FeatureItemProps {
   title: string;
   description: string;
   variant?: "numbered" | "block" | "trade";
+  titleOnly?: boolean;
 }
 
-export function FeatureItem({ icon, iconColor = "beige", title, description, variant = "numbered" }: FeatureItemProps) {
+export function FeatureItem({ icon, iconColor = "beige", title, description, variant = "numbered", titleOnly }: FeatureItemProps) {
   if (variant === "trade") {
     return (
       <div className="trade-feature">
@@ -37,8 +38,14 @@ export function FeatureItem({ icon, iconColor = "beige", title, description, var
     <div className="numbered-feature">
       <div className={`numbered-feature-icon ${iconColor}`}>{icon}</div>
       <div>
-        <h4>{title}</h4>
-        <p>{description}</p>
+        {titleOnly ? (
+          <p className="feature-title-text">{title}</p>
+        ) : (
+          <>
+            {title && <h4>{title}</h4>}
+            {description && <p>{description}</p>}
+          </>
+        )}
       </div>
     </div>
   );

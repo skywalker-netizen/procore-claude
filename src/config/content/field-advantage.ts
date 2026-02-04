@@ -55,29 +55,23 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
     ],
   },
   sitedocs: {
-    badge: "THE FIELD ADVANTAGE",
-    title: "100% field participation.",
-    titleHighlight: "That changes everything.",
+    badge: "Instant Onboarding",
+    title: "The Magic",
+    titleHighlight: "Orientation",
     subtitle:
-      "You cannot be on every site. You need a safety management software. But if the field hates it, what's the point? Garbage in, Garbage out.",
+      "With SiteDocs, orientations are managed outside the platform, requiring supervisors to spend significant time manually confirming that workers are properly oriented and job-ready.",
     features: [
       {
-        title: "Mobile-First. Field-Loved.",
-        description:
-          "Onboard in the Trench: When you hire 20 new workers for a high-stakes data center project, they don't need a four-hour software orientation. If they can send a text, they can use SALUS to stay compliant.",
+        title: "With SALUS, workers scan a single QR code at the gate to complete their site orientation, watch site-specific videos, and digitally sign all necessary forms before stepping onto the jobsite.",
+        description: "",
         iconColor: "red",
+        titleOnly: true,
       },
       {
-        title: "Not just digital forms; workflows.",
+        title: "",
         description:
-          'With Salus, you don\'t ask workers to learn a new "software" process; you provide a digital version of the way they already work in the field.',
+          'With Salus, you don\'t ask workers to learn a new "software" process; our success team works with you to provide a digital version of the way they already work in the field.',
         iconColor: "lime",
-      },
-      {
-        title: "More relevant, better intel",
-        description:
-          'Salus AI-powered Smart Forms adapt to the reality in the field, provide the information required to do the job, and skip anything not relevant to the job. If a trench is over 5ft, the "Shoring Evidence" photo becomes mandatory.',
-        iconColor: "blue",
       },
     ],
   },
