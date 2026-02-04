@@ -21,7 +21,7 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
   const content = FIELD_ADVANTAGE_CONTENT[variant];
 
   return (
-    <section className="section-padding field-advantage-section section-bg-white">
+    <section className={`section-padding field-advantage-section ${variant === "sitedocs" ? "section-bg-gray" : "section-bg-white"}`}>
       <div className="section-inner">
         <div className="field-advantage-grid">
           <div className="field-advantage-content">

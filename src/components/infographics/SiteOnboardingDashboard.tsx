@@ -57,12 +57,54 @@ export function SiteOnboardingDashboard() {
         </div>
         
         <div className="qr-scanner-icon">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-            {/* QR code pattern */}
-            <rect x="8" y="8" width="12" height="12" rx="2" fill="hsl(var(--lime))" />
-            <rect x="28" y="8" width="12" height="12" rx="2" fill="hsl(var(--lime))" />
-            <rect x="8" y="28" width="12" height="12" rx="2" fill="hsl(var(--lime))" />
-            <rect x="28" y="28" width="12" height="12" rx="2" fill="hsl(var(--lime))" opacity="0.4" />
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            {/* Top-left position detection pattern */}
+            <rect x="4" y="4" width="18" height="18" fill="hsl(var(--navy))" />
+            <rect x="7" y="7" width="12" height="12" fill="white" />
+            <rect x="10" y="10" width="6" height="6" fill="hsl(var(--navy))" />
+            
+            {/* Top-right position detection pattern */}
+            <rect x="42" y="4" width="18" height="18" fill="hsl(var(--navy))" />
+            <rect x="45" y="7" width="12" height="12" fill="white" />
+            <rect x="48" y="10" width="6" height="6" fill="hsl(var(--navy))" />
+            
+            {/* Bottom-left position detection pattern */}
+            <rect x="4" y="42" width="18" height="18" fill="hsl(var(--navy))" />
+            <rect x="7" y="45" width="12" height="12" fill="white" />
+            <rect x="10" y="48" width="6" height="6" fill="hsl(var(--navy))" />
+            
+            {/* Data modules - random pattern */}
+            <rect x="26" y="4" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="34" y="4" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="26" y="12" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="30" y="8" width="4" height="4" fill="hsl(var(--navy))" />
+            
+            <rect x="4" y="26" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="12" y="26" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="8" y="30" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="16" y="34" width="4" height="4" fill="hsl(var(--navy))" />
+            
+            <rect x="26" y="26" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="34" y="26" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="30" y="30" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="38" y="30" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="26" y="34" width="4" height="4" fill="hsl(var(--navy))" />
+            
+            <rect x="42" y="26" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="50" y="30" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="46" y="34" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="54" y="34" width="4" height="4" fill="hsl(var(--navy))" />
+            
+            <rect x="26" y="42" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="30" y="46" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="34" y="42" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="38" y="50" width="4" height="4" fill="hsl(var(--navy))" />
+            
+            <rect x="42" y="42" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="50" y="46" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="46" y="50" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="54" y="54" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="42" y="54" width="4" height="4" fill="hsl(var(--navy))" />
           </svg>
           {/* Dashed circle border */}
           <svg className="scanner-ring" width="100" height="100" viewBox="0 0 100 100">
