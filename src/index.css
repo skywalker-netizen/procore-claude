@@ -1701,7 +1701,7 @@
 .trade-feature h4 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 900;
   color: hsl(var(--white));
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -1766,7 +1766,7 @@
 .feature-block h4 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -1788,7 +1788,7 @@
 .feature-text h4 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 900;
   color: hsl(var(--navy));
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -1812,7 +1812,7 @@
 .numbered-feature h4 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
