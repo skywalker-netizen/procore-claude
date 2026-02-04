@@ -21,9 +21,9 @@ const HammerTech = () => {
       <HeroSection variant="hammertech" />
       <SocialProofSection variant="general" />
       <ComparisonTableSection variant="hammertech" />
-      <TradePartnerSection variant="sitedocs" />
-      <FieldAdvantageSection variant="sitedocs" />
-      <PreventativeMaintenanceSection variant="sitedocs" />
+      <FieldAdvantageSection variant="hammertech" />
+      <TradePartnerSection variant="hammertech" />
+      <PreventativeMaintenanceSection variant="hammertech" />
       <TestimonialsSection />
       <IntegrationSection />
       <CTASection />
