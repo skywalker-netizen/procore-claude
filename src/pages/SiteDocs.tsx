@@ -21,7 +21,7 @@ const SiteDocs = () => {
       <Header />
       <HeroSection variant="sitedocs" />
       <SocialProofSection variant="general" />
-      <TradePartnerSection variant="general" />
+      <TradePartnerSection variant="sitedocs" />
       <FieldAdvantageSection variant="general" />
       <StopWorkaroundsSection variant="general" />
       <PreventativeMaintenanceSection />

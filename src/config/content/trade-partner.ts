@@ -57,7 +57,7 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
   sitedocs: {
     badge: "TRADE PARTNER MANAGEMENT",
     title: "Full visibility Into Every Trade. Free.",
-    subtitle: 'In mission-critical construction, "I didn\'t know the sub wasn\'t certified" isn\'t a valid excuse.',
+    subtitle: 'The "Subcontractor Black Box" is where compliance goes to die. Salus creates a digital paper trail that actually holds up by holding individuals accountable.',
     features: [
       {
         title: "Zero Barrier Access",
