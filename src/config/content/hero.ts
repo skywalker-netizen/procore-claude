@@ -64,7 +64,7 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     badge: "CANADIAN SAFETY COMPLIANCE",
     title: "Secure Your COR™ Certification.",
     titleHighlight: "Maximize Your WCB Rebates.",
-    titleHighlightLine2: "Win.",
+    titleHighlightLine2: "Win Bids.",
     subtitle:
       "You're outgrowing paper binders and simple digital safety forms.",
     description:
