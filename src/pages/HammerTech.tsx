@@ -6,6 +6,7 @@ import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { FieldAdvantageSection } from "@/components/sections/FieldAdvantageSection";
 import { TradePartnerSection } from "@/components/sections/TradePartnerSection";
 import { StopWorkaroundsSection } from "@/components/sections/StopWorkaroundsSection";
+import { PreventativeMaintenanceSection } from "@/components/sections/PreventativeMaintenanceSection";
 import { IntegrationSection } from "@/components/sections/IntegrationSection";
 import { ComparisonTableSection } from "@/components/sections/ComparisonTableSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -24,7 +25,8 @@ const HammerTech = () => {
       <FieldAdvantageSection variant="hammertech" />
       <TradePartnerSection variant="hammertech" />
       <StopWorkaroundsSection variant="hammertech" />
-      <TestimonialsSection variant="white" />
+      <PreventativeMaintenanceSection variant="sitedocs" />
+      <TestimonialsSection />
       <IntegrationSection />
       <CTASection />
       <Footer />
