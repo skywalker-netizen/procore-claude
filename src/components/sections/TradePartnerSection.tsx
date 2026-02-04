@@ -35,7 +35,16 @@ export function TradePartnerSection({ variant }: TradePartnerSectionProps) {
               </div>
               <div>
                 <h4>{feature.title}</h4>
-                <p>{feature.description}</p>
+                <p>
+                  {feature.title === "Accountability" ? (
+                    <>
+                      See orientation status, JHA submissions, and corrective actions of your contractors{" "}
+                      <span className="text-white font-semibold">at the worker level, not just the company level.</span>
+                    </>
+                  ) : (
+                    feature.description
+                  )}
+                </p>
               </div>
             </div>
           ))}
