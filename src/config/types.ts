@@ -9,6 +9,7 @@ export interface FeatureContent {
   title: string;
   description: string;
   iconColor: IconColor;
+  titleOnly?: boolean;
 }
 
 export interface SectionContent {

@@ -1929,6 +1929,17 @@
   line-height: 1.6;
 }
 
+/* Title-only style: same as h4 but not uppercase */
+.numbered-feature .feature-title-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 0;
+  letter-spacing: 0.3px;
+  color: hsl(var(--navy));
+  line-height: 1.6;
+}
+
 
 /* --------------------------------------------------------------------------
    9.7 Executive Insights Section

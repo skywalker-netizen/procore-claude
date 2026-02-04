@@ -38,6 +38,7 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
                 title={feature.title}
                 description={feature.description}
                 variant="numbered"
+                titleOnly={feature.titleOnly}
               />
             ))}
           </div>
