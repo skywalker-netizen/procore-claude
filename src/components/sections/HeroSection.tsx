@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Layers, Zap, Settings } from "lucide-react";
+import { ShieldCheck, RefreshCw, Rocket } from "lucide-react";
 import { DemoForm } from "@/components/forms/DemoForm";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { G2Badge } from "@/components/shared/G2Badge";
@@ -17,19 +17,19 @@ interface HeroSectionProps {
 
 const generalTrustBadges: TrustBadgeItem[] = [
   {
-    icon: <Layers size={22} strokeWidth={2.5} />,
+    icon: <ShieldCheck size={22} strokeWidth={2.5} />,
     iconBg: "lime",
     text: "All-in-one connected",
     subtext: "safety ecosystem",
   },
   {
-    icon: <Zap size={22} strokeWidth={2.5} />,
+    icon: <RefreshCw size={22} strokeWidth={2.5} />,
     iconBg: "navy",
     text: "Jobsites - office",
     subtext: "constant feedback loop",
   },
   {
-    icon: <Settings size={22} strokeWidth={2.5} />,
+    icon: <Rocket size={22} strokeWidth={2.5} />,
     iconBg: "navy",
     text: "Agile - up and running in as",
     subtext: "little as two weeks",
