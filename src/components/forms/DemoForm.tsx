@@ -8,7 +8,7 @@ interface DemoFormProps {
 }
 
 export function DemoForm({ variant = "hero", className = "", style }: DemoFormProps) {
-  const { formData, handleInputChange, handleSubmit, isLoading, isSubmitted } = useDemoForm();
+  const { formData, handleInputChange, handleSubmit, isLoading, isSubmitted, errors } = useDemoForm();
 
   return (
     <div className={`demo-card ${className}`} style={style}>
@@ -31,7 +31,7 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
         <>
           <h2>See Salus in action.</h2>
           <p className="subtitle">BOOK YOUR PERSONALIZED INTEGRATION DEMO</p>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} noValidate>
             <div className="form-row">
               <div className="form-group">
                 <label>
@@ -43,8 +43,9 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
                   value={formData.firstName}
                   onChange={handleInputChange}
                   placeholder="First Name"
-                  required
+                  className={errors.firstName ? "has-error" : ""}
                 />
+                {errors.firstName && <span className="error-message">{errors.firstName}</span>}
               </div>
               <div className="form-group">
                 <label>
@@ -56,8 +57,9 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
                   value={formData.lastName}
                   onChange={handleInputChange}
                   placeholder="Last Name"
-                  required
+                  className={errors.lastName ? "has-error" : ""}
                 />
+                {errors.lastName && <span className="error-message">{errors.lastName}</span>}
               </div>
             </div>
             <div className="form-group">
@@ -70,8 +72,9 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
                 value={formData.company}
                 onChange={handleInputChange}
                 placeholder="Your company name"
-                required
+                className={errors.company ? "has-error" : ""}
               />
+              {errors.company && <span className="error-message">{errors.company}</span>}
             </div>
             <div className="form-group">
               <label>
@@ -83,8 +86,9 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="email@company.com"
-                required
+                className={errors.email ? "has-error" : ""}
               />
+              {errors.email && <span className="error-message">{errors.email}</span>}
             </div>
             <div className="form-group">
               <label>
@@ -96,8 +100,9 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder="+1 (555) 123-4567"
-                required
+                className={errors.phone ? "has-error" : ""}
               />
+              {errors.phone && <span className="error-message">{errors.phone}</span>}
             </div>
             <button type="submit" className="btn-submit" disabled={isLoading}>
               {isLoading ? "Sending..." : "Request Demo"}
