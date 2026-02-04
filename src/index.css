@@ -1701,11 +1701,12 @@
 .trade-feature h4 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 800;
   color: hsl(var(--white));
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  -webkit-text-stroke: 0.5px currentColor;
 }
 
 .trade-feature h4 .highlight {
@@ -1766,10 +1767,11 @@
 .feature-block h4 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  -webkit-text-stroke: 0.5px currentColor;
 }
 
 .feature-block p {
@@ -1788,11 +1790,12 @@
 .feature-text h4 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 800;
   color: hsl(var(--navy));
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  -webkit-text-stroke: 0.5px currentColor;
 }
 
 .feature-text p {
@@ -1812,10 +1815,11 @@
 .numbered-feature h4 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  -webkit-text-stroke: 0.5px currentColor;
 }
 
 .numbered-feature p {
