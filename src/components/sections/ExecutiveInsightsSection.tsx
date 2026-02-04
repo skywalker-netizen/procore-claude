@@ -3,7 +3,7 @@ import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 import { Quote } from "@/components/shared/Quote";
 import { AnalyticsCard } from "@/components/infographics/AnalyticsCard";
-import { EXECUTIVE_INSIGHTS_CONTENT, EXECUTIVE_INSIGHTS_QUOTE } from "@/config";
+import { EXECUTIVE_INSIGHTS_CONTENT, EXECUTIVE_INSIGHTS_QUOTE, EXECUTIVE_INSIGHTS_CA_QUOTE } from "@/config";
 import type { PageVariant, IconColor } from "@/config/types";
 
 interface ExecutiveInsightsSectionProps {
@@ -33,9 +33,9 @@ export function ExecutiveInsightsSection({ variant }: ExecutiveInsightsSectionPr
         <div className="analytics-column">
           <AnalyticsCard />
           <Quote
-            text={EXECUTIVE_INSIGHTS_QUOTE.text}
-            author={EXECUTIVE_INSIGHTS_QUOTE.author}
-            title={EXECUTIVE_INSIGHTS_QUOTE.title}
+            text={variant === "ca" ? EXECUTIVE_INSIGHTS_CA_QUOTE.text : EXECUTIVE_INSIGHTS_QUOTE.text}
+            author={variant === "ca" ? EXECUTIVE_INSIGHTS_CA_QUOTE.author : EXECUTIVE_INSIGHTS_QUOTE.author}
+            title={variant === "ca" ? EXECUTIVE_INSIGHTS_CA_QUOTE.title : EXECUTIVE_INSIGHTS_QUOTE.title}
           />
         </div>
         <div>
