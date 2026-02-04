@@ -18,7 +18,7 @@ export function PreventativeMaintenanceSection({ variant = "general" }: Preventa
   const content = PREVENTATIVE_MAINTENANCE_CONTENT[variant];
 
   return (
-    <section className="section-padding section-bg-white">
+    <section className={`section-padding ${variant === "sitedocs" ? "section-bg-white" : "section-bg-gray"}`}>
       <div className="section-inner grid-2">
         <div>
           <SyncBadge text={content.badge} />
