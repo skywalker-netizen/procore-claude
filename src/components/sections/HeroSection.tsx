@@ -52,6 +52,9 @@ export function HeroSection({ variant }: HeroSectionProps) {
                 <em className="hero-italic">{content.subtitleItalic}</em>{" "}
                 {content.subtitleEnd}
               </p>
+              {content.subtitleTagline && (
+                <p className="hero-subtitle-tagline">{content.subtitleTagline}</p>
+              )}
               <p className="hero-description">{content.description}</p>
             </>
           ) : (

@@ -7,6 +7,7 @@ interface HeroContent {
   subtitle: string;
   subtitleItalic?: string;
   subtitleEnd?: string;
+  subtitleTagline?: string;
   description: string;
   tagline?: string;
 }
@@ -18,7 +19,8 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     titleHighlight: " Brain.",
     subtitle: 'Procore dashboard says "compliant." But is it the truth?',
     subtitleItalic: 'Field teams call its safety module "click hell."',
-    subtitleEnd: "Forms get pencil-whipped. Your System of Record is only as good as your System of Reality.",
+    subtitleEnd: "Forms get pencil-whipped.",
+    subtitleTagline: "Your System of Record is only as good as your System of Reality.",
     description: "SALUS feeds Procore with a live feed of high-fidelity field intelligence, ensuring your mission-critical delivery stays on track and out of the headlines. Zero Incidents. Zero Downtime. Zero Blindspots.",
   },
   general: {
