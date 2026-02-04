@@ -1,64 +1,50 @@
 
-## Add Unit Tests for Form Validation and Variant Content
+# Fix FieldAdvantageSection for HammerTech Variant
 
-### Overview
-Create comprehensive unit tests covering the demo form validation logic and the variant content configuration system. The testing infrastructure (Vitest, React Testing Library) is already configured.
+## Problem
 
-### Test Files to Create
+The `FieldAdvantageSection` component has hardcoded checks for `variant === "sitedocs"` to control styling and infographic selection. To display the correct QR onboarding infographic on HammerTech, we've been forced to use `variant="sitedocs"`, which incorrectly loads SiteDocs copy instead of the HammerTech-specific content.
 
-**1. `src/components/forms/useDemoForm.test.ts`**
+## Solution
 
-Tests for the demo form hook validation:
+Update the component logic to treat `hammertech` similarly to `sitedocs` for visual elements (infographic, background, layout) while still pulling the correct HammerTech content from the config.
 
-| Test Case | Description |
-|-----------|-------------|
-| Required field validation | Verify errors for empty firstName, lastName, company, email, phone |
-| Email format validation | Test invalid emails like "notanemail", "missing@domain" |
-| Phone format validation | Test invalid characters in phone numbers |
-| Max length validation | Test firstName/lastName > 50 chars, company > 100 chars |
-| Valid submission | Verify no errors with valid data |
-| Whitespace trimming | Ensure "  John  " is trimmed before validation |
+## Changes
 
-**2. `src/config/content/content.test.ts`**
+### 1. Update FieldAdvantageSection.tsx
 
-Tests for variant content configuration:
+Update the conditional checks to include both `sitedocs` and `hammertech` variants:
 
-| Test Case | Description |
-|-----------|-------------|
-| All variants exist | Verify procore, general, sitedocs keys exist in each content config |
-| Required fields present | Check that badge, title, subtitle exist for each variant |
-| No empty strings | Ensure no variant has empty required fields |
-| Feature arrays valid | Verify features have title and description |
-| Type safety | Confirm content matches TypeScript interfaces |
+- **Background color**: Use gray background for both sitedocs and hammertech
+- **FeatureItem style**: Use "block" variant for both
+- **Quote display**: Show the sitedocs quote for both (or add a hammertech-specific quote later)
+- **Infographic**: Show `SiteOnboardingDashboard` for both variants
 
-### Technical Implementation
+```tsx
+// Line 24: Background
+className={`... ${(variant === "sitedocs" || variant === "hammertech") ? "section-bg-gray" : "section-bg-white"}`}
 
-**Form Validation Tests** - Extract the Zod schema to make it testable independently:
-```typescript
-// Test the schema directly
-const result = demoFormSchema.safeParse({ firstName: "", ... });
-expect(result.success).toBe(false);
-expect(result.error.errors[0].message).toBe("First name is required");
+// Line 41: FeatureItem variant
+variant={(variant === "sitedocs" || variant === "hammertech") ? "block" : "numbered"}
+
+// Line 46: Quote display
+{(variant === "sitedocs" || variant === "hammertech") && (
+
+// Line 57: Infographic selection
+{(variant === "sitedocs" || variant === "hammertech") ? (
 ```
 
-**Content Validation Tests** - Iterate over all variants:
-```typescript
-const variants: PageVariant[] = ["procore", "general", "sitedocs"];
-variants.forEach(variant => {
-  expect(HERO_CONTENT[variant].badge).toBeTruthy();
-});
+### 2. Update HammerTech.tsx
+
+Change the variant from `sitedocs` to `hammertech` so it pulls the correct content:
+
+```tsx
+<FieldAdvantageSection variant="hammertech" />
 ```
 
-### Files to Create/Modify
+## Result
 
-| File | Action |
-|------|--------|
-| `src/components/forms/useDemoForm.ts` | Export the Zod schema for direct testing |
-| `src/components/forms/useDemoForm.test.ts` | New: Form validation tests |
-| `src/config/content/content.test.ts` | New: Variant content tests |
-
-### Benefits
-- Catches validation regressions before they reach users
-- Ensures all page variants have complete content
-- Documents expected behavior of form validation
-- Enables confident refactoring of form logic
+The HammerTech page will display:
+- The correct HammerTech intro copy ("While HammerTech users struggle with complex sign-ins...")
+- The `SiteOnboardingDashboard` QR code infographic
+- Consistent gray background and block-style feature items
