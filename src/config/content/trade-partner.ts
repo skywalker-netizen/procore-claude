@@ -10,7 +10,7 @@ interface TradePartnerContent {
 export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
   procore: {
     badge: "TRADE PARTNER MANAGEMENT",
-    title: "Full visibility Into Every Trade.",
+    title: "Full visibility Into Every Trade. Free.",
     subtitle: 'In mission-critical construction, "I didn\'t know the sub wasn\'t certified" isn\'t a valid excuse.',
     features: [
       {
