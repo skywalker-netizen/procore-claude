@@ -18,7 +18,7 @@ const Ca = () => {
       <SEOHead variant="ca" />
       <Header />
       <HeroSection variant="ca" />
-      <SocialProofSection variant="general" />
+      <SocialProofSection variant="ca" />
       <FieldAdvantageSection variant="ca" />
       <StopWorkaroundsSection variant="general" />
       <ExecutiveInsightsSection variant="ca" />
