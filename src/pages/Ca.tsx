@@ -23,7 +23,7 @@ const Ca = () => {
       <StopWorkaroundsSection variant="general" />
       <TradePartnerSection variant="ca" />
       <PreventativeMaintenanceSection variant="ca" />
-      <ExecutiveInsightsSection variant="general" />
+      <ExecutiveInsightsSection variant="ca" />
       <IntegrationSection />
       <TestimonialsSection />
       <CTASection />
