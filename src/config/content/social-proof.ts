@@ -3,6 +3,7 @@ import type { VariantContent, StatContent } from "../types";
 export const SOCIAL_PROOF_TITLE: VariantContent<string> = {
   procore: "Leaders use Procore + Salus",
   general: "Leaders use Salus",
+  sitedocs: "Leaders use Salus",
 };
 
 export const SOCIAL_PROOF_STATS: StatContent[] = [

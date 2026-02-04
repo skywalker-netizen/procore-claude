@@ -54,6 +54,29 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
       },
     ],
   },
+  sitedocs: {
+    badge: "TRADE PARTNER MANAGEMENT",
+    title: "Full visibility Into Every Trade. Free.",
+    subtitle: 'In mission-critical construction, "I didn\'t know the sub wasn\'t certified" isn\'t a valid excuse.',
+    features: [
+      {
+        title: "Zero Barrier Access",
+        description: "Manage your Tier 1 and Tier 2 partners without the \"login tax.\" Onboard trades with QR codes for free.",
+      },
+      {
+        title: "QR Code Onboarding",
+        description: "Workers can join a project site by simply scanning a QR code with their mobile device. They are immediately connected to the site-specific safety plan and required forms.",
+      },
+      {
+        title: "Accountability",
+        description: "See orientation status, JHA submissions, and corrective actions of your contractors at the worker level, not just the company level.",
+      },
+      {
+        title: "Win - Win",
+        description: "For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
+      },
+    ],
+  },
 };
 
 export const TRADE_PARTNER_QUOTE: QuoteContent = {

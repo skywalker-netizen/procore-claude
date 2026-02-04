@@ -19,7 +19,7 @@ const SiteDocs = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSection variant="general" />
+      <HeroSection variant="sitedocs" />
       <SocialProofSection variant="general" />
       <FieldAdvantageSection variant="general" />
       <StopWorkaroundsSection variant="general" />
