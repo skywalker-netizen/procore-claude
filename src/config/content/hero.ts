@@ -64,9 +64,9 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     badge: "CANADIAN SAFETY COMPLIANCE",
     title: "Secure Your COR™ Certification.",
     titleHighlight: "Maximize Your WCB Rebates.",
-    titleHighlightLine2: "Win the Next Public Bid.",
+    titleHighlightLine2: "Win.",
     subtitle:
-      "You're outgrowing paper binders and simple digital safety forms. SALUS is the only \"Field-First\" safety platform that provides actionable and high-visibility field data — giving Canadian Prime Contractors and Skilled Trades push-button audit readiness and a direct path to insurance premium discounts.",
+      "You're outgrowing paper binders and simple digital safety forms. SALUS is the only \"Field-First\" safety platform that provides actionable and high-fidelity field data — giving Canadian Prime and Specialized Contractors push-button audit readiness and a direct path to insurance premium discounts.",
     description: "",
     tagline: "Start scaling with confidence.",
   },
