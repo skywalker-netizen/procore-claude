@@ -1,4 +1,4 @@
-import type { VariantContent, SectionContent, QuoteContent } from "../types";
+import type { VariantContent, SectionContent } from "../types";
 
 export const STOP_WORKAROUNDS_CONTENT: VariantContent<SectionContent> = {
   procore: {
@@ -130,10 +130,4 @@ export const STOP_WORKAROUNDS_CONTENT: VariantContent<SectionContent> = {
       },
     ],
   },
-};
-
-export const STOP_WORKAROUNDS_CA_QUOTE: QuoteContent = {
-  text: "Before SALUS, we were tracking safety data across 14 different systems—\nExcel, SharePoint, SiteDocs, you name it. It was unmanageable.\nMoving to SALUS didn't just digitize us; it unified us.",
-  author: "Robert Clark",
-  title: "VP of Safety - UNIVERSAL GROUP",
 };
