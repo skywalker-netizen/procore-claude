@@ -11,8 +11,8 @@ interface ExecutiveInsightsSectionProps {
 }
 
 const PROCORE_ICONS = [
-  <FileX size={20} />,
-  <Eye size={20} />,
+  <Shield size={20} />,
+  <ClipboardCheck size={20} />,
 ];
 
 const GENERAL_ICONS = [

@@ -9,16 +9,16 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
       "An EMR over 1.0 doesn't just raise your premiums—it disqualifies you from the bid list. Procore keeps a record of what happened. Salus shows you why it happened and what's about to happen.",
     features: [
       {
-        title: "No More Manual Tallies",
+        title: "High-Resolution Compliance",
         description:
-          "Salus aggregates your leading indicators into high-level Risk Profiles automatically.",
-        iconColor: "beige",
+          "In the world of energized work, Lockout/Tagout (LOTO), and NFPA 70E standards, compliance is the difference between uptime and a catastrophic failure. SALUS is built for specialized trades where one missed signature on a hot-work permit stops the job.",
+        iconColor: "blue",
       },
       {
-        title: "Track Leading Indicators",
+        title: "Audit-Ready, Always",
         description:
-          "Spot a spike in utility-strike near-misses across your Eastern Region sites before a backhoe hits a fiber line.",
-        iconColor: "green",
+          "Whether it's a mid-project audit or a Pre-qual for a new hyperscale bid, export a verified, time-stamped history of every high-risk activity in seconds.",
+        iconColor: "tan",
       },
     ],
   },
