@@ -20,12 +20,12 @@ const SiteDocs = () => {
       <Header />
       <HeroSection variant="sitedocs" />
       <SocialProofSection variant="general" />
+      <ComparisonTableSection />
       <TradePartnerSection variant="sitedocs" />
       <FieldAdvantageSection variant="sitedocs" />
       <PreventativeMaintenanceSection />
       <TestimonialsSection />
       <IntegrationSection />
-      <ComparisonTableSection />
       <CTASection />
       <Footer />
     </div>
