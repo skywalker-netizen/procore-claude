@@ -4,7 +4,7 @@ import { Quote } from "@/components/shared/Quote";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 import { TESTIMONIALS_CONTENT, TESTIMONIALS_QUOTE } from "@/config";
 import type { IconColor } from "@/config/types";
-import supportTeamImage from "@/assets/support-team.jpg";
+import supportTeamImage from "@/assets/support-team.png";
 
 const FEATURE_ICONS = [
   <Headphones size={20} />,
