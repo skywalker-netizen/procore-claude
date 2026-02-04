@@ -13,6 +13,7 @@ interface ExecutiveInsightsSectionProps {
 const PROCORE_ICONS = [
   <Shield size={20} />,
   <ClipboardCheck size={20} />,
+  <BarChart3 size={20} />,
 ];
 
 const GENERAL_ICONS = [
