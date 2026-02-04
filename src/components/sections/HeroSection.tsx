@@ -32,10 +32,17 @@ export function HeroSection({ variant }: HeroSectionProps) {
       <div className="hero-inner">
         <div>
           <SyncBadge text={content.badge} />
-          <h1 className="hero-title">
-            {content.title}<br />
-            <span className="highlight">{content.titleHighlight}</span>
-          </h1>
+          {isProcore ? (
+            <h1 className="hero-title">
+              The Best Field Engine<br />
+              for your Procore<span className="highlight">{content.titleHighlight}</span>
+            </h1>
+          ) : (
+            <h1 className="hero-title">
+              {content.title}<br />
+              <span className="highlight">{content.titleHighlight}</span>
+            </h1>
+          )}
           
           {isProcore ? (
             <>
