@@ -12,9 +12,13 @@ const FEATURE_ICONS = [
   <GraduationCap size={20} />,
 ];
 
-export function TestimonialsSection() {
+interface TestimonialsSectionProps {
+  variant?: "default" | "white";
+}
+
+export function TestimonialsSection({ variant = "default" }: TestimonialsSectionProps) {
   return (
-    <section className="section-padding testimonials-section section-bg-gray">
+    <section className={`section-padding testimonials-section ${variant === "white" ? "section-bg-white" : "section-bg-gray"}`}>
       <div className="section-inner grid-2 testimonials-grid">
         <div className="support-visual-column">
           <img 
