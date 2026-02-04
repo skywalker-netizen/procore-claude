@@ -21,9 +21,9 @@ const Ca = () => {
       <SocialProofSection variant="general" />
       <FieldAdvantageSection variant="ca" />
       <StopWorkaroundsSection variant="general" />
+      <ExecutiveInsightsSection variant="ca" />
       <TradePartnerSection variant="ca" />
       <PreventativeMaintenanceSection variant="ca" />
-      <ExecutiveInsightsSection variant="ca" />
       <IntegrationSection />
       <TestimonialsSection />
       <CTASection />
