@@ -22,8 +22,8 @@ const SiteDocs = () => {
       <TradePartnerSection variant="sitedocs" />
       <FieldAdvantageSection variant="sitedocs" />
       <PreventativeMaintenanceSection />
-      <IntegrationSection />
       <TestimonialsSection />
+      <IntegrationSection />
       <CTASection />
       <Footer />
     </div>
