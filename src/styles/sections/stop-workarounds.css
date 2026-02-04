@@ -1,0 +1,95 @@
+/* ==========================================================================
+   STOP WORKAROUNDS SECTION (Feature Blocks)
+   ========================================================================== */
+
+/* Feature Blocks - Industrial */
+.feature-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.feature-block h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-text-stroke: 0.5px currentColor;
+}
+
+.feature-block p {
+  font-size: 15px;
+  color: hsl(var(--steel-dark));
+  line-height: 1.6;
+}
+
+/* Title-only style: matches section-subtitle (intro line) font */
+.feature-block .feature-title-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: hsl(var(--navy));
+  line-height: 1.6;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.feature-text h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 800;
+  color: hsl(var(--navy));
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-text-stroke: 0.5px currentColor;
+}
+
+.feature-text p {
+  font-size: 14px;
+  color: hsl(var(--steel-dark));
+  line-height: 1.6;
+}
+
+/* Numbered Features - Industrial */
+.numbered-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.numbered-feature h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-text-stroke: 0.5px currentColor;
+}
+
+.numbered-feature p {
+  font-size: 14px;
+  color: hsl(var(--steel-dark));
+  line-height: 1.6;
+}
+
+/* Title-only style: matches section-subtitle (intro line) font */
+.numbered-feature .feature-title-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: hsl(var(--navy));
+  line-height: 1.6;
+}

@@ -1,0 +1,94 @@
+/* ==========================================================================
+   TRADE PARTNER SECTION
+   ========================================================================== */
+
+/* Dark Section */
+.dark-section {
+  background: hsl(var(--navy));
+  width: 100%;
+}
+
+.dark-section .badge {
+  background: var(--glass-white-10);
+}
+
+.dark-section .section-title {
+  color: hsl(var(--white));
+}
+
+.dark-section .section-title .muted {
+  color: var(--glass-white-40);
+}
+
+.dark-section .section-description {
+  color: var(--glass-white-60);
+}
+
+.dark-section .section-subtitle {
+  color: hsl(var(--concrete));
+}
+
+.trade-content .badge {
+  width: fit-content;
+}
+
+/* Trade Features */
+.trade-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.trade-feature h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 800;
+  color: hsl(var(--white));
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-text-stroke: 0.5px currentColor;
+}
+
+.trade-feature h4 .highlight {
+  color: hsl(var(--gray-400));
+}
+
+.trade-feature p {
+  font-size: 15px;
+  color: var(--glass-white-50);
+  line-height: 1.5;
+}
+
+.trade-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid var(--glass-white-10);
+  margin-top: 16px;
+}
+
+.trade-note-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(197, 248, 42, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--lime));
+}
+
+.trade-note p {
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(var(--lime));
+}
+
+/* Trade Content */
+.trade-content {
+  display: flex;
+  flex-direction: column;
+}

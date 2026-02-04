@@ -1,0 +1,117 @@
+/* ==========================================================================
+   BADGES
+   ========================================================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: hsl(var(--asphalt));
+  color: hsl(var(--concrete));
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  border-left: 3px solid hsl(var(--lime));
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  background: hsl(var(--lime));
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.status-badge {
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.status-badge.orientated {
+  color: hsl(var(--green));
+}
+
+.status-badge.orientated::before {
+  background: hsl(var(--green));
+}
+
+.status-badge.in-progress {
+  color: hsl(var(--orange));
+}
+
+.status-badge.in-progress::before {
+  background: hsl(var(--orange));
+}
+
+.status-badge.active {
+  color: hsl(var(--green));
+}
+
+.status-badge.active::before {
+  background: hsl(var(--green));
+}
+
+.cc-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.cc-badge.pending {
+  background: hsl(var(--blue));
+  color: hsl(var(--white));
+}
+
+.cc-badge.resolved {
+  background: hsl(var(--lime));
+  color: hsl(var(--navy));
+}
+
+.corrective-badge {
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.corrective-badge.pending {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+}
+
+.corrective-badge.resolved {
+  background: rgba(197, 248, 42, 0.2);
+  color: hsl(var(--lime));
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.flra-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(var(--lime));
+  background: hsla(var(--lime), 0.15);
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}

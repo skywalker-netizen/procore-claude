@@ -1,0 +1,108 @@
+/* ==========================================================================
+   LAYOUT UTILITIES
+   ========================================================================== */
+
+.section-padding {
+  padding: 100px 48px;
+  width: 100%;
+}
+
+.section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.section-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.section-title .highlight {
+  color: hsl(var(--steel));
+}
+
+.section-title .muted {
+  color: hsl(var(--steel));
+}
+
+.section-subtitle {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  color: hsl(var(--navy));
+}
+
+.section-subtitle .highlight {
+  color: hsl(var(--steel));
+}
+
+.section-subtitle .red {
+  color: hsl(var(--rust));
+}
+
+.section-intro {
+  font-size: 15px;
+  color: hsl(var(--steel-dark));
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   Section Background Utilities
+   -------------------------------------------------------------------------- */
+
+.section-bg-white {
+  background: hsl(var(--white));
+}
+
+.section-bg-gray {
+  background: hsl(var(--gray-100));
+}
+
+.section-bg-gradient-gray {
+  background: linear-gradient(180deg, hsl(var(--gray-100)) 0%, hsl(var(--white)) 100%);
+}
+
+/* --------------------------------------------------------------------------
+   Container & Size Utilities
+   -------------------------------------------------------------------------- */
+
+.max-w-cta {
+  max-width: 600px;
+}
+
+.logo-xs {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.logo-sm {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.logo-height-48 {
+  height: 48px;
+}
+
+.logo-height-64 {
+  height: 64px;
+}
+
+.logo-height-80,
+.social-proof-logos img.logo-height-80 {
+  height: 80px;
+}

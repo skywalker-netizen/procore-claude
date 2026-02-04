@@ -1,0 +1,36 @@
+/* ==========================================================================
+   TESTIMONIALS SECTION - Industrial
+   ========================================================================== */
+
+/* Testimonials / Unmatched Support Section */
+.testimonials-section {
+  text-align: left;
+}
+
+.testimonials-section .badge {
+  display: inline-flex;
+}
+
+.testimonials-subtitle {
+  font-size: 17px;
+  color: hsl(var(--steel-dark));
+  margin-bottom: 48px;
+}
+
+.support-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.support-visual-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.support-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}

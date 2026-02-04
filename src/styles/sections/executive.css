@@ -1,0 +1,70 @@
+/* ==========================================================================
+   EXECUTIVE INSIGHTS SECTION
+   ========================================================================== */
+
+/* Executive Quote - Industrial */
+.executive-quote {
+  margin-top: 32px;
+  padding: 20px 24px;
+  background: hsl(var(--lime) / 0.12);
+  border-left: 4px solid hsl(var(--lime));
+  border-radius: 0 4px 4px 0;
+}
+
+.executive-quote blockquote {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.6;
+  color: hsl(var(--navy));
+  margin-bottom: 16px;
+}
+
+.executive-quote cite {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-style: normal;
+  color: hsl(var(--steel));
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.executive-quote cite strong {
+  color: hsl(var(--navy));
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Executive Quote Dark Variant */
+.executive-quote.dark {
+  background: hsl(var(--steel-dark) / 0.3);
+  border-color: hsl(var(--steel-dark));
+  border-left-color: hsl(var(--lime));
+}
+
+.executive-quote.dark blockquote {
+  color: hsl(var(--concrete));
+}
+
+.executive-quote.dark cite {
+  color: hsl(var(--concrete));
+}
+
+.executive-quote.dark cite strong {
+  color: hsl(var(--concrete));
+}
+
+/* Analytics Column */
+.analytics-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Portal Column */
+.portal-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
