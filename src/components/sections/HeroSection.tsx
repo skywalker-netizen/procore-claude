@@ -52,7 +52,10 @@ export function HeroSection({ variant }: HeroSectionProps) {
                 {content.subtitleLine2End}<br />
                 {content.subtitleLine3}
               </p>
-              <p className="hero-description">{content.description}</p>
+              <p className="hero-description">
+                {content.descriptionLine1}<br /><br />
+                {content.descriptionLine2}
+              </p>
             </>
           ) : (
             <>

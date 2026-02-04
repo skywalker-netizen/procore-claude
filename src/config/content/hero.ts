@@ -9,7 +9,9 @@ interface HeroContent {
   subtitleLine2Italic?: string;
   subtitleLine2End?: string;
   subtitleLine3?: string;
-  description: string;
+  description?: string;
+  descriptionLine1?: string;
+  descriptionLine2?: string;
   tagline?: string;
 }
 
@@ -22,7 +24,8 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     subtitleLine2Italic: 'Field teams call its safety module "click hell."',
     subtitleLine2End: " Forms get pencil-whipped.",
     subtitleLine3: "Your System of Record is only as good as your System of Reality.",
-    description: "SALUS feeds Procore with a live feed of high-fidelity field intelligence, ensuring your mission-critical delivery stays on track and out of the headlines. Zero Incidents. Zero Downtime. Zero Blindspots.",
+    descriptionLine1: "SALUS feeds Procore with a live feed of high-fidelity field intelligence, ensuring your mission-critical delivery stays on track and out of the headlines.",
+    descriptionLine2: "Zero Incidents. Zero Downtime. Zero Blindspots.",
   },
   general: {
     badge: "NATIVE SYNC",
