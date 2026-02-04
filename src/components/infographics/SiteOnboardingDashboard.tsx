@@ -58,53 +58,128 @@ export function SiteOnboardingDashboard() {
         
         <div className="qr-scanner-icon">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            {/* Background */}
+            <rect width="64" height="64" fill="white" />
+            
             {/* Top-left position detection pattern */}
-            <rect x="4" y="4" width="18" height="18" fill="hsl(var(--navy))" />
-            <rect x="7" y="7" width="12" height="12" fill="white" />
-            <rect x="10" y="10" width="6" height="6" fill="hsl(var(--navy))" />
+            <rect x="4" y="4" width="14" height="14" fill="hsl(var(--navy))" />
+            <rect x="6" y="6" width="10" height="10" fill="white" />
+            <rect x="8" y="8" width="6" height="6" fill="hsl(var(--navy))" />
             
             {/* Top-right position detection pattern */}
-            <rect x="42" y="4" width="18" height="18" fill="hsl(var(--navy))" />
-            <rect x="45" y="7" width="12" height="12" fill="white" />
-            <rect x="48" y="10" width="6" height="6" fill="hsl(var(--navy))" />
+            <rect x="46" y="4" width="14" height="14" fill="hsl(var(--navy))" />
+            <rect x="48" y="6" width="10" height="10" fill="white" />
+            <rect x="50" y="8" width="6" height="6" fill="hsl(var(--navy))" />
             
             {/* Bottom-left position detection pattern */}
-            <rect x="4" y="42" width="18" height="18" fill="hsl(var(--navy))" />
-            <rect x="7" y="45" width="12" height="12" fill="white" />
-            <rect x="10" y="48" width="6" height="6" fill="hsl(var(--navy))" />
+            <rect x="4" y="46" width="14" height="14" fill="hsl(var(--navy))" />
+            <rect x="6" y="48" width="10" height="10" fill="white" />
+            <rect x="8" y="50" width="6" height="6" fill="hsl(var(--navy))" />
             
-            {/* Data modules - random pattern */}
-            <rect x="26" y="4" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="34" y="4" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="26" y="12" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="30" y="8" width="4" height="4" fill="hsl(var(--navy))" />
+            {/* Timing patterns - horizontal */}
+            <rect x="20" y="10" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="24" y="10" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="28" y="10" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="32" y="10" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="36" y="10" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="40" y="10" width="2" height="2" fill="hsl(var(--navy))" />
             
-            <rect x="4" y="26" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="12" y="26" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="8" y="30" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="16" y="34" width="4" height="4" fill="hsl(var(--navy))" />
+            {/* Timing patterns - vertical */}
+            <rect x="10" y="20" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="10" y="24" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="10" y="28" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="10" y="32" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="10" y="36" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="10" y="40" width="2" height="2" fill="hsl(var(--navy))" />
             
-            <rect x="26" y="26" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="34" y="26" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="30" y="30" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="38" y="30" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="26" y="34" width="4" height="4" fill="hsl(var(--navy))" />
+            {/* Dense data modules - Row 1 */}
+            <rect x="20" y="4" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="24" y="4" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="30" y="4" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="36" y="4" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="40" y="4" width="2" height="2" fill="hsl(var(--navy))" />
             
-            <rect x="42" y="26" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="50" y="30" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="46" y="34" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="54" y="34" width="4" height="4" fill="hsl(var(--navy))" />
+            {/* Data modules - Row 2 */}
+            <rect x="22" y="6" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="28" y="6" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="32" y="6" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="38" y="6" width="2" height="2" fill="hsl(var(--navy))" />
             
-            <rect x="26" y="42" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="30" y="46" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="34" y="42" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="38" y="50" width="4" height="4" fill="hsl(var(--navy))" />
+            {/* Data modules - Center area */}
+            <rect x="20" y="20" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="24" y="20" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="28" y="22" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="32" y="20" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="36" y="22" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="40" y="20" width="2" height="2" fill="hsl(var(--navy))" />
             
-            <rect x="42" y="42" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="50" y="46" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="46" y="50" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="54" y="54" width="4" height="4" fill="hsl(var(--navy))" />
-            <rect x="42" y="54" width="4" height="4" fill="hsl(var(--navy))" />
+            <rect x="22" y="24" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="26" y="26" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="30" y="24" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="34" y="26" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="38" y="24" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="42" y="26" width="2" height="2" fill="hsl(var(--navy))" />
+            
+            <rect x="20" y="28" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="24" y="30" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="28" y="28" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="32" y="30" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="36" y="28" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="40" y="30" width="2" height="2" fill="hsl(var(--navy))" />
+            
+            <rect x="22" y="32" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="26" y="34" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="30" y="32" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="34" y="34" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="38" y="32" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="42" y="34" width="2" height="2" fill="hsl(var(--navy))" />
+            
+            <rect x="20" y="36" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="24" y="38" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="28" y="36" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="32" y="38" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="36" y="36" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="40" y="38" width="2" height="2" fill="hsl(var(--navy))" />
+            
+            {/* Right side data */}
+            <rect x="46" y="20" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="50" y="22" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="54" y="20" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="48" y="26" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="52" y="24" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="56" y="26" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="46" y="30" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="50" y="28" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="54" y="32" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="48" y="34" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="52" y="36" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="56" y="38" width="2" height="2" fill="hsl(var(--navy))" />
+            
+            {/* Bottom area data */}
+            <rect x="20" y="46" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="24" y="48" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="28" y="46" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="32" y="50" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="36" y="48" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="40" y="46" width="2" height="2" fill="hsl(var(--navy))" />
+            
+            <rect x="22" y="52" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="26" y="54" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="30" y="52" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="34" y="56" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="38" y="54" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="42" y="52" width="2" height="2" fill="hsl(var(--navy))" />
+            
+            {/* Bottom-right corner data */}
+            <rect x="46" y="46" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="50" y="48" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="54" y="46" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="48" y="52" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="52" y="54" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="56" y="56" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="46" y="56" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="54" y="52" width="2" height="2" fill="hsl(var(--navy))" />
+            <rect x="58" y="50" width="2" height="2" fill="hsl(var(--navy))" />
           </svg>
           {/* Dashed circle border */}
           <svg className="scanner-ring" width="100" height="100" viewBox="0 0 100 100">
