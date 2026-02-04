@@ -66,8 +66,9 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     titleHighlight: "Maximize Your WCB Rebates.",
     titleHighlightLine2: "Win.",
     subtitle:
-      "You're outgrowing paper binders and simple digital safety forms. SALUS is the only \"Field-First\" safety management software that provides high-fidelity and actionable field intelligence — giving Canadian Prime and Specialized Contractors push-button audit readiness and a direct path to insurance premium discounts.",
-    description: "",
+      "You're outgrowing paper binders and simple digital safety forms.",
+    description:
+      "SALUS is the only \"Field-First\" safety management software that provides high-fidelity and actionable field intelligence — giving Canadian Prime and Specialized Contractors push-button audit readiness and a direct path to insurance premium discounts.",
     tagline: "Start scaling with confidence.",
   },
 };
