@@ -60,6 +60,16 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
       "Salus built for high-precision trades and general contractors a high-fidelity safety software designed for 100% field buy-in, rapid deployment, and collaboration between GCs and Trades.",
     tagline: "Scale your Business with Agility.",
   },
+  ca: {
+    badge: "CANADIAN SAFETY COMPLIANCE",
+    title: "Secure Your COR™ Certification.",
+    titleHighlight: "Maximize Your WCB Rebates.",
+    titleHighlightLine2: "Win the Next Public Bid.",
+    subtitle:
+      "You're outgrowing paper binders and simple digital safety forms. SALUS is the only \"Field-First\" safety platform that provides actionable and high-visibility field data — giving Canadian Prime Contractors and Skilled Trades push-button audit readiness and a direct path to insurance premium discounts.",
+    description: "",
+    tagline: "Start scaling with confidence.",
+  },
 };
 
 export const HERO_TRUST_BADGES: VariantContent<TrustBadgeContent[]> = {
@@ -123,6 +133,23 @@ export const HERO_TRUST_BADGES: VariantContent<TrustBadgeContent[]> = {
     {
       text: "Agile deployment",
       subtext: "as little as 2 weeks",
+      iconBg: "navy",
+    },
+  ],
+  ca: [
+    {
+      text: "COR™ Audit Ready",
+      subtext: "push-button compliance",
+      iconBg: "lime",
+    },
+    {
+      text: "WCB Premium",
+      subtext: "rebate optimization",
+      iconBg: "navy",
+    },
+    {
+      text: "Field-First Platform",
+      subtext: "built for Canadian contractors",
       iconBg: "navy",
     },
   ],

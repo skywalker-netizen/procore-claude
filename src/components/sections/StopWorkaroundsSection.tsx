@@ -38,6 +38,11 @@ const VARIANT_CONFIG: Record<PageVariant, VariantConfig> = {
     infographic: "lms",
     showUnifiedBadge: false,
   },
+  ca: {
+    icons: [<ScanSearch size={20} />, <MessagesSquare size={20} />, <Zap size={20} />],
+    infographic: "compliance",
+    showUnifiedBadge: true,
+  },
 };
 
 export function StopWorkaroundsSection({ variant }: StopWorkaroundsSectionProps) {

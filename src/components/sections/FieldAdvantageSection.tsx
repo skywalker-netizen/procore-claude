@@ -43,6 +43,12 @@ const VARIANT_CONFIG: Record<PageVariant, VariantConfig> = {
     infographic: "qr",
     showContentQuote: true,
   },
+  ca: {
+    bgClass: "section-bg-white",
+    featureStyle: "numbered",
+    infographic: "phones",
+    showContentQuote: false,
+  },
 };
 
 const FEATURE_ICONS = [

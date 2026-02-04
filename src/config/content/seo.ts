@@ -40,6 +40,12 @@ export const SEO_CONTENT: Record<PageVariant | "root", SEOContent> = {
       "Compare Salus vs HammerTech. Salus offers powerful safety management without the friction. 100% field buy-in, rapid deployment, and GC-Trade collaboration.",
     canonical: `${BASE_URL}/hammertech`,
   },
+  ca: {
+    title: "Salus Canada | COR™ Certification & WCB Rebate Optimization",
+    description:
+      "Salus helps Canadian contractors secure COR™ certification, maximize WCB rebates, and win public bids with push-button audit readiness.",
+    canonical: `${BASE_URL}/ca`,
+  },
 };
 
 export const ORGANIZATION_SCHEMA = {

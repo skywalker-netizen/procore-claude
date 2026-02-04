@@ -93,4 +93,24 @@ export const PREVENTATIVE_MAINTENANCE_CONTENT: VariantContent<SectionContent> = 
       },
     ],
   },
+  ca: {
+    badge: "ACTIONABLE FIELD INTELLIGENCE",
+    title: "Intelligence from the field, for the field.",
+    subtitle:
+      "Your Crane Log Shouldn't Live in a Binder. High-Fidelity Field Intelligence helps you prevent incidents and close the accountability gaps. At the worker and asset level.",
+    features: [
+      {
+        title: "CORRECTIVE ACTIONS",
+        description:
+          "A foreman scans a QR code on a scissor lift. SALUS instantly checks the maintenance log. If the inspection is overdue, the app flags it immediately. A constant feedback loop between jobsites and the office.",
+        iconColor: "blue",
+      },
+      {
+        title: "TRACK LEADING INDICATORS",
+        description:
+          "Spot a spike in utility-strike near-misses across your Eastern Region sites before a backhoe hits a fiber line.",
+        iconColor: "lime",
+      },
+    ],
+  },
 };

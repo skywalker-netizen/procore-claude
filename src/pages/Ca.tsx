@@ -15,9 +15,9 @@ import { SEOHead } from "@/components/shared/SEOHead";
 const Ca = () => {
   return (
     <div className="min-h-screen">
-      <SEOHead variant="general" />
+      <SEOHead variant="ca" />
       <Header />
-      <HeroSection variant="general" />
+      <HeroSection variant="ca" />
       <SocialProofSection variant="general" />
       <FieldAdvantageSection variant="general" />
       <StopWorkaroundsSection variant="general" />
