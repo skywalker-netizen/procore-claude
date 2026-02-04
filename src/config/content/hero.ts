@@ -15,7 +15,7 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
   procore: {
     badge: "SYNCED WITH THE FIELD",
     title: "The Best Field Engine for your Procore",
-    titleHighlight: "Brain.",
+    titleHighlight: " Brain.",
     subtitle: 'Procore dashboard says "compliant." But is it the truth?',
     subtitleItalic: 'Field teams call its safety module "click hell."',
     subtitleEnd: "Forms get pencil-whipped. Your System of Record is only as good as your System of Reality.",
