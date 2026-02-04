@@ -1305,8 +1305,16 @@
 .hero-description {
   font-size: 16px;
   color: hsl(var(--gray-600));
-  margin-bottom: 48px;
-  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 560px;
+}
+
+.hero-tagline {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(var(--navy));
+  margin-bottom: 32px;
 }
 
 .trust-badges {
@@ -1327,19 +1335,19 @@
 
 .trust-text strong {
   display: block;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
+  font-size: 11px;
   color: hsl(var(--navy));
   letter-spacing: 0.3px;
 }
 
 .trust-text span {
+  display: block;
   color: hsl(var(--steel));
   font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.3px;
 }
 
 /* Hero Proof Section */
