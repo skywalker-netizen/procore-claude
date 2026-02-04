@@ -1,6 +1,15 @@
+import { Headphones, UserCheck, GraduationCap } from "lucide-react";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { Quote } from "@/components/shared/Quote";
+import { FeatureItem } from "@/components/shared/FeatureItem";
 import { TESTIMONIALS_CONTENT, TESTIMONIALS_QUOTE } from "@/config";
+import type { IconColor } from "@/config/types";
+
+const FEATURE_ICONS = [
+  <Headphones size={20} />,
+  <UserCheck size={20} />,
+  <GraduationCap size={20} />,
+];
 
 export function TestimonialsSection() {
   return (
@@ -14,6 +23,17 @@ export function TestimonialsSection() {
             {TESTIMONIALS_CONTENT.title} <span className="highlight">{TESTIMONIALS_CONTENT.titleHighlight}</span>
           </h2>
           <p className="section-subtitle">{TESTIMONIALS_CONTENT.subtitle}</p>
+
+          {TESTIMONIALS_CONTENT.features.map((feature, index) => (
+            <FeatureItem
+              key={index}
+              icon={FEATURE_ICONS[index]}
+              iconColor={feature.iconColor as IconColor}
+              title={feature.title}
+              description={feature.description}
+              variant="block"
+            />
+          ))}
         </div>
         <div className="support-quote-column">
           <Quote
