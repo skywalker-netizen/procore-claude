@@ -769,8 +769,48 @@
 }
 
 .feature-block-icon.circle.blue {
-  background: hsl(210, 25%, 90%);
-  border-color: hsl(210, 20%, 80%);
+  background: hsl(205, 85%, 92%);
+  border-color: hsl(205, 70%, 75%);
+}
+
+.feature-block-icon.circle.blue svg {
+  color: hsl(205, 80%, 40%);
+}
+
+.feature-block-icon.circle.tan {
+  background: hsl(25, 70%, 92%);
+  border-color: hsl(25, 55%, 75%);
+}
+
+.feature-block-icon.circle.tan svg {
+  color: hsl(25, 70%, 45%);
+}
+
+.feature-block-icon.circle.lime {
+  background: hsl(82, 70%, 88%);
+  border-color: hsl(82, 55%, 65%);
+}
+
+.feature-block-icon.circle.lime svg {
+  color: hsl(82, 70%, 35%);
+}
+
+.feature-block-icon.circle.orange {
+  background: hsl(30, 90%, 92%);
+  border-color: hsl(30, 70%, 70%);
+}
+
+.feature-block-icon.circle.orange svg {
+  color: hsl(30, 85%, 45%);
+}
+
+.feature-block-icon.circle.red {
+  background: hsl(0, 70%, 93%);
+  border-color: hsl(0, 55%, 78%);
+}
+
+.feature-block-icon.circle.red svg {
+  color: hsl(0, 65%, 45%);
 }
 
 .feature-block-icon svg {

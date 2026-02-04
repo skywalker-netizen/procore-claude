@@ -18,7 +18,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
         title: "Audit-Ready, Always",
         description:
           "Whether it's a mid-project audit or a Pre-qual for a new hyperscale bid, export a verified, time-stamped history of every high-risk activity in seconds.",
-        iconColor: "tan",
+        iconColor: "orange",
       },
       {
         title: "STEP-Ready Reporting",
@@ -45,7 +45,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
         title: "Audit-Ready, Always",
         description:
           "Whether it's a mid-project audit or a Pre-qual for a new hyperscale bid, export a verified, time-stamped history of every high-risk activity in seconds.",
-        iconColor: "tan",
+        iconColor: "orange",
       },
       {
         title: "STEP-Ready Reporting",
