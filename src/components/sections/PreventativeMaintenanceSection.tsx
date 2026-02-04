@@ -1,4 +1,4 @@
-import { Wrench, TrendingUp } from "lucide-react";
+import { Wrench, ClipboardCheck, Activity } from "lucide-react";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 import { PREVENTATIVE_MAINTENANCE_CONTENT } from "@/config";
@@ -6,7 +6,8 @@ import type { IconColor } from "@/config/types";
 
 const FEATURE_ICONS = [
   <Wrench size={20} />,
-  <TrendingUp size={20} />,
+  <ClipboardCheck size={20} />,
+  <Activity size={20} />,
 ];
 
 export function PreventativeMaintenanceSection() {
