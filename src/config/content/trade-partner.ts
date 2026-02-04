@@ -10,7 +10,7 @@ interface TradePartnerContent {
 export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
   procore: {
     badge: "TRADE PARTNER MANAGEMENT",
-    title: "Full visibility Into Every Trade. Free.",
+    title: "Better collaboration for greater visibility: it's a win-win and it should be Free.",
     subtitle: 'In mission-critical construction, "I didn\'t know the sub wasn\'t certified" isn\'t a valid excuse.',
     features: [
       {
@@ -33,7 +33,7 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
   },
   general: {
     badge: "TRADE PARTNER MANAGEMENT",
-    title: "Full visibility Into Every Trade. Free.",
+    title: "Better collaboration for greater visibility: it's a win-win and it should be Free.",
     subtitle: 'In mission-critical construction, "I didn\'t know the sub wasn\'t certified" isn\'t a valid excuse.',
     features: [
       {
@@ -56,7 +56,7 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
   },
   sitedocs: {
     badge: "TRADE PARTNER MANAGEMENT",
-    title: "Full visibility Into Every Trade. Free.",
+    title: "Better collaboration for greater visibility: it's a win-win and it should be Free.",
     subtitle: 'The "Subcontractor Black Box" is where compliance goes to die. Sitedocs only manages trades at the company level. Salus onboards individuals, not just companies, and tracks compliance and corrective actions down to the individual level.',
     features: [
       {
