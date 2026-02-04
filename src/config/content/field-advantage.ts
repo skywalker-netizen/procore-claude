@@ -65,13 +65,11 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
         title: "Faster onboarding",
         description: "",
         iconColor: "lime",
-        titleOnly: true,
       },
       {
         title: "Lower risk",
         description: "",
         iconColor: "blue",
-        titleOnly: true,
       },
     ],
   },
