@@ -75,10 +75,10 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
   },
   hammertech: {
     badge: "Instant Onboarding",
-    title: "The Magic",
-    titleHighlight: "Orientation",
+    title: "Field Buy-In vs.",
+    titleHighlight: "Complexity",
     subtitle:
-      "While HammerTech users struggle with complex sign-ins and clunky menus, Salus workers scan a QR code and are ready to work in seconds.",
+      "While HammerTech users struggle with complex sign-ins and clunky menus, Salus workers scan a QR code and are ready to work in seconds, and Salus office interface doesn't require a master's degree to navigate.",
     features: [
       {
         title: "Faster onboarding",
@@ -86,9 +86,14 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
         iconColor: "lime",
       },
       {
-        title: "Lower risk",
-        description: "",
+        title: "Android Ready",
+        description: "Zero sign-in issues, 100% uptime.",
         iconColor: "blue",
+      },
+      {
+        title: "Full Customization",
+        description: "Salus doesn't require you to learn new workflows; It adapts to your specific workflows.",
+        iconColor: "red",
       },
     ],
   },
