@@ -2379,17 +2379,22 @@
   margin-bottom: 48px;
 }
 
-/* Support Section Columns */
 .support-content {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-.support-quote-column {
+.support-visual-column {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.support-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 

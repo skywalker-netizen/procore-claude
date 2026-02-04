@@ -4,6 +4,7 @@ import { Quote } from "@/components/shared/Quote";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 import { TESTIMONIALS_CONTENT, TESTIMONIALS_QUOTE } from "@/config";
 import type { IconColor } from "@/config/types";
+import supportTeamImage from "@/assets/support-team.jpg";
 
 const FEATURE_ICONS = [
   <Headphones size={20} />,
@@ -35,7 +36,12 @@ export function TestimonialsSection() {
             />
           ))}
         </div>
-        <div className="support-quote-column">
+        <div className="support-visual-column">
+          <img 
+            src={supportTeamImage} 
+            alt="Construction team collaborating on safety" 
+            className="support-image"
+          />
           <Quote
             text={TESTIMONIALS_QUOTE.text}
             author={TESTIMONIALS_QUOTE.author}
