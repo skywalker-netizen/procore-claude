@@ -3,6 +3,7 @@ import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
 import { Quote } from "@/components/shared/Quote";
 import { PhoneMockups } from "@/components/infographics/PhoneMockups";
+import { SiteOnboardingDashboard } from "@/components/infographics/SiteOnboardingDashboard";
 import { FIELD_ADVANTAGE_CONTENT, FIELD_ADVANTAGE_QUOTE } from "@/config";
 import type { PageVariant, IconColor } from "@/config/types";
 
@@ -44,12 +45,18 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
           </div>
 
           <div className="field-advantage-mockups">
-            <PhoneMockups />
-            <Quote
-              text={FIELD_ADVANTAGE_QUOTE.text}
-              author={FIELD_ADVANTAGE_QUOTE.author}
-              title={FIELD_ADVANTAGE_QUOTE.title}
-            />
+            {variant === "sitedocs" ? (
+              <SiteOnboardingDashboard />
+            ) : (
+              <>
+                <PhoneMockups />
+                <Quote
+                  text={FIELD_ADVANTAGE_QUOTE.text}
+                  author={FIELD_ADVANTAGE_QUOTE.author}
+                  title={FIELD_ADVANTAGE_QUOTE.title}
+                />
+              </>
+            )}
           </div>
         </div>
       </div>
