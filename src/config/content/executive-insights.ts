@@ -2,11 +2,11 @@ import type { VariantContent, SectionContent, QuoteContent } from "../types";
 
 export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
   procore: {
-    badge: "EXECUTIVE-LEVEL INSIGHTS",
-    title: "Your EMR Is a Bid Filter.",
-    titleHighlight: "Treat It Like One.",
+    badge: "COMPLIANCE & REPORTING",
+    title: "Inspection-Ready. Audit-Proof.",
+    titleHighlight: "Win.",
     subtitle:
-      "An EMR over 1.0 doesn't just raise your premiums—it disqualifies you from the bid list. Procore keeps a record of what happened. Salus shows you why it happened and what's about to happen.",
+      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. Salus proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
     features: [
       {
         title: "High-Resolution Compliance",
@@ -19,6 +19,12 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
         description:
           "Whether it's a mid-project audit or a Pre-qual for a new hyperscale bid, export a verified, time-stamped history of every high-risk activity in seconds.",
         iconColor: "tan",
+      },
+      {
+        title: "STEP-Ready Reporting",
+        description:
+          "With Salus, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
+        iconColor: "lime",
       },
     ],
   },
