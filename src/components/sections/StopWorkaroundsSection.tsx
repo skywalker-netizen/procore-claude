@@ -1,9 +1,10 @@
 import { ScanSearch, MessagesSquare, Zap } from "lucide-react";
 import { SyncBadge } from "@/components/shared/SyncBadge";
 import { FeatureItem } from "@/components/shared/FeatureItem";
+import { Quote } from "@/components/shared/Quote";
 import { ComplianceCoreDashboard } from "@/components/infographics/ComplianceCoreDashboard";
 import { LMSDashboard } from "@/components/infographics/LMSDashboard";
-import { STOP_WORKAROUNDS_CONTENT } from "@/config";
+import { STOP_WORKAROUNDS_CONTENT, STOP_WORKAROUNDS_CA_QUOTE } from "@/config";
 import type { PageVariant, IconColor } from "@/config/types";
 import type { ReactNode } from "react";
 
@@ -77,6 +78,14 @@ export function StopWorkaroundsSection({ variant }: StopWorkaroundsSectionProps)
             <LMSDashboard />
           ) : (
             <ComplianceCoreDashboard showUnifiedBadge={config.showUnifiedBadge} />
+          )}
+          {variant === "ca" && (
+            <Quote
+              text={STOP_WORKAROUNDS_CA_QUOTE.text}
+              author={STOP_WORKAROUNDS_CA_QUOTE.author}
+              title={STOP_WORKAROUNDS_CA_QUOTE.title}
+              className="mt-8"
+            />
           )}
         </div>
       </div>
