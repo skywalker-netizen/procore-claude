@@ -4,7 +4,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
 
-const demoFormSchema = z.object({
+export const demoFormSchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(50, "First name is too long"),
   lastName: z.string().trim().min(1, "Last name is required").max(50, "Last name is too long"),
   company: z.string().trim().min(1, "Company is required").max(100, "Company name is too long"),
