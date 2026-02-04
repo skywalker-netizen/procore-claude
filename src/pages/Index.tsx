@@ -28,8 +28,8 @@ const Index = () => {
       <TradePartnerSection variant="procore" />
       <ExecutiveInsightsSection variant="procore" />
       <PreventativeMaintenanceSection />
-      <TechSpecsSection />
       <TestimonialsSection />
+      <TechSpecsSection />
       <CTASection />
       <Footer />
     </div>
