@@ -14,7 +14,7 @@ export function PreventativeMaintenanceSection() {
   const content = PREVENTATIVE_MAINTENANCE_CONTENT;
 
   return (
-    <section className="section-padding section-bg-gray">
+    <section className="section-padding section-bg-white">
       <div className="section-inner grid-2">
         <div>
           <SyncBadge text={content.badge} />
