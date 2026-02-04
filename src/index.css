@@ -266,7 +266,8 @@
   height: 64px;
 }
 
-.logo-height-80 {
+.logo-height-80,
+.social-proof-logos img.logo-height-80 {
   height: 80px;
 }
 
