@@ -1333,13 +1333,14 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   margin-bottom: 24px;
+  font-weight: 600;
 }
 
-.hero-subtitle em {
+.hero-italic {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   font-weight: 400;
-  color: hsl(var(--gray-600));
+  color: hsl(var(--steel));
 }
 
 .hero-description {
@@ -1359,8 +1360,13 @@
 
 .trust-badges {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 16px;
+}
+
+.trust-badges-procore {
+  gap: 32px;
 }
 
 .trust-badge {
@@ -1380,6 +1386,12 @@
   font-size: 11px;
   color: hsl(var(--navy));
   letter-spacing: 0.3px;
+}
+
+.trust-badges-procore .trust-text span {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.5px;
 }
 
 .trust-text span {
