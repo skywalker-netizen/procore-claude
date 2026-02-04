@@ -65,7 +65,7 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
           <img src={broccoliniCaLogo} alt="Broccolini" className="invert-logo" />
           <img src={lmsSteelCaLogo} alt="LMS Reinforcing Steel Group" className="invert-logo" />
           <img src={group1Logo} alt="Group 1" />
-          <img src={kingHoeLogo} alt="King Hoe Excavating" className="invert-logo" />
+          <img src={kingHoeLogo} alt="King Hoe Excavating" />
           <img src={giustiGroupLogo} alt="Giusti Group" />
           <img src={universalGroupLogo} alt="Universal Group" />
         </>
