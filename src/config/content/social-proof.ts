@@ -5,6 +5,7 @@ export const SOCIAL_PROOF_TITLE: VariantContent<string> = {
   general: "Leaders use Salus",
   sitedocs: "Leaders use Salus",
   hammertech: "Leaders use Salus",
+  ca: "Leaders use Salus",
 };
 
 export const SOCIAL_PROOF_STATS: StatContent[] = [

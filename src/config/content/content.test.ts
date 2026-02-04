@@ -9,7 +9,7 @@ import { PREVENTATIVE_MAINTENANCE_CONTENT } from "./preventative-maintenance";
 import { SOCIAL_PROOF_TITLE, SOCIAL_PROOF_STATS, SOCIAL_PROOF_QUOTE } from "./social-proof";
 import { TESTIMONIALS_CONTENT, TESTIMONIALS_QUOTE, getTestimonialsContent } from "./testimonials";
 
-const PAGE_VARIANTS: PageVariant[] = ["procore", "general", "sitedocs", "hammertech"];
+const PAGE_VARIANTS: PageVariant[] = ["procore", "general", "sitedocs", "hammertech", "ca"];
 
 describe("Hero Content", () => {
   it("should have all variants defined", () => {

@@ -26,7 +26,7 @@ export function HeroSection({ variant }: HeroSectionProps) {
   const trustBadges = HERO_TRUST_BADGES[variant];
   const icons = variant === "procore" ? PROCORE_ICONS : GENERAL_ICONS;
   const isProcore = variant === "procore";
-  const useGeneralLayout = variant === "general" || variant === "sitedocs" || variant === "hammertech";
+  const useGeneralLayout = variant === "general" || variant === "sitedocs" || variant === "hammertech" || variant === "ca";
 
   return (
     <section className="hero">
