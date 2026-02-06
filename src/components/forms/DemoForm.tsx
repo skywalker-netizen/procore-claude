@@ -104,6 +104,11 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
               />
               {errors.phone && <span className="error-message">{errors.phone}</span>}
             </div>
+            <input type="hidden" name="gclid" value={formData.gclid} />
+            <input type="hidden" name="li_fat_id" value={formData.li_fat_id} />
+            <input type="hidden" name="gbraid" value={formData.gbraid} />
+            <input type="hidden" name="fbclkid" value={formData.fbclkid} />
+            <input type="hidden" name="msclid" value={formData.msclid} />
             <button type="submit" className="btn-submit" disabled={isLoading}>
               {isLoading ? "Sending..." : "Request Demo"}
               {!isLoading && (

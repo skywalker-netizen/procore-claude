@@ -23,6 +23,11 @@ export interface DemoFormData {
   utm_campaign: string;
   utm_medium: string;
   utm_term: string;
+  gclid: string;
+  li_fat_id: string;
+  gbraid: string;
+  fbclkid: string;
+  msclid: string;
 }
 
 export type FormErrors = Partial<Record<keyof Pick<DemoFormData, 'firstName' | 'lastName' | 'company' | 'email' | 'phone'>, string>>;
@@ -42,6 +47,11 @@ export function useDemoForm() {
     utm_campaign: "",
     utm_medium: "",
     utm_term: "",
+    gclid: "",
+    li_fat_id: "",
+    gbraid: "",
+    fbclkid: "",
+    msclid: "",
   });
 
   // Capture UTM parameters from URL on mount
@@ -53,6 +63,11 @@ export function useDemoForm() {
       utm_campaign: params.get("utm_campaign") || "",
       utm_medium: params.get("utm_medium") || "",
       utm_term: params.get("utm_term") || "",
+      gclid: params.get("gclid") || "",
+      li_fat_id: params.get("li_fat_id") || "",
+      gbraid: params.get("gbraid") || "",
+      fbclkid: params.get("fbclkid") || "",
+      msclid: params.get("msclid") || "",
     }));
   }, []);
 
@@ -114,6 +129,11 @@ export function useDemoForm() {
           utm_campaign: formData.utm_campaign,
           utm_medium: formData.utm_medium,
           utm_term: formData.utm_term,
+          gclid: formData.gclid,
+          li_fat_id: formData.li_fat_id,
+          gbraid: formData.gbraid,
+          fbclkid: formData.fbclkid,
+          msclid: formData.msclid,
         }),
       });
 
