@@ -15,7 +15,7 @@ export function IntegrationSection() {
   const content = INTEGRATION_CONTENT;
 
   return (
-    <section className="integration-section">
+    <section id="procore-integration" className="integration-section">
       <div className="integration-inner">
         <div className="integration-content">
           <SyncBadge text={content.badge} />
