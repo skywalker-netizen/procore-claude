@@ -62,7 +62,7 @@ export function FieldAdvantageSection({ variant }: FieldAdvantageSectionProps) {
   const config = VARIANT_CONFIG[variant];
 
   return (
-    <section className={`section-padding field-advantage-section ${config.bgClass}`}>
+    <section id="field-advantage" className={`section-padding field-advantage-section ${config.bgClass}`}>
       <div className="section-inner">
         <div className="field-advantage-grid">
           <div className="field-advantage-content">
