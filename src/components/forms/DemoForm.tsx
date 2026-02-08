@@ -35,7 +35,7 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
             integration demo.
           </p>
           <p className="form-footer">
-            Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to
+            Join leaders like McFarland and Electric Plus who trust SALUS to
             capture field data for their Procore instance.
           </p>
         </div>
@@ -93,7 +93,7 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
             </button>
           </div>
           <p className="form-footer">
-            Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to
+            Join leaders like McFarland and Electric Plus who trust SALUS to
             capture field data for their Procore instance.
           </p>
         </>
@@ -194,7 +194,7 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
             </button>
           </form>
           <p className="form-footer">
-            Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to
+            Join leaders like McFarland and Electric Plus who trust SALUS to
             capture field data for their Procore instance.
           </p>
         </>
