@@ -87,7 +87,7 @@ export function HeroSection({ variant }: HeroSectionProps) {
             <G2Badge />
           </div>
         </div>
-        <div id="demo-form">
+        <div id="demo-form" style={{ scrollMarginTop: '80px' }}>
           <DemoForm variant="hero" />
         </div>
       </div>
