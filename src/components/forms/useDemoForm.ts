@@ -4,6 +4,19 @@ import { useToast } from "@/hooks/use-toast";
 
 const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
 
+export const COMPANY_SIZE_OPTIONS = [
+  { label: "Up to 10", value: "Micro" },
+  { label: "11 to 20", value: "Small Business" },
+  { label: "21 to 100", value: "SMB" },
+  { label: "101 to 500", value: "Mid-Market" },
+  { label: "500+", value: "Majors" },
+] as const;
+
+export const SAFETY_MANAGEMENT_OPTIONS = ["Paper", "Software", "Mix"] as const;
+
+export type CompanySizeValue = typeof COMPANY_SIZE_OPTIONS[number]["value"];
+export type SafetyManagementValue = typeof SAFETY_MANAGEMENT_OPTIONS[number];
+
 export const demoFormSchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(50, "First name is too long"),
   lastName: z.string().trim().min(1, "Last name is required").max(50, "Last name is too long"),
@@ -12,6 +25,11 @@ export const demoFormSchema = z.object({
   phone: z.string().trim().min(1, "Phone number is required")
     .regex(/^[\d\s\-\+\(\)]+$/, "Please enter a valid phone number"),
 });
+
+export interface QualificationData {
+  companySize: CompanySizeValue | "";
+  safetyManagement: SafetyManagementValue | "";
+}
 
 export interface DemoFormData {
   firstName: string;
@@ -32,11 +50,21 @@ export interface DemoFormData {
 
 export type FormErrors = Partial<Record<keyof Pick<DemoFormData, 'firstName' | 'lastName' | 'company' | 'email' | 'phone'>, string>>;
 
+export type QualificationErrors = Partial<Record<keyof QualificationData, string>>;
+
+export type FormStep = "qualification" | "contact" | "submitted";
+
 export function useDemoForm() {
   const { toast } = useToast();
+  const [step, setStep] = useState<FormStep>("qualification");
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
+  const [qualificationErrors, setQualificationErrors] = useState<QualificationErrors>({});
+  const [qualificationData, setQualificationData] = useState<QualificationData>({
+    companySize: "",
+    safetyManagement: "",
+  });
   const [formData, setFormData] = useState<DemoFormData>({
     firstName: "",
     lastName: "",
@@ -70,6 +98,36 @@ export function useDemoForm() {
       msclid: params.get("msclid") || "",
     }));
   }, []);
+
+  const handleQualificationSelect = (field: keyof QualificationData, value: string) => {
+    setQualificationData((prev) => ({ ...prev, [field]: value }));
+    if (qualificationErrors[field]) {
+      setQualificationErrors((prev) => {
+        const next = { ...prev };
+        delete next[field];
+        return next;
+      });
+    }
+  };
+
+  const handleNextStep = () => {
+    const newErrors: QualificationErrors = {};
+    if (!qualificationData.companySize) {
+      newErrors.companySize = "Please select your company size";
+    }
+    if (!qualificationData.safetyManagement) {
+      newErrors.safetyManagement = "Please select how you manage safety";
+    }
+    if (Object.keys(newErrors).length > 0) {
+      setQualificationErrors(newErrors);
+      return;
+    }
+    setStep("contact");
+  };
+
+  const handleBackStep = () => {
+    setStep("qualification");
+  };
 
   const clearFieldError = (field: keyof FormErrors) => {
     if (errors[field]) {
@@ -125,6 +183,8 @@ export function useDemoForm() {
           Company: formData.company,
           "Work email": formData.email,
           "Phone number": formData.phone,
+          "Company Size": qualificationData.companySize,
+          "Safety Management": qualificationData.safetyManagement,
           utm_source: formData.utm_source,
           utm_campaign: formData.utm_campaign,
           utm_medium: formData.utm_medium,
@@ -138,6 +198,7 @@ export function useDemoForm() {
       });
 
       setIsSubmitted(true);
+      setStep("submitted");
     } catch (error) {
       console.error("Error submitting form:", error);
       toast({
@@ -152,10 +213,16 @@ export function useDemoForm() {
 
   return {
     formData,
+    qualificationData,
     handleInputChange,
+    handleQualificationSelect,
+    handleNextStep,
+    handleBackStep,
     handleSubmit,
     isLoading,
     isSubmitted,
+    step,
     errors,
+    qualificationErrors,
   };
 }
