@@ -8,7 +8,7 @@ export function Header() {
           <img src={salusLogo} alt="Salus" className="logo-image" />
         </a>
         <nav className="nav">
-          <a href="#demo-form" className="btn btn-primary">
+          <a href="#demo-form" className="btn btn-lime">
             BOOK A DEMO
           </a>
         </nav>
