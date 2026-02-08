@@ -1,5 +1,5 @@
-import { Check } from "lucide-react";
-import { useDemoForm } from "./useDemoForm";
+import { Check, ArrowLeft } from "lucide-react";
+import { useDemoForm, COMPANY_SIZE_OPTIONS, SAFETY_MANAGEMENT_OPTIONS } from "./useDemoForm";
 
 interface DemoFormProps {
   variant?: "hero" | "cta";
@@ -8,11 +8,23 @@ interface DemoFormProps {
 }
 
 export function DemoForm({ variant = "hero", className = "", style }: DemoFormProps) {
-  const { formData, handleInputChange, handleSubmit, isLoading, isSubmitted, errors } = useDemoForm();
+  const {
+    formData,
+    qualificationData,
+    handleInputChange,
+    handleQualificationSelect,
+    handleNextStep,
+    handleBackStep,
+    handleSubmit,
+    isLoading,
+    step,
+    errors,
+    qualificationErrors,
+  } = useDemoForm();
 
   return (
     <div className={`demo-card ${className}`} style={style}>
-      {isSubmitted ? (
+      {step === "submitted" ? (
         <div className="thank-you-screen">
           <div className="thank-you-icon">
             <Check size={48} strokeWidth={2.5} />
@@ -27,10 +39,72 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
             capture field data for their Procore instance.
           </p>
         </div>
-      ) : (
+      ) : step === "qualification" ? (
         <>
           <h2>See Salus in action.</h2>
           <p className="subtitle">BOOK YOUR PERSONALIZED INTEGRATION DEMO</p>
+          <div className="qualification-form">
+            <div className="form-group">
+              <label>
+                How many workers in your company? <span className="required">*</span>
+              </label>
+              <div className="option-pills">
+                {COMPANY_SIZE_OPTIONS.map((option) => (
+                  <button
+                    key={option.value}
+                    type="button"
+                    className={`option-pill ${qualificationData.companySize === option.value ? "selected" : ""}`}
+                    onClick={() => handleQualificationSelect("companySize", option.value)}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
+              {qualificationErrors.companySize && (
+                <span className="error-message">{qualificationErrors.companySize}</span>
+              )}
+            </div>
+            <div className="form-group">
+              <label>
+                How are you managing safety today? <span className="required">*</span>
+              </label>
+              <div className="option-pills">
+                {SAFETY_MANAGEMENT_OPTIONS.map((option) => (
+                  <button
+                    key={option}
+                    type="button"
+                    className={`option-pill ${qualificationData.safetyManagement === option ? "selected" : ""}`}
+                    onClick={() => handleQualificationSelect("safetyManagement", option)}
+                  >
+                    {option}
+                  </button>
+                ))}
+              </div>
+              {qualificationErrors.safetyManagement && (
+                <span className="error-message">{qualificationErrors.safetyManagement}</span>
+              )}
+            </div>
+            <button type="button" className="btn-submit" onClick={handleNextStep}>
+              Next
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+          <p className="form-footer">
+            Join leaders like <a href="#">McFarland</a> and <a href="#">Electric Plus</a> who trust SALUS to
+            capture field data for their Procore instance.
+          </p>
+        </>
+      ) : (
+        <>
+          <button type="button" className="back-button" onClick={handleBackStep}>
+            <ArrowLeft size={16} />
+            Back
+          </button>
+          <h2>Almost there!</h2>
+          <p className="subtitle">TELL US ABOUT YOURSELF</p>
           <form onSubmit={handleSubmit} noValidate>
             <div className="form-row">
               <div className="form-group">
