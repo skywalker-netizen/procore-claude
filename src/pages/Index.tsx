@@ -12,8 +12,11 @@ import { TechSpecsSection } from "@/components/sections/TechSpecsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { SEOHead } from "@/components/shared/SEOHead";
+import { useHashScroll } from "@/hooks/useHashScroll";
 
 const Index = () => {
+  useHashScroll();
+
   return (
     <div className="min-h-screen">
       <SEOHead variant="procore" includeProductSchema />
