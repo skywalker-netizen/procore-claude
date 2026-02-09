@@ -108,7 +108,7 @@ export function ComparisonTableSection({ variant = "sitedocs" }: ComparisonTable
   const competitorLabel = COMPETITOR_LABELS[variant];
 
   return (
-    <section className="section-padding section-bg-white">
+    <section id="capability-gap" className="section-padding section-bg-white" style={{ scrollMarginTop: '80px' }}>
       <div className="section-inner">
         {variant === "hammertech" && (
           <div className="text-center mb-12">
