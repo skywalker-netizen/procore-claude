@@ -110,17 +110,28 @@ export function ComparisonTableSection({ variant = "sitedocs" }: ComparisonTable
   return (
     <section id="capability-gap" className="section-padding section-bg-white" style={{ scrollMarginTop: '80px' }}>
       <div className="section-inner">
-        {variant === "hammertech" && (
-          <div className="text-center mb-12">
-            <SyncBadge text="THE CAPABILITY GAP" />
-            <h2 className="section-title mt-4">
-              Performance without <span className="highlight">Friction.</span>
-            </h2>
-            <p className="section-subtitle max-w-3xl mx-auto">
-              HammerTech is a complex machine. Salus is a high-performance engine designed for the people using it.
-            </p>
-          </div>
-        )}
+        <div className="text-center mb-12">
+          <SyncBadge text="THE CAPABILITY GAP" />
+          {variant === "hammertech" ? (
+            <>
+              <h2 className="section-title mt-4">
+                Performance without <span className="highlight">Friction.</span>
+              </h2>
+              <p className="section-subtitle max-w-3xl mx-auto">
+                HammerTech is a complex machine. Salus is a high-performance engine designed for the people using it.
+              </p>
+            </>
+          ) : (
+            <>
+              <h2 className="section-title mt-4">
+                Total Visibility. Every Worker. Every Asset. Every <span className="highlight">Site.</span>
+              </h2>
+              <p className="section-subtitle max-w-3xl mx-auto">
+                Salus scales with your business.
+              </p>
+            </>
+          )}
+        </div>
         <div className="comparison-table-wrapper">
           <table className="comparison-table">
             <thead>
