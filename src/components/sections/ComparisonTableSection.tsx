@@ -124,10 +124,10 @@ export function ComparisonTableSection({ variant = "sitedocs" }: ComparisonTable
           ) : (
             <>
               <h2 className="section-title mt-4">
-                Total Visibility. Every Worker. Every Asset. Every <span className="highlight">Site.</span>
+                Total <span className="highlight">Visibility.</span>
               </h2>
               <p className="section-subtitle max-w-3xl mx-auto">
-                Salus scales with your business.
+                Every Worker. Every Asset. Every Site: Salus scales with your business.
               </p>
             </>
           )}
