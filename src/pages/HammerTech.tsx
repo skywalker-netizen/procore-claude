@@ -10,8 +10,11 @@ import { ComparisonTableSection } from "@/components/sections/ComparisonTableSec
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { SEOHead } from "@/components/shared/SEOHead";
+import { useHashScroll } from "@/hooks/useHashScroll";
 
 const HammerTech = () => {
+  useHashScroll();
+
   return (
     <div className="min-h-screen">
       <SEOHead variant="hammertech" />
