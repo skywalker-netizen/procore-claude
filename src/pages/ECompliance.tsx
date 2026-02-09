@@ -27,9 +27,9 @@ const ECompliance = () => {
       <FieldAdvantageSection variant="ecompliance" />
       <TradePartnerSection variant="ecompliance" />
       <PreventativeMaintenanceSection variant="ecompliance" />
+      <ExecutiveInsightsSection variant="ecompliance" />
       <StopWorkaroundsSection variant="ecompliance" />
       <TestimonialsSection variant="ecompliance" bgVariant="white" />
-      <ExecutiveInsightsSection variant="ecompliance" />
       <IntegrationSection />
       <CTASection />
       <Footer />
