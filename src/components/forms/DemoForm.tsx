@@ -41,7 +41,7 @@ export function DemoForm({ variant = "hero", className = "", style }: DemoFormPr
         </div>
       ) : step === "qualification" ? (
         <>
-          <h2>See Salus in action.</h2>
+          <h2>See SALUS in action.</h2>
           <p className="subtitle">BOOK YOUR PERSONALIZED INTEGRATION DEMO</p>
           <div className="qualification-form">
             <div className="form-group">
