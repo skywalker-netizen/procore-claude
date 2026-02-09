@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { SEO_CONTENT, ORGANIZATION_SCHEMA, PRODUCT_SCHEMA } from "./seo";
 import type { PageVariant } from "../types";
 
-const ALL_VARIANTS: (PageVariant | "root")[] = ["root", "procore", "general", "sitedocs", "hammertech"];
+const ALL_VARIANTS: (PageVariant | "root")[] = ["root", "procore", "general", "sitedocs", "hammertech", "ca", "ecompliance"];
 
 describe("SEO Content", () => {
   it("should have all variants defined", () => {
@@ -48,6 +48,7 @@ describe("SEO Content", () => {
   it("should have competitor names in comparison page descriptions", () => {
     expect(SEO_CONTENT.sitedocs.description.toLowerCase()).toContain("sitedocs");
     expect(SEO_CONTENT.hammertech.description.toLowerCase()).toContain("hammertech");
+    expect(SEO_CONTENT.ecompliance.description.toLowerCase()).toContain("ecompliance");
   });
 });
 
@@ -58,7 +59,7 @@ describe("Organization Schema", () => {
   });
 
   it("should have required organization fields", () => {
-    expect(ORGANIZATION_SCHEMA.name).toBe("Salus");
+    expect(ORGANIZATION_SCHEMA.name).toBe("SALUS");
     expect(ORGANIZATION_SCHEMA.url).toBeTruthy();
     expect(ORGANIZATION_SCHEMA.logo).toBeTruthy();
     expect(ORGANIZATION_SCHEMA.description).toBeTruthy();
