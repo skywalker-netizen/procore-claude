@@ -51,7 +51,7 @@ export function StopWorkaroundsSection({ variant }: StopWorkaroundsSectionProps)
   const config = VARIANT_CONFIG[variant];
 
   return (
-    <section className="section-padding section-bg-gray">
+    <section id="knowledge-is-power" className="section-padding section-bg-gray" style={{ scrollMarginTop: '80px' }}>
       <div className="section-inner grid-2">
         <div>
           <SyncBadge text={content.badge} />
