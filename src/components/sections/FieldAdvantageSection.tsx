@@ -49,6 +49,12 @@ const VARIANT_CONFIG: Record<PageVariant, VariantConfig> = {
     infographic: "phones",
     showContentQuote: false,
   },
+  ecompliance: {
+    bgClass: "section-bg-gray",
+    featureStyle: "block",
+    infographic: "qr",
+    showContentQuote: true,
+  },
 };
 
 const FEATURE_ICONS = [

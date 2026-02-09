@@ -9,7 +9,7 @@ interface ComparisonRow {
 }
 
 interface ComparisonTableProps {
-  variant?: "sitedocs" | "hammertech";
+  variant?: "sitedocs" | "hammertech" | "ecompliance";
 }
 
 const SITEDOCS_COMPARISON_DATA: ComparisonRow[] = [
@@ -98,13 +98,57 @@ const HAMMERTECH_COMPARISON_DATA: ComparisonRow[] = [
   },
 ];
 
+const ECOMPLIANCE_COMPARISON_DATA: ComparisonRow[] = [
+  {
+    capability: "Mobile Reliability",
+    competitor: "Frequent crashes & forced logouts",
+    salus: "Zero-interruption updates",
+  },
+  {
+    capability: "App/Web Sync",
+    competitor: "App and portal don't communicate",
+    salus: "Instant bi-directional sync",
+  },
+  {
+    capability: "Contractor Access",
+    competitor: "Paid membership required",
+    salus: "Free QR-code onboarding",
+  },
+  {
+    capability: "Site Orientations",
+    competitor: "Extra cost add-on",
+    salus: "Included with QR codes",
+  },
+  {
+    capability: "Asset Management",
+    competitor: "No asset profiles or reports",
+    salus: "Full asset-level tracking",
+  },
+  {
+    capability: "Analytics Setup",
+    competitor: "Confusing, vendor-dependent",
+    salus: "Out-of-the-box reporting",
+  },
+  {
+    capability: "Action Item Flow",
+    competitor: "Broken approval chain",
+    salus: "Closed-loop accountability",
+  },
+  {
+    capability: "Support Model",
+    competitor: "Train-the-Trainer (DIY)",
+    salus: "Dedicated Success Partner",
+  },
+];
+
 const COMPETITOR_LABELS: Record<string, string> = {
   sitedocs: "SITEDOCS",
   hammertech: "HAMMERTECH",
+  ecompliance: "eCOMPLIANCE",
 };
 
 export function ComparisonTableSection({ variant = "sitedocs" }: ComparisonTableProps) {
-  const data = variant === "hammertech" ? HAMMERTECH_COMPARISON_DATA : SITEDOCS_COMPARISON_DATA;
+  const data = variant === "hammertech" ? HAMMERTECH_COMPARISON_DATA : variant === "ecompliance" ? ECOMPLIANCE_COMPARISON_DATA : SITEDOCS_COMPARISON_DATA;
   const competitorLabel = COMPETITOR_LABELS[variant];
 
   return (
@@ -119,6 +163,15 @@ export function ComparisonTableSection({ variant = "sitedocs" }: ComparisonTable
               </h2>
               <p className="section-subtitle max-w-3xl mx-auto">
                 HammerTech is a complex machine. SALUS is a high-performance engine designed for the people using it.
+              </p>
+            </>
+          ) : variant === "ecompliance" ? (
+            <>
+              <h2 className="section-title mt-4">
+                Reliability over <span className="highlight">Frustration.</span>
+              </h2>
+              <p className="section-subtitle max-w-3xl mx-auto">
+                eCompliance's friction drives workers away. SALUS is built for the field, not against it.
               </p>
             </>
           ) : (

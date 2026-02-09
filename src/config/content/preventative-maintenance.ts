@@ -119,4 +119,30 @@ export const PREVENTATIVE_MAINTENANCE_CONTENT: VariantContent<SectionContent> = 
       },
     ],
   },
+  ecompliance: {
+    badge: "ASSET MANAGEMENT",
+    title: "Equipment Chaos vs. Asset Precision",
+    subtitle:
+      "eCompliance has no asset profiles, no service reminders, and no asset-specific reports. SALUS gives every piece of equipment its own digital identity. QR tags on specific equipment mean inspections are tied to the exact asset, not just a category.\n\nComplete visibility into:",
+    features: [
+      {
+        title: "Maintenance cases",
+        description: "",
+        iconColor: "blue",
+        titleOnly: true,
+      },
+      {
+        title: "Inspection history",
+        description: "",
+        iconColor: "tan",
+        titleOnly: true,
+      },
+      {
+        title: "Operational status for every single unit in your fleet",
+        description: "",
+        iconColor: "lime",
+        titleOnly: true,
+      },
+    ],
+  },
 };

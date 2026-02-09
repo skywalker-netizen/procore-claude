@@ -3,7 +3,7 @@
 
 export type IconColor = "beige" | "blue" | "lime" | "red" | "green" | "tan" | "orange";
 
-export type PageVariant = "procore" | "general" | "sitedocs" | "hammertech" | "ca";
+export type PageVariant = "procore" | "general" | "sitedocs" | "hammertech" | "ca" | "ecompliance";
 
 export interface FeatureContent {
   title: string;

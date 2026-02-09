@@ -123,6 +123,29 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
       },
     ],
   },
+  ecompliance: {
+    badge: "CONTRACTOR MANAGEMENT",
+    title: "Better collaboration for greater visibility: it's a win-win and it should be Free.",
+    subtitle: "Contractors can't access eCompliance without purchasing a membership. SALUS onboards trades for free via QR codes and provides multiple submission paths — no paywall, no friction.",
+    features: [
+      {
+        title: "Zero Barrier Access",
+        description: "eCompliance charges contractors for access. SALUS onboards trades for free — no membership fees, no friction.",
+      },
+      {
+        title: "QR Code Onboarding",
+        description: "Workers scan a QR code and are immediately connected to the site-specific safety plan and required forms. No app download required for basic submissions.",
+      },
+      {
+        title: "Document Monitoring",
+        description: "Track insurance certificates, training records, and compliance documents for every trade partner in real-time with automated expiry alerts.",
+      },
+      {
+        title: "Accountability",
+        description: "See orientation status, JHA submissions, and corrective actions of your contractors at the worker level, not just the company level.",
+      },
+    ],
+  },
 };
 
 export const TRADE_PARTNER_QUOTE: QuoteContent = {

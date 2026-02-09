@@ -6,6 +6,7 @@ export const SOCIAL_PROOF_TITLE: VariantContent<string> = {
   sitedocs: "Leaders use SALUS",
   hammertech: "Leaders use SALUS",
   ca: "Leaders use SALUS",
+  ecompliance: "Leaders use SALUS",
 };
 
 export const SOCIAL_PROOF_STATS: StatContent[] = [
@@ -40,6 +41,11 @@ export const SOCIAL_PROOF_QUOTE: VariantContent<QuoteContent> = {
     author: "",
     title: "",
   },
+  ecompliance: {
+    text: "Before SALUS, we were tracking safety data across 14 different systems—\nExcel, SharePoint, SiteDocs, you name it. It was unmanageable.\nMoving to SALUS didn't just digitize us; it unified us.",
+    author: "Robert Clark",
+    title: "VP of Safety - UNIVERSAL GROUP",
+  },
 };
 
 export const STOP_WORKAROUNDS_QUOTE: VariantContent<QuoteContent | null> = {
@@ -52,4 +58,5 @@ export const STOP_WORKAROUNDS_QUOTE: VariantContent<QuoteContent | null> = {
     author: "Robert Clark",
     title: "VP of Safety - UNIVERSAL GROUP",
   },
+  ecompliance: null,
 };

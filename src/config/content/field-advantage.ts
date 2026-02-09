@@ -124,6 +124,33 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
       },
     ],
   },
+  ecompliance: {
+    badge: "THE FIELD ADVANTAGE",
+    title: "Your App Shouldn't Be",
+    titleHighlight: "the Hazard.",
+    subtitle:
+      "eCompliance's app crashes mid-form, kicks users out during updates, and doesn't sync between mobile and web portal. Workers lose data and stop logging in. SALUS provides a reliable, field-first experience that workers actually trust.",
+    features: [
+      {
+        title: "Zero-Interruption Updates",
+        description:
+          "eCompliance forces users to log out during updates, causing lost forms and frustration. SALUS updates seamlessly in the background — zero downtime, zero lost data.",
+        iconColor: "red",
+      },
+      {
+        title: "Seamless App-Web Sync",
+        description:
+          "eCompliance's app and web portal don't communicate — forms created in one don't appear in the other. SALUS provides instant bi-directional sync between mobile and desktop.",
+        iconColor: "lime",
+      },
+      {
+        title: "Supervisor-Ready Mobile",
+        description:
+          "eCompliance's mobile app is too basic for supervisors, forcing them to carry laptops to the field. SALUS gives supervisors powerful field tools while keeping it intuitive for workers.",
+        iconColor: "blue",
+      },
+    ],
+  },
 };
 
 export const FIELD_ADVANTAGE_QUOTE: QuoteContent = {

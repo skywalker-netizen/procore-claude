@@ -130,4 +130,31 @@ export const STOP_WORKAROUNDS_CONTENT: VariantContent<SectionContent> = {
       },
     ],
   },
+  ecompliance: {
+    badge: "CLOSED-LOOP ACCOUNTABILITY",
+    title: "Close the Loop on",
+    titleHighlight: "Every Action Item.",
+    subtitle:
+      "eCompliance's action items show overdue even after action is taken. Hazard assessments can be unpublished by anyone. SALUS provides a closed-loop system where every action is tracked to completion with full audit trail.",
+    features: [
+      {
+        title: "Unified Platform, Zero Silos",
+        description:
+          "Centralize everything from training logs to certificates in one live hub. No more risk hidden in disconnected spreadsheets and email threads.",
+        iconColor: "beige",
+      },
+      {
+        title: "Closed-Loop Actions",
+        description:
+          "Every corrective action is tracked from identification to resolution. No more \"completed\" items showing as overdue, and no unauthorized changes to hazard assessments.",
+        iconColor: "blue",
+      },
+      {
+        title: "Timezone-Aware Scheduling",
+        description:
+          "eCompliance scheduling ignores time zones, causing confusion across regions. SALUS ensures every deadline and notification respects the local time of the worker.",
+        iconColor: "lime",
+      },
+    ],
+  },
 };
