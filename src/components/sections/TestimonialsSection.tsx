@@ -21,7 +21,7 @@ export function TestimonialsSection({ variant, bgVariant = "default" }: Testimon
   const content = getTestimonialsContent(variant);
   
   return (
-    <section className={`section-padding testimonials-section ${bgVariant === "white" ? "section-bg-white" : "section-bg-gray"}`}>
+    <section id="unmatched-support" className={`section-padding testimonials-section ${bgVariant === "white" ? "section-bg-white" : "section-bg-gray"}`} style={{ scrollMarginTop: '80px' }}>
       <div className="section-inner grid-2 testimonials-grid">
         <div className="support-visual-column">
           <img 
