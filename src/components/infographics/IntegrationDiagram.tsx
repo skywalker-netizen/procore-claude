@@ -18,7 +18,7 @@ export function IntegrationDiagram() {
         <div className="diagram-brand">
           <span>SALUS</span>
           <div className="brand-icon salus">
-            <img src={salusShieldLogo} alt="Salus" className="logo-sm" />
+            <img src={salusShieldLogo} alt="SALUS" className="logo-sm" />
           </div>
           <small>FIELD ENGINE</small>
         </div>

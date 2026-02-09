@@ -118,7 +118,7 @@ export function ComparisonTableSection({ variant = "sitedocs" }: ComparisonTable
                 Performance without <span className="highlight">Friction.</span>
               </h2>
               <p className="section-subtitle max-w-3xl mx-auto">
-                HammerTech is a complex machine. Salus is a high-performance engine designed for the people using it.
+                HammerTech is a complex machine. SALUS is a high-performance engine designed for the people using it.
               </p>
             </>
           ) : (
@@ -127,7 +127,7 @@ export function ComparisonTableSection({ variant = "sitedocs" }: ComparisonTable
                 Total <span className="highlight">Visibility.</span>
               </h2>
               <p className="section-subtitle max-w-3xl mx-auto">
-                Every Worker. Every Asset. Every Site: Salus scales with your business.
+                Every Worker. Every Asset. Every Site: SALUS scales with your business.
               </p>
             </>
           )}

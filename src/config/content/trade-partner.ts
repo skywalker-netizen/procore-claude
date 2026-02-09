@@ -27,7 +27,7 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
       },
       {
         title: "Win - Win",
-        description: "For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
+        description: "For GCs, SALUS Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
       },
     ],
   },
@@ -50,14 +50,14 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
       },
       {
         title: "Win - Win",
-        description: "For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
+        description: "For GCs, SALUS Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
       },
     ],
   },
   sitedocs: {
     badge: "TRADE PARTNER MANAGEMENT",
     title: "Better collaboration for greater visibility: it's a win-win and it should be Free.",
-    subtitle: 'The "Subcontractor Black Box" is where compliance goes to die. Sitedocs only manages trades at the company level. Salus onboards individuals, not just companies, and tracks compliance and corrective actions down to the individual level.',
+    subtitle: 'The "Subcontractor Black Box" is where compliance goes to die. Sitedocs only manages trades at the company level. SALUS onboards individuals, not just companies, and tracks compliance and corrective actions down to the individual level.',
     features: [
       {
         title: "Zero Barrier Access",
@@ -73,14 +73,14 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
       },
       {
         title: "Win - Win",
-        description: "For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
+        description: "For GCs, SALUS Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
       },
     ],
   },
   hammertech: {
     badge: "TRADE PARTNER MANAGEMENT",
     title: "Better collaboration for greater visibility: it's a win-win and it should be Free.",
-    subtitle: 'The "Subcontractor Black Box" is where compliance goes to die. HammerTech setup generates friction, as Trades have to create a new HammerTech account with every GC they work with. With Salus, Trades and General Contractors create an account only once.',
+    subtitle: 'The "Subcontractor Black Box" is where compliance goes to die. HammerTech setup generates friction, as Trades have to create a new HammerTech account with every GC they work with. With SALUS, Trades and General Contractors create an account only once.',
     features: [
       {
         title: "Zero Barrier Access",
@@ -88,7 +88,7 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
       },
       {
         title: "Win - Win",
-        description: "For GCs, Salus Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
+        description: "For GCs, SALUS Frictionless Contractor portal means no more compliance black hole. Meanwhile, Trades own their data; they keep a portable safety record that protects their EMR and their bid eligibility.",
       },
       {
         title: "QR Code Onboarding",
@@ -119,7 +119,7 @@ export const TRADE_PARTNER_CONTENT: VariantContent<TradePartnerContent> = {
       },
       {
         title: "Win - Win",
-        description: "For Prime Contractors, Salus Contractor portal means no more compliance black hole. Meanwhile, Specialty Contractors own their data; they keep a portable safety record that protects their premiums and bid eligibility.",
+        description: "For Prime Contractors, SALUS Contractor portal means no more compliance black hole. Meanwhile, Specialty Contractors own their data; they keep a portable safety record that protects their premiums and bid eligibility.",
       },
     ],
   },

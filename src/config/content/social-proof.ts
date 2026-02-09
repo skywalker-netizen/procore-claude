@@ -1,11 +1,11 @@
 import type { VariantContent, StatContent, QuoteContent } from "../types";
 
 export const SOCIAL_PROOF_TITLE: VariantContent<string> = {
-  procore: "Leaders use Procore + Salus",
-  general: "Leaders use Salus",
-  sitedocs: "Leaders use Salus",
-  hammertech: "Leaders use Salus",
-  ca: "Leaders use Salus",
+  procore: "Leaders use Procore + SALUS",
+  general: "Leaders use SALUS",
+  sitedocs: "Leaders use SALUS",
+  hammertech: "Leaders use SALUS",
+  ca: "Leaders use SALUS",
 };
 
 export const SOCIAL_PROOF_STATS: StatContent[] = [

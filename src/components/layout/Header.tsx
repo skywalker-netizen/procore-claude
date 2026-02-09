@@ -5,7 +5,7 @@ export function Header() {
     <header className="header">
       <div className="header-inner">
         <a href="#" className="logo">
-          <img src={salusLogo} alt="Salus" className="logo-image" />
+          <img src={salusLogo} alt="SALUS" className="logo-image" />
         </a>
         <nav className="nav">
           <a href="#demo-form" className="btn btn-lime">

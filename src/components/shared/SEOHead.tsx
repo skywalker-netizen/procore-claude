@@ -36,7 +36,7 @@ export function SEOHead({ variant, includeProductSchema = false }: SEOHeadProps)
       <meta property="og:url" content={seo.canonical} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:site_name" content="Salus" />
+      <meta property="og:site_name" content="SALUS" />
       {isCanada && <meta property="og:locale" content="en_CA" />}
 
       {/* Twitter Card */}

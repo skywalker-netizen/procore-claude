@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-logo">
-          <img src={salusLogo} alt="Salus" className="logo-image" />
+          <img src={salusLogo} alt="SALUS" className="logo-image" />
         </div>
         <div className="footer-copyright">© 2024 SALUS SAFETY INC. | ALL RIGHTS RESERVED</div>
       </div>
