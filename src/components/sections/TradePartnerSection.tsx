@@ -21,7 +21,7 @@ export function TradePartnerSection({ variant }: TradePartnerSectionProps) {
   const isProcore = variant === "procore";
 
   return (
-    <section id="trade-partner-management" className={`section-padding dark-section ${!isProcore ? "trade-partner-section" : ""}`}>
+    <section id="trade-partner-management" className={`section-padding dark-section ${!isProcore ? "trade-partner-section" : ""}`} style={{ scrollMarginTop: '80px' }}>
       <div className="section-inner grid-2">
         <div className="trade-content">
           <SyncBadge text={content.badge} />
