@@ -48,6 +48,13 @@ export const SEO_CONTENT: Record<PageVariant | "root", SEOContent> = {
     canonical: `${BASE_URL}/ca`,
     keywords: "COR certification, WCB rebates, Canadian safety software, construction safety Canada, WHMIS 2015, NBC 2020, Alberta safety, BC safety, Ontario safety",
   },
+  ecompliance: {
+    title: "SALUS vs eCompliance | Safety Management Comparison",
+    description:
+      "Compare SALUS vs eCompliance. SALUS provides reliable mobile performance, instant app-web sync, free contractor onboarding, and full asset management — without the frustration.",
+    canonical: `${BASE_URL}/ecompliance`,
+    keywords: "eCompliance alternative, safety management software, construction safety app, eCompliance comparison, safety compliance software",
+  },
 };
 
 export const ORGANIZATION_SCHEMA = {

@@ -48,8 +48,33 @@ export const TESTIMONIALS_CONTENT_HAMMERTECH = {
   ] as FeatureContent[],
 };
 
+export const TESTIMONIALS_CONTENT_ECOMPLIANCE = {
+  badge: "UNMATCHED SUPPORT",
+  title: "World-Class Service.",
+  titleHighlight: "We Are Here For You.",
+  subtitle: "eCompliance uses a \"train-the-trainer\" model — they train a few champions and expect them to train everyone else. SALUS provides a dedicated success manager with unlimited training for admins, supervisors, field workers, and subcontractors.",
+  features: [
+    {
+      title: "Technical support via chat, email or phone during your core business hours",
+      description: "eCompliance support is limited and slow. SALUS agents pick up the phone in minutes. Whether you're a field worker or platform administrator, we're here to answer your questions and troubleshoot issues directly.",
+      iconColor: "lime",
+    },
+    {
+      title: "Tailored onboarding plan",
+      description: "Build your success plan with a dedicated customer success manager to optimize SALUS for your business needs.",
+      iconColor: "blue",
+    },
+    {
+      title: "Live and on-demand platform training",
+      description: "Master SALUS with expert training at your fingertips. Access on-demand videos for quick refreshers or join live sessions to get your questions answered in real time.",
+      iconColor: "orange",
+    },
+  ] as FeatureContent[],
+};
+
 export function getTestimonialsContent(variant?: PageVariant) {
   if (variant === "hammertech") return TESTIMONIALS_CONTENT_HAMMERTECH;
+  if (variant === "ecompliance") return TESTIMONIALS_CONTENT_ECOMPLIANCE;
   return TESTIMONIALS_CONTENT;
 }
 

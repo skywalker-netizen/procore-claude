@@ -71,6 +71,17 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
       "SALUS is the only \"Field-First\" safety management software that provides high-fidelity and actionable field intelligence — giving Canadian Prime and Specialized Contractors push-button audit readiness and a direct path to insurance premium discounts.",
     tagline: "Start scaling with confidence.",
   },
+  ecompliance: {
+    badge: "RELIABILITY OVER FRUSTRATION",
+    title: "SALUS vs. eCompliance:",
+    titleHighlight: "Stop losing workers",
+    titleHighlightLine2: "to a broken app.",
+    subtitle:
+      "When your safety app crashes mid-form, forces logouts during updates, and doesn't sync between mobile and web, workers stop logging in. Your compliance data dries up, and your risk exposure grows.",
+    description:
+      "SALUS provides a zero-interruption, bi-directionally synced safety platform that field workers actually use — giving you complete visibility into workers, assets, and trades without the frustration.",
+    tagline: "Reliability. Visibility. Accountability.",
+  },
 };
 
 export const HERO_TRUST_BADGES: VariantContent<TrustBadgeContent[]> = {
@@ -151,6 +162,23 @@ export const HERO_TRUST_BADGES: VariantContent<TrustBadgeContent[]> = {
     {
       text: "Agile - up and running in as",
       subtext: "little as two weeks",
+      iconBg: "navy",
+    },
+  ],
+  ecompliance: [
+    {
+      text: "All-in-one connected",
+      subtext: "safety ecosystem",
+      iconBg: "lime",
+    },
+    {
+      text: "Zero service",
+      subtext: "interruptions",
+      iconBg: "navy",
+    },
+    {
+      text: "Dedicated Success",
+      subtext: "Partner",
       iconBg: "navy",
     },
   ],

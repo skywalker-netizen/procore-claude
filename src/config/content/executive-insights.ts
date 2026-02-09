@@ -136,6 +136,33 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
       },
     ],
   },
+  ecompliance: {
+    badge: "ANALYTICS & REPORTING",
+    title: "Out-of-the-Box Reporting.",
+    titleHighlight: "Zero Setup.",
+    subtitle:
+      "eCompliance's analytics setup is confusing and vendor-dependent. SALUS provides out-of-the-box reporting across Projects, Forms, Workers, Corrective Actions, Certificates, Assets, Subcontractors, and Incidents.",
+    features: [
+      {
+        title: "Instant Dashboards",
+        description:
+          "No confusing setup or vendor dependency. SALUS delivers actionable analytics from day one — across every module, every site, and every trade.",
+        iconColor: "blue",
+      },
+      {
+        title: "Leading Indicator Tracking",
+        description:
+          "Spot trends in near-misses, participation rates, and corrective action velocity before they become incidents.",
+        iconColor: "orange",
+      },
+      {
+        title: "Export-Ready Reports",
+        description:
+          "Generate audit-ready, time-stamped reports for any time period. No data manipulation required — what you see is what you get.",
+        iconColor: "lime",
+      },
+    ],
+  },
 };
 
 export const EXECUTIVE_INSIGHTS_QUOTE: QuoteContent = {
