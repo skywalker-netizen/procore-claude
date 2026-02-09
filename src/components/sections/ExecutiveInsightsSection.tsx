@@ -28,7 +28,7 @@ export function ExecutiveInsightsSection({ variant }: ExecutiveInsightsSectionPr
   const icons = isProcore ? PROCORE_ICONS : GENERAL_ICONS;
 
   return (
-    <section className="section-padding section-bg-white">
+    <section id="compliance-reporting" className="section-padding section-bg-white" style={{ scrollMarginTop: '80px' }}>
       <div className="section-inner grid-2">
         <div className="analytics-column">
           <AnalyticsCard />
