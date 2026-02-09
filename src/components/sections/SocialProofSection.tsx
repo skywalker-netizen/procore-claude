@@ -39,7 +39,7 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
   const isProcore = variant === "procore";
   const isCa = variant === "ca";
   const title = SOCIAL_PROOF_TITLE[variant];
-  const backgroundImage = isProcore ? procoreFieldBackground : fieldBackground;
+  const backgroundImage = (isProcore || variant === "ecompliance") ? procoreFieldBackground : fieldBackground;
 
   const renderLogos = () => {
     if (isProcore) {
