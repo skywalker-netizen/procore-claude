@@ -22,7 +22,7 @@ const ECompliance = () => {
       <SEOHead variant="ecompliance" />
       <Header />
       <HeroSection variant="ecompliance" />
-      <SocialProofSection variant="general" />
+      <SocialProofSection variant="ecompliance" />
       <ComparisonTableSection variant="ecompliance" />
       <FieldAdvantageSection variant="ecompliance" />
       <TradePartnerSection variant="ecompliance" />
