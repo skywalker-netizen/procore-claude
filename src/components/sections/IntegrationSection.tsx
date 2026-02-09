@@ -15,7 +15,7 @@ export function IntegrationSection() {
   const content = INTEGRATION_CONTENT;
 
   return (
-    <section id="procore-integration" className="integration-section">
+    <section id="procore-integration" className="integration-section" style={{ scrollMarginTop: '80px' }}>
       <div className="integration-inner">
         <div className="integration-content">
           <SyncBadge text={content.badge} />
