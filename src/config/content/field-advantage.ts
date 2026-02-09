@@ -20,7 +20,7 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
         iconColor: "lime",
       },
       {
-        title: "Salus forms are litigation-grade.",
+        title: "SALUS forms are litigation-grade.",
         description:
           'GPS-stamped location proof. Mandatory photo evidence for failed check. Voice-to-text captures the nuance of a hazard, not just a checkbox. The signed PDF still lands in Procore for your records, but now you have context.',
         iconColor: "blue",
@@ -43,13 +43,13 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
       {
         title: "Not just digital forms; workflows.",
         description:
-          'With Salus, you don\'t ask workers to learn a new "software" process; you provide a digital version of the way they already work in the field.',
+          'With SALUS, you don\'t ask workers to learn a new "software" process; you provide a digital version of the way they already work in the field.',
         iconColor: "lime",
       },
       {
         title: "More relevant, better intel",
         description:
-          'Salus AI-powered Smart Forms adapt to the reality in the field, provide the information required to do the job, and skip anything not relevant to the job. If a trench is over 5ft, the "Shoring Evidence" photo becomes mandatory.',
+          'SALUS AI-powered Smart Forms adapt to the reality in the field, provide the information required to do the job, and skip anything not relevant to the job. If a trench is over 5ft, the "Shoring Evidence" photo becomes mandatory.',
         iconColor: "blue",
       },
     ],
@@ -78,7 +78,7 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
     title: "Field Buy-In vs.",
     titleHighlight: "Complexity",
     subtitle:
-      "While HammerTech users struggle with complex sign-ins and clunky menus, Salus workers scan a QR code and are ready to work in seconds, and Salus office interface doesn't require a master's degree to navigate.",
+      "While HammerTech users struggle with complex sign-ins and clunky menus, SALUS workers scan a QR code and are ready to work in seconds, and SALUS office interface doesn't require a master's degree to navigate.",
     features: [
       {
         title: "Faster onboarding",
@@ -92,7 +92,7 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
       },
       {
         title: "Full Customization",
-        description: "Salus doesn't require you to learn new workflows; It adapts to your specific workflows.",
+        description: "SALUS doesn't require you to learn new workflows; It adapts to your specific workflows.",
         iconColor: "red",
       },
     ],
@@ -107,19 +107,19 @@ export const FIELD_ADVANTAGE_CONTENT: VariantContent<SectionContent> = {
       {
         title: "Mobile-First. Field-Loved.",
         description:
-          "Onboard in the Trench: if they can send a text, they can use SALUS to stay compliant. Salus AI-powered Smart Forms adapt to the reality in the field, provide the information required to do the job, and skip anything not relevant to the job.",
+          "Onboard in the Trench: if they can send a text, they can use SALUS to stay compliant. SALUS AI-powered Smart Forms adapt to the reality in the field, provide the information required to do the job, and skip anything not relevant to the job.",
         iconColor: "red",
       },
       {
         title: "Not just digital forms; workflows.",
         description:
-          "Salus Smart Forms provide the logic-gated intelligence needed for complex NBC 2020 or mission-critical environments.",
+          "SALUS Smart Forms provide the logic-gated intelligence needed for complex NBC 2020 or mission-critical environments.",
         iconColor: "lime",
       },
       {
         title: "More relevant in-field experience, better intel",
         description:
-          "Salus Form builder gives you complete control over your digital forms. Customize the software to make it fit your needs and your workflows, not the way around. We don't ask your crews to learn a new software process. We provide a digital mirror of the way they already work.",
+          "SALUS Form builder gives you complete control over your digital forms. Customize the software to make it fit your needs and your workflows, not the way around. We don't ask your crews to learn a new software process. We provide a digital mirror of the way they already work.",
         iconColor: "blue",
       },
     ],

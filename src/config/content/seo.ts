@@ -12,39 +12,39 @@ const BASE_URL = "https://salusisprocoresafetysolution.lovable.app";
 
 export const SEO_CONTENT: Record<PageVariant | "root", SEOContent> = {
   root: {
-    title: "Salus - Adoption-First Safety Management Software",
+    title: "SALUS - Adoption-First Safety Management Software",
     description:
-      "Salus provides safety software loved by field teams and executives. All-in-one connected safety ecosystem with agile deployment in as little as 2 weeks.",
+      "SALUS provides safety software loved by field teams and executives. All-in-one connected safety ecosystem with agile deployment in as little as 2 weeks.",
     canonical: BASE_URL,
   },
   general: {
-    title: "Salus - Adoption-First Safety Management Software",
+    title: "SALUS - Adoption-First Safety Management Software",
     description:
-      "Salus provides safety software loved by field teams and executives. All-in-one connected safety ecosystem with agile deployment in as little as 2 weeks.",
+      "SALUS provides safety software loved by field teams and executives. All-in-one connected safety ecosystem with agile deployment in as little as 2 weeks.",
     canonical: BASE_URL,
   },
   procore: {
-    title: "Salus | Procore's Field-First Safety Companion",
+    title: "SALUS | Procore's Field-First Safety Companion",
     description:
-      "Salus is Procore's best and most beloved field and safety companion. With deep native connectivity, Salus provides Procore with real-time field data.",
+      "SALUS is Procore's best and most beloved field and safety companion. With deep native connectivity, SALUS provides Procore with real-time field data.",
     canonical: `${BASE_URL}/salus-safety-for-procore`,
   },
   sitedocs: {
-    title: "Salus vs SiteDocs | Safety Management Comparison",
+    title: "SALUS vs SiteDocs | Safety Management Comparison",
     description:
-      "Compare Salus vs SiteDocs. Salus provides worker and asset level accountability, full visibility across sites, trades, and equipment.",
+      "Compare SALUS vs SiteDocs. SALUS provides worker and asset level accountability, full visibility across sites, trades, and equipment.",
     canonical: `${BASE_URL}/sitedocs`,
   },
   hammertech: {
-    title: "Salus vs HammerTech | Safety Management Comparison",
+    title: "SALUS vs HammerTech | Safety Management Comparison",
     description:
-      "Compare Salus vs HammerTech. Salus offers powerful safety management without the friction. 100% field buy-in, rapid deployment, and GC-Trade collaboration.",
+      "Compare SALUS vs HammerTech. SALUS offers powerful safety management without the friction. 100% field buy-in, rapid deployment, and GC-Trade collaboration.",
     canonical: `${BASE_URL}/hammertech`,
   },
   ca: {
-    title: "Salus Canada | COR™ Certification & WCB Rebate Optimization",
+    title: "SALUS Canada | COR™ Certification & WCB Rebate Optimization",
     description:
-      "Salus helps Canadian contractors secure COR™ certification, maximize WCB premium rebates, and win public infrastructure bids. Push-button audit readiness for BC, Alberta & Ontario.",
+      "SALUS helps Canadian contractors secure COR™ certification, maximize WCB premium rebates, and win public infrastructure bids. Push-button audit readiness for BC, Alberta & Ontario.",
     canonical: `${BASE_URL}/ca`,
     keywords: "COR certification, WCB rebates, Canadian safety software, construction safety Canada, WHMIS 2015, NBC 2020, Alberta safety, BC safety, Ontario safety",
   },
@@ -53,7 +53,7 @@ export const SEO_CONTENT: Record<PageVariant | "root", SEOContent> = {
 export const ORGANIZATION_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Salus",
+  name: "SALUS",
   url: BASE_URL,
   logo: `${BASE_URL}/favicon.png`,
   description:
@@ -64,7 +64,7 @@ export const ORGANIZATION_SCHEMA = {
 export const PRODUCT_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Salus Safety Management",
+  name: "SALUS Safety Management",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   offers: {
@@ -84,10 +84,10 @@ export const PRODUCT_SCHEMA = {
 export const CANADA_SERVICE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Salus Safety Management for Canada",
+  name: "SALUS Safety Management for Canada",
   provider: {
     "@type": "Organization",
-    name: "Salus",
+    name: "SALUS",
   },
   areaServed: [
     { "@type": "Country", name: "Canada" },

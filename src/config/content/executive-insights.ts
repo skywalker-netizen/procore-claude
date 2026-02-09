@@ -6,7 +6,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
     title: "Inspection-Ready. Audit-Proof.",
     titleHighlight: "Win.",
     subtitle:
-      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. Salus proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
+      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. SALUS proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
     features: [
       {
         title: "High-Resolution Compliance",
@@ -23,7 +23,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
       {
         title: "STEP-Ready Reporting",
         description:
-          "With Salus, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
+          "With SALUS, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
         iconColor: "lime",
       },
     ],
@@ -33,7 +33,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
     title: "Inspection-Ready. Audit-Proof.",
     titleHighlight: "Win.",
     subtitle:
-      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. Salus proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
+      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. SALUS proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
     features: [
       {
         title: "High-Resolution Compliance",
@@ -50,7 +50,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
       {
         title: "STEP-Ready Reporting",
         description:
-          "With Salus, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
+          "With SALUS, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
         iconColor: "lime",
       },
     ],
@@ -60,7 +60,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
     title: "Inspection-Ready. Audit-Proof.",
     titleHighlight: "Win.",
     subtitle:
-      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. Salus proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
+      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. SALUS proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
     features: [
       {
         title: "High-Resolution Compliance",
@@ -77,7 +77,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
       {
         title: "STEP-Ready Reporting",
         description:
-          "With Salus, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
+          "With SALUS, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
         iconColor: "lime",
       },
     ],
@@ -87,7 +87,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
     title: "Inspection-Ready. Audit-Proof.",
     titleHighlight: "Win.",
     subtitle:
-      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. Salus proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
+      'In Fault-tolerant construction, compliance isn\'t a checkbox. It is a process. SALUS proves intent against "nuclear verdicts" and enhances your reputation for excellence.',
     features: [
       {
         title: "High-Resolution Compliance",
@@ -104,7 +104,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
       {
         title: "STEP-Ready Reporting",
         description:
-          "With Salus, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
+          "With SALUS, firms can generate the 'push-button' reports required for the STEP self-assessment. This includes real-time tracking of leading indicators, worker participation rates, and supervisor training metrics.",
         iconColor: "lime",
       },
     ],
@@ -125,7 +125,7 @@ export const EXECUTIVE_INSIGHTS_CONTENT: VariantContent<SectionContent> = {
       {
         title: "The Rebate Engine",
         description:
-          "You can't provide the high-fidelity documentation required for premium discounts. With Salus, you can.",
+          "You can't provide the high-fidelity documentation required for premium discounts. With SALUS, you can.",
         iconColor: "orange",
       },
       {

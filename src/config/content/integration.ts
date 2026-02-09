@@ -5,18 +5,18 @@ export const INTEGRATION_CONTENT: SectionContent = {
   title: "One Truth.",
   titleHighlight: "Zero Excuses.",
   subtitle:
-    'With Procore, you already have an "Enterprise Software." You don\'t need another one. With Salus native sync, Procore stays your system of record while giving the field a tool they actually love. No double entry. No shadow workflows.',
+    'With Procore, you already have an "Enterprise Software." You don\'t need another one. With SALUS native sync, Procore stays your system of record while giving the field a tool they actually love. No double entry. No shadow workflows.',
   features: [
     {
       title: "Procore as Master",
       description:
-        "All financial and project master data originates in Procore. Inspections, observations, and personnel data from Salus appear in Procore exactly where your PMs expect to find them.",
+        "All financial and project master data originates in Procore. Inspections, observations, and personnel data from SALUS appear in Procore exactly where your PMs expect to find them.",
       iconColor: "beige",
     },
     {
-      title: "Salus is Procore's Field Engine",
+      title: "SALUS is Procore's Field Engine",
       description:
-        "All financial and project master data originates in Procore and pushed to Salus; All field data is captured in Salus and pushed into Procore.",
+        "All financial and project master data originates in Procore and pushed to SALUS; All field data is captured in SALUS and pushed into Procore.",
       iconColor: "blue",
     },
   ],

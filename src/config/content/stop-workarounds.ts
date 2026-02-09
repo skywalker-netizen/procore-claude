@@ -32,7 +32,7 @@ export const STOP_WORKAROUNDS_CONTENT: VariantContent<SectionContent> = {
       {
         title: "Unified Platform, Zero Silos",
         description:
-          'No more dark data in excel, email, or Google. A foreman scans a QR code on a scissor lift. Salus instantly cross-references the worker\'s profile. If their Fall Protection cert expired yesterday, they can\'t sign onto the JHA.',
+          'No more dark data in excel, email, or Google. A foreman scans a QR code on a scissor lift. SALUS instantly cross-references the worker\'s profile. If their Fall Protection cert expired yesterday, they can\'t sign onto the JHA.',
         iconColor: "beige",
       },
       {
@@ -59,7 +59,7 @@ export const STOP_WORKAROUNDS_CONTENT: VariantContent<SectionContent> = {
       {
         title: "Unified Platform, Zero Silos",
         description:
-          'No more dark data in excel, email, or Google. A foreman scans a QR code on a scissor lift. Salus instantly cross-references the worker\'s profile. If their Fall Protection cert expired yesterday, they can\'t sign onto the JHA.',
+          'No more dark data in excel, email, or Google. A foreman scans a QR code on a scissor lift. SALUS instantly cross-references the worker\'s profile. If their Fall Protection cert expired yesterday, they can\'t sign onto the JHA.',
         iconColor: "beige",
       },
       {
@@ -98,7 +98,7 @@ export const STOP_WORKAROUNDS_CONTENT: VariantContent<SectionContent> = {
       {
         title: "AI Content Builder + Auto-Translations",
         description:
-          "Build your own repository of Toolbox talks and Safe Work procedures with AI Document Creation. Salus handles the catalog so you don't have to.",
+          "Build your own repository of Toolbox talks and Safe Work procedures with AI Document Creation. SALUS handles the catalog so you don't have to.",
         iconColor: "lime",
       },
     ],
@@ -113,7 +113,7 @@ export const STOP_WORKAROUNDS_CONTENT: VariantContent<SectionContent> = {
       {
         title: "Unified Platform, Zero Silos",
         description:
-          'No more dark data in excel, email, or Google. A foreman scans a QR code on a scissor lift. Salus instantly cross-references the worker\'s profile. If their Fall Protection cert expired yesterday, they can\'t sign onto the JHA.',
+          'No more dark data in excel, email, or Google. A foreman scans a QR code on a scissor lift. SALUS instantly cross-references the worker\'s profile. If their Fall Protection cert expired yesterday, they can\'t sign onto the JHA.',
         iconColor: "beige",
       },
       {

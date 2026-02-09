@@ -28,7 +28,7 @@ export const TESTIMONIALS_CONTENT_HAMMERTECH = {
   badge: "UNMATCHED SUPPORT",
   title: "World-Class Service.",
   titleHighlight: "We Are Here For You.",
-  subtitle: "HammerTech setup is a huge pain. Salus is designed for agility. Our dedicated team handles the implementation so you never stop moving.",
+  subtitle: "HammerTech setup is a huge pain. SALUS is designed for agility. Our dedicated team handles the implementation so you never stop moving.",
   features: [
     {
       title: "Technical support via chat, email or phone during your core business hours",

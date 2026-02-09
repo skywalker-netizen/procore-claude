@@ -25,7 +25,7 @@ export const PREVENTATIVE_MAINTENANCE_CONTENT: VariantContent<SectionContent> = 
     badge: "ACTIONABLE FIELD INTELLIGENCE",
     title: "Equipment Chaos vs. Asset Precision",
     subtitle:
-      "Knowing your \"Scissor Lifts\" are safe isn't enough. You need to know that Lift #402 had its pre-trip inspection today. Unlike SiteDocs, every machine in Salus has its own digital identity. QR tags on specific equipment mean inspections are tied to the exact asset, not just a category.\n\nComplete visibility into:",
+      "Knowing your \"Scissor Lifts\" are safe isn't enough. You need to know that Lift #402 had its pre-trip inspection today. Unlike SiteDocs, every machine in SALUS has its own digital identity. QR tags on specific equipment mean inspections are tied to the exact asset, not just a category.\n\nComplete visibility into:",
     features: [
       {
         title: "Maintenance cases",
@@ -71,7 +71,7 @@ export const PREVENTATIVE_MAINTENANCE_CONTENT: VariantContent<SectionContent> = 
     badge: "ACTIONABLE FIELD INTELLIGENCE",
     title: "Equipment Chaos vs. Asset Precision",
     subtitle:
-      "Knowing your \"Scissor Lifts\" are safe isn't enough. You need to know that Lift #402 had its pre-trip inspection today. Every machine in Salus has its own digital identity. QR tags on specific equipment mean inspections are tied to the exact asset, not just a category.\n\nComplete visibility into:",
+      "Knowing your \"Scissor Lifts\" are safe isn't enough. You need to know that Lift #402 had its pre-trip inspection today. Every machine in SALUS has its own digital identity. QR tags on specific equipment mean inspections are tied to the exact asset, not just a category.\n\nComplete visibility into:",
     features: [
       {
         title: "Maintenance cases",
@@ -97,7 +97,7 @@ export const PREVENTATIVE_MAINTENANCE_CONTENT: VariantContent<SectionContent> = 
     badge: "ACTIONABLE FIELD INTELLIGENCE",
     title: "Equipment Chaos vs. Asset Precision",
     subtitle:
-      "Knowing your \"Scissor Lifts\" are safe isn't enough. You need to know that Lift #402 had its pre-trip inspection today. In Salus, every machine in Salus has its own digital identity. QR tags on specific equipment mean inspections are tied to the exact asset, not just a category.\n\nComplete visibility into:",
+      "Knowing your \"Scissor Lifts\" are safe isn't enough. You need to know that Lift #402 had its pre-trip inspection today. In SALUS, every machine has its own digital identity. QR tags on specific equipment mean inspections are tied to the exact asset, not just a category.\n\nComplete visibility into:",
     features: [
       {
         title: "Maintenance cases",
