@@ -89,7 +89,7 @@ export function SocialProofSection({ variant }: SocialProofSectionProps) {
   return (
     <section className="social-proof-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="social-proof-inner">
-        <h3 className="social-proof-title">{title}</h3>
+        <h2 className="social-proof-title">{title}</h2>
         <div className="social-proof-logos">
           {renderLogos()}
         </div>

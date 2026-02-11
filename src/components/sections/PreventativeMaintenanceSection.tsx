@@ -43,7 +43,7 @@ export function PreventativeMaintenanceSection({ variant = "general" }: Preventa
           </div>
           <div className="asset-card">
             <div className="asset-card-header">
-              <h4>Fleet Health Check</h4>
+              <h3>Fleet Health Check</h3>
               <span>ASSET DASHBOARD</span>
             </div>
             <div className="asset-card-item">

@@ -21,17 +21,19 @@ const ECompliance = () => {
     <div className="min-h-screen">
       <SEOHead variant="ecompliance" />
       <Header />
-      <HeroSection variant="ecompliance" />
-      <SocialProofSection variant="ecompliance" />
-      <ComparisonTableSection variant="ecompliance" />
-      <FieldAdvantageSection variant="ecompliance" />
-      <TradePartnerSection variant="ecompliance" />
-      <PreventativeMaintenanceSection variant="ecompliance" />
-      <ExecutiveInsightsSection variant="ecompliance" />
-      <StopWorkaroundsSection variant="ecompliance" />
-      <TestimonialsSection variant="ecompliance" bgVariant="white" />
-      <IntegrationSection />
-      <CTASection />
+      <main>
+        <HeroSection variant="ecompliance" />
+        <SocialProofSection variant="ecompliance" />
+        <ComparisonTableSection variant="ecompliance" />
+        <FieldAdvantageSection variant="ecompliance" />
+        <TradePartnerSection variant="ecompliance" />
+        <PreventativeMaintenanceSection variant="ecompliance" />
+        <ExecutiveInsightsSection variant="ecompliance" />
+        <StopWorkaroundsSection variant="ecompliance" />
+        <TestimonialsSection variant="ecompliance" bgVariant="white" />
+        <IntegrationSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

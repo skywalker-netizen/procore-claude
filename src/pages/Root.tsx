@@ -20,16 +20,18 @@ const Root = () => {
     <div className="min-h-screen">
       <SEOHead variant="root" includeProductSchema />
       <Header />
-      <HeroSection variant="general" />
-      <SocialProofSection variant="general" />
-      <FieldAdvantageSection variant="general" />
-      <StopWorkaroundsSection variant="general" />
-      <TradePartnerSection variant="general" />
-      <PreventativeMaintenanceSection variant="general" />
-      <ExecutiveInsightsSection variant="general" />
-      <IntegrationSection />
-      <TestimonialsSection />
-      <CTASection />
+      <main>
+        <HeroSection variant="general" />
+        <SocialProofSection variant="general" />
+        <FieldAdvantageSection variant="general" />
+        <StopWorkaroundsSection variant="general" />
+        <TradePartnerSection variant="general" />
+        <PreventativeMaintenanceSection variant="general" />
+        <ExecutiveInsightsSection variant="general" />
+        <IntegrationSection />
+        <TestimonialsSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );
