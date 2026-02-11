@@ -11,4 +11,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://discoversalus.lovable.app/sitemap.xml
+Sitemap: https://discover.salussafety.io/sitemap.xml
