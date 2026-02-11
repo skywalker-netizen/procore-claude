@@ -21,17 +21,19 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOHead variant="procore" includeProductSchema />
       <Header />
-      <HeroSection variant="procore" />
-      <SocialProofSection variant="procore" />
-      <IntegrationSection />
-      <FieldAdvantageSection variant="procore" />
-      <StopWorkaroundsSection variant="procore" />
-      <TradePartnerSection variant="procore" />
-      <PreventativeMaintenanceSection />
-      <ExecutiveInsightsSection variant="procore" />
-      <TechSpecsSection />
-      <TestimonialsSection />
-      <CTASection />
+      <main>
+        <HeroSection variant="procore" />
+        <SocialProofSection variant="procore" />
+        <IntegrationSection />
+        <FieldAdvantageSection variant="procore" />
+        <StopWorkaroundsSection variant="procore" />
+        <TradePartnerSection variant="procore" />
+        <PreventativeMaintenanceSection />
+        <ExecutiveInsightsSection variant="procore" />
+        <TechSpecsSection />
+        <TestimonialsSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

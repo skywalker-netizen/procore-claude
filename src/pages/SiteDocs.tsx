@@ -19,15 +19,17 @@ const SiteDocs = () => {
     <div className="min-h-screen">
       <SEOHead variant="sitedocs" />
       <Header />
-      <HeroSection variant="sitedocs" />
-      <SocialProofSection variant="general" />
-      <ComparisonTableSection />
-      <TradePartnerSection variant="sitedocs" />
-      <FieldAdvantageSection variant="sitedocs" />
-      <PreventativeMaintenanceSection variant="sitedocs" />
-      <TestimonialsSection />
-      <IntegrationSection />
-      <CTASection />
+      <main>
+        <HeroSection variant="sitedocs" />
+        <SocialProofSection variant="general" />
+        <ComparisonTableSection />
+        <TradePartnerSection variant="sitedocs" />
+        <FieldAdvantageSection variant="sitedocs" />
+        <PreventativeMaintenanceSection variant="sitedocs" />
+        <TestimonialsSection />
+        <IntegrationSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

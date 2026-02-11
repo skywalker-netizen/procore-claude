@@ -20,16 +20,18 @@ const Ca = () => {
     <div className="min-h-screen">
       <SEOHead variant="ca" />
       <Header />
-      <HeroSection variant="ca" />
-      <SocialProofSection variant="ca" />
-      <FieldAdvantageSection variant="ca" />
-      <StopWorkaroundsSection variant="ca" />
-      <ExecutiveInsightsSection variant="ca" />
-      <TradePartnerSection variant="ca" />
-      <PreventativeMaintenanceSection variant="ca" />
-      <TestimonialsSection bgVariant="white" />
-      <IntegrationSection />
-      <CTASection />
+      <main>
+        <HeroSection variant="ca" />
+        <SocialProofSection variant="ca" />
+        <FieldAdvantageSection variant="ca" />
+        <StopWorkaroundsSection variant="ca" />
+        <ExecutiveInsightsSection variant="ca" />
+        <TradePartnerSection variant="ca" />
+        <PreventativeMaintenanceSection variant="ca" />
+        <TestimonialsSection bgVariant="white" />
+        <IntegrationSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

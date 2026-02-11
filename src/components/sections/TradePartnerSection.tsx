@@ -34,7 +34,7 @@ export function TradePartnerSection({ variant }: TradePartnerSectionProps) {
                 {FEATURE_ICONS[index]}
               </div>
               <div>
-                <h4>{feature.title}</h4>
+                <h3>{feature.title}</h3>
                 <p>
                   {feature.title === "Accountability" ? (
                     <>

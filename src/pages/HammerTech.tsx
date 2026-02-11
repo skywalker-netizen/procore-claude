@@ -19,15 +19,17 @@ const HammerTech = () => {
     <div className="min-h-screen">
       <SEOHead variant="hammertech" />
       <Header />
-      <HeroSection variant="hammertech" />
-      <SocialProofSection variant="general" />
-      <ComparisonTableSection variant="hammertech" />
-      <FieldAdvantageSection variant="hammertech" />
-      <TradePartnerSection variant="hammertech" />
-      <StopWorkaroundsSection variant="hammertech" />
-      <TestimonialsSection variant="hammertech" bgVariant="white" />
-      <IntegrationSection />
-      <CTASection />
+      <main>
+        <HeroSection variant="hammertech" />
+        <SocialProofSection variant="general" />
+        <ComparisonTableSection variant="hammertech" />
+        <FieldAdvantageSection variant="hammertech" />
+        <TradePartnerSection variant="hammertech" />
+        <StopWorkaroundsSection variant="hammertech" />
+        <TestimonialsSection variant="hammertech" bgVariant="white" />
+        <IntegrationSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );
