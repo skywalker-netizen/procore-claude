@@ -4,7 +4,7 @@
 
 /* Dark Section */
 .dark-section {
-  background: hsl(var(--navy));
+  background: hsl(var(--asphalt));
   width: 100%;
 }
 
