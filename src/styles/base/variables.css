@@ -4,19 +4,19 @@
 
 :root {
   /* Field-First Industrial Palette */
-  --navy: 204 93% 10%;
-  --navy-dark: 204 95% 7%;
-  --lime: 108 71% 44%;
-  --lime-dark: 108 65% 36%;
+  --navy: 220 25% 18%;
+  --navy-dark: 220 28% 12%;
+  --lime: 82 70% 50%;
+  --lime-dark: 82 65% 42%;
   
   /* Concrete & Earth Tones */
-  --concrete: 213 100% 97%;
+  --concrete: 30 5% 92%;
   --concrete-dark: 30 4% 78%;
   --steel: 210 8% 45%;
   --steel-dark: 210 10% 32%;
   --rust: 18 60% 45%;
   --clay: 28 35% 58%;
-  --asphalt: 204 8% 46%;
+  --asphalt: 220 8% 25%;
   
   /* Grays with warm undertone */
   --gray-100: 35 8% 96%;

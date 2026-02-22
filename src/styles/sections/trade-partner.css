@@ -4,7 +4,7 @@
 
 /* Dark Section */
 .dark-section {
-  background: hsl(var(--asphalt));
+  background: hsl(var(--navy));
   width: 100%;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .dark-section .section-description {
-  color: hsl(var(--white));
+  color: var(--glass-white-60);
 }
 
 .dark-section .section-subtitle {
@@ -52,12 +52,12 @@
 }
 
 .trade-feature h4 .highlight {
-  color: hsl(var(--white));
+  color: hsl(var(--gray-400));
 }
 
 .trade-feature p {
   font-size: 15px;
-  color: hsl(var(--white));
+  color: var(--glass-white-50);
   line-height: 1.5;
 }
 
