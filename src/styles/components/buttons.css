@@ -32,7 +32,7 @@
 
 .btn-lime {
   background: hsl(var(--lime));
-  color: hsl(var(--navy));
+  color: hsl(var(--white));
   padding: 16px 32px;
   font-size: 13px;
   border: 2px solid hsl(var(--lime-dark));
