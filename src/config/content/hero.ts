@@ -36,7 +36,7 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
       'A great safety program starts with smart leaders in the field, but to scale smart, you need help. More paper doesn\'t work, you\'ve outgrown simple digital safety forms, and you don\'t have time for "Enterprise" bloat. Time for Salus, your smart safety partner.',
     description:
       'Salus is the only "Field-first" safety management software that empowers supervisors and safety directors to run more effective safety programs while cutting non-productive time, so that people can get more done - together, safely.',
-    tagline: "Zero Incidents. Zero Downtime. Zero Blindspots.",
+    
   },
   sitedocs: {
     badge: "ACCOUNTABILITY, NOT JUST FORMS",
