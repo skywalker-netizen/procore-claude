@@ -35,7 +35,7 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     subtitle:
       'A great safety program starts with smart leaders in the field, but to scale smart, you need help. More paper doesn\'t work, you\'ve outgrown simple digital safety forms, and you don\'t have time for "Enterprise" bloat. Time for Salus, your smart safety partner.',
     description:
-      "Designed from the ground up, Salus empowers supervisors and safety directors with high field visibility and helps them close gaps quickly so that mission-critical projects stay on track and reputations stay protected.",
+      "Designed from the ground up, Salus empowers supervisors and safety directors with tools to run scalable and highly effective safety programs while cutting non-productive time, so that people can get more done - safely.",
     tagline: "Zero Incidents. Zero Downtime. Zero Blindspots.",
   },
   sitedocs: {
