@@ -33,7 +33,7 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     title: "Safety management software",
     titleHighlight: "Loved by Boots and Suits.",
     subtitle:
-      'In your business, "good enough" safety is not an option. But you\'re outgrowing paper binders and simple digital safety forms, and you don\'t have time for "Enterprise" bloat.',
+      'A great safety program is not an admin chore. It starts with smart leaders in the field, but to scale smart, you need help. You\'re outgrowing paper binders and simple digital safety forms, and you don\'t have time for "Enterprise" bloat. Time for Salus, your smart safety partner.',
     description:
       "SALUS provides high-precision trades and general contractors with a live stream of high-fidelity, actionable field intelligence and helps close the accountability gaps so that mission-critical projects stay on track and reputations stay protected.",
     tagline: "Zero Incidents. Zero Downtime. Zero Blindspots.",
