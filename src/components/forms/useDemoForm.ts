@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
+import { getPpcClickIds } from "@/lib/cookies";
 
 const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19065622/ulrzdge/";
 
@@ -82,20 +83,21 @@ export function useDemoForm() {
     msclid: "",
   });
 
-  // Capture UTM parameters from URL on mount
+  // Capture UTM parameters from URL and PPC click IDs from cookies on mount
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
+    const clickIds = getPpcClickIds();
     setFormData((prev) => ({
       ...prev,
       utm_source: params.get("utm_source") || "",
       utm_campaign: params.get("utm_campaign") || "",
       utm_medium: params.get("utm_medium") || "",
       utm_term: params.get("utm_term") || "",
-      gclid: params.get("gclid") || "",
-      li_fat_id: params.get("li_fat_id") || "",
-      gbraid: params.get("gbraid") || "",
-      fbclkid: params.get("fbclkid") || "",
-      msclid: params.get("msclid") || "",
+      gclid: clickIds.gclid || params.get("gclid") || "",
+      li_fat_id: clickIds.li_fat_id || params.get("li_fat_id") || "",
+      gbraid: clickIds.gbraid || params.get("gbraid") || "",
+      fbclkid: clickIds.fbclkid || params.get("fbclkid") || "",
+      msclid: clickIds.msclid || params.get("msclid") || "",
     }));
   }, []);
 
