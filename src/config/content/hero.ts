@@ -68,7 +68,7 @@ export const HERO_CONTENT: VariantContent<HeroContent> = {
     subtitle:
       'A great safety program starts with smart leaders in the field, but to scale smart, you need help. More paper doesn\'t work, you\'ve outgrown simple digital safety forms, and you don\'t have time for "Enterprise" bloat. Time for Salus, your smart safety partner.',
     description:
-      'SALUS is the only "Field-First" safety management software that provides high-visibility and actionable field intelligence — giving Canadian Prime and Specialized Contractors push-button audit readiness and a direct path to insurance premium discounts.',
+      'Salus is the only "Field-first" safety management software that empowers supervisors and safety directors to run more effective safety programs while cutting non-productive time, so that people can get more done - together, safely.',
     tagline: "Start scaling with confidence.",
   },
   ecompliance: {
